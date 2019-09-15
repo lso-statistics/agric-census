@@ -9,9 +9,9 @@ preproc
 if curocc($) = 1 then
 	//$(curocc($)) = "Cattle";
 		if LQ02 = 2 then
-				skip to LQ02(curocc($)+6);//skip to the next row
+				skip to LQ02(curocc($)+6);//skip to sheep
 			else
-				skip to LQ02(curocc($)+1);//skip to the next row
+				skip to LQ02(curocc($)+1);//skip to calves
 		endif;
 	elseif curocc($) = 2 then
 		$(curocc($)) = "Calve";
@@ -41,7 +41,9 @@ if curocc($) = 1 then
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Sheep";
 		if LQ02 = 2 then
-			skip to LQ02(curocc($)+3);//skip to the next row
+			skip to LQ02(curocc($)+3);//skip to goats
+		else
+			skip to LQ02(curocc($)+1);//skip to Improve Sheep
 		endif;
 	elseif curocc($) = 8 then
 		$(curocc($)) = "Improve Sheep";
@@ -56,7 +58,9 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Goats";
 		if LQ02 = 2 then
-			skip to LQ02(curocc($)+3);//skip to the next row
+			skip to LQ02(curocc($)+3);//skip to pigs
+		else
+			skip to LQ02(curocc($)+1);//skip to Improved Goats
 		endif;
 	elseif curocc($) = 11 then
 		$(curocc($)) = "Improved Goats";
@@ -72,6 +76,8 @@ if curocc($) = 1 then
 		//$(curocc($)) = "Pigs";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+3);//skip to the next row
+		else
+			skip to LQ02(curocc($)+1);//skip to Improved Pigs
 		endif;
 	elseif curocc($) = 14 then
 		$(curocc($)) = "Improved Pigs";
@@ -102,6 +108,8 @@ if curocc($) = 1 then
 		//$(curocc($)) = "Chickens";
 		if LQ02 = 2 then
 			skip to USED_SUPPLIMENT_TYPE(1);//skip to suplements for all cattle
+		else
+			skip to LQ02(curocc($)+1);//skip to Boilers
 		endif;
 	elseif curocc($) = 20 then
 		$(curocc($)) = "Boilers";
@@ -119,61 +127,8 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_TYPE(1);//skip to suplements for all cattle
 		endif;
 endif;
-{PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
-preproc
+postproc
 
-if curocc($) = 1 then
-	$(curocc($)) = "Fodder/Hay/Grass";
-		if USED_SUPPLIMENT_TYPE(curocc($)) = 2 then
-				skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 2 then
-		$(curocc($)) = "Crop Residue";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 3 then
-		$(curocc($)) = "Feed Concentrete";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 4 then
-		$(curocc($)) = "Dairy Meal";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 5 then
-		$(curocc($)) = "Poultry Meal";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 6 then
-		$(curocc($)) = "Sheep Palets";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 7 then
-		$(curocc($)) = "Moroko";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 8 then
-		$(curocc($)) = "Seameal/Bran";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 9 then
-		$(curocc($)) = "Salt";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
-		endif;
-	elseif curocc($) = 10 then
-		$(curocc($)) = "Mineral Block";
-		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_ALL_CATTLE(1);//skip to suplements used for all cattle
-		endif;
-
-endif;}
 PROC USED_SUPPLIMENT_TYPE
 preproc
 numeric currentRow;
@@ -396,6 +351,59 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(1);//skip to suplements used for poultry
+		endif;
+endif;
+PROC TYPE_OF_SUPPLIMENT_POULTRY
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_POULTRY(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_POULTRY = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_POULTRY = 2 then
 			//skip to USED_SUPPLIMENT_SHEEP(1);//skip to suplements used for sheep
 		endif;
 endif;

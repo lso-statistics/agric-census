@@ -63,12 +63,13 @@ Font=-027 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0018 Cambria
 Name=FORM002
 Label=Livestock Summer Feed
 Level=1
-Size=1289,2099
+Size=1289,2666
   
 Item=USED_SUPPLIMENT_TYPE000
 Item=USED_SUPPLIMENT_ALL_CATTLE000
 Item=USED_SUPPLIMENT_SHEEP000
 Item=USED_SUPPLIMENT_GOATS000
+Item=USED_SUPPLIMENT_POULTRY000
   
 [EndForm]
   
@@ -1554,8 +1555,10 @@ Name=LQ13SA_ALL_GOATS
 Position=33,0,76,20
 Item=LQ13SA_ALL_GOATS,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,371,16
 Text=Total Quantity of suppliments provided to feed the goats?
  
 [EndColumn]
@@ -1674,10 +1677,10 @@ Text=Total purchase price (Maloti) forthe goats?
 [EndColumn]
   
 [Column]
-Width=163
+Width=191
   
 [HeaderText]
-Position=8,32,163,104
+Position=1,48,191,104
 Text=Total transport costs from point of purchase to holding (Maloti) for the goats?
  
 [Field]
@@ -1688,6 +1691,266 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Text=Total transport costs from point of purchase to holding (Maloti) for the goats?
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+  
+[Grid]
+Name=USED_SUPPLIMENT_POULTRY000
+Label=Did the holding use the suppliment for poultry?
+Form=3
+Required=Yes
+Type=Record
+TypeName=LIVESTOCK_FEEDS_SUMMER
+Max=10
+DisplaySize=22,2094,1261,2641
+Orientation=Horizontal
+FieldRowHeight=39
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=0,0,120,39
+Text=Fodder/Hay/Grass
+ 
+  
+[Text]
+Position=61,0,120,40
+Text=Crop Residue
+ 
+  
+[Text]
+Position=35,0,120,40
+Text=Feed Concentrate
+ 
+  
+[Text]
+Position=44,15,120,39
+Text=Dairy Meal
+ 
+  
+[Text]
+Position=63,0,120,40
+Text=Poultry Meal
+ 
+  
+[Text]
+Position=67,0,120,40
+Text=Sheep Palets
+ 
+  
+[Text]
+Position=65,15,120,39
+Text=Moroko
+ 
+  
+[Text]
+Position=21,15,120,39
+Text=Seameal/Bran
+ 
+  
+[Text]
+Position=81,15,120,39
+Text=Salts
+ 
+  
+[Text]
+Position=60,0,120,40
+Text=Mineral Block
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,48,78,152
+Text=Did the holding use the suppliment for poultry?
+ 
+[Field]
+Name=USED_SUPPLIMENT_POULTRY
+Position=55,0,70,20
+Item=USED_SUPPLIMENT_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=Did the holding use the suppliment for poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=149
+  
+[HeaderText]
+Position=8,112,149,152
+Text=Type of Suppliments for poultry
+ 
+[Field]
+Name=TYPE_OF_SUPPLIMENT_POULTRY
+Position=0,0,129,20
+Item=TYPE_OF_SUPPLIMENT_POULTRY,COP_DICT_DICT
+Protected=Yes
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Position=0,0,203,16
+Text=Type of Suppliments for poultry
+ 
+[EndColumn]
+  
+[Column]
+Width=84
+  
+[HeaderText]
+Position=0,48,84,152
+Text=Total Quantity of suppliments provided to feed the poultry?
+ 
+[Field]
+Name=LQ13SA_ALL_GOATT
+Position=33,0,76,20
+Item=LQ13SA_ALL_GOATT,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Position=0,0,380,16
+Text=Total Quantity of suppliments provided to feed the poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=84
+  
+[HeaderText]
+Position=0,48,84,152
+Text=Unit of total Quantity of suppliment provided to feed the poultry?
+ 
+[Field]
+Name=LQ13SB_ALL_POULTRY
+Position=59,0,74,20
+Item=LQ13SB_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=Unit of total Quantity of suppliment provided to feed the poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=77
+  
+[HeaderText]
+Position=0,64,77,152
+Text=Main source of acquisition for the poultry?
+ 
+[Field]
+Name=LQ15S_ALL_POULTRY
+Position=54,0,69,20
+Item=LQ15S_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=Main source of acquisition for the poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=94
+  
+[HeaderText]
+Position=0,48,94,152
+Text=Was any of this supplemetary feed purchsed for the poultry?
+ 
+[Field]
+Name=LQ16S_ALL_POULTRY
+Position=71,0,86,20
+Item=LQ16S_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=Was any of this supplemetary feed purchsed for the poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=149
+  
+[HeaderText]
+Position=71,64,149,152
+Text=Quantity purchased the dairy for the poultry?
+ 
+[Field]
+Name=LQ17SA_ALL_POULTRY
+Position=0,0,141,20
+Item=LQ17SA_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Quantity purchased the dairy for the poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,64,78,152
+Text=Unit of quantity purchased for the poultry?
+ 
+[Field]
+Name=LQ17SB_ALL_POULTRY
+Position=55,0,70,20
+Item=LQ17SB_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Unit of quantity purchased for the poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=163
+  
+[HeaderText]
+Position=93,48,163,152
+Text=Total purchase price (Maloti) forthe poultry?
+ 
+[Field]
+Name=LQ17SC_ALL_POULTRY
+Position=0,0,155,20
+Item=LQ17SC_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Total purchase price (Maloti) forthe poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=163
+  
+[HeaderText]
+Position=87,0,163,152
+Text=Total transport costs from point of purchase to holding (Maloti) for the poultry?
+ 
+[Field]
+Name=LQ18S_ALL_POULTRY
+Position=0,0,155,20
+Item=LQ18S_ALL_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Total transport costs from point of purchase to holding (Maloti) for the poultry?
  
 [EndColumn]
   
