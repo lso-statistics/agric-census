@@ -1,0 +1,2871 @@
+﻿[Dictionary]
+Version=CSPro 7.0
+Label=CropsCostOfProduction
+Name=CROPSCOSTOFPRODUCTION_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=CropsCostOfProduction questionnaire
+Name=CROPSCOSTOFPRODUCTION_QUEST
+
+[IdItems]
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=2
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=District
+Name=DISTRICT_VS1
+Value=1;Botha-Bothe
+Value=2;Leribe
+Value=3;Berea
+Value=4;Maseru
+Value=5;Mafeteng
+Value=6;Mohale’sHoek
+Value=7;Quthing
+Value=8;Qacha’s Nek
+Value=9;Mokhotlong
+Value=10;Thaba-Tseka
+
+[Item]
+Label=Constituency
+Name=CONSTITUENCY
+Start=4
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Constituency
+Name=CONSTITUENCY_VS1
+Value=1;Mechachane
+Value=2;Hololo
+Value=3;Motete
+Value=4;Qalo
+Value=5;Butha-buthe
+Value=6;Maliba-mats'o
+Value=7;Mphosong
+Value=8;Thaba-phats'oa
+Value=9;Mahobong
+Value=10;Pela-ts'oeu
+Value=11;Matlakeng
+Value=12;Leribe
+Value=13;Hlotse
+Value=14;Tsikoane
+Value=15;Maputsoe
+Value=16;Likhetlane
+Value=17;Peka
+Value=18;Kolonyama
+Value=19;Mosalemane
+Value=20;Makhoroana
+Value=21;Bela-bela
+Value=22;Malimong
+Value=23;Khafung
+Value=24;Teya-teyaneng
+Value=25;T'soana-makhulo
+Value=26;Thupa-kubu
+Value=27;Berea
+Value=28;Khubetsoana
+Value=29;Mabote
+Value=30;Motimposo
+Value=31;Stadium Area
+Value=32;Maseru
+Value=33;Thetsane
+Value=34;Qoaling
+Value=35;Lithoteng
+Value=36;Lithabaneng
+Value=37;Abia
+Value=38;Thaba-bosiu
+Value=39;Machache
+Value=40;Thaba-putsoa
+Value=41;Maama
+Value=42;Koro-koro
+Value=43;Qeme
+Value=44;Rothe
+Value=45;Matsieng
+Value=46;Makhaleng
+Value=47;Maletsunyane
+Value=48;Thaba-phechela
+Value=49;Kolo
+Value=50;Matelile
+Value=51;Maliepetsane
+Value=52;Thabana Morena
+Value=53;Likhoele
+Value=54;Qalabane
+Value=55;Mafeteng
+Value=56;Taung
+Value=57;Qhalasi
+Value=58;Mohale's Hoek
+Value=59;Mekaling
+Value=60;Qaqatu
+Value=61;Mpharane
+Value=62;Ketane
+Value=63;Hloahloeng
+Value=64;Tele
+Value=65;Moyeni
+Value=66;Sebapala
+Value=67;Mt.moorosi
+Value=68;Qhoali
+Value=69;Qacha'snek
+Value=70;Lebakeng
+Value=71;Tsoelike
+Value=72;Mantsonyane
+Value=73;Thaba-moea
+Value=74;Thaba-tseka
+Value=75;Semena
+Value=76;Mashai
+Value=77;Malingoaneng
+Value=78;Senqu
+Value=79;Mokhotlong
+Value=80;Bobatsi
+
+[Item]
+Label=Community Council
+Name=COMMUNITY_COUNCIL
+Start=6
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=Community Council
+Name=COMMUNITY_COUNCIL_VS1
+Value='B01';Ngoajane
+Value='B02';Likila
+Value='B03';Nqoe
+Value='B04';Tŝa-le-Moleka
+Value='B05';Botha-Bothe
+Value='C01';Matsoku
+Value='C02';Bolahla
+Value='C03';Ramapepe
+Value='C04';Mamafubelu
+Value='C05';Menkhoaneng
+Value='C06';Maisa-Phoka
+Value='C07';Sephokong
+Value='C08';Litjotjela
+Value='C09';Hleoheng
+Value='C10';Manka
+Value='C11';Tsoili-tsoili
+Value='C12';Hlotse
+Value='C13';Maputsoe
+Value='D01';Makeoane
+Value='D02';Mapoteng
+Value='D03';Kueneng
+Value='D04';Teba-Tebe
+Value='D05';Phuthiatsana
+Value='D06';Motanasela
+Value='D07';Senekane
+Value='D08';Kanana
+Value='D10';Berea
+Value='A01';Qiloane
+Value='A02';Ratau
+Value='A03';Likolobeng
+Value='A04';Manonyane
+Value='A05';Mohlakeng
+Value='A06';Mazenod
+Value='A07';Lilala
+Value='A08';Makhoarane
+Value='A09';Kubake
+Value='A10';Makhoalipana
+Value='A11';Maseru
+Value='A12';Semonkong
+Value='E01';Metsi-Maholo
+Value='E02';Mamantso
+Value='E03';Ramoetsana
+Value='E04';Lehlakaneng
+Value='E05';Makoabating
+Value='E06';Tsana-Talana
+Value='E07';Qibing
+Value='E08';Mafeteng
+Value='F01';Siloe
+Value='F02';Mashaleng
+Value='F03';Khoelenya
+Value='F04';Lithipeng
+Value='F05';Thaba-Mokhele
+Value='F06';Qhoasing
+Value='F07';Senqunyane
+Value='F08';Mohales Hoek
+Value='G01';Mtjanyane
+Value='G02';Qomoqomong
+Value='G03';Tosing
+Value='G04';Telle
+Value='G05';Tsitsong
+Value='G06';Quthing
+Value='H01';Qanya
+Value='H02';Ntsupe
+Value='H03';Tsoelikana
+Value='H04';Qachas Nek
+Value='K01';Tenesolo
+Value='K02';Khutlo-se-Metsi
+Value='K03';Litsoetse
+Value='K04';Bokong
+Value='K05';Linakeng
+Value='K06';Thaba-Tseka
+Value='J01';Seate
+Value='J02';Mphokojoane
+Value='J03';Senqebethu
+Value='J04';Menoaneng
+Value='J05';Mokhotlong
+
+[Item]
+Label=Village Name
+Name=VILLAGE_NAME
+Start=9
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Chief/Headman
+Name=CHIEF
+Start=39
+Len=30
+DataType=Alpha
+
+[Item]
+Label=PSU Code
+Name=PSU_CODE
+Start=69
+Len=7
+ZeroFill=Yes
+
+[Item]
+Label=Village Number
+Name=VILLAGE_NUMBER
+Start=76
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Village Number
+Name=VILLAGE_NUMBER_VS1
+Value=1:15;1 - 15
+
+[Item]
+Label=Zone
+Name=ZONE
+Start=78
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Zone
+Name=ZONE_VS1
+Value=1;Lowlands
+Value=2;Foothills
+Value=3;Mountains
+Value=4;Senqu river valley
+
+[Item]
+Label=Enumeration Area
+Name=ENUMERATION_AREA
+Start=79
+Len=11
+ZeroFill=Yes
+
+[Item]
+Label=Settlement
+Name=SETTLEMENT
+Start=90
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Settlement
+Name=SETTLEMENT_VS1
+Value=1;Urban
+Value=2;Peri-Urban
+Value=3;Rural
+
+[Item]
+Label=Names of Household Head
+Name=HOUSEHOLD_HEAD_NAMES
+Start=91
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Household Number
+Name=HOUSEHOLD_NUMBER
+Start=116
+Len=3
+ZeroFill=Yes
+
+[Record]
+Label=Socio Demographics
+Name=SOCIO_DEMOGRAPHICS
+RecordTypeValue='7'
+MaxRecords=30
+RecordLen=212
+
+[Item]
+Label=Household member serial No
+Name=B1
+Start=119
+Len=2
+
+[Item]
+Label=Name of the household member (NAME)
+Name=B2
+Start=121
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Anymore People?
+Name=ANYMORE_PEOPLE
+Start=171
+Len=1
+
+[ValueSet]
+Label=Anymore People?
+Name=ANYMORE_PEOPLE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Is (NAME) male or female?
+Name=B3
+Start=172
+Len=1
+
+[ValueSet]
+Label=Is (NAME) male or female?
+Name=B3_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=What is (NAME)'s  age?
+Name=B4
+Start=173
+Len=3
+
+[ValueSet]
+Label=What is (NAME)'s  age?
+Name=B4_VS1
+Value=0:135;0 - 135
+
+[Item]
+Label=What is (NAME)'s  relationship to the HH?
+Name=B5
+Start=176
+Len=2
+
+[ValueSet]
+Label=What is (NAME)'s  relationship to the HH?
+Name=B5_VS1
+Value=1;Household Head
+Value=2;Spouse
+Value=3;Partner
+Value=4;Son\Daughter
+Value=5;Son/Daughter in Law
+Value=6;Child in Law
+Value=7;Step Child
+Value=8;Sibling
+Value=9;Own Parent
+Value=10;Parent in law
+Value=11;Grand Parent
+Value=12;Grand/Great Grand child
+Value=13;Other Relative
+Value=14;Not Related
+
+[Item]
+Label=What is (NAME)'s  marital status?
+Name=B6
+Start=178
+Len=2
+
+[ValueSet]
+Label=What is (NAME)'s  marital status?
+Name=B6_VS1
+Value=1;Married
+Value=2;Single
+Value=3;Divorced
+Value=4;Seperated
+Value=5;Widower
+Value=7;Other
+Value=98;N/A
+
+[Item]
+Label=What is (NAME)'s other  marital status?
+Name=B6_OTHER
+Start=180
+Len=30
+DataType=Alpha
+
+[Item]
+Label=What is (NAME)'s  highest level of education attained?
+Name=B7
+Start=210
+Len=1
+
+[ValueSet]
+Label=What is (NAME)'s  highest level of education attained?
+Name=B7_VS1
+Value=1;No Education
+Value=2;Primary School
+Value=3;Secondary School
+Value=4;Tertiary Education
+
+[Item]
+Label=What is (NAME)'s current residential status?
+Name=B8
+Start=211
+Len=1
+
+[ValueSet]
+Label=What is (NAME)'s current residential status?
+Name=B8_VS1
+Value=1;Present
+Value=2;Elsewhere in Lesotho
+Value=3;RSA
+Value=4;Outside RSA
+
+[Item]
+Label=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Name=B9
+Start=212
+Len=1
+
+[ValueSet]
+Label=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Name=B9_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Fields Records
+Name=FIELDS_RECORDS
+RecordTypeValue='F'
+MaxRecords=20
+RecordLen=396
+
+[Item]
+Label=Field number
+Name=CQ04
+Start=119
+Len=2
+
+[ValueSet]
+Label=Field number
+Name=CQ04_VS1
+Value=0:20;0 - 20
+
+[Item]
+Label=What was the ownership of the field?
+Name=CQ05
+Start=121
+Len=1
+
+[ValueSet]
+Label=What was the ownership of the field?
+Name=CQ05_VS1
+Value=1;Owned & Onwer Operated
+Value=2;Owned & Share Cropped
+Value=3;Owned & Operated by Protected
+Value=4;Rented in
+Value=5;Borrowed in
+Value=6;Borrowed out
+Value=7;Rented out
+
+[Item]
+Label=What was the use of the field?
+Name=CQ06
+Start=122
+Len=1
+
+[ValueSet]
+Label=What was the use of the field?
+Name=CQ06_VS1
+Value=1;Cultivated
+Value=2;Fallow
+Value=3;Rented out
+Value=4;Borrowed out
+Value=5;Other (specify)
+
+[Item]
+Label=What was the other use of the field?
+Name=CQ06_OTHER
+Start=123
+Len=25
+DataType=Alpha
+
+[Item]
+Label=How much was paid in cash for renting this field?
+Name=CQ07A
+Start=148
+Len=10
+Decimal=2
+
+[Item]
+Label=How much was paid in cash equivalent for renting this field?
+Name=CQ07B
+Start=158
+Len=10
+Decimal=2
+
+[Item]
+Label=How much was recieved in cash for renting this field?
+Name=CQ08A
+Start=168
+Len=10
+Decimal=2
+
+[Item]
+Label=How much was revieved in cash equivalent for renting-out this field
+Name=CQ08B
+Start=178
+Len=10
+Decimal=2
+
+[Item]
+Label=What was the main method used for land preparation?
+Name=CQ09A
+Start=188
+Len=1
+
+[ValueSet]
+Label=What was the main method used for land preparation?
+Name=CQ09A_VS1
+Value=1;Convention
+Value=2;Conservation
+
+[Item]
+Label=What implements did the holding use to prepare land for planting?
+Name=CQ09B
+Start=189
+Len=1
+
+[ValueSet]
+Label=What implements did the holding use to prepare land for planting?
+Name=CQ09B_VS1
+Value=1;Own Hand Hoe
+Value=2;Own Animal Plough/Harrow/Planter
+Value=3;Own Tractor Plough/Disk Harrow/Planter
+Value=4;Hierd hoe
+Value=5;Hired Animal Plough/Harrow/Planter
+Value=6;Hired Tractor Plough/Disk Harrow/Planter
+Value=7;Ripper
+Value=8;Combination (specify)
+
+[Item]
+Label=What other implements did the holding use to prepare land for planting?
+Name=CQ09B_OTHER
+Start=190
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many complete weedings of this field were done during the season?
+Name=CQ09C
+Start=220
+Len=1
+
+[Item]
+Label=Was the field a pure or mixed stand?
+Name=CQ12
+Start=221
+Len=1
+
+[ValueSet]
+Label=Was the field a pure or mixed stand?
+Name=CQ12_VS1
+Value=1;Pure stand
+Value=2;Mixture
+
+[Item]
+Label=What crops were planted on the field?
+Name=CQ13
+Start=222
+Len=7
+DataType=Alpha
+
+[ValueSet]
+Label=What crops were planted on the field?
+Name=CQ13_VS1
+Value='M      ';Maize
+Value='W      ';Wheat
+Value='S      ';Sorghum
+Value='B      ';Beans
+Value='P      ';Peas
+Value='F      ';Fallow
+
+[Item]
+Label=What was the seed type used?
+Name=CQ14
+Start=229
+Len=1
+
+[ValueSet]
+Label=What was the seed type used?
+Name=CQ14_VS1
+Value=1;Local
+Value=2;Hybrid
+Value=3;Open Pollinated Variety
+
+[Item]
+Label=Area (ha) For mixtures estimate the propotion under each crop?
+Name=CQ15
+Start=230
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the quantity of seeds used?
+Name=CQ16A
+Start=237
+Len=7
+Decimal=2
+
+[Item]
+Label=What was the quantity of seeds in kg (units)?
+Name=CQ16B
+Start=244
+Len=1
+
+[ValueSet]
+Label=What was the quantity of seeds in kg (units)?
+Name=CQ16B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=write the code for each combination of crop identified in C.Q13 and C.Q14?
+Name=CQ17A
+Start=245
+Len=2
+
+[Item]
+Label=write the code for each combination of seeds identified in C.Q13 and C.Q14?
+Name=CQ17B
+Start=247
+Len=2
+
+[Item]
+Label=Where did the holding obtain most of the seeds used?
+Name=CQ18
+Start=249
+Len=1
+
+[ValueSet]
+Label=Where did the holding obtain most of the seeds used?
+Name=CQ18_VS1
+Value=1;Traders
+Value=2;Ministry of Agricalture and Food Security
+Value=3;Development Partners
+Value=4;Non Governmental Organizations
+Value=5;Farmers'Associations
+Value=6;Own Harvest
+
+[Item]
+Label=What was the total quantity purchased?
+Name=CQ19A
+Start=250
+Len=7
+Decimal=2
+
+[Item]
+Label=What was the unit of quantity purchased?
+Name=CQ19B
+Start=257
+Len=1
+
+[ValueSet]
+Label=What was the unit of quantity purchased?
+Name=CQ19B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=What was the total price paid for the total quantity purchased?
+Name=CQ19C
+Start=258
+Len=7
+Decimal=2
+
+[Item]
+Label=Was the inorganic fertiliser used on the field?
+Name=CQ22
+Start=265
+Len=1
+
+[ValueSet]
+Label=Was the inorganic fertiliser used on the field?
+Name=CQ22_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=What was the main type of inorganic fertiliser used on the field?
+Name=CQ23
+Start=266
+Len=1
+
+[ValueSet]
+Label=What was the main type of inorganic fertiliser used on the field?
+Name=CQ23_VS1
+Value=1;NPK
+Value=2;LEN
+Value=3;Phosphates
+Value=4;Urea
+
+[Item]
+Label=What was the total  quantity of inorganic fertiliser used on the field?
+Name=CQ24A
+Start=267
+Len=7
+Decimal=2
+
+[Item]
+Label=What was the unit of total  quantity of inorganic fertiliser used on the field?
+Name=CQ24B
+Start=274
+Len=1
+
+[ValueSet]
+Label=What was the unit of total  quantity of inorganic fertiliser used on the field?
+Name=CQ24B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=Write the code for each inorganic fertiliser used (C.Q23)
+Name=CQ25
+Start=275
+Len=2
+
+[Item]
+Label=Where did the holding obtain most of the inorganic fertilizer used?
+Name=CQ26
+Start=277
+Len=1
+
+[ValueSet]
+Label=Where did the holding obtain most of the inorganic fertilizer used?
+Name=CQ26_VS1
+Value=1; Traders
+Value=2;Ministry of Agriculture and Food Security
+Value=3;Development Partners
+Value=4;Non Governmental Organizations
+Value=5;Farmers' Association
+
+[Item]
+Label=What was the total quantity purchased?
+Name=CQ27A
+Start=278
+Len=7
+Decimal=2
+
+[Item]
+Label=What was the unit of the total quantity purchased?
+Name=CQ27B
+Start=285
+Len=1
+
+[ValueSet]
+Label=What was the unit of the total quantity purchased?
+Name=CQ27B_VS1
+Value=1;Kg
+Value=2;Litre
+
+[Item]
+Label=What was the total purchase price of the total quantity purchased?
+Name=CQ27C
+Start=286
+Len=7
+
+[Item]
+Label=Was the organic fertiliser used on the field?
+Name=CQ30
+Start=293
+Len=1
+
+[ValueSet]
+Label=Was the organic fertiliser used on the field?
+Name=CQ30_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=What was the main type of organic fertiliser used on the field?
+Name=CQ31
+Start=294
+Len=1
+
+[ValueSet]
+Label=What was the main type of organic fertiliser used on the field?
+Name=CQ31_VS1
+Value=1;Kraal Manure
+Value=2;Poultry Manure
+Value=3;Ash
+Value=4;Composts
+Value=5;Sewage waste
+
+[Item]
+Label=What was the total quantity of organic fertiliser used on the field?
+Name=CQ32A
+Start=295
+Len=5
+Decimal=2
+
+[Item]
+Label=What was the unit of total  quantity of organic fertiliser used on the field?
+Name=CQ32B
+Start=300
+Len=1
+
+[ValueSet]
+Label=What was the unit of total  quantity of organic fertiliser used on the field?
+Name=CQ32B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=Write the code for each organic fertiliser used (C.Q31)
+Name=CQ33
+Start=301
+Len=1
+
+[ValueSet]
+Label=Write the code for each organic fertiliser used (C.Q31)
+Name=CQ33_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=Where did the holding obtain most of the organic fertiliser used?
+Name=CQ34
+Start=302
+Len=1
+
+[ValueSet]
+Label=Where did the holding obtain most of the organic fertiliser used?
+Name=CQ34_VS1
+Value=1;Trader
+Value=2;Own
+Value=3;Other Farmer
+
+[Item]
+Label=What was the total quantity purchased
+Name=CQ35A
+Start=303
+Len=7
+Decimal=2
+
+[ValueSet]
+Label=What was the total quantity purchased
+Name=CQ35A_VS1
+Value=1.00;Traders
+Value=2.00;Own
+Value=3.00;Other Farmers
+
+[Item]
+Label=What was the unit of the quantity purchased?
+Name=CQ35B
+Start=310
+Len=1
+
+[ValueSet]
+Label=What was the unit of the quantity purchased?
+Name=CQ35B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=What was the total purchase price for the total quantity purchased?
+Name=CQ35C
+Start=311
+Len=7
+Decimal=2
+
+[Item]
+Label=were the herbicides used on the field?
+Name=CQ39
+Start=318
+Len=1
+
+[ValueSet]
+Label=were the herbicides used on the field?
+Name=CQ39_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=What was the total quantity of herbicides used on the field?
+Name=CQ40A
+Start=319
+Len=5
+Decimal=2
+
+[Item]
+Label=What was the unit of the total quantity of the herbicides used on the field?
+Name=CQ40B
+Start=324
+Len=1
+
+[ValueSet]
+Label=What was the unit of the total quantity of the herbicides used on the field?
+Name=CQ40B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=Where did the holding obtain most of the herbicides used?
+Name=CQ41
+Start=325
+Len=1
+
+[ValueSet]
+Label=Where did the holding obtain most of the herbicides used?
+Name=CQ41_VS1
+Value=1;Trader
+Value=2;Own
+Value=3;Other Farmers
+
+[Item]
+Label=What was the total quantity purchased?
+Name=CQ42A
+Start=326
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the unit of the total quantity purchased?
+Name=CQ42B
+Start=336
+Len=1
+
+[Item]
+Label=What was the total purchase price in Maloti?
+Name=CQ42C
+Start=337
+Len=10
+Decimal=2
+
+[Item]
+Label=were insecticides used on this field?
+Name=CQ45
+Start=347
+Len=1
+
+[ValueSet]
+Label=were insecticides used on this field?
+Name=CQ45_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=What was the total quantity of insecticides used on this field?
+Name=CQ46A
+Start=348
+Len=6
+Decimal=2
+
+[ValueSet]
+Label=What was the total quantity of insecticides used on this field?
+Name=CQ46A_VS1
+Value=0.01;Yes
+Value=0.02;No
+
+[Item]
+Label=What was unit of the total quantity of insecticides used on the fields
+Name=CQ46B
+Start=354
+Len=1
+
+[Item]
+Label=Where did the holding obtain most of the insecticides used?
+Name=CQ47
+Start=355
+Len=1
+
+[ValueSet]
+Label=Where did the holding obtain most of the insecticides used?
+Name=CQ47_VS1
+Value=1;Traders
+Value=2;Own
+Value=3;Farmers
+
+[Item]
+Label=What was the quantity purchased
+Name=CQ48A
+Start=356
+Len=6
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the unit of the total quantity purchased
+Name=CQ48B
+Start=362
+Len=1
+
+[ValueSet]
+Label=What was the unit of the total quantity purchased
+Name=CQ48B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=What was the total purchase price of thetotal quantity puchased?
+Name=CQ48C
+Start=363
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Were fungicides used on this field?
+Name=CQ51
+Start=373
+Len=1
+
+[ValueSet]
+Label=Were fungicides used on this field?
+Name=CQ51_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=What was the total quantity of fungilicides on this field?
+Name=CQ52A
+Start=374
+Len=6
+Decimal=2
+
+[Item]
+Label=What was the unit of the total quantity used on this field?
+Name=CQ52B
+Start=380
+Len=1
+
+[ValueSet]
+Label=What was the unit of the total quantity used on this field?
+Name=CQ52B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=Where did the holding obtain most of the fungicides used
+Name=CQ53
+Start=381
+Len=1
+
+[ValueSet]
+Label=Where did the holding obtain most of the fungicides used
+Name=CQ53_VS1
+Value=1;Trader
+Value=2;Own
+Value=3;Other Farmers
+
+[Item]
+Label=What was the total quantity purchased?
+Name=CQ54A
+Start=382
+Len=7
+Decimal=2
+
+[Item]
+Label=What was the unit of the total quantity purchased?
+Name=CQ54B
+Start=389
+Len=1
+
+[ValueSet]
+Label=What was the unit of the total quantity purchased?
+Name=CQ54B_VS1
+Value=1;Kg
+Value=2;Litres
+
+[Item]
+Label=What was the total purchase price of the total quantity purchased?
+Name=CQ54C
+Start=390
+Len=7
+Decimal=2
+
+[Record]
+Label=Fields and Crops and Seeds
+Name=FIELDS_AND_CROPS_AND_SEEDS
+RecordTypeValue='8'
+MaxRecords=100
+RecordLen=123
+
+[Item]
+Label=Field Number
+Name=FIELD_NUMBER
+Start=119
+Len=2
+
+[Item]
+Label=Seed Type
+Name=SEED_TYPE
+Start=121
+Len=1
+
+[Item]
+Label=Crop Codes
+Name=CROP_CODES
+Start=122
+Len=2
+
+[Record]
+Label=Land preparation
+Name=LAND_PREPARATION
+RecordTypeValue='L'
+RecordLen=996
+
+[Item]
+Label=How many household members were involved in land preparation
+Name=CQ58AQ
+Start=119
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on land preparation?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EA
+Start=122
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on land preparation?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_E
+Start=125
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do land preparation
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDING
+Start=127
+Len=3
+
+[Item]
+Label=On average how many days did each worker on land preparation?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EA
+Start=130
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on land preparation?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EA
+Start=132
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete land preparation?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASH
+Start=134
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete land preparation?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_T
+Start=144
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in planting
+Name=CQ58BQ
+Start=174
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on planting?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EL
+Start=177
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on planting?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_P
+Start=180
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do planting
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINR
+Start=182
+Len=3
+
+[Item]
+Label=On average how many days did each worker on planting?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EL
+Start=185
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on planting?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EL
+Start=187
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete planting?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASS
+Start=189
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete planting?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_UA
+Start=199
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in Fertilizer Application?
+Name=CQ58CQ
+Start=229
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on Fertilizer Application?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EM
+Start=232
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on Fertilizer Application?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_Q
+Start=235
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do Fertilizer Application
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINS
+Start=237
+Len=3
+
+[Item]
+Label=On average how many days did each worker on Fertilizer Application?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EM
+Start=240
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on Fertilizer Application?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EM
+Start=242
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete Fertilizer Application?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CAST
+Start=244
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete Fertilizer Application?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_VA
+Start=254
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in 1st weeding
+Name=CQ58DQ
+Start=284
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on 1st weeding
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EN
+Start=287
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on 1st weeding
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_R
+Start=290
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do 1st weeding
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINT
+Start=292
+Len=3
+
+[Item]
+Label=On average how many days did each worker on 1st weeding?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EN
+Start=295
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on 1st weeding
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EN
+Start=297
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete 1st weeding?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASU
+Start=299
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete 1st weeding?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_WA
+Start=309
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in plant protection application?
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERS
+Start=339
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on plant protection application??
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EO
+Start=342
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on plant protection application?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_S
+Start=345
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do plant protection application?
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINU
+Start=347
+Len=3
+
+[Item]
+Label=On average how many days did each worker on plant protection application?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EO
+Start=350
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on plant protection application?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EO
+Start=352
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete plant protection application??
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASV
+Start=354
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete plant protection application?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_XA
+Start=364
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in 2nd weeding?
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERT
+Start=394
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on 2nd weeding?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EP
+Start=397
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on 2nd weeding?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_T
+Start=400
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do 2nd weeding
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINV
+Start=402
+Len=3
+
+[Item]
+Label=On average how many days did each worker on 2nd weeding?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EP
+Start=405
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on 2nd weeding?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EP
+Start=407
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete 2nd weeding?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASW
+Start=409
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete 2nd weeding?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_YA
+Start=419
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in harvesting?
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERU
+Start=449
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on harvesting?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EQ
+Start=452
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on harvesting?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_U
+Start=455
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do harvesting
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINW
+Start=457
+Len=3
+
+[Item]
+Label=On average how many days did each worker on harvesting?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EQ
+Start=460
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on harvesting?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EQ
+Start=462
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete harvesting?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASX
+Start=464
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete harvesting?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_ZA
+Start=474
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in transporting the crops
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERV
+Start=504
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on transporting the crops?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_ER
+Start=507
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on transporting the crops?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_V
+Start=510
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do transporting the crops?
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINX
+Start=512
+Len=3
+
+[Item]
+Label=On average how many days did each worker on transporting the crops?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_ER
+Start=515
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on transporting the crops?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_ER
+Start=517
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete transporting the crops?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASY
+Start=519
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete transporting the crops?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_TE
+Start=529
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in shelling and packing?
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERW
+Start=559
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on shelling and packing?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_ES
+Start=562
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on shelling and packing?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_W
+Start=565
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do shelling and packing?
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINY
+Start=567
+Len=3
+
+[Item]
+Label=On average how many days did each worker on shelling and packing?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_ES
+Start=570
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on shelling and packing?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_ES
+Start=572
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete shelling and packing?
+Name=WHAT_WAS_THE_AMOUNT_PAID_IN_CASZ
+Start=574
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete shelling and packing?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_TF
+Start=584
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in selling crops?
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERX
+Start=614
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on  selling crops?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_ET
+Start=617
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on  selling crops?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_X
+Start=620
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do selling crops?
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINZ
+Start=622
+Len=3
+
+[Item]
+Label=On average how many days did each worker on  selling crops?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_ET
+Start=625
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on selling crops?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_ET
+Start=627
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete  selling crops?
+Name=HAT_WAS_THE_AMOUNT_PAID_IN_CASQA
+Start=629
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete  selling crops?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_TG
+Start=639
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in other activities?
+Name=HOW_MANY_HOUSEHOLD_MEMBERS_WERY
+Start=669
+Len=3
+
+[Item]
+Label=On average, How many days did each member work on other activities?
+Name=ON_AVERAGE_HOW_MANY_DAYS_DID_EU
+Start=672
+Len=3
+
+[Item]
+Label=On average, how many hours did each household memberwork per day on other activities?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_Y
+Start=675
+Len=2
+
+[Item]
+Label=How many people did the holding hire to do other activities?
+Name=HOW_MANY_PEOPLE_DID_THE_HOLDINQA
+Start=677
+Len=3
+
+[Item]
+Label=On average how many days did each worker on other activities?
+Name=ON_AVEERAGE_HOW_MANY_DAYS_DID_EU
+Start=680
+Len=2
+
+[Item]
+Label=On average how many hours did each worker spend each day on other activities?
+Name=ON_AVERAGE_HOW_MANY_HOURS_DID_EU
+Start=682
+Len=2
+
+[Item]
+Label=What was the amount paid in cash to hire labour to complete other activities?
+Name=HAT_WAS_THE_AMOUNT_PAID_IN_CASRA
+Start=684
+Len=10
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to hire labour to complete other activities?
+Name=FOR_IN_KIND_PAYMENTS_WHAT_WAS_TH
+Start=694
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Did the holding use any external services provider to carry_out activities related to crop production during the summer season of the 2018/2019 agricultural year?
+Name=DID_THE_HOLDING_USE_ANY_EXTERNAL
+Start=724
+Len=1
+
+[Item]
+Label=Did the holding hire a service for ploughing eg. hiring tractor/draught animals?
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_F
+Start=725
+Len=1
+
+[Item]
+Label=How much for cash was paid for the service?
+Name=HOW_MUCH_FOR_CASH_WAS_PAID_FOR_T
+Start=726
+Len=1
+
+[Item]
+Label=For in-kind payments, what was the total cash-equivalent paid to?
+Name=FOR_IN_KIND_PAYMENTS_FOR_THE_SES
+Start=727
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding hire a service for other land preparation & seeding?
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_G
+Start=737
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service ?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TH
+Start=738
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Did the holding hire a service for application of fertilizer?
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_H
+Start=748
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TI
+Start=749
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=FOR_IN_KIND_PAYMENT_FOR_THE_SERV
+Start=759
+Len=10
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=FOR_IN_KIND_PAYMENT_FOR_THE_SERW
+Start=769
+Len=10
+
+[Item]
+Label=Did the holding hire a service for application of plant protection products?
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_I
+Start=779
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TJ
+Start=780
+Len=10
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=FOR_IN_KIND_PAYMENT_FOR_THE_SERX
+Start=790
+Len=10
+
+[Item]
+Label=Did the holding hire a service for harvest?
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_J
+Start=800
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TK
+Start=801
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=FOR_IN_KIND_PAYMENT_FOR_THE_SERY
+Start=811
+Len=10
+
+[Item]
+Label=Did the holding hire a service for Transport: from the field to holding, to market etc
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_K
+Start=821
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TL
+Start=822
+Len=10
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=FOR_IN_KIND_PAYMENT_FOR_THE_SERZ
+Start=832
+Len=10
+
+[Item]
+Label=Did the holding hire a service for Threshing and shelling
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_L
+Start=842
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TM
+Start=843
+Len=10
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=OR_IN_KIND_PAYMENT_FOR_THE_SERVA
+Start=853
+Len=10
+
+[Item]
+Label=Did the holding hire a service for other services (specify)
+Name=DID_THE_HOLDING_HIRE_A_SERVICE_M
+Start=863
+Len=1
+
+[Item]
+Label=How much in cash was paid for the service?
+Name=HOW_MUCH_IN_CASH_WAS_PAID_FOR_TN
+Start=864
+Len=10
+
+[Item]
+Label=For in-kind payment for the service-what was the cash equivalent?
+Name=OR_IN_KIND_PAYMENT_FOR_THE_SERVB
+Start=874
+Len=10
+
+[Item]
+Label=What was the total quantity harvested for th Summer/ winter season of the 2018/2019 agricultural year?(verifying c.Q13)
+Name=WHAT_WAS_THE_TOTAL_QUANTITY_HARV
+Start=884
+Len=1
+
+[Item]
+Label=What was the unit total quantity harvested for th Summer/ winter season of the 2018/2019 agricultural year?(verifying c.Q13)
+Name=WHAT_WAS_THE_UNIT_TOTAL_QUANTITY
+Start=885
+Len=1
+
+[Item]
+Label=What quantity of this crop was sold/exchanged
+Name=WHAT_QUANTITY_OF_THIS_CROP_WAS_S
+Start=886
+Len=10
+
+[Item]
+Label=What was the unit of quantity of this crop was sold/exchanged?
+Name=WHAT_WAS_THE_UNIT_OF_QUANTITY_OF
+Start=896
+Len=10
+
+[Item]
+Label=Where did you sell most of this crop?
+Name=WHERE_DID_YOU_SELL_MOST_OF_THIS
+Start=906
+Len=1
+
+[Item]
+Label=What was the total payments recieved in Maloti (cash)?
+Name=WHAT_WAS_THE_TOTAL_PAYMENTS_RECI
+Start=907
+Len=10
+Decimal=2
+
+[Item]
+Label=What was the total payments recieved in Maloti (Cash-equivalent of in-kind payments)?
+Name=WHAT_WAS_THE_TOTAL_PAYMENTS_RECJ
+Start=917
+Len=10
+
+[Item]
+Label=From August 2018 to July 2019, on average, how much did the holding pay monthly for water used for groups and livestock?
+Name=FROM_AUGUST_2018_TO_JULY_2019_O
+Start=927
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=In cash-equivalent, if the payment was made in-kind?
+Name=IN_CASH_EQUIVALENT_IF_THE_PAYME
+Start=937
+Len=10
+
+[Item]
+Label=How much in total did you pay for electricity used for agricultural activities from August 2018 to September 2019?
+Name=HOW_MUCH_IN_TOTAL_DID_YOU_PAY_FO
+Start=947
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=In cash-equivalent, if the payment was made in-kind?
+Name=IN_CASH_EQUIVALENT_IF_THE_PAYMF
+Start=957
+Len=10
+
+[Item]
+Label=How much in total did you pay for repairs and maintenance related to form machinery and equipment from August 2018 to July 2019?
+Name=HOW_MUCH_IN_TOTAL_DID_YOU_PAY_FP
+Start=967
+Len=10
+
+[Item]
+Label=In cash-equivalent, if the payment was made in-kind?
+Name=IN_CASH_EQUIVALENT_IF_THE_PAYMG
+Start=977
+Len=10
+
+[Item]
+Label=In cash-equivalent, if the payment was made in-kind?
+Name=CQ77B
+Start=987
+Len=10
+
+[Record]
+Label=Farm Assets
+Name=FARM_ASSETS
+RecordTypeValue='2'
+MaxRecords=30
+RecordLen=190
+
+[Item]
+Label=During the 2018/2019 Agricultural Year did the holding own these machinery/equipment for crops?
+Name=FQ02A
+Start=119
+Len=15
+
+[ValueSet]
+Label=During the 2018/2019 Agricultural Year did the holding own these machinery/equipment for crops?
+Name=FQ02A_VS1
+Value=1;Hand Hoe
+Value=2;Ox drawn Plough
+Value=3;Tractor drawn Plough
+Value=4;Tractor
+Value=5;Planter
+Value=6;Cultivator
+Value=7;Harrow
+Value=8;Harvester
+Value=9;Hand drive Tractor
+Value=10;Sheller
+Value=11;Ripper
+Value=12;Hammer mill
+Value=13;Hand hammer mill
+Value=14;Rump press/Oil expeller
+Value=15;Sprayer
+Value=16;Scotch carts
+Value=17;Other (specify)
+Value=18;Water pump/borehole
+Value=19;Treadle pump
+Value=20;Water tank
+Value=21;Sprinkler
+Value=22;Other (specify)
+Value=23;Feed mixer
+Value=24;Crusher
+Value=25;Feed and water trough
+Value=26;Milking equipment
+Value=27;Castration equipment
+Value=28;Dehorning equipment
+Value=29;Vet. related tools and equipment
+Value=30;Other (specify)
+
+[Item]
+Label=Other machinery/equipment for crops?
+Name=FQ02A_OTHER
+Start=134
+Len=1
+
+[Item]
+Label=How many machinery/equipment for crops did the have in working condition on 1st August 2018?
+Name=FQ03A
+Start=135
+Len=3
+
+[Item]
+Label=Does the holding currently own any machinery/equipment for crops --- in working condition  now?
+Name=FQ04A
+Start=138
+Len=1
+
+[Item]
+Label=How many of these machinery/equipment for crops asserts in working condition does the holding currently own?
+Name=FQ05A
+Start=139
+Len=1
+
+[Item]
+Label=What is the age of the machinery/equipment for crops (assets)?
+Name=FQ06A
+Start=140
+Len=2
+
+[Item]
+Label=If you were to sell those machinery/equipment for crops (assets) now on the makert, how much would you sell them for (Maloti)?
+Name=FQ07A
+Start=142
+Len=1
+
+[Item]
+Label=During the 2018/2019 Agricultural Year did the holding own these irrigation equipment ?
+Name=FQ02B
+Start=143
+Len=15
+
+[ValueSet]
+Label=During the 2018/2019 Agricultural Year did the holding own these irrigation equipment ?
+Name=FQ02B_VS1
+Value=1;Hand Hoe
+Value=2;Ox drawn Plough
+Value=3;Tractor drawn Plough
+Value=4;Tractor
+Value=5;Planter
+Value=6;Cultivator
+Value=7;Harrow
+Value=8;Harvester
+Value=9;Hand drive Tractor
+Value=10;Sheller
+Value=11;Ripper
+Value=12;Hammer mill
+Value=13;Hand hammer mill
+Value=14;Rump press/Oil expeller
+Value=15;Sprayer
+Value=16;Scotch carts
+Value=17;Other (specify)
+Value=18;Water pump/borehole
+Value=19;Treadle pump
+Value=20;Water tank
+Value=21;Sprinkler
+Value=22;Other (specify)
+Value=23;Feed mixer
+Value=24;Crusher
+Value=25;Feed and water trough
+Value=26;Milking equipment
+Value=27;Castration equipment
+Value=28;Dehorning equipment
+Value=29;Vet. related tools and equipment
+Value=30;Other (specify)
+
+[Item]
+Label=Other  irrigation equipment ?
+Name=FQ02B_OTHER
+Start=158
+Len=1
+
+[Item]
+Label=How many irrigation equipment did the holding have in working condition on 1st August 2018?
+Name=FQ03B
+Start=159
+Len=3
+
+[Item]
+Label=Does the holding currently own any irrigation equipment --- in working condition  now?
+Name=FQ04B
+Start=162
+Len=1
+
+[Item]
+Label=How many of these irrigation equipment (asserts) in working condition does the holding currently own?
+Name=FQ05B
+Start=163
+Len=1
+
+[Item]
+Label=What is the age of the irrigation equipment (asset)?
+Name=FQ06B
+Start=164
+Len=2
+
+[Item]
+Label=If you were to sell those (irrigation equipment) assets now on the makert, how much would you sell them for (Maloti)?
+Name=FQ07B
+Start=166
+Len=1
+
+[Item]
+Label=During the 2018/2019 Agricultural Year did the holding own these machinery/equipment for Livestock?
+Name=FQ02C
+Start=167
+Len=15
+
+[ValueSet]
+Label=During the 2018/2019 Agricultural Year did the holding own these machinery/equipment for Livestock?
+Name=FQ02C_VS1
+Value=1;Hand Hoe
+Value=2;Ox drawn Plough
+Value=3;Tractor drawn Plough
+Value=4;Tractor
+Value=5;Planter
+Value=6;Cultivator
+Value=7;Harrow
+Value=8;Harvester
+Value=9;Hand drive Tractor
+Value=10;Sheller
+Value=11;Ripper
+Value=12;Hammer mill
+Value=13;Hand hammer mill
+Value=14;Rump press/Oil expeller
+Value=15;Sprayer
+Value=16;Scotch carts
+Value=17;Other (specify)
+Value=18;Water pump/borehole
+Value=19;Treadle pump
+Value=20;Water tank
+Value=21;Sprinkler
+Value=22;Other (specify)
+Value=23;Feed mixer
+Value=24;Crusher
+Value=25;Feed and water trough
+Value=26;Milking equipment
+Value=27;Castration equipment
+Value=28;Dehorning equipment
+Value=29;Vet. related tools and equipment
+Value=30;Other (specify)
+
+[Item]
+Label=Other machinery/equipment for Livestock?
+Name=FQ02C_OTHER
+Start=182
+Len=1
+
+[Item]
+Label=How many machinery/equipment for Livestock did the have in working condition on 1st August 2018?
+Name=FQ03C
+Start=183
+Len=3
+
+[Item]
+Label=Does the holding currently own any machinery/equipment for Livestock in working condition  now?
+Name=FQ04C
+Start=186
+Len=1
+
+[Item]
+Label=How many of these machinery/equipment for Livestock (assets) in working condition does the holding currently own?
+Name=FQ05C
+Start=187
+Len=1
+
+[Item]
+Label=What is the age of the machinery/equipment for Livestock asset?
+Name=FQ06C
+Start=188
+Len=2
+
+[Item]
+Label=If you were to sell those(machinery/equipment for Livestock) assets now on the makert, how much would you sell them for (Maloti)?
+Name=FQ07C
+Start=190
+Len=1
+
+[Record]
+Label=Machinery and Equipment for Crops
+Name=MACHINERY_EQUIPMENT_CROPS
+RecordTypeValue='5'
+MaxRecords=17
+RecordLen=169
+
+[Item]
+Label=During the 2018/2019 Agricaltural year did the holding own assets?
+Name=FQ02
+Start=119
+Len=1
+
+[ValueSet]
+Label=During the 2018/2019 Agricaltural year did the holding own assets?
+Name=FQ02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Type of asset
+Name=FQ03
+Start=120
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many assets  did the holding have in working cindition?
+Name=FQ04
+Start=150
+Len=2
+
+[Item]
+Label=Does the holding currently own any of these assetsin working condition now?
+Name=FQ05
+Start=152
+Len=1
+
+[ValueSet]
+Label=Does the holding currently own any of these assetsin working condition now?
+Name=FQ05_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=How many of these assets in working conditions does the holding currently own?
+Name=FQ06
+Start=153
+Len=4
+
+[Item]
+Label=What is the age of the asset?
+Name=FQ07
+Start=157
+Len=4
+
+[Item]
+Label=if you were to sell those assets now on the market, how much would you sell them for
+Name=FQ08
+Start=161
+Len=9
+Decimal=2
+
+[Record]
+Label=Irrigation Equipment,crops Prod. and Sales
+Name=IRRIGATION_EQUIPMENT_PROD_SALES
+RecordTypeValue='4'
+MaxRecords=5
+RecordLen=241
+
+[Item]
+Label=During the 2018/2019 Agricaltural year did the holding own these Irrigation equipment.
+Name=FQ03_IRRIGATION
+Start=119
+Len=1
+
+[ValueSet]
+Label=During the 2018/2019 Agricaltural year did the holding own these Irrigation equipment.
+Name=FQ03_IRRIGATION_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Type of irrigation Equipment
+Name=FQ_IRRIGATION
+Start=120
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many assets  did the holding have in working cindition?
+Name=FQ04_IRRIGATION
+Start=150
+Len=2
+
+[Item]
+Label=Does the holding currently own any irrigation equipment in working condition now?
+Name=FQ05_IRRIGATION
+Start=152
+Len=1
+
+[ValueSet]
+Label=Does the holding currently own any irrigation equipment in working condition now?
+Name=FQ05_IRRIGATION_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=How many of these assets in working conditions does the holding currently own?
+Name=FQ06_IRRIGATION
+Start=153
+Len=4
+
+[Item]
+Label=What is the age of the asset?
+Name=FQ07_IRRIGATION
+Start=157
+Len=4
+
+[Item]
+Label=if you were to sell those assets now on the market, how much would you sell them for
+Name=FQ08_IRRIGATION
+Start=161
+Len=9
+Decimal=2
+
+[Item]
+Label=Types of Crop
+Name=CQ67
+Start=170
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Crop Codes
+Name=CROP_CODE
+Start=195
+Len=2
+
+[Item]
+Label=What was the total quantity harvested for the Summer [winter] season of the 2018/19 agricultural year?
+Name=CQ68A
+Start=197
+Len=7
+Decimal=2
+
+[Item]
+Label=What was the unit of the total quantity harvested for the Summer [winter] season of the 2018/19 agricultural year?
+Name=CQ68B
+Start=204
+Len=1
+
+[ValueSet]
+Label=What was the unit of the total quantity harvested for the Summer [winter] season of the 2018/19 agricultural year?
+Name=CQ68B_VS1
+Value=1;Kg
+Value=2;50 kg bag
+Value=3;70 Kg bag
+Value=4;80 kg Bag
+
+[Item]
+Label=What quantity of the crop was sold/exchanged ?
+Name=CQ69A
+Start=205
+Len=9
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the unit of the quantity of the crop sold/exchanged ?
+Name=CQ69B
+Start=214
+Len=1
+
+[ValueSet]
+Label=What was the unit of the quantity of the crop sold/exchanged ?
+Name=CQ69B_VS1
+Value=1;Kg
+Value=2;50 kg bag
+Value=3;70 Kg bag
+Value=4;80 kg Bag
+
+[Item]
+Label=Where did you sell/exchange most of the crop?
+Name=CQ70
+Start=215
+Len=1
+
+[ValueSet]
+Label=Where did you sell/exchange most of the crop?
+Name=CQ70_VS1
+Value=1;Farm Gate
+Value=2;Millers
+Value=3;Packers
+Value=4;Government
+Value=5;Development Partners/NGOs
+
+[Item]
+Label=What was the cash total payments received in Maloti?
+Name=CQ71A
+Start=216
+Len=9
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the cash equivalent of in kind payments received in Maloti?
+Name=CQ71B
+Start=225
+Len=9
+
+[Item]
+Label=How much did the holding spend on Transport to sell the crop in cash?
+Name=CQ72
+Start=234
+Len=8
+Decimal=2
+DecimalChar=Yes
+
+[Record]
+Label=Machinery and Equipment for Livestock and infrasructures
+Name=MACHINERY_EQUIPMENT_LS_INFRA_AS
+RecordTypeValue='6'
+MaxRecords=8
+RecordLen=301
+
+[Item]
+Label=During the 2018/2019 Agricaltural year did the holding own assets?
+Name=FQ03_LIVESTOCK
+Start=119
+Len=1
+
+[ValueSet]
+Label=During the 2018/2019 Agricaltural year did the holding own assets?
+Name=FQ03_LIVESTOCK_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Type of Machinery for Livestock
+Name=FQ02_LIVESTOCK
+Start=120
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many assets  did the holding have in working condition?
+Name=FQ04_LIVESTOCK
+Start=150
+Len=2
+
+[Item]
+Label=Does the holding currently own any of these assets in working condition now?
+Name=FQ05_LIVESTOCK
+Start=152
+Len=1
+
+[ValueSet]
+Label=Does the holding currently own any of these assets in working condition now?
+Name=FQ05_LIVESTOCK_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=How many of these assets in working conditions does the holding currently own?
+Name=FQ06__LIVESTOCK
+Start=153
+Len=4
+
+[Item]
+Label=What is the age of the asset?
+Name=FQ07_LIVESTOCK
+Start=157
+Len=4
+
+[Item]
+Label=if you were to sell those assets now on the market, how much would you sell them for
+Name=FQ08_LIVESTOCK
+Start=161
+Len=9
+Decimal=2
+
+[Item]
+Label=During the 2018/2019 Agricaltural year did the holding own farm buildings and infrastracture?
+Name=FQ11_BUILDINGS
+Start=170
+Len=1
+
+[ValueSet]
+Label=During the 2018/2019 Agricaltural year did the holding own farm buildings and infrastracture?
+Name=FQ11_BUILDINGS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=The type of Building or infrastructure
+Name=FQ10_BUILDINGS
+Start=171
+Len=30
+DataType=Alpha
+
+[Item]
+Label=How many of them are operational/in use?
+Name=FQ12_BUILDINGS
+Start=201
+Len=2
+
+[Item]
+Label=In which year was ASSET1 the construction completed (year when the infrastructure started to be used)?
+Name=FQ13A_BUILDINGS
+Start=203
+Len=4
+
+[Item]
+Label=In which year was ASSET2 the construction completed (year when the infrastructure started to be used)?
+Name=FQ13B_BUILDINGS
+Start=207
+Len=4
+
+[Item]
+Label=What is the estimate of the construction costs t replace ASSET1 ?
+Name=FQ14A_BUILDINGS
+Start=211
+Len=11
+Decimal=2
+
+[Item]
+Label=What is the estimate of the construction costs t replace ASSET2 ?
+Name=FQ14B_BUILDINGS
+Start=222
+Len=11
+Decimal=2
+
+[Item]
+Label=Did the holding hire a service for the activity
+Name=CQ64
+Start=233
+Len=1
+
+[ValueSet]
+Label=Did the holding hire a service for the activity
+Name=CQ64_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Type of Activity
+Name=CQ63
+Start=234
+Len=50
+DataType=Alpha
+
+[Item]
+Label=How much in cash was paid for the service
+Name=CQ65A
+Start=284
+Len=9
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=For in kind payment for the service what was the cash equivalent
+Name=CQ65B
+Start=293
+Len=9
+Decimal=2
+DecimalChar=Yes
+
+[Record]
+Label=Labour Costs
+Name=LABOUR_COSTS
+RecordTypeValue='1'
+MaxRecords=11
+RecordLen=247
+
+[Item]
+Label=Did you do this activity?
+Name=CQ57
+Start=119
+Len=1
+
+[ValueSet]
+Label=Did you do this activity?
+Name=CQ57_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Activity Name
+Name=CQ57A
+Start=120
+Len=100
+DataType=Alpha
+
+[Item]
+Label=How many household members were involved in activity?
+Name=CQ58A
+Start=220
+Len=2
+
+[Item]
+Label=On avarage, How many days did household member work on the activity?
+Name=CQ58B
+Start=222
+Len=2
+
+[Item]
+Label=On avarage, How many hours did household member work on the activity?
+Name=CQ58C
+Start=224
+Len=2
+
+[Item]
+Label=How many people did the hire to the activity?
+Name=CQ59A
+Start=226
+Len=2
+
+[Item]
+Label=On avarage, How many days did each worker spend on the activity?
+Name=CQ59B
+Start=228
+Len=2
+
+[Item]
+Label=On avarage, How many hours did worker spend each day on the activity?
+Name=CQ59C
+Start=230
+Len=2
+
+[Item]
+Label=What was the total amount pay in cash to hire labour to completed the activity
+Name=CQ60A
+Start=232
+Len=8
+Decimal=2
+
+[Item]
+Label=For in-kind payments, what was the total cash equivalent pay to hire labour to complete the activity?
+Name=CQ60B
+Start=240
+Len=8
+Decimal=2
+DecimalChar=Yes
+
+[Record]
+Label=Crops Record
+Name=CROPS_RECORD
+RecordTypeValue='3'
+RecordLen=283
+
+[Item]
+Label=Name of respondent
+Name=RESPONDENT_NAME
+Start=119
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Relationship of the Respondent to household
+Name=RESPONDENT
+Start=149
+Len=1
+
+[Item]
+Label=Number of Household Memebers
+Name=NUMBER_OF_HOUSEHOLD_MEMBERS
+Start=150
+Len=2
+
+[Item]
+Label=Did the holding plant any crops during the past Agricaltural year 2018/2019?
+Name=CQ01
+Start=152
+Len=1
+
+[ValueSet]
+Label=Did the holding plant any crops during the past Agricaltural year 2018/2019?
+Name=CQ01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=How many fields did the holding have during the summer season for last Agricaltural year 2018/2019?
+Name=CQ02
+Start=153
+Len=2
+
+[ValueSet]
+Label=How many fields did the holding have during the summer season for last Agricaltural year 2018/2019?
+Name=CQ02_VS1
+Value=0:10;0 - 10
+
+[Item]
+Label=Did the holding put any inorganic fertiliser on their crops during the Summer season  for the agricaltural year 2018/2019?
+Name=CQ20
+Start=155
+Len=1
+
+[ValueSet]
+Label=Did the holding put any inorganic fertiliser on their crops during the Summer season  for the agricaltural year 2018/2019?
+Name=CQ20_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding put any organic fertiliser on their crops during the Summer season  for the agricaltural year 2018/2019?
+Name=CQ28
+Start=156
+Len=1
+
+[ValueSet]
+Label=Did the holding put any organic fertiliser on their crops during the Summer season  for the agricaltural year 2018/2019?
+Name=CQ28_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding apply any plant protection products to their crops during the summer (winter) season?
+Name=CQ36
+Start=157
+Len=1
+
+[ValueSet]
+Label=Did the holding apply any plant protection products to their crops during the summer (winter) season?
+Name=CQ36_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding apply any herbicides to their crops during the summer (winter) season?
+Name=CQ37
+Start=158
+Len=1
+
+[ValueSet]
+Label=Did the holding apply any herbicides to their crops during the summer (winter) season?
+Name=CQ37_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding apply any insecticides to their crops during the summer (winter) season?
+Name=CQ43
+Start=159
+Len=1
+
+[ValueSet]
+Label=Did the holding apply any insecticides to their crops during the summer (winter) season?
+Name=CQ43_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding apply any fungicides to their crops during the summer (winter) season?
+Name=CQ49
+Start=160
+Len=1
+
+[ValueSet]
+Label=Did the holding apply any fungicides to their crops during the summer (winter) season?
+Name=CQ49_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=How much was spent to purchase protective clothing to use during the application of the plant protection products during summer (winter) season?
+Name=CQ55
+Start=161
+Len=8
+Decimal=2
+
+[Item]
+Label=Did the holding use any external service provider to carry out the activities of crop production during summer (winter) season?
+Name=CQ61
+Start=169
+Len=1
+
+[ValueSet]
+Label=Did the holding use any external service provider to carry out the activities of crop production during summer (winter) season?
+Name=CQ61_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=From August 2018 to July 2019, on average, how much did the holding pay monthly for water used
+Name=CQ73
+Start=170
+Len=9
+Decimal=2
+
+[Item]
+Label=From August 2018 to July 2019, on average, how much did the holding pay IN KIND monthly for water used
+Name=CQ73A
+Start=179
+Len=9
+Decimal=2
+
+[Item]
+Label=From August 2018 to July 2019, on average, how much did the holding pay monthly for electricity used for agricultural services?
+Name=CQ74
+Start=188
+Len=9
+Decimal=2
+
+[Item]
+Label=From August 2018 to July 2019, on average, how much did the holding pay IN KIND monthly for electricity used for agricultural services?
+Name=CQ74A
+Start=197
+Len=9
+Decimal=2
+
+[Item]
+Label=How much in total did the holding pay for repairs and maintenance related to farm machinery and equipment from August 2018 to July 2019?
+Name=CQ75
+Start=206
+Len=9
+Decimal=2
+
+[Item]
+Label=How much in total did the holding pay IN KIND for repairs and maintenance related to farm machinery and equipment from August 2018 to July 2019?
+Name=CQ75A
+Start=215
+Len=9
+Decimal=2
+
+[Item]
+Label=How much in total did the holding pay for fuel, oil and lubricants from August 2018 to July 2019?
+Name=CQ76
+Start=224
+Len=9
+Decimal=2
+
+[Item]
+Label=How much in total did the holding pay IN KIND for fuel, oil and lubricants from August 2018 to July 2019?
+Name=CQ76A
+Start=233
+Len=9
+Decimal=2
+
+[Item]
+Label=How much did the holding pay for your lease fees from August 2018 to July 2019?
+Name=CQ77
+Start=242
+Len=9
+Decimal=2
+
+[Item]
+Label=How much did the holding pay IN KIND for your lease fees from August 2018 to July 2019?
+Name=CQ77A
+Start=251
+Len=9
+Decimal=2
+
+[Item]
+Label=How much did the holding spend on any other expenses related to crops or livestock from August 2018  to July 2019?
+Name=CQ78
+Start=260
+Len=9
+Decimal=2
+
+[Item]
+Label=How much in total did holding spend IN KIND on any other expenses related to crops or livestock from August 2018 to July 2019?
+Name=CQ78A
+Start=269
+Len=10
+
+[Item]
+Label=Did the holding engage Family labour?
+Name=CQ56A
+Start=279
+Len=1
+
+[ValueSet]
+Label=Did the holding engage Family labour?
+Name=CQ56A_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding engage Hired labour?
+Name=CQ56B
+Start=280
+Len=1
+
+[ValueSet]
+Label=Did the holding engage Hired labour?
+Name=CQ56B_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Does the holding own any Machinery/Equipment for Crops?
+Name=FQ_MACHINERY_CROPS
+Start=281
+Len=1
+
+[ValueSet]
+Label=Does the holding own any Machinery/Equipment for Crops?
+Name=FQ_MACHINERY_CROPS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Does the holding own any irrigation Equipment?
+Name=FQ_IRRIGATION_EQUIPMENT
+Start=282
+Len=1
+
+[ValueSet]
+Label=Does the holding own any irrigation Equipment?
+Name=FQ_IRRIGATION_EQUIPMENT_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Does the holding own any Machinery/Equipment for Crops?
+Name=FQ_MACHINERY_LIVESTOCK
+Start=283
+Len=1
+
+[ValueSet]
+Label=Does the holding own any Machinery/Equipment for Crops?
+Name=FQ_MACHINERY_LIVESTOCK_VS1
+Value=1;Yes
+Value=2;No

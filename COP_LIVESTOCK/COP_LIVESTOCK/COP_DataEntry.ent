@@ -1,0 +1,25 @@
+﻿[CSPro Application]
+Version=CSPro 7.0
+Label=COP_DATAENTRY
+Name=COP_DATAENTRY
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+CAPI=Yes
+CAPIFont1=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont2=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont1Color=0
+CAPIFont2Color=16711680
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+[AppCode]
+File=.\COP_DataEntry.ent.apc
+[Message]
+File=.\COP_DataEntry.ent.mgf
+[Help]
+File=.\COP_DataEntry.ent.qsf
+[Forms]
+File=.\COP_DataEntry.fmf
+[Dictionary Types]
+Dict-Type=.\COP_Dict.dcf,Input,.\COP_DataEntry.fmf

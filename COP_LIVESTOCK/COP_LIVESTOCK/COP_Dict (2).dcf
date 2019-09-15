@@ -1,0 +1,1767 @@
+﻿[Dictionary]
+Version=CSPro 7.0
+Label=COP_Dict
+Name=COP_DICT_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=COP_Dict questionnaire
+Name=COP_DICT_QUEST
+
+[IdItems]
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=2
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=District
+Name=DISTRICT_VS1
+Value=1;Botha-Bothe
+Value=2;Leribe
+Value=3;Berea
+Value=4;Maseru
+Value=5;Mafeteng
+Value=6;Mohale’sHoek
+Value=7;Quthing
+Value=8;Qacha’s Nek
+Value=9;Mokhotlong
+Value=10;Thaba-Tseka
+
+[Item]
+Label=Constituency
+Name=CONSTITUENCY
+Start=4
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Constituency
+Name=CONSTITUENCY_VS1
+Value=1;Mechachane
+Value=2;Hololo
+Value=3;Motete
+Value=4;Qalo
+Value=5;Butha-buthe
+Value=6;Maliba-mats'o
+Value=7;Mphosong
+Value=8;Thaba-phats'oa
+Value=9;Mahobong
+Value=10;Pela-ts'oeu
+Value=11;Matlakeng
+Value=12;Leribe
+Value=13;Hlotse
+Value=14;Tsikoane
+Value=15;Maputsoe
+Value=16;Likhetlane
+Value=17;Peka
+Value=18;Kolonyama
+Value=19;Mosalemane
+Value=20;Makhoroana
+Value=21;Bela-bela
+Value=22;Malimong
+Value=23;Khafung
+Value=24;Teya-teyaneng
+Value=25;T'soana-makhulo
+Value=26;Thupa-kubu
+Value=27;Berea
+Value=28;Khubetsoana
+Value=29;Mabote
+Value=30;Motimposo
+Value=31;Stadium Area
+Value=32;Maseru
+Value=33;Thetsane
+Value=34;Qoaling
+Value=35;Lithoteng
+Value=36;Lithabaneng
+Value=37;Abia
+Value=38;Thaba-bosiu
+Value=39;Machache
+Value=40;Thaba-putsoa
+Value=41;Maama
+Value=42;Koro-koro
+Value=43;Qeme
+Value=44;Rothe
+Value=45;Matsieng
+Value=46;Makhaleng
+Value=47;Maletsunyane
+Value=48;Thaba-phechela
+Value=49;Kolo
+Value=50;Matelile
+Value=51;Maliepetsane
+Value=52;Thabana Morena
+Value=53;Likhoele
+Value=54;Qalabane
+Value=55;Mafeteng
+Value=56;Taung
+Value=57;Qhalasi
+Value=58;Mohale's Hoek
+Value=59;Mekaling
+Value=60;Qaqatu
+Value=61;Mpharane
+Value=62;Ketane
+Value=63;Hloahloeng
+Value=64;Tele
+Value=65;Moyeni
+Value=66;Sebapala
+Value=67;Mt.moorosi
+Value=68;Qhoali
+Value=69;Qacha'snek
+Value=70;Lebakeng
+Value=71;Tsoelike
+Value=72;Mantsonyane
+Value=73;Thaba-moea
+Value=74;Thaba-tseka
+Value=75;Semena
+Value=76;Mashai
+Value=77;Malingoaneng
+Value=78;Senqu
+Value=79;Mokhotlong
+Value=80;Bobatsi
+
+[Item]
+Label=Community Council
+Name=COMMUNITY_COUNCIL
+Start=6
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=Community Council
+Name=COMMUNITY_COUNCIL_VS1
+Value='B01';Ngoajane
+Value='B02';Likila
+Value='B03';Nqoe
+Value='B04';Tŝa-le-Moleka
+Value='B05';Botha-Bothe
+Value='C01';Matsoku
+Value='C02';Bolahla
+Value='C03';Ramapepe
+Value='C04';Mamafubelu
+Value='C05';Menkhoaneng
+Value='C06';Maisa-Phoka
+Value='C07';Sephokong
+Value='C08';Litjotjela
+Value='C09';Hleoheng
+Value='C10';Manka
+Value='C11';Tsoili-tsoili
+Value='C12';Hlotse
+Value='C13';Maputsoe
+Value='D01';Makeoane
+Value='D02';Mapoteng
+Value='D03';Kueneng
+Value='D04';Teba-Tebe
+Value='D05';Phuthiatsana
+Value='D06';Motanasela
+Value='D07';Senekane
+Value='D08';Kanana
+Value='D10';Berea
+Value='A01';Qiloane
+Value='A02';Ratau
+Value='A03';Likolobeng
+Value='A04';Manonyane
+Value='A05';Mohlakeng
+Value='A06';Mazenod
+Value='A07';Lilala
+Value='A08';Makhoarane
+Value='A09';Kubake
+Value='A10';Makhoalipana
+Value='A11';Maseru
+Value='A12';Semonkong
+Value='E01';Metsi-Maholo
+Value='E02';Mamantso
+Value='E03';Ramoetsana
+Value='E04';Lehlakaneng
+Value='E05';Makoabating
+Value='E06';Tsana-Talana
+Value='E07';Qibing
+Value='E08';Mafeteng
+Value='F01';Siloe
+Value='F02';Mashaleng
+Value='F03';Khoelenya
+Value='F04';Lithipeng
+Value='F05';Thaba-Mokhele
+Value='F06';Qhoasing
+Value='F07';Senqunyane
+Value='F08';Mohales Hoek
+Value='G01';Mtjanyane
+Value='G02';Qomoqomong
+Value='G03';Tosing
+Value='G04';Telle
+Value='G05';Tsitsong
+Value='G06';Quthing
+Value='H01';Qanya
+Value='H02';Ntsupe
+Value='H03';Tsoelikana
+Value='H04';Qachas Nek
+Value='K01';Tenesolo
+Value='K02';Khutlo-se-Metsi
+Value='K03';Litsoetse
+Value='K04';Bokong
+Value='K05';Linakeng
+Value='K06';Thaba-Tseka
+Value='J01';Seate
+Value='J02';Mphokojoane
+Value='J03';Senqebethu
+Value='J04';Menoaneng
+Value='J05';Mokhotlong
+
+[Item]
+Label=Village Name
+Name=VILLAGE_NAME
+Start=9
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Chief/Headman
+Name=CHIEF
+Start=39
+Len=30
+DataType=Alpha
+
+[Item]
+Label=PSU Code
+Name=PSU_CODE
+Start=69
+Len=7
+ZeroFill=Yes
+
+[Item]
+Label=Village Number
+Name=VILLAGE_NUMBER
+Start=76
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=Village Number
+Name=VILLAGE_NUMBER_VS1
+Value=1:15;1 - 15
+
+[Item]
+Label=Zone
+Name=ZONE
+Start=78
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Zone
+Name=ZONE_VS1
+Value=1;Lowlands
+Value=2;Foothills
+Value=3;Mountains
+Value=4;Senqu river valley
+
+[Item]
+Label=Enumeration Area
+Name=ENUMERATION_AREA
+Start=79
+Len=11
+ZeroFill=Yes
+
+[Item]
+Label=Settlement
+Name=SETTLEMENT
+Start=90
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Settlement
+Name=SETTLEMENT_VS1
+Value=1;Urban
+Value=2;Peri-Urban
+Value=3;Rural
+
+[Item]
+Label=Names of Household Head
+Name=HOUSEHOLD_HEAD_NAMES
+Start=91
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Household Number
+Name=HOUSEHOLD_NUMBER
+Start=116
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=Household Number
+Name=HOUSEHOLD_NUMBER_VS1
+Value=1:999;1 - 999
+
+[Record]
+Label=LIVESTOCK PRODUCTION
+Name=LIVESTOCK_PRODUCTION_REC
+RecordTypeValue='2'
+MaxRecords=22
+RecordLen=190
+
+[Item]
+Label=Did this household raise livestock?
+Name=LQ02
+Start=119
+Len=1
+
+[ValueSet]
+Label=Did this household raise livestock?
+Name=LQ02_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Type of Livestock Raised
+Name=TYPE_OF_LIVESTOCK_RAISED
+Start=120
+Len=25
+DataType=Alpha
+
+[Item]
+Label=What type of livestock production system did the holding mainly use?
+Name=LQ03
+Start=145
+Len=1
+
+[ValueSet]
+Label=What type of livestock production system did the holding mainly use?
+Name=LQ03_VS1
+Value=1;Grazing System
+Value=2;Mixed System
+Value=3;Industrial System
+
+[Item]
+Label=How many were raised on 31 July 2019?
+Name=LQ04
+Start=146
+Len=5
+
+[Item]
+Label=How many were purchased for cash between 1st August 2018 to 31st July 2019?
+Name=LQ05A
+Start=151
+Len=5
+
+[Item]
+Label=What was the total amount paid for these purchase in Maloti?
+Name=LQ05B
+Start=156
+Len=1
+
+[Item]
+Label=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019?
+Name=LQ06
+Start=157
+Len=3
+
+[Item]
+Label=How many were slaughtered between 1st August 2018 to 31st July 2019?
+Name=LQ07A
+Start=160
+Len=3
+
+[Item]
+Label=Did you pay for slaughtering ?
+Name=LQ07B
+Start=163
+Len=1
+
+[ValueSet]
+Label=Did you pay for slaughtering ?
+Name=LQ07B_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=What was the total cost for slaughtering in maloti?
+Name=LQ07C
+Start=164
+Len=8
+Decimal=2
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
+Name=LQ08
+Start=172
+Len=5
+ZeroFill=Yes
+
+[Item]
+Label=How many were sold for cash between 1st August 2018 to 31st July 2019?
+Name=LQ9A
+Start=177
+Len=5
+ZeroFill=Yes
+
+[Item]
+Label=What was the total value for sales in Maloti?
+Name=LQ9B
+Start=182
+Len=9
+Decimal=2
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Record]
+Label=LIVESTOCK FEEDS SUMMER
+Name=LIVESTOCK_FEEDS_SUMMER
+RecordTypeValue='3'
+MaxRecords=10
+RecordLen=466
+
+[Item]
+Label=Did the holding use the suppliment for the dairy cattle alone?
+Name=USED_SUPPLIMENT_TYPE
+Start=119
+Len=1
+
+[Item]
+Label=Type of Suppliment for dairy cattle
+Name=TYPE_OF_SUPPLIMENT
+Start=120
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Name=LQ13SA
+Start=150
+Len=7
+Decimal=2
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Name=LQ13SB
+Start=157
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Name=LQ13SB_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the dairy cattle alone?
+Name=LQ15S
+Start=158
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the dairy cattle alone?
+Name=LQ15S_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Name=LQ16S
+Start=159
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Name=LQ16S_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased for the dairy cattle alone?
+Name=LQ17SA
+Start=160
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the dairy cattle alone?
+Name=LQ17SB
+Start=170
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) for the dairy cattle alone?
+Name=LQ17SC
+Start=171
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
+Name=LQ18S
+Start=181
+Len=10
+Decimal=2
+
+[Item]
+Label=Type of Suppliment for all cattle
+Name=TYPE_OF_SUPPLIMENT_ALL_CATTLE
+Start=191
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Did the holding use the suppliment for all cattle ?
+Name=USED_SUPPLIMENT_ALL_CATTLE
+Start=221
+Len=1
+
+[Item]
+Label=Total Quantity of suppliment provided to feed all cattle?
+Name=LQ13SA_ALL_CATTLE
+Start=222
+Len=3
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Name=LQ13SB_ALL_CATTLE
+Start=225
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Name=LQ13SB_ALL_CATTLE_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for all cattle?
+Name=LQ15S_ALL_CATTLE
+Start=226
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for all cattle?
+Name=LQ15S_ALL_CATTLE_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for all cattle?
+Name=LQ16S_ALL_CATTLE
+Start=227
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for all cattle?
+Name=LQ16S_ALL_CATTLE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for all cattle?
+Name=LQ17SA_ALL_CATTLE
+Start=228
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for all cattle?
+Name=LQ17SB_ALL_CATTLE
+Start=238
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) for all cattle?
+Name=LQ17SC_ALL_CATTLE
+Start=239
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for all cattle?
+Name=LQ18S_ALL_CATTLE
+Start=249
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for sheep?
+Name=USED_SUPPLIMENT_SHEEP
+Start=259
+Len=1
+
+[Item]
+Label=Type of Suppliments for sheep
+Name=TYPE_OF_SUPPLIMENT_SHEEP
+Start=260
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliments provided to feed the sheep?
+Name=LQ13SA_ALL_SHEEP
+Start=290
+Len=7
+Decimal=2
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Name=LQ13SB_ALL_SHEEP
+Start=297
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Name=LQ13SB_ALL_SHEEP_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the sheep?
+Name=LQ15S_ALL_SHEEP
+Start=298
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the sheep?
+Name=LQ15S_ALL_SHEEP_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the sheep?
+Name=LQ16S_ALL_SHEEP
+Start=299
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the sheep?
+Name=LQ16S_ALL_SHEEP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for the sheep?
+Name=LQ17SA_ALL_SHEEP
+Start=300
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the sheep?
+Name=LQ17SB_ALL_SHEEP
+Start=310
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) forthe sheep?
+Name=LQ17SC_ALL_SHEEP
+Start=311
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the sheep?
+Name=LQ18S_ALL_SHEEP
+Start=321
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for goats?
+Name=USED_SUPPLIMENT_GOATS
+Start=331
+Len=1
+
+[Item]
+Label=Type of Suppliments for goats
+Name=TYPE_OF_SUPPLIMENT_GOATS
+Start=332
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliments provided to feed the goats?
+Name=LQ13SA_ALL_GOATS
+Start=362
+Len=3
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the goats?
+Name=LQ13SB_ALL_GOATS
+Start=365
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the goats?
+Name=LQ13SB_ALL_GOATS_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the goats?
+Name=LQ15S_ALL_GOATS
+Start=366
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the goats?
+Name=LQ15S_ALL_GOATS_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the goats?
+Name=LQ16S_ALL_GOATS
+Start=367
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the goats?
+Name=LQ16S_ALL_GOATS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for the goats?
+Name=LQ17SA_ALL_GOATS
+Start=368
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the goats?
+Name=LQ17SB_ALL_GOATS
+Start=378
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) forthe goats?
+Name=LQ17SC_ALL_GOATS
+Start=379
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the goats?
+Name=LQ18S_ALL_GOATS
+Start=389
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for poultry?
+Name=USED_SUPPLIMENT_POULTRY
+Start=399
+Len=1
+
+[Item]
+Label=Type of Suppliments for poultry
+Name=TYPE_OF_SUPPLIMENT_POULTRY
+Start=400
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliments provided to feed the poultry?
+Name=LQ13SA_ALL_GOATT
+Start=430
+Len=3
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Name=LQ13SB_ALL_POULTRY
+Start=433
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Name=LQ13SB_ALL_POULTRY_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the poultry?
+Name=LQ15S_ALL_POULTRY
+Start=434
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the poultry?
+Name=LQ15S_ALL_POULTRY_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the poultry?
+Name=LQ16S_ALL_POULTRY
+Start=435
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the poultry?
+Name=LQ16S_ALL_POULTRY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for the poultry?
+Name=LQ17SA_ALL_POULTRY
+Start=436
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the poultry?
+Name=LQ17SB_ALL_POULTRY
+Start=446
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) forthe poultry?
+Name=LQ17SC_ALL_POULTRY
+Start=447
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the poultry?
+Name=LQ18S_ALL_POULTRY
+Start=457
+Len=10
+Decimal=2
+
+[Record]
+Label=LIVESTOCK FEEDS WINTER
+Name=LIVESTOCK_FEED_WINTER
+RecordTypeValue='7'
+MaxRecords=10
+RecordLen=466
+
+[Item]
+Label=Did the holding use the suppliment for the dairy cattle alone?
+Name=USED_SUPPLIMENT_TYPW
+Start=119
+Len=1
+
+[Item]
+Label=Type of Suppliment for dairy cattle
+Name=TYPE_OF_SUPPLIMENEW
+Start=120
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Name=LQ13WA
+Start=150
+Len=7
+Decimal=2
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Name=LQ13WB
+Start=157
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Name=LQ13WB_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the dairy cattle alone?
+Name=LQ15W
+Start=158
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the dairy cattle alone?
+Name=LQ15W_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Name=LQ16W
+Start=159
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Name=LQ16W_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased for the dairy cattle alone?
+Name=LQ17WA
+Start=160
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the dairy cattle alone?
+Name=LQ17WB
+Start=170
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) for the dairy cattle alone?
+Name=LQ17WC
+Start=171
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
+Name=LQ18W
+Start=181
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for all cattle ?
+Name=USED_SUPPLIMENT_ALL_CATTLEW
+Start=191
+Len=1
+
+[Item]
+Label=Type of Suppliment for all cattle
+Name=TYPE_OF_SUPPLIMENT_ALL_CATTLEW
+Start=192
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliment provided to feed all cattle?
+Name=LQ13SA_ALL_CATTLEW
+Start=222
+Len=3
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Name=LQ13SB_ALL_CATTLEW
+Start=225
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Name=LQ13SB_ALL_CATTLEW_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for all cattle?
+Name=LQ15S_ALL_CATTLEW
+Start=226
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for all cattle?
+Name=LQ15S_ALL_CATTLEW_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for all cattle?
+Name=LQ16S_ALL_CATTLEW
+Start=227
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for all cattle?
+Name=LQ16S_ALL_CATTLEW_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for all cattle?
+Name=LQ17SA_ALL_CATTLEW
+Start=228
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for all cattle?
+Name=LQ17SB_ALL_CATTLEW
+Start=238
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) for all cattle?
+Name=LQ17SC_ALL_CATTLEW
+Start=239
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for all cattle?
+Name=LQ18S_ALL_CATTLEW
+Start=249
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for sheep?
+Name=USED_SUPPLIMENT_SHEEPW
+Start=259
+Len=1
+
+[Item]
+Label=Type of Suppliments for sheep
+Name=TYPE_OF_SUPPLIMENT_SHEEPW
+Start=260
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliments provided to feed the sheep?
+Name=LQ13SA_ALL_SHEEPW
+Start=290
+Len=7
+Decimal=2
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Name=LQ13SB_ALL_SHEEPW
+Start=297
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Name=LQ13SB_ALL_SHEEPW_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the sheep?
+Name=LQ15S_ALL_SHEEPW
+Start=298
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the sheep?
+Name=LQ15S_ALL_SHEEPW_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the sheep?
+Name=LQ16S_ALL_SHEEPW
+Start=299
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the sheep?
+Name=LQ16S_ALL_SHEEPW_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for the sheep?
+Name=LQ17SA_ALL_SHEEPW
+Start=300
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the sheep?
+Name=LQ17SB_ALL_SHEEPW
+Start=310
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) forthe sheep?
+Name=LQ17SC_ALL_SHEEPW
+Start=311
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the sheep?
+Name=LQ18S_ALL_SHEEPW
+Start=321
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for goats?
+Name=USED_SUPPLIMENT_GOATW
+Start=331
+Len=1
+
+[Item]
+Label=Type of Suppliments for goats
+Name=TYPE_OF_SUPPLIMENT_GOATW
+Start=332
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliments provided to feed the goats?
+Name=LQ13SA_ALL_GOATW
+Start=362
+Len=3
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the goats?
+Name=LQ13SB_ALL_GOATW
+Start=365
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the goats?
+Name=LQ13SB_ALL_GOATW_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the goats?
+Name=LQ15S_ALL_GOATW
+Start=366
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the goats?
+Name=LQ15S_ALL_GOATW_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the goats?
+Name=LQ16S_ALL_GOATW
+Start=367
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the goats?
+Name=LQ16S_ALL_GOATW_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for the goats?
+Name=LQ17SA_ALL_GOATW
+Start=368
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the goats?
+Name=LQ17SB_ALL_GOATW
+Start=378
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) forthe goats?
+Name=LQ17SC_ALL_GOATW
+Start=379
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the goats?
+Name=LQ18S_ALL_GOATW
+Start=389
+Len=10
+Decimal=2
+
+[Item]
+Label=Did the holding use the suppliment for poultry?
+Name=USED_SUPPLIMENT_POULTRYW
+Start=399
+Len=1
+
+[Item]
+Label=Type of Suppliments for poultry
+Name=TYPE_OF_SUPPLIMENT_POULTRYW
+Start=400
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Total Quantity of suppliments provided to feed the poultry?
+Name=LQ13SA_ALL_POULTRYW
+Start=430
+Len=3
+
+[Item]
+Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Name=LQ13SB_ALL_POULTRYW
+Start=433
+Len=1
+
+[ValueSet]
+Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Name=LQ13SB_ALL_POULTRYW_VS1
+Value=1;kg
+Value=2;rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
+[Item]
+Label=Main source of acquisition for the poultry?
+Name=LQ15S_ALL_POULTRYW
+Start=434
+Len=1
+
+[ValueSet]
+Label=Main source of acquisition for the poultry?
+Name=LQ15S_ALL_POULTRYW_VS1
+Value=1;Purchased
+Value=2;Self-supplied/produced
+Value=3;Gift
+Value=4;Other
+
+[Item]
+Label=Was any of this supplemetary feed purchsed for the poultry?
+Name=LQ16S_ALL_POULTRYW
+Start=435
+Len=1
+
+[ValueSet]
+Label=Was any of this supplemetary feed purchsed for the poultry?
+Name=LQ16S_ALL_POULTRYW_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Quantity purchased the dairy for the poultry?
+Name=LQ17SA_ALL_POULTRYW
+Start=436
+Len=10
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Unit of quantity purchased for the poultry?
+Name=LQ17SB_ALL_POULTRYW
+Start=446
+Len=1
+
+[Item]
+Label=Total purchase price (Maloti) forthe poultry?
+Name=LQ17SC_ALL_POULTRYW
+Start=447
+Len=10
+Decimal=2
+
+[Item]
+Label=Total transport costs from point of purchase to holding (Maloti) for the poultry?
+Name=LQ18S_ALL_POULTRYW
+Start=457
+Len=10
+Decimal=2
+
+[Record]
+Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
+Name=LIVESTOCK_MANAGEMENT_AND_HEATH_S
+RecordTypeValue='8'
+MaxRecords=4
+RecordLen=159
+
+[Item]
+Label=Were the Livestock  de-wormed at least once
+Name=LQ19A
+Start=119
+Len=1
+
+[Item]
+Label=How much was spent on de-worming in maloti?
+Name=LQ19B
+Start=120
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Were livestock Vaccinated at least once ?
+Name=LQ20A
+Start=127
+Len=1
+
+[Item]
+Label=How much was spent on these vaccinations?
+Name=LQ20B
+Start=128
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the main source of Vaccines
+Name=LQ20C
+Start=135
+Len=1
+
+[Item]
+Label=What was the main method of parasite control on Livestock raised
+Name=LQ21A
+Start=136
+Len=1
+
+[Item]
+Label=How much was spent on parasite control (Maloti)?
+Name=LQ21B
+Start=137
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Were any Livestock treated for infectious diseases or accidents?
+Name=LQ22
+Start=144
+Len=1
+
+[Item]
+Label=How much was spent on treatment for infectious diseases or accidents
+Name=LQ22B
+Start=145
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Was Artificial Insemination (IA) or mating practiced?
+Name=LQ23A
+Start=152
+Len=1
+
+[Item]
+Label=How much was spent on IA/ mating?
+Name=LQ23B
+Start=153
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Record]
+Label=LABOUR COST
+Name=LABOUR_COST
+RecordTypeValue='5'
+RecordLen=215
+
+[Item]
+Label=For household members-write the serial number from the household roaster,for hired workers write initials
+Name=LQ2A
+Start=119
+Len=4
+DataType=Alpha
+
+[Item]
+Label=For how many months was name involved in tending and herding livestock in months
+Name=LQ28E
+Start=123
+Len=2
+
+[Item]
+Label=On average,how many weeks in a month did name tend and herd livestock
+Name=LQ28F
+Start=125
+Len=2
+
+[Item]
+Label=On average how many days in a week did name tend and herd livestock?
+Name=LQ28G
+Start=127
+Len=1
+
+[Item]
+Label=On average,for how many hours in a day did name tend and herd livestock?
+Name=LQ28H
+Start=128
+Len=2
+
+[Item]
+Label=For hired workers how much did he/she receive for their work in cash or in kind?
+Name=LQ29C
+Start=130
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Does the payment cover other activities?
+Name=LQ29D
+Start=137
+Len=1
+
+[Item]
+Label=For household members-write the serial number from the household roaster,for hired workers write initials
+Name=LQ3A
+Start=138
+Len=4
+DataType=Alpha
+
+[Item]
+Label=For how many months was name involved in tending to poultry in months
+Name=LQ32E
+Start=142
+Len=2
+
+[Item]
+Label=On average,how many weeks in a month did name tending to poultry?
+Name=LQ32F
+Start=144
+Len=2
+
+[Item]
+Label=On average how many days in a week did name tending to poultry?
+Name=LQ32G
+Start=146
+Len=1
+
+[Item]
+Label=On average,for how many hours in a day did name tending to poultry?
+Name=LQ32H
+Start=147
+Len=2
+
+[Item]
+Label=For hired workers how much did he/she receive for their work in cash or in kind?
+Name=LQ33C
+Start=149
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Does the payment cover other activities?
+Name=LQ33D
+Start=156
+Len=1
+
+[Item]
+Label=For household members-write the serial number from the household roaster,for hired workers write initials
+Name=LQ35
+Start=157
+Len=4
+DataType=Alpha
+
+[Item]
+Label=Activity
+Name=LQ36
+Start=161
+Len=40
+DataType=Alpha
+
+[Item]
+Label=For how many months was name involved in this activity in months?
+Name=LQ37A
+Start=201
+Len=2
+
+[Item]
+Label=On average,how many weeks in a months was name involved in this activity ?
+Name=LQ37B
+Start=203
+Len=2
+
+[Item]
+Label=On average how many days in a week was name involved in this activity?
+Name=LQ37C
+Start=205
+Len=1
+
+[Item]
+Label=On average,for how many hours in a day was name involved in this activity?
+Name=LQ37D
+Start=206
+Len=2
+
+[Item]
+Label=For hired workers how much did he/she receive for this activity in cash or in kind?
+Name=LQ38A
+Start=208
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Does the payment cover other activities?
+Name=LQ38B
+Start=215
+Len=1
+
+[Record]
+Label=LIVESTOCK PRODUCTS
+Name=LIVESTOCK_PRODUCT
+RecordTypeValue='9'
+MaxRecords=7
+RecordLen=170
+
+[Item]
+Label=Was any livestock product produced during summer
+Name=LQ40S
+Start=119
+Len=1
+
+[Item]
+Label=For how many months was Livestock product produced during summer?
+Name=LQ41SA
+Start=120
+Len=1
+
+[Item]
+Label=During those months what was the average quantity of livestock product produced during summer
+Name=LQ42SA
+Start=121
+Len=5
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=During those months what was the unit of the average quantity livestock product produced during summer
+Name=LQ42SB
+Start=126
+Len=2
+
+[Item]
+Label=Did the holding sell any of the livestock product produced during summer
+Name=LQ43S
+Start=128
+Len=1
+
+[Item]
+Label=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+Name=LQ44SA
+Start=129
+Len=5
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+Name=LQ44SB
+Start=134
+Len=2
+
+[Item]
+Label=What was the total value of sales of livestock product in the during summer period?
+Name=LQ44SC
+Start=136
+Len=9
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Was any livestock product produced during winter ?
+Name=LQ40W
+Start=145
+Len=1
+
+[Item]
+Label=For how many months was Livestock product produced during winter ?
+Name=LQ41WA
+Start=146
+Len=1
+
+[Item]
+Label=During those months what was the average quantity of livestock product produced during winter ?
+Name=LQ42WA
+Start=147
+Len=5
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=During those months what was the unit of the average quantity livestock product produced during winter ?
+Name=LQ42WB
+Start=152
+Len=2
+
+[Item]
+Label=Did the holding sell any of the livestock product produced during winter ?
+Name=LQ43W
+Start=154
+Len=1
+
+[Item]
+Label=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+Name=LQ44WA
+Start=155
+Len=5
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+Name=LQ44WB
+Start=160
+Len=2
+
+[Item]
+Label=What was the total value of sales of livestock product in the winter period
+Name=LQ44WC
+Start=162
+Len=9
+Decimal=2
+DecimalChar=Yes
+
+[Record]
+Label=LIVESTOCK RECORDS
+Name=LIVESTOCK_RECORDS
+RecordTypeValue='1'
+RecordLen=140
+
+[Item]
+Label=Did the holding  raise any livestock from 1st August to 31 July 2019?
+Name=LQ01S
+Start=119
+Len=1
+
+[Item]
+Label=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
+Name=LQ11S_DAIRYCATTLE
+Start=120
+Len=1
+
+[Item]
+Label=Did the holding provide All Cattle with any Supplimentary feed during summer
+Name=LQ11S_ALLCATTLE
+Start=121
+Len=1
+
+[Item]
+Label=Did the holding provide sheep with any Supplimentary feed during summer
+Name=LQ11S_SHEEP
+Start=122
+Len=1
+
+[Item]
+Label=Did the holding provide Goats with any Supplimentary feed during summer
+Name=LQ11S_GOATS
+Start=123
+Len=1
+
+[Item]
+Label=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
+Name=LQ11S_POULTRY
+Start=124
+Len=1
+
+[Item]
+Label=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
+Name=LQ24
+Start=125
+Len=1
+
+[Item]
+Label=How was the person paid?-give the estimated cash value if paid in-kind 
+Name=LQ25
+Start=126
+Len=7
+
+[Item]
+Label=Were any other person or household member involved in tending and herding livestock
+Name=LQ26
+Start=133
+Len=1
+
+[Item]
+Label=Were any other person or household member involved in tending poultry
+Name=LQ30
+Start=134
+Len=1
+
+[Item]
+Label=Were any other person or household member involved in other livestock activities?
+Name=LQ34
+Start=135
+Len=1
+
+[Item]
+Label=Were any draught animals raised between 1 August 2018 and 31  july 2019
+Name=LQ45A
+Start=136
+Len=1
+
+[Item]
+Label=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
+Name=LQ45B
+Start=137
+Len=1
+
+[Item]
+Label=How much did the holding recieve in total payents for renting out the draught animal
+Name=LQ45C
+Start=138
+Len=1
+
+[Item]
+Label=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
+Name=LQ46A
+Start=139
+Len=1
+
+[Item]
+Label=How much did the holding recieve in total payment from the manure sale?
+Name=LQ46B
+Start=140
+Len=1
+
+[Record]
+Label=VISITS
+Name=VISITS
+RecordTypeValue='6'
+RecordLen=118
