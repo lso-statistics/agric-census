@@ -427,6 +427,12 @@ Name=USED_SUPPLIMENT_TYPE
 Start=119
 Len=1
 
+[ValueSet]
+Label=Did the holding use the suppliment for the dairy cattle alone?
+Name=USED_SUPPLIMENT_TYPE_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Type of Suppliment for dairy cattle
 Name=TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
@@ -450,8 +456,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
 Name=LQ13SB_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -523,6 +529,12 @@ Name=USED_SUPPLIMENT_ALL_CATTLE
 Start=221
 Len=1
 
+[ValueSet]
+Label=Did the holding use the suppliment for all cattle ?
+Name=USED_SUPPLIMENT_ALL_CATTLE_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Total Quantity of suppliment provided to feed all cattle?
 Name=LQ13SA_ALL_CATTLE
@@ -538,8 +550,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed all cattle?
 Name=LQ13SB_ALL_CATTLE_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -633,8 +645,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the sheep?
 Name=LQ13SB_ALL_SHEEP_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -699,6 +711,12 @@ Name=USED_SUPPLIMENT_GOATS
 Start=331
 Len=1
 
+[ValueSet]
+Label=Did the holding use the suppliment for goats?
+Name=USED_SUPPLIMENT_GOATS_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Type of Suppliments for goats
 Name=TYPE_OF_SUPPLIMENT_GOATS
@@ -721,8 +739,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the goats?
 Name=LQ13SB_ALL_GOATS_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -793,6 +811,12 @@ Name=USED_SUPPLIMENT_POULTRY
 Start=399
 Len=1
 
+[ValueSet]
+Label=Did the holding use the suppliment for poultry?
+Name=USED_SUPPLIMENT_POULTRY_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Type of Suppliments for poultry
 Name=TYPE_OF_SUPPLIMENT_POULTRY
@@ -806,6 +830,15 @@ Name=LQ13SA_ALL_GOATT
 Start=430
 Len=3
 
+[ValueSet]
+Label=Total Quantity of suppliments provided to feed the poultry?
+Name=LQ13SA_ALL_GOATT_VS1
+Value=1;1 = Kg
+Value=2;2 = Rolls
+Value=3;3 = Bales
+Value=4;4 = Bundles
+Value=5;5 = Other
+
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the poultry?
 Name=LQ13SB_ALL_POULTRY
@@ -815,8 +848,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the poultry?
 Name=LQ13SB_ALL_POULTRY_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other

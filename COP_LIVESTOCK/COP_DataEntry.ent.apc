@@ -174,6 +174,16 @@ if curocc($) = 1 then
 		endif;
 
 endif;}
+PROC USED_SUPPLIMENT_TYPE
+preproc
+numeric currentRow;
+do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
+	if currentRow = 1 and LQ02(currentRow) = 2 then // if have to cattle skip asking about their supplement feed, skip to ship supplement feed
+		skip to USED_SUPPLIMENT_SHEEP;
+	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have to sheep skip asking about their supplement feed, skip to goats supplement feed
+		skip to USED_SUPPLIMENT_GOATS;
+	endif;
+enddo;
 PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
 preproc
 if curocc($) = 1 then
@@ -332,7 +342,60 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_SHEEP = 2 then
-			//skip to USED_SUPPLIMENT_SHEEP(1);//skip to suplements used for sheep
+			skip to USED_SUPPLIMENT_GOATS(1);//skip to suplements used for sheep
 		endif;
 
+endif;
+PROC TYPE_OF_SUPPLIMENT_GOATS
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_GOATS(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_GOATS = 2 then
+			//skip to USED_SUPPLIMENT_SHEEP(1);//skip to suplements used for sheep
+		endif;
 endif;

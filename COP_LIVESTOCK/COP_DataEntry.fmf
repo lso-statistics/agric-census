@@ -63,7 +63,7 @@ Font=-027 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0018 Cambria
 Name=FORM002
 Label=Livestock Summer Feed
 Level=1
-Size=1237,1850
+Size=1289,2099
   
 Item=USED_SUPPLIMENT_TYPE000
 Item=USED_SUPPLIMENT_ALL_CATTLE000
@@ -644,7 +644,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=13,19,1138,435
+DisplaySize=17,43,1258,497
 Orientation=Horizontal
 FieldRowHeight=29
 HeadingRowHeight=0
@@ -914,7 +914,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=17,473,1132,857
+DisplaySize=17,548,1260,1018
 Orientation=Horizontal
 FieldRowHeight=34
 HeadingRowHeight=0
@@ -986,8 +986,10 @@ Name=USED_SUPPLIMENT_ALL_CATTLE
 Position=55,0,70,20
 Item=USED_SUPPLIMENT_ALL_CATTLE,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,318,16
 Text=Did the holding use the suppliment for all cattle ?
  
 [EndColumn]
@@ -1121,6 +1123,7 @@ Name=LQ17SB_ALL_CATTLE
 Position=51,0,66,20
 Item=LQ17SB_ALL_CATTLE,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,258,16
@@ -1177,19 +1180,19 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=40,910,1212,1407
+DisplaySize=19,1060,1263,1523
 Orientation=Horizontal
-FieldRowHeight=40
+FieldRowHeight=33
 HeadingRowHeight=104
 FreeMovement=No
  
 [Text]
-Position=0,0,120,40
+Position=0,0,120,33
 Text=Fodder/Hay/Grass
  
   
 [Text]
-Position=27,0,120,40
+Position=27,0,120,33
 Text=Crop Residue
  
   
@@ -1199,37 +1202,37 @@ Text=Feed Concentrate
  
   
 [Text]
-Position=44,0,120,40
+Position=44,0,120,33
 Text=Dairy Meal
  
   
 [Text]
-Position=32,0,120,40
+Position=32,0,120,33
 Text=Poultry Meal
  
   
 [Text]
-Position=28,0,120,40
+Position=28,0,120,33
 Text=Sheep Palets
  
   
 [Text]
-Position=65,0,120,40
+Position=65,0,120,33
 Text=Moroko
  
   
 [Text]
-Position=21,16,120,40
+Position=21,0,120,33
 Text=Seameal/Bran
  
   
 [Text]
-Position=81,16,120,40
+Position=81,0,120,33
 Text=Salts
  
   
 [Text]
-Position=25,16,120,40
+Position=25,0,120,33
 Text=Mineral Block
  
   
@@ -1383,8 +1386,10 @@ Name=LQ17SB_ALL_SHEEP
 Position=51,0,66,20
 Item=LQ17SB_ALL_SHEEP,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,267,16
 Text=Unit of quantity purchased for the sheep?
  
 [EndColumn]
@@ -1436,60 +1441,60 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=42,1425,1142,1825
+DisplaySize=25,1567,1264,2074
 Orientation=Horizontal
-FieldRowHeight=0
+FieldRowHeight=40
 HeadingRowHeight=0
 FreeMovement=No
  
 [Text]
-Position=7,4,22,28
-Text=1
+Position=0,0,120,40
+Text=Fodder/Hay/Grass
  
   
 [Text]
-Position=7,4,22,28
-Text=2
+Position=61,0,120,40
+Text=Crop Residue
  
   
 [Text]
-Position=7,4,22,28
-Text=3
+Position=35,0,120,40
+Text=Feed Concentrate
  
   
 [Text]
-Position=7,4,22,28
-Text=4
+Position=44,0,120,40
+Text=Dairy Meal
  
   
 [Text]
-Position=7,4,22,28
-Text=5
+Position=63,0,120,40
+Text=Poultry Meal
  
   
 [Text]
-Position=7,4,22,28
-Text=6
+Position=67,0,120,40
+Text=Sheep Palets
  
   
 [Text]
-Position=7,4,22,28
-Text=7
+Position=65,16,120,40
+Text=Moroko
  
   
 [Text]
-Position=7,4,22,28
-Text=8
+Position=21,16,120,40
+Text=Seameal/Bran
  
   
 [Text]
-Position=7,4,22,28
-Text=9
+Position=81,16,120,40
+Text=Salts
  
   
 [Text]
-Position=0,4,22,28
-Text=10
+Position=60,0,120,40
+Text=Mineral Block
  
   
 [Column]
@@ -1508,8 +1513,10 @@ Name=USED_SUPPLIMENT_GOATS
 Position=55,0,70,20
 Item=USED_SUPPLIMENT_GOATS,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,295,16
 Text=Did the holding use the suppliment for goats?
  
 [EndColumn]
