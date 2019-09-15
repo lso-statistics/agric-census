@@ -133,10 +133,12 @@ PROC USED_SUPPLIMENT_TYPE
 preproc
 numeric currentRow;
 do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
-	if currentRow = 1 and LQ02(currentRow) = 2 then // if have to cattle skip asking about their supplement feed, skip to ship supplement feed
+	if currentRow = 1 and LQ02(currentRow) = 2 then // if have no cattle skip asking about their supplement feed, skip to ship supplement feed
 		skip to USED_SUPPLIMENT_SHEEP;
-	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have to sheep skip asking about their supplement feed, skip to goats supplement feed
+	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
 		skip to USED_SUPPLIMENT_GOATS;
+	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
+		//skip to ...;
 	endif;
 enddo;
 PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE

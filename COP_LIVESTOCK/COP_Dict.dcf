@@ -921,6 +921,12 @@ Name=USED_SUPPLIMENT_TYPW
 Start=119
 Len=1
 
+[ValueSet]
+Label=Did the holding use the suppliment for the dairy cattle alone?
+Name=USED_SUPPLIMENT_TYPW_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Type of Suppliment for dairy cattle
 Name=TYPE_OF_SUPPLIMENEW
@@ -944,8 +950,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
 Name=LQ13WB_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -990,6 +996,15 @@ Name=LQ17WB
 Start=170
 Len=1
 
+[ValueSet]
+Label=Unit of quantity purchased for the dairy cattle alone?
+Name=LQ17WB_VS1
+Value=1;Kg
+Value=2;Rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
 [Item]
 Label=Total purchase price (Maloti) for the dairy cattle alone?
 Name=LQ17WC
@@ -1009,6 +1024,12 @@ Label=Did the holding use the suppliment for all cattle ?
 Name=USED_SUPPLIMENT_ALL_CATTLEW
 Start=191
 Len=1
+
+[ValueSet]
+Label=Did the holding use the suppliment for all cattle ?
+Name=USED_SUPPLIMENT_ALL_CATTLEW_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Type of Suppliment for all cattle
@@ -1032,8 +1053,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed all cattle?
 Name=LQ13SB_ALL_CATTLEW_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -1078,6 +1099,15 @@ Name=LQ17SB_ALL_CATTLEW
 Start=238
 Len=1
 
+[ValueSet]
+Label=Unit of quantity purchased for all cattle?
+Name=LQ17SB_ALL_CATTLEW_VS1
+Value=1;Kg
+Value=2;Rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
 [Item]
 Label=Total purchase price (Maloti) for all cattle?
 Name=LQ17SC_ALL_CATTLEW
@@ -1097,6 +1127,12 @@ Label=Did the holding use the suppliment for sheep?
 Name=USED_SUPPLIMENT_SHEEPW
 Start=259
 Len=1
+
+[ValueSet]
+Label=Did the holding use the suppliment for sheep?
+Name=USED_SUPPLIMENT_SHEEPW_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Type of Suppliments for sheep
@@ -1121,8 +1157,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the sheep?
 Name=LQ13SB_ALL_SHEEPW_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -1167,6 +1203,15 @@ Name=LQ17SB_ALL_SHEEPW
 Start=310
 Len=1
 
+[ValueSet]
+Label=Unit of quantity purchased for the sheep?
+Name=LQ17SB_ALL_SHEEPW_VS1
+Value=1;Kg
+Value=2;Rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
 [Item]
 Label=Total purchase price (Maloti) forthe sheep?
 Name=LQ17SC_ALL_SHEEPW
@@ -1186,6 +1231,12 @@ Label=Did the holding use the suppliment for goats?
 Name=USED_SUPPLIMENT_GOATW
 Start=331
 Len=1
+
+[ValueSet]
+Label=Did the holding use the suppliment for goats?
+Name=USED_SUPPLIMENT_GOATW_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Type of Suppliments for goats
@@ -1209,8 +1260,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the goats?
 Name=LQ13SB_ALL_GOATW_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -1255,6 +1306,15 @@ Name=LQ17SB_ALL_GOATW
 Start=378
 Len=1
 
+[ValueSet]
+Label=Unit of quantity purchased for the goats?
+Name=LQ17SB_ALL_GOATW_VS1
+Value=1;Kg
+Value=2;Rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
+
 [Item]
 Label=Total purchase price (Maloti) forthe goats?
 Name=LQ17SC_ALL_GOATW
@@ -1274,6 +1334,12 @@ Label=Did the holding use the suppliment for poultry?
 Name=USED_SUPPLIMENT_POULTRYW
 Start=399
 Len=1
+
+[ValueSet]
+Label=Did the holding use the suppliment for poultry?
+Name=USED_SUPPLIMENT_POULTRYW_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Type of Suppliments for poultry
@@ -1297,8 +1363,8 @@ Len=1
 [ValueSet]
 Label=Unit of total Quantity of suppliment provided to feed the poultry?
 Name=LQ13SB_ALL_POULTRYW_VS1
-Value=1;kg
-Value=2;rolls
+Value=1;Kg
+Value=2;Rolls
 Value=3;Bales
 Value=4;Bundles
 Value=5;Other
@@ -1342,6 +1408,15 @@ Label=Unit of quantity purchased for the poultry?
 Name=LQ17SB_ALL_POULTRYW
 Start=446
 Len=1
+
+[ValueSet]
+Label=Unit of quantity purchased for the poultry?
+Name=LQ17SB_ALL_POULTRYW_VS1
+Value=1;Kg
+Value=2;Rolls
+Value=3;Bales
+Value=4;Bundles
+Value=5;Other
 
 [Item]
 Label=Total purchase price (Maloti) forthe poultry?
