@@ -131,7 +131,7 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM004
 Label=Livestock Management and Health Services
 Level=1
-Size=1318,367
+Size=1411,365
   
 Item=LIVESTOCK_MANAGEMENT_AND_HEAT000
   
@@ -3346,7 +3346,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_MANAGEMENT_AND_HEATH_S
 Max=4
-DisplaySize=12,39,1293,342
+DisplaySize=12,37,1386,340
 Orientation=Horizontal
 FieldRowHeight=28
 HeadingRowHeight=0
@@ -3490,15 +3490,15 @@ Text=What was the main source of Vaccines
 [EndColumn]
   
 [Column]
-Width=199
+Width=147
   
 [HeaderText]
-Position=28,112,199,152
+Position=12,96,147,152
 Text=What was the other main source of Vaccines?
  
 [Field]
 Name=LQ20C_OTHER
-Position=0,0,189,20
+Position=0,0,134,20
 Item=LQ20C_OTHER,COP_DICT_DICT
 UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
