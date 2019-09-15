@@ -127,6 +127,16 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
 [EndForm]
   
+[Form]
+Name=FORM004
+Label=Livestock Management and Health Services
+Level=1
+Size=1318,367
+  
+Item=LIVESTOCK_MANAGEMENT_AND_HEAT000
+  
+[EndForm]
+  
 [Level]
 Name=COP_DICT_QUEST
 Label=COP_Dict questionnaire
@@ -3313,6 +3323,298 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Text=Total transport costs from point of purchase to holding (Maloti) for the poultry?
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=LIVESTOCK_MANAGEMENT_FORM
+Label=Livestock Management and Health Services
+Form=5
+LogicControl=No
+Max=1
+  
+[Grid]
+Name=LIVESTOCK_MANAGEMENT_AND_HEAT000
+Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
+Form=5
+Required=Yes
+Type=Record
+TypeName=LIVESTOCK_MANAGEMENT_AND_HEATH_S
+Max=4
+DisplaySize=12,39,1293,342
+Orientation=Horizontal
+FieldRowHeight=28
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=12,0,57,28
+Text=Cattle
+ 
+  
+[Text]
+Position=8,4,57,28
+Text=Sheep
+ 
+  
+[Text]
+Position=13,4,57,28
+Text=Goats
+ 
+  
+[Text]
+Position=0,0,57,40
+Text=Poultry (Exotic)
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=80
+  
+[HeaderText]
+Position=0,64,80,152
+Text=Were the Livestock  de-wormed at least once
+ 
+[Field]
+Name=LQ19A
+Position=57,0,72,20
+Item=LQ19A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Position=0,0,291,16
+Text=Were the Livestock  de-wormed at least once
+ 
+[EndColumn]
+  
+[Column]
+Width=147
+  
+[HeaderText]
+Position=40,128,147,152
+Text=Livestock name
+ 
+[Field]
+Name=LIVESTOCK_NAME
+Position=0,0,137,20
+Item=LIVESTOCK_NAME,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Livestock name
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=23,64,107,152
+Text=How much was spent on de-worming in maloti?
+ 
+[Field]
+Name=LQ19B
+Position=0,0,99,20
+Item=LQ19B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much was spent on de-worming in maloti?
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,64,78,152
+Text=Were livestock Vaccinated at least once ?
+ 
+[Field]
+Name=LQ20A
+Position=55,0,70,20
+Item=LQ20A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=Were livestock Vaccinated at least once ?
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=12,80,107,152
+Text=How much was spent on these vaccinations?
+ 
+[Field]
+Name=LQ20B
+Position=0,0,99,20
+Item=LQ20B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much was spent on these vaccinations?
+ 
+[EndColumn]
+  
+[Column]
+Width=74
+  
+[HeaderText]
+Position=0,80,74,152
+Text=What was the main source of Vaccines
+ 
+[Field]
+Name=LQ20C
+Position=51,0,66,20
+Item=LQ20C,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=What was the main source of Vaccines
+ 
+[EndColumn]
+  
+[Column]
+Width=199
+  
+[HeaderText]
+Position=28,112,199,152
+Text=What was the other main source of Vaccines?
+ 
+[Field]
+Name=LQ20C_OTHER
+Position=0,0,189,20
+Item=LQ20C_OTHER,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=What was the other main source of Vaccines?
+ 
+[EndColumn]
+  
+[Column]
+Width=76
+  
+[HeaderText]
+Position=0,32,76,152
+Text=What was the main method of parasite control on Livestock raised
+ 
+[Field]
+Name=LQ21A
+Position=53,0,68,20
+Item=LQ21A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=What was the main method of parasite control on Livestock raised
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=32,48,107,152
+Text=How much was spent on parasite control (Maloti)?
+ 
+[Field]
+Name=LQ21B
+Position=0,0,99,20
+Item=LQ21B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much was spent on parasite control (Maloti)?
+ 
+[EndColumn]
+  
+[Column]
+Width=84
+  
+[HeaderText]
+Position=1,48,84,152
+Text=Were any Livestock treated for infectious diseases or accidents?
+ 
+[Field]
+Name=LQ22
+Position=57,0,72,20
+Item=LQ22,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Were any Livestock treated for infectious diseases or accidents?
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=32,0,107,152
+Text=How much was spent on treatment for infectious diseases or accidents
+ 
+[Field]
+Name=LQ22B
+Position=0,0,99,20
+Item=LQ22B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much was spent on treatment for infectious diseases or accidents
+ 
+[EndColumn]
+  
+[Column]
+Width=90
+  
+[HeaderText]
+Position=0,48,90,152
+Text=Was Artificial Insemination (IA) or mating practiced?
+ 
+[Field]
+Name=LQ23A
+Position=67,0,82,20
+Item=LQ23A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=Was Artificial Insemination (IA) or mating practiced?
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=32,80,107,152
+Text=How much was spent on IA/ mating?
+ 
+[Field]
+Name=LQ23B
+Position=0,0,99,20
+Item=LQ23B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much was spent on IA/ mating?
  
 [EndColumn]
   

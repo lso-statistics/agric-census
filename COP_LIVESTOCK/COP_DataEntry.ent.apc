@@ -138,7 +138,7 @@ do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
 	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
 		skip to USED_SUPPLIMENT_GOATS;
 	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
-		//skip to ...;
+		skip to LQ19A;
 	endif;
 enddo;
 PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
@@ -193,7 +193,6 @@ if curocc($) = 1 then
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(1);//skip to suplements used for all cattle
 		endif;
-
 endif;
 PROC TYPE_OF_SUPPLIMENT_ALL_CATTLE
 preproc
@@ -407,5 +406,282 @@ if curocc($) = 1 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			//skip to USED_SUPPLIMENT_SHEEP(1);//skip to suplements used for sheep
+		endif;
+endif;
+PROC USED_SUPPLIMENT_TYPW
+preproc
+numeric currentRow;
+do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
+	if currentRow = 1 and LQ02(currentRow) = 2 then // if have no cattle skip asking about their supplement feed, skip to ship supplement feed
+		skip to USED_SUPPLIMENT_SHEEPW;
+	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
+		skip to USED_SUPPLIMENT_GOATW;
+	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
+		skip to LQ19A;
+	endif;
+enddo;
+PROC TYPE_OF_SUPPLIMENEW
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_TYPW(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_TYPW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(1);//skip to suplements used for all cattle
+		endif;
+endif;
+PROC TYPE_OF_SUPPLIMENT_ALL_CATTLEW
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(1);//skip to suplements used for sheep
+		endif;
+endif;
+PROC TYPE_OF_SUPPLIMENT_SHEEPW
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_SHEEPW(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_SHEEPW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(1);//skip to suplements used for goats
+		endif;
+endif;
+PROC TYPE_OF_SUPPLIMENT_GOATW
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_GOATW(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_GOATW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(1);//skip to suplements used for poultry
+		endif;
+endif;
+PROC TYPE_OF_SUPPLIMENT_POULTRYW
+preproc
+if curocc($) = 1 then
+	$(curocc($)) = "Fodder/Hay/Grass";
+		if USED_SUPPLIMENT_POULTRYW(curocc($)) = 2 then
+				skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		$(curocc($)) = "Crop Residue";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		$(curocc($)) = "Feed Concentrete";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		$(curocc($)) = "Dairy Meal";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		$(curocc($)) = "Poultry Meal";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		$(curocc($)) = "Sheep Palets";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		$(curocc($)) = "Moroko";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		$(curocc($)) = "Seameal/Bran";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		$(curocc($)) = "Salt";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		$(curocc($)) = "Mineral Block";
+		if USED_SUPPLIMENT_POULTRYW = 2 then
+			skip to LQ19A;//skip to suplements used for poultry
 		endif;
 endif;

@@ -1437,7 +1437,7 @@ Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
 Name=LIVESTOCK_MANAGEMENT_AND_HEATH_S
 RecordTypeValue='8'
 MaxRecords=4
-RecordLen=159
+RecordLen=199
 
 [Item]
 Label=Were the Livestock  de-wormed at least once
@@ -1445,10 +1445,23 @@ Name=LQ19A
 Start=119
 Len=1
 
+[ValueSet]
+Label=Were the Livestock  de-wormed at least once
+Name=LQ19A_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Livestock name
+Name=LIVESTOCK_NAME
+Start=120
+Len=20
+DataType=Alpha
+
 [Item]
 Label=How much was spent on de-worming in maloti?
 Name=LQ19B
-Start=120
+Start=140
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1456,13 +1469,19 @@ DecimalChar=Yes
 [Item]
 Label=Were livestock Vaccinated at least once ?
 Name=LQ20A
-Start=127
+Start=147
 Len=1
+
+[ValueSet]
+Label=Were livestock Vaccinated at least once ?
+Name=LQ20A_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How much was spent on these vaccinations?
 Name=LQ20B
-Start=128
+Start=148
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1470,19 +1489,46 @@ DecimalChar=Yes
 [Item]
 Label=What was the main source of Vaccines
 Name=LQ20C
-Start=135
+Start=155
 Len=1
+
+[ValueSet]
+Label=What was the main source of Vaccines
+Name=LQ20C_VS1
+Value=1;Veterinary Clinic
+Value=2;Trader
+Value=3;Farmer/Farmer Association
+Value=4;NGO
+Value=5;Other source
+
+[Item]
+Label=What was the other main source of Vaccines?
+Name=LQ20C_OTHER
+Start=156
+Len=20
+DataType=Alpha
 
 [Item]
 Label=What was the main method of parasite control on Livestock raised
 Name=LQ21A
-Start=136
+Start=176
 Len=1
+
+[ValueSet]
+Label=What was the main method of parasite control on Livestock raised
+Name=LQ21A_VS1
+Value=1;Dipping
+Value=2;Spraying
+Value=3;Pour-on
+Value=4;Hand dressing
+Value=5;Traditional
+Value=6;Injection
+Value=7;Non
 
 [Item]
 Label=How much was spent on parasite control (Maloti)?
 Name=LQ21B
-Start=137
+Start=177
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1490,13 +1536,13 @@ DecimalChar=Yes
 [Item]
 Label=Were any Livestock treated for infectious diseases or accidents?
 Name=LQ22
-Start=144
+Start=184
 Len=1
 
 [Item]
 Label=How much was spent on treatment for infectious diseases or accidents
 Name=LQ22B
-Start=145
+Start=185
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1504,13 +1550,19 @@ DecimalChar=Yes
 [Item]
 Label=Was Artificial Insemination (IA) or mating practiced?
 Name=LQ23A
-Start=152
+Start=192
 Len=1
+
+[ValueSet]
+Label=Was Artificial Insemination (IA) or mating practiced?
+Name=LQ23A_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How much was spent on IA/ mating?
 Name=LQ23B
-Start=153
+Start=193
 Len=7
 Decimal=2
 DecimalChar=Yes
