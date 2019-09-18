@@ -7,7 +7,7 @@ Interactive=Ask
 
 [Files]
 Application=.\CCP.ent
-InputData=.\dee.csdb|CSPRODB
+InputData=.\data.dat
 
 
 [Parameters]

@@ -14,7 +14,7 @@ Name=FORM000
 Label=CropsCostOfProduction questionnaire
 QuestionTextHeight=91
 Level=1
-Size=576,554
+Size=730,536
   
 Item=DISTRICT
 Item=CONSTITUENCY
@@ -29,7 +29,7 @@ Item=SETTLEMENT
 Item=HOUSEHOLD_HEAD_NAMES
 Item=HOUSEHOLD_NUMBER
   
-Box=74,94,551,529,Thin
+Box=61,112,705,511,Thin
 Box=207,30,416,85,Raised
   
 [Text]
@@ -50,7 +50,7 @@ Size=994,942
 Item=PERSON_ROSTER
 Item=DEMOGRAPHIC_ROSTER
 Item=RESPONDENT_NAME
-Item=RESPONDENT
+Item=RESPONDENT_RELATIONSHIP
 Item=NUMBER_OF_HOUSEHOLD_MEMBERS
   
 Box=63,10,969,60,Raised
@@ -78,7 +78,7 @@ Item=SEED_USE_COSTS
 Item=CQ20
 Item=FERTILIZER_COST
 Item=CQ28
-Item=FIELDS_AND_CROPS_AND_SEEDS000
+Item=FIELDS_AND_CROPS_AND_SEED
   
 Box=205,6,769,51,Raised
 Box=17,57,327,89,Raised
@@ -126,7 +126,7 @@ Size=1363,729
   
 Item=CQ36
 Item=CQ37
-Item=CQ39000
+Item=LAND_PROTECTION
 Item=CQ43
 Item=CQ49
 Item=CQ55
@@ -495,9 +495,9 @@ Text=Name of respondent
  
   
 [Field]
-Name=RESPONDENT
-Position=340,136,355,156
-Item=RESPONDENT,CROPSCOSTOFPRODUCTION_DICT
+Name=RESPONDENT_RELATIONSHIP
+Position=343,133,372,153
+Item=RESPONDENT_RELATIONSHIP,CROPSCOSTOFPRODUCTION_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=2
@@ -1771,13 +1771,14 @@ Text=What was the total price paid for the total quantity purchased?
  
   
 [Grid]
-Name=FIELDS_AND_CROPS_AND_SEEDS000
+Name=FIELDS_AND_CROPS_AND_SEED
 Label=Fields and Crops and Seeds
 Form=3
 Required=Yes
 Type=Record
 TypeName=FIELDS_AND_CROPS_AND_SEEDS
 Max=100
+MaxField=CQ02
 DisplaySize=940,625,1201,909
 Orientation=Horizontal
 FieldRowHeight=0
@@ -2368,6 +2369,7 @@ Required=Yes
 Type=Record
 TypeName=FIELDS_RECORDS
 Max=20
+MaxField=CQ02
 DisplaySize=15,1184,1138,1632
 Orientation=Horizontal
 FieldRowHeight=0
@@ -2857,13 +2859,14 @@ Text=Did the holding apply any herbicides to their crops during the summer (wint
  
   
 [Grid]
-Name=CQ39000
-Label=were the herbicides used on the field?
+Name=LAND_PROTECTION
+Label=Land Protection Roster
 Form=4
 Required=Yes
 Type=Record
 TypeName=FIELDS_RECORDS
 Max=20
+MaxField=CQ02
 DisplaySize=12,248,1243,664
 Orientation=Horizontal
 FieldRowHeight=0
@@ -3422,6 +3425,32 @@ Form=5
 LogicControl=No
 Max=1
   
+[Field]
+Name=CQ56B
+Position=281,113,296,133
+Item=CQ56B,CROPSCOSTOFPRODUCTION_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=14,116,254,132
+Text=Did the holding engage Hired labour?
+ 
+  
+[Field]
+Name=CQ56A
+Position=290,81,305,101
+Item=CQ56A,CROPSCOSTOFPRODUCTION_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=14,84,263,100
+Text=Did the holding engage Family labour?
+ 
+  
 [Grid]
 Name=LABOUR
 Label=Labour Roster
@@ -3437,67 +3466,67 @@ HeadingRowHeight=0
 FreeMovement=No
  
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Land Preperation
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Planting
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Fertilizer Application
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=First Weeding
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Application Plant Protection Products
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Second Weeding
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Harvesting
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Transport from field to homestead
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Shelling and Packing
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,40
+Position=0,0,256,40
 Text=Transport from holding to Point of Selling
 HorizontalAlignment=Left
  
   
 [Text]
-Position=0,0,249,28
+Position=0,0,256,28
 Text=Other Specify...
 HorizontalAlignment=Left
  
@@ -3696,29 +3725,16 @@ Text=For in-kind payments, what was the total cash equivalent pay to hire labour
  
   
 [Field]
-Name=CQ56A
-Position=290,81,305,101
-Item=CQ56A,CROPSCOSTOFPRODUCTION_DICT
+Name=CQ61
+Position=866,675,881,695
+Item=CQ61,CROPSCOSTOFPRODUCTION_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=14,84,263,100
-Text=Did the holding engage Family labour?
- 
-  
-[Field]
-Name=CQ56B
-Position=281,113,296,133
-Item=CQ56B,CROPSCOSTOFPRODUCTION_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=14,116,254,132
-Text=Did the holding engage Hired labour?
+Position=23,678,824,694
+Text=Did the holding use any external service provider to carry out the activities of crop production during summer (winter) season?
  
   
 [Grid]
@@ -3743,7 +3759,7 @@ HorizontalAlignment=Left
   
 [Text]
 Position=0,0,322,28
-Text=Other land preparation & seeding 
+Text=Other land preparation & seeding
 HorizontalAlignment=Left
  
   
@@ -3865,19 +3881,6 @@ Text=For in kind payment for the service what was the cash equivalent
 [EndColumn]
   
 [EndGrid]
- 
-  
-[Field]
-Name=CQ61
-Position=866,675,881,695
-Item=CQ61,CROPSCOSTOFPRODUCTION_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=23,678,824,694
-Text=Did the holding use any external service provider to carry out the activities of crop production during summer (winter) season?
  
   
 [Grid]
@@ -4278,6 +4281,19 @@ Form=7
 LogicControl=No
 Max=1
   
+[Field]
+Name=FQ_MACHINERY_CROPS
+Position=452,143,467,163
+Item=FQ_MACHINERY_CROPS,CROPSCOSTOFPRODUCTION_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=7
+  
+[Text]
+Position=43,146,419,162
+Text=Does the holding own any Machinery/Equipment for Crops?
+ 
+  
 [Grid]
 Name=MACHINERY_EQUIPMENT_CROP
 Label=Machinery/Equipment for Crops
@@ -4294,7 +4310,7 @@ FreeMovement=No
  
 [Text]
 Position=0,0,179,28
-Text=Hand Hoe 
+Text=Hand Hoe
 HorizontalAlignment=Left
  
   
@@ -4533,6 +4549,19 @@ Text=if you were to sell those assets now on the market, how much would you sell
 [EndGrid]
  
   
+[Field]
+Name=FQ_IRRIGATION_EQUIPMENT
+Position=364,688,379,708
+Item=FQ_IRRIGATION_EQUIPMENT,CROPSCOSTOFPRODUCTION_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=7
+  
+[Text]
+Position=28,691,335,707
+Text=Does the holding own any irrigation Equipment?
+ 
+  
 [Grid]
 Name=IRRIGATION_EQUIPMENT
 Label=Irrigation Equipment
@@ -4713,6 +4742,19 @@ Text=if you were to sell those assets now on the market, how much would you sell
 [EndColumn]
   
 [EndGrid]
+ 
+  
+[Field]
+Name=FQ_MACHINERY_LIVESTOCK
+Position=446,1107,461,1127
+Item=FQ_MACHINERY_LIVESTOCK,CROPSCOSTOFPRODUCTION_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=7
+  
+[Text]
+Position=37,1110,436,1126
+Text=Does the holding own any Machinery/Equipment for Livestock?
  
   
 [Grid]
@@ -5114,45 +5156,6 @@ Text=What is the estimate of the construction costs t replace ASSET2 ?
 [EndColumn]
   
 [EndGrid]
- 
-  
-[Field]
-Name=FQ_MACHINERY_CROPS
-Position=452,143,467,163
-Item=FQ_MACHINERY_CROPS,CROPSCOSTOFPRODUCTION_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=43,146,419,162
-Text=Does the holding own any Machinery/Equipment for Crops?
- 
-  
-[Field]
-Name=FQ_IRRIGATION_EQUIPMENT
-Position=364,688,379,708
-Item=FQ_IRRIGATION_EQUIPMENT,CROPSCOSTOFPRODUCTION_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=28,691,335,707
-Text=Does the holding own any irrigation Equipment?
- 
-  
-[Field]
-Name=FQ_MACHINERY_LIVESTOCK
-Position=446,1107,461,1127
-Item=FQ_MACHINERY_LIVESTOCK,CROPSCOSTOFPRODUCTION_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=37,1110,413,1126
-Text=Does the holding own any Machinery/Equipment for Crops?
  
 [EndGroup]
   

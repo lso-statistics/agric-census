@@ -3,7 +3,7 @@ PROC GLOBAL
 
 numeric CensusYear = 2020;
 numeric CensusMonth = 4;
-numeric YoungestAgeMarriage = 10;
+numeric YoungestAgeMarriage = 12;
 numeric MaxNumOfYrsOutsideLesotho = 3;
 numeric MinAgeDiffBtwnChildAndParent = 12;
 numeric MinRetirementAge = 24;
@@ -67,6 +67,14 @@ CheckBlank(HOUSEHOLD_HEAD_NAMES);
 	HOUSEHOLD_HEAD_NAMES = toupper(HOUSEHOLD_HEAD_NAMES);
 
 
+PROC RESPONDENT_NAME
+
+CheckBlank(RESPONDENT_NAME)
+PROC RESPONDENT_RELATIONSHIP
+if RESPONDENT_RELATIONSHIP = 1 and RESPONDENT_NAME <> HOUSEHOLD_HEAD_NAMES then
+ errmsg("If this Household head name cannot be different from the one given in the ID")
+		select("Correct respondent Name", RESPONDENT_NAME);
+ endif;
 PROC B1
 
 preproc
@@ -106,7 +114,7 @@ postproc
 
 PROC ANYMORE_PEOPLE
 
-// End roster if there are no more household members to enter
+// End roster if there are no more householding members to enter
 	if ANYMORE_PEOPLE = 2 then
 		savepartial();
 		endgroup;
@@ -116,8 +124,101 @@ PROC NUMBER_OF_HOUSEHOLD_MEMBERS
 preproc
 
 	NUMBER_OF_HOUSEHOLD_MEMBERS = totocc(PERSON_ROSTER);
+PROC B3
+// If household head is married then his/her spouse must be of different sex.
+	if B5(curocc()) = 2 and B3(curocc()) = B3(1) then
+		errmsg("If %s is %s's spouse, then they must be of opposite sex",
+		strip(B2(curocc())), strip(B2(1)))
+		select("Correct household head sex", B3(1),
+			   "Correct spouse relationship", B5(curocc()),
+			   "Correct spouse sex", B3(curocc()));
+	endif;
+PROC B4
+	//Parent's age should be 12 years more than child's age.
+	if B5(curocc()) = 4 and B4(1) < B4(curocc()) + MinAgeDiffBtwnChildAndParent then
+		errmsg("%s's age should be 12 years more than %s's age",strip(B2(1)),strip(B2(curocc())))
+		select("Correct parent's age",B4(1),"Correct child's age",B4(curocc()));
+
+	//Grandparent's age should be 24 years more than grandchild's age.
+	elseif B5(curocc()) = 12 and B4(1) < B4(curocc()) + ( 2 * MinAgeDiffBtwnChildAndParent ) then
+		errmsg("%s's age should be 24 years more than %s's age",strip(B2(1)),strip(B2(curocc())))
+		select("Correct grandparent's age",B4(1),"Correct grandchild's age",B4(curocc()));
+
+	//Own parent's age should be 12 years more than household head's age.
+	elseif B5(curocc()) = 8 and B4(curocc()) < B4(1) + MinAgeDiffBtwnChildAndParent then
+		errmsg("%s's age should be 12 years less than %s's age",strip(B2(1)),strip(B2(curocc())))
+		select("Correct household head's age",B4(1),"Correct own parent's age",B5(curocc()));
+
+	//Grandparent's age should be 24 years more than grandchild's age.
+	elseif B5(curocc()) = 11 and B4(curocc()) < B4(1) + ( 2 * MinAgeDiffBtwnChildAndParent ) then
+		errmsg("%s's age should be 24 years more than %s's age",strip(B2(1)),strip(B2(curocc())))
+		select("Correct grandparent's age",B4(1),"Correct grandchild's age",B4(curocc()));
+	endif;
+PROC B5
+onfocus
+
+	if curocc() = 1 then
+		setvalueset(B5,B5_RELATIONSHIP_OF_HEAD);
+	else
+		setvalueset(B5,B5_RELATIONSHIP_TO_HEAD);
+	endif;
+PROC B6
+preproc
+
+	//if one is less than 10 years, then they should not be married.
+	if B4 < YoungestAgeMarriage then
+		B6 = 1;
+		skip to B8;
+	endif;
+
+postproc
+
+	// Ensure that under 10 is never married
+	if B4 < YoungestAgeMarriage and B6 <> 1 then
+		errmsg("%s is %d years old and marital status is %s. Under %d years old must never be married.",
+		strip(B2(curocc())), B4(curocc()), getlabel(B6_VS1, B6(curocc())),YoungestAgeMarriage)
+		select("Correct Age", B4, "Correct Marital Status", B6);
+	endif;
+
+	//The Household head and Spouse should have the same marital status
+	if B3(curocc()) = 2 then
+
+		if B6(1) = 2 and B6(curocc()) <> 2 then
+			errmsg("%s cannot be monogamously married to %s while their marital status is different",
+			strip(B2(curocc())), strip(B2(1)))
+			select("Correct head marital status",B6(1),"Correct spouse marital status",B6(curocc()),"Correct relationship",B5(curocc()));
+
+		elseif B6(1) = 3 and B6(curocc()) <> 3 then
+			errmsg("%s cannot be polygamously married to %s while their marital status is different",
+			strip(B2(curocc())), strip(B2(1)))
+			select("Correct head marital status",B6(1),"Correct spouse marital status",B6(curocc()),"Correct relationship",B5(curocc()));
+
+		endif;
+
+	endif;
+
+	//skip for Never married (1) or Don't know (9) options
+	if B6 in 1,9 then
+		skip to next;
+	endif;
+PROC B7
+ if  B4 <= 10  and B7 > 1 then 
+   errmsg("%s is too young to have attained any educational level",
+		strip(B2(curocc())))
+		select("Correct Current educational level",B7(curocc()));
+   endif;
+PROC B8
+
+If RESPONDENT_RELATIONSHIP = 1 and curocc(B8)= 1 then
+	B8 = 1;
+endif;
 PROC B9
 
+PROC CQ01
+postproc
+if CQ01<> 1 then 
+	stop();
+endif;
 PROC CQ02
 
 numberOfFields = CQ02;
@@ -126,6 +227,36 @@ preproc
 
 	// Automatically fill in person number
 	CQ04 = curocc();
+PROC CQ06
+if CQ06 <> 5 then
+		skip to CQ07A;
+	endif;
+PROC CQ06_OTHER
+CheckBlank(CQ06_OTHER);
+	CQ06_OTHER = toupper(CQ06_OTHER);
+
+	savepartial();
+PROC CQ07A
+preproc
+if CQ05 <> 4 then 
+ skip to CQ08A;
+endif;
+PROC CQ08A
+preproc
+
+if CQ05 <> 7 then
+	skip to CQ09A;
+endif;
+PROC CQ09A
+preproc
+
+if CQ06 <> 1 then 
+	skip to next;
+endif;
+PROC CQ09B
+if CQ06 <> 8 then
+		skip to CQ07A;
+endif;
 PROC CQ09B_OTHER
 postproc
  CheckBlank(CQ09B_OTHER)
@@ -155,15 +286,56 @@ else
 endif;
 PROC CQ57
 postproc 
-if CQ57 = 2 then
+if CQ57 = 1 and curocc(CQ57) = 1 then
+	CQ57A = 'Land Preparation'
+elseif CQ57 = 1 and curocc(CQ57) = 2 then
+	CQ57A = 'Planting'
+elseif CQ57 = 1 and curocc(CQ57) = 3 then
+	CQ57A = ' Fertilizer  Application'
+elseif CQ57 = 1 and curocc(CQ57) = 4 then
+	CQ57A = '1st Weeding'
+elseif CQ57 = 1 and curocc(CQ57) = 5 then
+	CQ57A = 'Application of plant protection products '
+elseif CQ57 = 1 and curocc(CQ57) = 6 then
+	CQ57A = '2nd Weeding'
+elseif CQ57 = 1 and curocc(CQ57) = 7 then
+	CQ57A = 'Harvesting'
+elseif CQ57 = 1 and curocc(CQ57) = 8 then
+	CQ57A = 'Transporting the crop from the field to homestead'
+elseif CQ57 = 1 and curocc(CQ57) = 9 then
+	CQ57A = 'Shelling and Packing'
+elseif CQ57 = 1 and curocc(CQ57) = 10 then
+	CQ57A = 'Transporting the crop from the holding to the point of selling'
+elseif CQ57 = 1 and curocc(CQ57) = 11 then
+	CQ57A = 'Other, specify:'
+elseif CQ57 = 2 then
 	skip to next;
 endif;
 
 PROC CQ57A
 
-preproc
-if CQ57 = 1 then 
 
-//strip(CQ57A) = getocclabel($(curocc($)));
+PROC CQ64
 
+postproc 
+if CQ64 = 1 and curocc(CQ64) = 1 then
+	CQ63 = 'Ploughting eg. Hiring tractor/drought animals'
+elseif CQ64 = 1 and curocc(CQ64) = 2 then
+	CQ63 = 'Other land preparation_seeding'
+elseif CQ64 = 1 and curocc(CQ64) = 3 then
+	CQ63 = 'Application of fertilizer'
+elseif CQ64 = 1 and curocc(CQ64) = 4 then
+	CQ63 = 'Application of plant protection products'
+elseif CQ64 = 1 and curocc(CQ64) = 5 then
+	CQ63 = 'Harvesting'
+elseif CQ64 = 1 and curocc(CQ64) = 6 then
+	CQ63 = 'Transport:from the field to holding,to market ect'
+elseif CQ64 = 1 and curocc(CQ64) = 7 then
+	CQ63 = 'Harvesting'
+elseif CQ64 = 1 and curocc(CQ64) = 8 then
+	CQ63 = 'Threshing_shelling'
+elseif CQ64 = 1 and curocc(CQ64) = 9 then
+	CQ57A = 'Other, specify:'
+elseif CQ57 = 2 then
+	skip to next;
 endif;

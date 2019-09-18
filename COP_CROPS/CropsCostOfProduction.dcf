@@ -359,21 +359,43 @@ Len=2
 
 [ValueSet]
 Label=What is (NAME)'s  relationship to the HH?
-Name=B5_VS1
+Name=B5_RELATIONSHIP
 Value=1;Household Head
 Value=2;Spouse
-Value=3;Partner
-Value=4;Son\Daughter
-Value=5;Son/Daughter in Law
-Value=6;Child in Law
-Value=7;Step Child
-Value=8;Sibling
-Value=9;Own Parent
-Value=10;Parent in law
-Value=11;Grand Parent
-Value=12;Grand/Great Grand child
-Value=13;Other Relative
-Value=14;Not Related
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
+
+[ValueSet]
+Label=Relationship
+Name=B5_RELATIONSHIP_OF_HEAD
+Value=1;Household Head
+
+[ValueSet]
+Label=Relationship
+Name=B5_RELATIONSHIP_TO_HEAD
+Value=2;Spouse
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
 
 [Item]
 Label=What is (NAME)'s  marital status?
@@ -384,13 +406,14 @@ Len=2
 [ValueSet]
 Label=What is (NAME)'s  marital status?
 Name=B6_VS1
-Value=1;Married
-Value=2;Single
-Value=3;Divorced
-Value=4;Seperated
-Value=5;Widower
-Value=7;Other
-Value=98;N/A
+Value=1;Never married
+Value=2;Monogamously married
+Value=3;Polygamously married
+Value=4;Living together
+Value=5;Separated
+Value=6;Divorced
+Value=7;Widowed
+Value=9;Don't know
 
 [Item]
 Label=What is (NAME)'s other  marital status?
@@ -968,12 +991,6 @@ Name=CQ46A
 Start=348
 Len=6
 Decimal=2
-
-[ValueSet]
-Label=What was the total quantity of insecticides used on this field?
-Name=CQ46A_VS1
-Value=0.01;Yes
-Value=0.02;No
 
 [Item]
 Label=What was unit of the total quantity of insecticides used on the fields
@@ -2592,7 +2609,7 @@ DecimalChar=Yes
 Label=Crops Record
 Name=CROPS_RECORD
 RecordTypeValue='3'
-RecordLen=283
+RecordLen=284
 
 [Item]
 Label=Name of respondent
@@ -2603,20 +2620,38 @@ DataType=Alpha
 
 [Item]
 Label=Relationship of the Respondent to household
-Name=RESPONDENT
+Name=RESPONDENT_RELATIONSHIP
 Start=149
-Len=1
+Len=2
+
+[ValueSet]
+Label=Relationship of the Respondent to household
+Name=RESPONDENT_RELATIONSHIP_VS1
+Value=1;Household Head
+Value=2;Spouse
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
 
 [Item]
 Label=Number of Household Memebers
 Name=NUMBER_OF_HOUSEHOLD_MEMBERS
-Start=150
+Start=151
 Len=2
 
 [Item]
 Label=Did the holding plant any crops during the past Agricaltural year 2018/2019?
 Name=CQ01
-Start=152
+Start=153
 Len=1
 
 [ValueSet]
@@ -2628,7 +2663,7 @@ Value=2;No
 [Item]
 Label=How many fields did the holding have during the summer season for last Agricaltural year 2018/2019?
 Name=CQ02
-Start=153
+Start=154
 Len=2
 
 [ValueSet]
@@ -2639,7 +2674,7 @@ Value=0:10;0 - 10
 [Item]
 Label=Did the holding put any inorganic fertiliser on their crops during the Summer season  for the agricaltural year 2018/2019?
 Name=CQ20
-Start=155
+Start=156
 Len=1
 
 [ValueSet]
@@ -2651,7 +2686,7 @@ Value=2;No
 [Item]
 Label=Did the holding put any organic fertiliser on their crops during the Summer season  for the agricaltural year 2018/2019?
 Name=CQ28
-Start=156
+Start=157
 Len=1
 
 [ValueSet]
@@ -2663,7 +2698,7 @@ Value=2;No
 [Item]
 Label=Did the holding apply any plant protection products to their crops during the summer (winter) season?
 Name=CQ36
-Start=157
+Start=158
 Len=1
 
 [ValueSet]
@@ -2675,7 +2710,7 @@ Value=2;No
 [Item]
 Label=Did the holding apply any herbicides to their crops during the summer (winter) season?
 Name=CQ37
-Start=158
+Start=159
 Len=1
 
 [ValueSet]
@@ -2687,7 +2722,7 @@ Value=2;No
 [Item]
 Label=Did the holding apply any insecticides to their crops during the summer (winter) season?
 Name=CQ43
-Start=159
+Start=160
 Len=1
 
 [ValueSet]
@@ -2699,7 +2734,7 @@ Value=2;No
 [Item]
 Label=Did the holding apply any fungicides to their crops during the summer (winter) season?
 Name=CQ49
-Start=160
+Start=161
 Len=1
 
 [ValueSet]
@@ -2711,14 +2746,14 @@ Value=2;No
 [Item]
 Label=How much was spent to purchase protective clothing to use during the application of the plant protection products during summer (winter) season?
 Name=CQ55
-Start=161
+Start=162
 Len=8
 Decimal=2
 
 [Item]
 Label=Did the holding use any external service provider to carry out the activities of crop production during summer (winter) season?
 Name=CQ61
-Start=169
+Start=170
 Len=1
 
 [ValueSet]
@@ -2730,90 +2765,90 @@ Value=2;No
 [Item]
 Label=From August 2018 to July 2019, on average, how much did the holding pay monthly for water used
 Name=CQ73
-Start=170
+Start=171
 Len=9
 Decimal=2
 
 [Item]
 Label=From August 2018 to July 2019, on average, how much did the holding pay IN KIND monthly for water used
 Name=CQ73A
-Start=179
+Start=180
 Len=9
 Decimal=2
 
 [Item]
 Label=From August 2018 to July 2019, on average, how much did the holding pay monthly for electricity used for agricultural services?
 Name=CQ74
-Start=188
+Start=189
 Len=9
 Decimal=2
 
 [Item]
 Label=From August 2018 to July 2019, on average, how much did the holding pay IN KIND monthly for electricity used for agricultural services?
 Name=CQ74A
-Start=197
+Start=198
 Len=9
 Decimal=2
 
 [Item]
 Label=How much in total did the holding pay for repairs and maintenance related to farm machinery and equipment from August 2018 to July 2019?
 Name=CQ75
-Start=206
+Start=207
 Len=9
 Decimal=2
 
 [Item]
 Label=How much in total did the holding pay IN KIND for repairs and maintenance related to farm machinery and equipment from August 2018 to July 2019?
 Name=CQ75A
-Start=215
+Start=216
 Len=9
 Decimal=2
 
 [Item]
 Label=How much in total did the holding pay for fuel, oil and lubricants from August 2018 to July 2019?
 Name=CQ76
-Start=224
+Start=225
 Len=9
 Decimal=2
 
 [Item]
 Label=How much in total did the holding pay IN KIND for fuel, oil and lubricants from August 2018 to July 2019?
 Name=CQ76A
-Start=233
+Start=234
 Len=9
 Decimal=2
 
 [Item]
 Label=How much did the holding pay for your lease fees from August 2018 to July 2019?
 Name=CQ77
-Start=242
+Start=243
 Len=9
 Decimal=2
 
 [Item]
 Label=How much did the holding pay IN KIND for your lease fees from August 2018 to July 2019?
 Name=CQ77A
-Start=251
+Start=252
 Len=9
 Decimal=2
 
 [Item]
 Label=How much did the holding spend on any other expenses related to crops or livestock from August 2018  to July 2019?
 Name=CQ78
-Start=260
+Start=261
 Len=9
 Decimal=2
 
 [Item]
 Label=How much in total did holding spend IN KIND on any other expenses related to crops or livestock from August 2018 to July 2019?
 Name=CQ78A
-Start=269
+Start=270
 Len=10
 
 [Item]
 Label=Did the holding engage Family labour?
 Name=CQ56A
-Start=279
+Start=280
 Len=1
 
 [ValueSet]
@@ -2825,7 +2860,7 @@ Value=2;No
 [Item]
 Label=Did the holding engage Hired labour?
 Name=CQ56B
-Start=280
+Start=281
 Len=1
 
 [ValueSet]
@@ -2837,7 +2872,7 @@ Value=2;No
 [Item]
 Label=Does the holding own any Machinery/Equipment for Crops?
 Name=FQ_MACHINERY_CROPS
-Start=281
+Start=282
 Len=1
 
 [ValueSet]
@@ -2849,7 +2884,7 @@ Value=2;No
 [Item]
 Label=Does the holding own any irrigation Equipment?
 Name=FQ_IRRIGATION_EQUIPMENT
-Start=282
+Start=283
 Len=1
 
 [ValueSet]
@@ -2859,13 +2894,13 @@ Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Does the holding own any Machinery/Equipment for Crops?
+Label=Does the holding own any Machinery/Equipment for Livestock?
 Name=FQ_MACHINERY_LIVESTOCK
-Start=283
+Start=284
 Len=1
 
 [ValueSet]
-Label=Does the holding own any Machinery/Equipment for Crops?
+Label=Does the holding own any Machinery/Equipment for Livestock?
 Name=FQ_MACHINERY_LIVESTOCK_VS1
 Value=1;Yes
 Value=2;No
