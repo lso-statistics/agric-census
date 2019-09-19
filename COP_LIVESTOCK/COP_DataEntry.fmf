@@ -3559,8 +3559,10 @@ Name=LQ22
 Position=57,0,72,20
 Item=LQ22,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,421,16
 Text=Were any Livestock treated for infectious diseases or accidents?
  
 [EndColumn]

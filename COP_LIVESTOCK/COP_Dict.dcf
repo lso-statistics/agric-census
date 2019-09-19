@@ -1530,6 +1530,12 @@ Name=LQ22
 Start=184
 Len=1
 
+[ValueSet]
+Label=Were any Livestock treated for infectious diseases or accidents?
+Name=LQ22_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=How much was spent on treatment for infectious diseases or accidents
 Name=LQ22B
