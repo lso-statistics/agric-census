@@ -682,10 +682,10 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
-			advance to LQ19A(1);//skip to livestock management
+			skip to LQ19A(1);//skip to livestock management
 		endif;
 endif;
-PROC LQ19A
+PROC LIVESTOCK_MANAGEMENT_AND_HEAT000
 preproc
 numeric currentRow;
 do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
@@ -697,3 +697,87 @@ do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
 		//skip to LABOUR COSTS;
 	endif;
 enddo;
+PROC LQ19A
+
+postproc
+//GIVE LABELS OF TYPE OF LIVESTOCK DEPENDING ON THE ROW NUMBER IN THE ROSTER
+if curocc($) = 1 then
+	LIVESTOCK_NAME(curocc($)) = "Cattle";//IF ROW NUMBER IS 1 THEN WE ARE ON CATTLE
+	elseif curocc($) = 2 then
+		LIVESTOCK_NAME(curocc($)) = "Sheep";//IF ROW NUMBER IS 2 THEN WE ARE ON SHEEP
+	elseif curocc($) = 3 then
+		LIVESTOCK_NAME(curocc($)) = "Goats";//IF ROW NUMBER IS 3 THEN WE ARE ON GOATS
+	elseif curocc($) = 4 then
+		LIVESTOCK_NAME(curocc($)) = "Poultry (Exotic)";//IF ROW NUMBER IS 3 THEN WE ARE ON POULTRY EXOTIC
+endif;
+
+//GIVE SKIPS TO LQ20A DEPENDING ON THE ANSWER GIVEN (WHEN ANSWER IS 2)
+if curocc($) = 1 then
+	if $ = 2 then
+		skip to $(curocc($)+1);
+	endif;
+elseif curocc($) = 2 then
+	if $ = 2 then
+		skip to $(curocc($)+1);
+	endif;
+elseif curocc($) = 3 then
+	if $ = 2 then
+		skip to $(curocc($)+1);
+	endif;
+elseif curocc($) = 4 then
+	if $ = 2 then
+		//skip to LABOUR COSTS;
+	endif;		
+endif;
+PROC LQ20C
+//IF THE GIVEN ANSWER IS NOT EQUAL TO 4 SKIP OTHER MAIN SOURCE TO LQ21A ELSE SKIP TO OTHER MAIN SOURCE
+if curocc($) = 1 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($));
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;
+elseif curocc($) = 2 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($));
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;
+elseif curocc($) = 3 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($));
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;
+elseif curocc($) = 4 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($));
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;	
+endif;
+PROC LQ20C_OTHER
+//IF THE GIVEN ANSWER IS NOT EQUAL TO 4 SKIP OTHER MAIN SOURCE TO LQ21A ELSE SKIP TO OTHER MAIN SOURCE
+if curocc($) = 1 then
+	if $ not in 1:4 then
+		errmsg("");
+	endif;
+elseif curocc($) = 2 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($));
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;
+elseif curocc($) = 3 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($));
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;
+elseif curocc($) = 4 then
+	if $ in 1:4 then
+		skip to LQ21A(curocc($)); 
+	else
+		skip to LQ20C_OTHER(curocc($));
+	endif;	
+endif;

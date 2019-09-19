@@ -3407,10 +3407,12 @@ Text=Livestock name
 Name=LIVESTOCK_NAME
 Position=0,0,137,20
 Item=LIVESTOCK_NAME,COP_DICT_DICT
+Protected=Yes
 UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,102,16
 Text=Livestock name
  
 [EndColumn]
