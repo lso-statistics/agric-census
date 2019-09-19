@@ -138,7 +138,7 @@ do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
 	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
 		skip to USED_SUPPLIMENT_GOATS;
 	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
-		skip to LQ19A;
+		skip to LQ19A(1);
 	endif;
 enddo;
 PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
@@ -405,7 +405,7 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRY = 2 then
-			//skip to USED_SUPPLIMENT_SHEEP(1);//skip to suplements used for sheep
+			skip to USED_SUPPLIMENT_TYPW(1);//skip to suplements used for sheep
 		endif;
 endif;
 PROC USED_SUPPLIMENT_TYPW
@@ -417,7 +417,7 @@ do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
 	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
 		skip to USED_SUPPLIMENT_GOATW;
 	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
-		skip to LQ19A;
+		skip to LQ19A(1);
 	endif;
 enddo;
 PROC TYPE_OF_SUPPLIMENEW
@@ -682,6 +682,18 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
-			skip to LQ19A;//skip to suplements used for poultry
+			advance to LQ19A(1);//skip to livestock management
 		endif;
 endif;
+PROC LQ19A
+preproc
+numeric currentRow;
+do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
+	if currentRow = 1 and LQ02(currentRow) = 2 then // if have no cattle skip asking about if they were de-wormed supplement feed, skip to ship 
+		skip to LQ19A(2);
+	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about if they were de-wormed supplement feed, skip to goats
+		skip to LQ19A(3);
+	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip asking about if they were de-wormed supplement feed, skip to Labour costs
+		//skip to LABOUR COSTS;
+	endif;
+enddo;
