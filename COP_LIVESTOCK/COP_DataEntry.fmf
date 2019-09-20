@@ -13,7 +13,7 @@ File=.\COP_Dict.dcf
 Name=FORM000
 Label=COP_Dict questionnaire
 Level=1
-Size=573,583
+Size=761,759
   
 Item=DISTRICT
 Item=CONSTITUENCY
@@ -27,9 +27,14 @@ Item=ENUMERATION_AREA
 Item=SETTLEMENT
 Item=HOUSEHOLD_HEAD_NAMES
 Item=HOUSEHOLD_NUMBER
+Item=INTERVIEW_DATE
+Item=NUMBER_OF_VISITS
+Item=VISIT_DATE000
+Item=HOUSEHOLD_STATUS
   
-Box=25,42,548,558,Thin
+Box=25,42,736,558,Thin
 Box=147,70,401,112,Raised
+Box=25,580,737,759,Raised
   
 [Text]
 Name=TEXT1
@@ -41,12 +46,22 @@ Font=-024 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0018 Cambria
 [EndForm]
   
 [Form]
+Name=FORM005
+Label=DEMOGRAPHICS
+Level=1
+Size=655,882
+  
+  
+[EndForm]
+  
+[Form]
 Name=FORM001
 Label=Livestock Stock Form
 Level=1
-Size=1342,776
+Size=1392,827
   
 Item=LIVESTOCK_STOCK
+Item=LQ01
   
 Box=19,4,402,59,Thin
   
@@ -54,15 +69,15 @@ Box=19,4,402,59,Thin
 Name=TEXT2
 Position=35,14,370,46
 Text=SECTION 1: Livestock Stock
-Form=2
+Form=3
 Font=-027 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0018 Cambria
  
   
 [Text]
 Name=TEXT3
-Position=24,80,207,99
+Position=24,113,207,132
 Text=Part 1.1 Livestock Stock
-Form=2
+Form=3
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
 [EndForm]
@@ -71,20 +86,25 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM002
 Label=Livestock Summer Feed
 Level=1
-Size=1289,2704
+Size=1289,2772
   
-Item=USED_SUPPLIMENT_TYPE000
+Item=USED_SUPPLIMENT_DAIRY_CATTLE
 Item=USED_SUPPLIMENT_ALL_CATTLE000
 Item=USED_SUPPLIMENT_SHEEP000
 Item=USED_SUPPLIMENT_GOATS000
 Item=USED_SUPPLIMENT_POULTRY000
+Item=LQ10S_ALLCATTLE
+Item=LQ10S_DAIRYCATTLE
+Item=LQ10S_SHEEP
+Item=LQ10S_GOATS
+Item=LQ10S_POULTRY
   
   
 [Text]
 Name=TEXT4
-Position=18,9,273,28
+Position=29,5,284,24
 Text=Part 1.2 Livestock Feed (Summer)
-Form=3
+Form=4
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
@@ -92,15 +112,15 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=TEXT5
 Position=28,1777,283,1796
 Text=Part 1.2 Livestock Feed (Summer)
-Form=3
+Form=4
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Text]
 Name=TEXT6
-Position=24,2660,264,2679
+Position=24,2728,264,2747
 Text=Part 1.2 Livestock Feed (Winter)
-Form=3
+Form=4
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
 [EndForm]
@@ -109,20 +129,25 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM003
 Label=Livestock Winter Feed
 Level=1
-Size=1362,2770
+Size=1362,2839
   
 Item=USED_SUPPLIMENT_TYPW000
 Item=USED_SUPPLIMENT_ALL_CATTLEW000
 Item=USED_SUPPLIMENT_SHEEPW000
 Item=USED_SUPPLIMENT_GOATW000
 Item=USED_SUPPLIMENT_POULTRYW000
+Item=LQ10W_DAIRYCATTLE
+Item=LQ10W_ALLCATTLE
+Item=LQ10W_SHEEP
+Item=LQ10W_GOATS
+Item=LQ10W_POULTRY
   
   
 [Text]
 Name=TEXT8
-Position=47,14,287,33
+Position=47,4,287,23
 Text=Part 1.2 Livestock Feed (Winter)
-Form=4
+Form=5
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
 [EndForm]
@@ -131,10 +156,86 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM004
 Label=Livestock Management and Health Services
 Level=1
-Size=1411,365
+Size=1411,836
   
 Item=LIVESTOCK_MANAGEMENT_AND_HEAT000
   
+[EndForm]
+  
+[Form]
+Name=FORM006
+Label=Labour Costs
+Level=1
+Size=869,1703
+  
+Item=TABLE_L4
+Item=TABLE_L5
+Item=TABLE_L6
+Item=LQ24
+Item=LQ25
+Item=LQ26
+Item=LQ30
+Item=LQ34
+  
+  
+[Text]
+Name=TEXT7
+Position=28,116,83,132
+Text=Table L4
+Form=7
+ 
+  
+[Text]
+Name=TEXT11
+Position=40,686,95,702
+Text=Table L5
+Form=7
+ 
+  
+[Text]
+Name=TEXT12
+Position=42,1224,97,1240
+Text=Table L6
+Form=7
+ 
+[EndForm]
+  
+[Form]
+Name=FORM007
+Label=Livestock Products
+Level=1
+Size=924,1954
+  
+Item=TABLE_L7
+Item=TABLE_L8
+Item=LQ45A
+Item=LQ45B
+Item=LQ45C
+Item=LQ46A
+Item=LQ46B
+  
+  
+[Text]
+Name=TEXT9
+Position=25,19,240,38
+Text=Part 1.5: Livestock Products
+Form=8
+Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT10
+Position=39,60,94,76
+Text=Table L7
+Form=8
+ 
+  
+[Text]
+Name=TEXT13
+Position=38,651,93,667
+Text=Table L8
+Form=8
+ 
 [EndForm]
   
 [Level]
@@ -148,6 +249,19 @@ Label=COP_Dict questionnaire
 Form=1
 LogicControl=No
 Max=1
+  
+[Field]
+Name=INTERVIEW_DATE
+Position=566,75,723,95
+Item=INTERVIEW_DATE,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=456,78,548,94
+Text=Interview Date
+ 
   
 [Field]
 Name=DISTRICT
@@ -300,25 +414,127 @@ Form=1
 Position=59,518,180,534
 Text=Household Number
  
+  
+[Field]
+Name=NUMBER_OF_VISITS
+Position=462,630,477,650
+Item=NUMBER_OF_VISITS,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=280,633,381,649
+Text=Number of visits
+ 
+  
+[Grid]
+Name=VISIT_DATE000
+Label=Visit date
+Form=1
+Required=Yes
+Type=Item
+TypeName=VISIT_DATE
+Max=3
+DisplaySize=46,626,223,734
+Orientation=Horizontal
+FieldRowHeight=28
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=21,0,56,28
+Text=First
+ 
+  
+[Text]
+Position=0,4,56,28
+Text=Second
+ 
+  
+[Text]
+Position=15,4,56,28
+Text=Third
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=121
+  
+[HeaderText]
+Position=54,0,121,24
+Text=Visit date
+ 
+[Field]
+Name=VISIT_DATE
+Position=0,0,113,20
+Item=VISIT_DATE,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Visit date
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+  
+[Field]
+Name=HOUSEHOLD_STATUS
+Position=463,660,478,680
+Item=HOUSEHOLD_STATUS,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=281,663,391,679
+Text=Household Status
+ 
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=DEMOGRAPHICS_FORM
+Label=DEMOGRAPHICS
+Form=2
+LogicControl=No
+Max=1
 [EndGroup]
   
 [Group]
 Required=Yes
 Name=LIVESTOCK
 Label=Livestock Stock Form
-Form=2
+Form=3
 LogicControl=No
 Max=1
+  
+[Field]
+Name=LQ01
+Position=570,77,585,97
+Item=LQ01,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=24,80,451,96
+Text=Did the holding  raise any livestock from 1st August to 31 July 2019?
+Form=3
+ 
   
 [Grid]
 Name=LIVESTOCK_STOCK
 Label=Livestock Stock Form
-Form=2
+Form=3
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_PRODUCTION_REC
 Max=22
-DisplaySize=19,108,1317,751
+DisplaySize=19,141,1317,784
 Orientation=Horizontal
 FieldRowHeight=28
 HeadingRowHeight=0
@@ -697,19 +913,32 @@ Text=What was the total value for sales in Maloti?
 Required=Yes
 Name=SUMMER_FEED
 Label=Livestock Summer Feed
-Form=3
+Form=4
 LogicControl=No
 Max=1
   
+[Field]
+Name=LQ10S_DAIRYCATTLE
+Position=575,51,590,71
+Item=LQ10S_DAIRYCATTLE,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=4
+  
+[Text]
+Position=29,54,543,70
+Text=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
+ 
+  
 [Grid]
-Name=USED_SUPPLIMENT_TYPE000
+Name=USED_SUPPLIMENT_DAIRY_CATTLE
 Label=Did the holding use the suppliment for the dairy cattle alone?
-Form=3
+Form=4
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=17,43,1258,497
+DisplaySize=26,79,1258,533
 Orientation=Horizontal
 FieldRowHeight=29
 HeadingRowHeight=0
@@ -971,15 +1200,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the da
 [EndGrid]
  
   
+[Field]
+Name=LQ10S_ALLCATTLE
+Position=556,543,571,563
+Item=LQ10S_ALLCATTLE,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=4
+  
+[Text]
+Position=30,546,528,562
+Text=Did the holding provide All Cattle with any Supplimentary feed during summer
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_ALL_CATTLE000
 Label=Did the holding use the suppliment for all cattle ?
-Form=3
+Form=4
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=17,548,1260,1018
+DisplaySize=24,578,1261,1048
 Orientation=Horizontal
 FieldRowHeight=34
 HeadingRowHeight=0
@@ -1237,15 +1479,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for all ca
 [EndGrid]
  
   
+[Field]
+Name=LQ10S_SHEEP
+Position=537,1057,552,1077
+Item=LQ10S_SHEEP,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=4
+  
+[Text]
+Position=27,1061,505,1077
+Text=Did the holding provide sheep with any Supplimentary feed during summer
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_SHEEP000
 Label=Did the holding use the suppliment for sheep?
-Form=3
+Form=4
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=19,1060,1263,1523
+DisplaySize=25,1093,1263,1556
 Orientation=Horizontal
 FieldRowHeight=33
 HeadingRowHeight=104
@@ -1498,15 +1753,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the sh
 [EndGrid]
  
   
+[Field]
+Name=LQ10S_GOATS
+Position=535,1563,550,1583
+Item=LQ10S_GOATS,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=4
+  
+[Text]
+Position=27,1566,503,1582
+Text=Did the holding provide Goats with any Supplimentary feed during summer
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_GOATS000
 Label=Did the holding use the suppliment for goats?
-Form=3
+Form=4
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=25,1567,1264,2074
+DisplaySize=25,1595,1264,2102
 Orientation=Horizontal
 FieldRowHeight=40
 HeadingRowHeight=0
@@ -1543,17 +1811,17 @@ Text=Sheep Palets
  
   
 [Text]
-Position=65,16,120,40
+Position=65,0,120,40
 Text=Moroko
  
   
 [Text]
-Position=21,16,120,40
+Position=21,0,120,40
 Text=Seameal/Bran
  
   
 [Text]
-Position=81,16,120,40
+Position=81,0,120,40
 Text=Salts
  
   
@@ -1761,15 +2029,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the go
 [EndGrid]
  
   
+[Field]
+Name=LQ10S_POULTRY
+Position=590,2121,605,2141
+Item=LQ10S_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=4
+  
+[Text]
+Position=31,2124,559,2140
+Text=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_POULTRY000
 Label=Did the holding use the suppliment for poultry?
-Form=3
+Form=4
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=22,2094,1261,2641
+DisplaySize=25,2164,1264,2711
 Orientation=Horizontal
 FieldRowHeight=39
 HeadingRowHeight=0
@@ -2026,21 +2307,34 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the po
   
 [Group]
 Required=Yes
-Name=LIVESTOCK_WINTER_FORM
+Name=WINTER_FEED
 Label=Livestock Winter Feed
-Form=4
+Form=5
 LogicControl=No
 Max=1
+  
+[Field]
+Name=LQ10W_DAIRYCATTLE
+Position=582,36,597,56
+Item=LQ10W_DAIRYCATTLE,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=50,39,553,55
+Text=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
+ 
   
 [Grid]
 Name=USED_SUPPLIMENT_TYPW000
 Label=Did the holding use the suppliment for the dairy cattle alone?
-Form=4
+Form=5
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=47,50,1334,573
+DisplaySize=43,74,1333,597
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2292,15 +2586,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the da
 [EndGrid]
  
   
+[Field]
+Name=LQ10W_ALLCATTLE
+Position=561,611,576,631
+Item=LQ10W_ALLCATTLE,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=48,614,535,630
+Text=Did the holding provide All Cattle with any Supplimentary feed during winter
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_ALL_CATTLEW000
 Label=Did the holding use the suppliment for all cattle ?
-Form=4
+Form=5
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=43,608,1336,1095
+DisplaySize=43,647,1336,1134
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2552,15 +2859,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for all ca
 [EndGrid]
  
   
+[Field]
+Name=LQ10W_SHEEP
+Position=544,1147,559,1167
+Item=LQ10W_SHEEP,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=48,1150,515,1166
+Text=Did the holding provide sheep with any Supplimentary feed during winter
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_SHEEPW000
 Label=Did the holding use the suppliment for sheep?
-Form=4
+Form=5
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=46,1129,1337,1635
+DisplaySize=46,1182,1337,1688
 Orientation=Horizontal
 FieldRowHeight=32
 HeadingRowHeight=0
@@ -2811,15 +3131,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the sh
 [EndGrid]
  
   
+[Field]
+Name=LQ10W_GOATS
+Position=539,1695,554,1715
+Item=LQ10W_GOATS,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=47,1698,512,1714
+Text=Did the holding provide Goats with any Supplimentary feed during winter
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_GOATW000
 Label=Did the holding use the suppliment for goats?
-Form=4
+Form=5
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=45,1675,1335,2162
+DisplaySize=45,1726,1335,2213
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -3070,15 +3403,28 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the go
 [EndGrid]
  
   
+[Field]
+Name=LQ10W_POULTRY
+Position=596,2223,611,2243
+Item=LQ10W_POULTRY,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=5
+  
+[Text]
+Position=50,2226,567,2242
+Text=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
+ 
+  
 [Grid]
 Name=USED_SUPPLIMENT_POULTRYW000
 Label=Did the holding use the suppliment for poultry?
-Form=4
+Form=5
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=47,2183,1335,2745
+DisplaySize=47,2252,1335,2814
 Orientation=Horizontal
 FieldRowHeight=40
 HeadingRowHeight=0
@@ -3334,14 +3680,14 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the po
 Required=Yes
 Name=LIVESTOCK_MANAGEMENT_FORM
 Label=Livestock Management and Health Services
-Form=5
+Form=6
 LogicControl=No
 Max=1
   
 [Grid]
 Name=LIVESTOCK_MANAGEMENT_AND_HEAT000
 Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
-Form=5
+Form=6
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_MANAGEMENT_AND_HEATH_S
@@ -3623,6 +3969,1457 @@ Text=How much was spent on IA/ mating?
 [EndColumn]
   
 [EndGrid]
+ 
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=LABOUR_COSTS_FORM
+Label=Labour Costs
+Form=7
+LogicControl=No
+Max=1
+  
+[Field]
+Name=LQ24
+Position=704,22,719,42
+Item=LQ24,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=7
+  
+[Text]
+Position=19,25,654,41
+Text=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
+ 
+  
+[Field]
+Name=LQ25
+Position=705,46,804,66
+Item=LQ25,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=7
+  
+[Text]
+Position=20,49,472,65
+Text=How was the person paid?-give the estimated cash value if paid in-kind
+ 
+  
+[Field]
+Name=LQ26
+Position=706,76,721,96
+Item=LQ26,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=7
+  
+[Text]
+Position=18,74,573,90
+Text=Were any other person or household member involved in tending and herding livestock
+ 
+  
+[Grid]
+Name=TABLE_L4
+Label=TABLE L4
+Form=7
+Required=Yes
+Type=Record
+TypeName=LABOUR_COST
+Max=30
+DisplaySize=22,138,673,586
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=7,4,22,28
+Text=1
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=2
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=3
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=4
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=5
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=6
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=7
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=8
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=9
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=10
+ 
+  
+[Text]
+Position=1,4,22,28
+Text=11
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=12
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=13
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=14
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=15
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=16
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=17
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=18
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=19
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=20
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=21
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=22
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=23
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=24
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=25
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=26
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=27
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=28
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=29
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=30
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=103
+  
+[HeaderText]
+Position=0,32,103,168
+Text=For household members-write the serial number from the household roaster,for hired workers write initials
+ 
+[Field]
+Name=LQ27
+Position=38,0,95,20
+Item=LQ27,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For household members-write the serial number from the household roaster,for hired workers write initials
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,0,78,168
+Text=For how many months was name involved in tending and herding livestock in months
+ 
+[Field]
+Name=LQ28A
+Position=41,0,70,20
+Item=LQ28A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For how many months was name involved in tending and herding livestock in months
+ 
+[EndColumn]
+  
+[Column]
+Width=91
+  
+[HeaderText]
+Position=0,32,91,168
+Text=On average,how many weeks in a month did name tend and herd livestock
+ 
+[Field]
+Name=LQ28B
+Position=54,0,83,20
+Item=LQ28B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average,how many weeks in a month did name tend and herd livestock
+ 
+[EndColumn]
+  
+[Column]
+Width=80
+  
+[HeaderText]
+Position=0,32,80,168
+Text=On average how many days in a week did name tend and herd livestock?
+ 
+[Field]
+Name=LQ28C
+Position=57,0,72,20
+Item=LQ28C,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average how many days in a week did name tend and herd livestock?
+ 
+[EndColumn]
+  
+[Column]
+Width=81
+  
+[HeaderText]
+Position=0,32,81,168
+Text=On average,for how many hours in a day did name tend and herd livestock?
+ 
+[Field]
+Name=LQ28D
+Position=44,0,73,20
+Item=LQ28D,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average,for how many hours in a day did name tend and herd livestock?
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=27,32,107,168
+Text=For hired workers how much did he/she receive for their work in cash or in kind?
+ 
+[Field]
+Name=LQ29A
+Position=0,0,99,20
+Item=LQ29A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For hired workers how much did he/she receive for their work in cash or in kind?
+ 
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,80,72,168
+Text=Does the payment cover other activities?
+ 
+[Field]
+Name=LQ29B
+Position=49,0,64,20
+Item=LQ29B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Does the payment cover other activities?
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+  
+[Field]
+Name=LQ30
+Position=522,626,537,646
+Item=LQ30,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=7
+  
+[Text]
+Position=25,629,488,645
+Text=Were any other person or household member involved in tending poultry
+ 
+  
+[Grid]
+Name=TABLE_L5
+Label=TABLE L5
+Form=7
+Required=Yes
+Type=Record
+TypeName=LABOUR_COST
+Max=30
+DisplaySize=27,705,676,1121
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=7,4,22,28
+Text=1
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=2
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=3
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=4
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=5
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=6
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=7
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=8
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=9
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=10
+ 
+  
+[Text]
+Position=1,4,22,28
+Text=11
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=12
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=13
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=14
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=15
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=16
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=17
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=18
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=19
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=20
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=21
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=22
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=23
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=24
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=25
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=26
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=27
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=28
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=29
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=30
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=103
+  
+[HeaderText]
+Position=0,0,103,136
+Text=For household members-write the serial number from the household roaster,for hired workers write initials
+ 
+[Field]
+Name=LQ31
+Position=38,0,95,20
+Item=LQ31,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For household members-write the serial number from the household roaster,for hired workers write initials
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,0,78,136
+Text=For how many months was name involved in tending to poultry in months
+ 
+[Field]
+Name=LQ32A
+Position=41,0,70,20
+Item=LQ32A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For how many months was name involved in tending to poultry in months
+ 
+[EndColumn]
+  
+[Column]
+Width=91
+  
+[HeaderText]
+Position=0,16,91,136
+Text=On average,how many weeks in a month did name tending to poultry?
+ 
+[Field]
+Name=LQ32B
+Position=54,0,83,20
+Item=LQ32B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average,how many weeks in a month did name tending to poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,0,78,136
+Text=On average how many days in a week did name tending to poultry?
+ 
+[Field]
+Name=LQ32C
+Position=55,0,70,20
+Item=LQ32C,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average how many days in a week did name tending to poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=81
+  
+[HeaderText]
+Position=0,0,81,136
+Text=On average,for how many hours in a day did name tending to poultry?
+ 
+[Field]
+Name=LQ32D
+Position=44,0,73,20
+Item=LQ32D,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average,for how many hours in a day did name tending to poultry?
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=27,0,107,136
+Text=For hired workers how much did he/she receive for their work in cash or in kind?
+ 
+[Field]
+Name=LQ33A
+Position=0,0,99,20
+Item=LQ33A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For hired workers how much did he/she receive for their work in cash or in kind?
+ 
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,48,72,136
+Text=Does the payment cover other activities?
+ 
+[Field]
+Name=LQ33B
+Position=49,0,64,20
+Item=LQ33B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Does the payment cover other activities?
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+  
+[Field]
+Name=LQ34
+Position=600,1168,615,1188
+Item=LQ34,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=7
+  
+[Text]
+Position=34,1171,561,1187
+Text=Were any other person or household member involved in other livestock activities?
+ 
+  
+[Grid]
+Name=TABLE_L6
+Label=TABLE L6
+Form=7
+Required=Yes
+Type=Record
+TypeName=LABOUR_COST
+Max=30
+DisplaySize=27,1246,844,1678
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=7,4,22,28
+Text=1
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=2
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=3
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=4
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=5
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=6
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=7
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=8
+ 
+  
+[Text]
+Position=7,4,22,28
+Text=9
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=10
+ 
+  
+[Text]
+Position=1,4,22,28
+Text=11
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=12
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=13
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=14
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=15
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=16
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=17
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=18
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=19
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=20
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=21
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=22
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=23
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=24
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=25
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=26
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=27
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=28
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=29
+ 
+  
+[Text]
+Position=0,4,22,28
+Text=30
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=103
+  
+[HeaderText]
+Position=0,16,103,152
+Text=For household members-write the serial number from the household roaster,for hired workers write initials
+ 
+[Field]
+Name=LQ35
+Position=38,0,95,20
+Item=LQ35,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For household members-write the serial number from the household roaster,for hired workers write initials
+ 
+[EndColumn]
+  
+[Column]
+Width=178
+  
+[HeaderText]
+Position=124,128,178,152
+Text=Activity
+ 
+[Field]
+Name=LQ36
+Position=0,0,165,20
+Item=LQ36,COP_DICT_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Activity
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,16,78,152
+Text=For how many months was name involved in this activity in months?
+ 
+[Field]
+Name=LQ37A
+Position=41,0,70,20
+Item=LQ37A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For how many months was name involved in this activity in months?
+ 
+[EndColumn]
+  
+[Column]
+Width=91
+  
+[HeaderText]
+Position=0,32,91,152
+Text=On average,how many weeks in a months was name involved in this activity ?
+ 
+[Field]
+Name=LQ37B
+Position=54,0,83,20
+Item=LQ37B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average,how many weeks in a months was name involved in this activity ?
+ 
+[EndColumn]
+  
+[Column]
+Width=78
+  
+[HeaderText]
+Position=0,0,78,152
+Text=On average how many days in a week was name involved in this activity?
+ 
+[Field]
+Name=LQ37C
+Position=55,0,70,20
+Item=LQ37C,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average how many days in a week was name involved in this activity?
+ 
+[EndColumn]
+  
+[Column]
+Width=81
+  
+[HeaderText]
+Position=0,0,81,152
+Text=On average,for how many hours in a day was name involved in this activity?
+ 
+[Field]
+Name=LQ37D
+Position=44,0,73,20
+Item=LQ37D,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=On average,for how many hours in a day was name involved in this activity?
+ 
+[EndColumn]
+  
+[Column]
+Width=107
+  
+[HeaderText]
+Position=24,16,107,152
+Text=For hired workers how much did he/she receive for this activity in cash or in kind?
+ 
+[Field]
+Name=LQ38A
+Position=0,0,99,20
+Item=LQ38A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For hired workers how much did he/she receive for this activity in cash or in kind?
+ 
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,64,72,152
+Text=Does the payment cover other activities?
+ 
+[Field]
+Name=LQ38B
+Position=49,0,64,20
+Item=LQ38B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Does the payment cover other activities?
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=LIVESTOCK_PRODUCTS_FORM
+Label=Livestock Products
+Form=8
+LogicControl=No
+Max=1
+  
+[Grid]
+Name=TABLE_L7
+Label=Table L7
+Form=8
+Required=Yes
+Type=Record
+TypeName=LIVESTOCK_PRODUCT
+Max=7
+DisplaySize=21,82,835,597
+Orientation=Horizontal
+FieldRowHeight=28
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=51,0,118,28
+Text=Cow milk
+ 
+  
+[Text]
+Position=55,0,118,40
+Text=Chicken eggs
+ 
+  
+[Text]
+Position=42,0,118,40
+Text=Meat from cattle
+ 
+  
+[Text]
+Position=42,0,118,40
+Text=Meat from sheep
+ 
+  
+[Text]
+Position=42,0,118,40
+Text=Meat from goats
+ 
+  
+[Text]
+Position=0,0,118,56
+Text=Chickens for meat (live/slaughtered)
+ 
+  
+[Text]
+Position=68,0,118,40
+Text=Skins & hides
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,112,72,216
+Text=Was any livestock product produced during summer
+ 
+[Field]
+Name=LQ40S
+Position=49,0,64,20
+Item=LQ40S,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Was any livestock product produced during summer
+ 
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,64,72,216
+Text=For how many months was Livestock product produced during summer?
+ 
+[Field]
+Name=LQ41SA
+Position=49,0,64,20
+Item=LQ41SA,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For how many months was Livestock product produced during summer?
+ 
+[EndColumn]
+  
+[Column]
+Width=79
+  
+[HeaderText]
+Position=4,16,79,216
+Text=During those months what was the average quantity of livestock product produced during summer
+ 
+[Field]
+Name=LQ42SA
+Position=0,0,71,20
+Item=LQ42SA,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=During those months what was the average quantity of livestock product produced during summer
+ 
+[EndColumn]
+  
+[Column]
+Width=76
+  
+[HeaderText]
+Position=0,0,76,216
+Text=During those months what was the unit of the average quantity livestock product produced during summer
+ 
+[Field]
+Name=LQ42SB
+Position=39,0,68,20
+Item=LQ42SB,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=During those months what was the unit of the average quantity livestock product produced during summer
+ 
+[EndColumn]
+  
+[Column]
+Width=77
+  
+[HeaderText]
+Position=0,64,77,216
+Text=Did the holding sell any of the livestock product produced during summer
+ 
+[Field]
+Name=LQ43S
+Position=54,0,69,20
+Item=LQ43S,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Did the holding sell any of the livestock product produced during summer
+ 
+[EndColumn]
+  
+[Column]
+Width=86
+  
+[HeaderText]
+Position=0,64,86,216
+Text=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+ 
+[Field]
+Name=LQ44SA
+Position=7,0,78,20
+Item=LQ44SA,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+ 
+[EndColumn]
+  
+[Column]
+Width=81
+  
+[HeaderText]
+Position=0,48,81,216
+Text=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+ 
+[Field]
+Name=LQ44SB
+Position=44,0,73,20
+Item=LQ44SB,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+ 
+[EndColumn]
+  
+[Column]
+Width=135
+  
+[HeaderText]
+Position=58,64,135,216
+Text=What was the total value of sales of livestock product in the during summer period?
+ 
+[Field]
+Name=LQ44SC
+Position=0,0,127,20
+Item=LQ44SC,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=What was the total value of sales of livestock product in the during summer period?
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+  
+[Grid]
+Name=TABLE_L8
+Label=TABLE L8
+Form=8
+Required=Yes
+Type=Record
+TypeName=LIVESTOCK_PRODUCT
+Max=7
+DisplaySize=24,675,837,1188
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=51,4,118,28
+Text=Cow milk
+ 
+  
+[Text]
+Position=55,0,118,40
+Text=Chicken eggs
+ 
+  
+[Text]
+Position=42,0,118,40
+Text=Meat from cattle
+ 
+  
+[Text]
+Position=42,0,118,40
+Text=Meat from sheep
+ 
+  
+[Text]
+Position=42,0,118,40
+Text=Meat from goats
+ 
+  
+[Text]
+Position=0,0,118,56
+Text=Chickens for meat (live/slaughtered)
+ 
+  
+[Text]
+Position=68,0,118,40
+Text=Skins & hides
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,112,72,216
+Text=Was any livestock product produced during winter ?
+ 
+[Field]
+Name=LQ40W
+Position=49,0,64,20
+Item=LQ40W,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Was any livestock product produced during winter ?
+ 
+[EndColumn]
+  
+[Column]
+Width=72
+  
+[HeaderText]
+Position=0,64,72,216
+Text=For how many months was Livestock product produced during winter ?
+ 
+[Field]
+Name=LQ41WA
+Position=49,0,64,20
+Item=LQ41WA,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=For how many months was Livestock product produced during winter ?
+ 
+[EndColumn]
+  
+[Column]
+Width=79
+  
+[HeaderText]
+Position=4,16,79,216
+Text=During those months what was the average quantity of livestock product produced during winter ?
+ 
+[Field]
+Name=LQ42WA
+Position=0,0,71,20
+Item=LQ42WA,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=During those months what was the average quantity of livestock product produced during winter ?
+ 
+[EndColumn]
+  
+[Column]
+Width=76
+  
+[HeaderText]
+Position=0,0,76,216
+Text=During those months what was the unit of the average quantity livestock product produced during winter ?
+ 
+[Field]
+Name=LQ42WB
+Position=39,0,68,20
+Item=LQ42WB,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=During those months what was the unit of the average quantity livestock product produced during winter ?
+ 
+[EndColumn]
+  
+[Column]
+Width=77
+  
+[HeaderText]
+Position=0,64,77,216
+Text=Did the holding sell any of the livestock product produced during winter ?
+ 
+[Field]
+Name=LQ43W
+Position=54,0,69,20
+Item=LQ43W,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=Did the holding sell any of the livestock product produced during winter ?
+ 
+[EndColumn]
+  
+[Column]
+Width=86
+  
+[HeaderText]
+Position=0,64,86,216
+Text=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+ 
+[Field]
+Name=LQ44WA
+Position=7,0,78,20
+Item=LQ44WA,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+ 
+[EndColumn]
+  
+[Column]
+Width=81
+  
+[HeaderText]
+Position=0,64,81,216
+Text=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+ 
+[Field]
+Name=LQ44WB
+Position=44,0,73,20
+Item=LQ44WB,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+ 
+[EndColumn]
+  
+[Column]
+Width=135
+  
+[HeaderText]
+Position=59,80,135,216
+Text=What was the total value of sales of livestock product in the winter period
+ 
+[Field]
+Name=LQ44WC
+Position=0,0,127,20
+Item=LQ44WC,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=What was the total value of sales of livestock product in the winter period
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
+  
+[Field]
+Name=LQ45A
+Position=833,1218,848,1238
+Item=LQ45A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=8
+  
+[Text]
+Position=29,1223,498,1239
+Text=Were any draught animals raised between 1 August 2018 and 31  july 2019
+ 
+  
+[Field]
+Name=LQ45B
+Position=833,1248,848,1268
+Item=LQ45B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=8
+  
+[Text]
+Position=29,1251,783,1267
+Text=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
+ 
+  
+[Field]
+Name=LQ45C
+Position=833,1277,848,1297
+Item=LQ45C,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=8
+  
+[Text]
+Position=29,1279,567,1295
+Text=How much did the holding recieve in total payents for renting out the draught animal
+ 
+  
+[Field]
+Name=LQ46A
+Position=833,1307,848,1327
+Item=LQ46A,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=8
+  
+[Text]
+Position=29,1306,619,1322
+Text=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
+ 
+  
+[Field]
+Name=LQ46B
+Position=833,1336,848,1356
+Item=LQ46B,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=8
+  
+[Text]
+Position=29,1334,502,1350
+Text=How much did the holding recieve in total payment from the manure sale?
  
 [EndGroup]
   

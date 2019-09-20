@@ -302,6 +302,165 @@ Name=HOUSEHOLD_NUMBER_VS1
 Value=1:999;1 - 999
 
 [Record]
+Label=SOCIO DEMOGRAPHICS
+Name=SOCIO_DEMOGRAPHICS
+RecordTypeValue='4'
+MaxRecords=30
+RecordLen=182
+
+[Item]
+Label=Household member serial No
+Name=B1
+Start=119
+Len=2
+
+[Item]
+Label=Name of the household member (NAME)
+Name=B2
+Start=121
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Anymore People?
+Name=ANYMORE_PEOPLE
+Start=171
+Len=1
+
+[ValueSet]
+Label=Anymore People?
+Name=ANYMORE_PEOPLE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Is (NAME) male or female?
+Name=B3
+Start=172
+Len=1
+
+[ValueSet]
+Label=Is (NAME) male or female?
+Name=B3_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=What is (NAME)'s  age?
+Name=B4
+Start=173
+Len=3
+
+[ValueSet]
+Label=What is (NAME)'s  age?
+Name=B4_VS1
+Value=0:135;0 - 135
+
+[Item]
+Label=What is (NAME)'s  relationship to the HH?
+Name=B5
+Start=176
+Len=2
+
+[ValueSet]
+Label=What is (NAME)'s  relationship to the HH?
+Name=B5_VS1
+Value=1;Household Head
+Value=2;Spouse
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
+
+[ValueSet]
+Label=Relationship
+Name=B5_VS2
+Value=1;Household Head
+
+[ValueSet]
+Label=Relationship
+Name=B5_VS3
+Value=2;Spouse
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
+
+[Item]
+Label=What is (NAME)'s  marital status?
+Name=B6
+Start=178
+Len=2
+
+[ValueSet]
+Label=What is (NAME)'s  marital status?
+Name=B6_VS1
+Value=1;Never married
+Value=2;Monogamously married
+Value=3;Polygamously married
+Value=4;Living together
+Value=5;Separated
+Value=6;Divorced
+Value=7;Widowed
+Value=9;Don't know
+
+[Item]
+Label=What is (NAME)'s  highest level of education attained?
+Name=B7
+Start=180
+Len=1
+
+[ValueSet]
+Label=What is (NAME)'s  highest level of education attained?
+Name=B7_VS1
+Value=1;No Education
+Value=2;Primary School
+Value=3;Secondary School
+Value=4;Tertiary Education
+
+[Item]
+Label=What is (NAME)'s current residential status?
+Name=B8
+Start=181
+Len=1
+
+[ValueSet]
+Label=What is (NAME)'s current residential status?
+Name=B8_VS1
+Value=1;Present
+Value=2;Elsewhere in Lesotho
+Value=3;RSA
+Value=4;Outside RSA
+
+[Item]
+Label=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Name=B9
+Start=182
+Len=1
+
+[ValueSet]
+Label=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Name=B9_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
 Label=LIVESTOCK PRODUCTION
 Name=LIVESTOCK_PRODUCTION_REC
 RecordTypeValue='2'
@@ -1568,42 +1727,43 @@ DecimalChar=Yes
 Label=LABOUR COST
 Name=LABOUR_COST
 RecordTypeValue='5'
+MaxRecords=30
 RecordLen=215
 
 [Item]
 Label=For household members-write the serial number from the household roaster,for hired workers write initials
-Name=LQ2A
+Name=LQ27
 Start=119
 Len=4
 DataType=Alpha
 
 [Item]
 Label=For how many months was name involved in tending and herding livestock in months
-Name=LQ28E
+Name=LQ28A
 Start=123
 Len=2
 
 [Item]
 Label=On average,how many weeks in a month did name tend and herd livestock
-Name=LQ28F
+Name=LQ28B
 Start=125
 Len=2
 
 [Item]
 Label=On average how many days in a week did name tend and herd livestock?
-Name=LQ28G
+Name=LQ28C
 Start=127
 Len=1
 
 [Item]
 Label=On average,for how many hours in a day did name tend and herd livestock?
-Name=LQ28H
+Name=LQ28D
 Start=128
 Len=2
 
 [Item]
 Label=For hired workers how much did he/she receive for their work in cash or in kind?
-Name=LQ29C
+Name=LQ29A
 Start=130
 Len=7
 Decimal=2
@@ -1611,44 +1771,44 @@ DecimalChar=Yes
 
 [Item]
 Label=Does the payment cover other activities?
-Name=LQ29D
+Name=LQ29B
 Start=137
 Len=1
 
 [Item]
 Label=For household members-write the serial number from the household roaster,for hired workers write initials
-Name=LQ3A
+Name=LQ31
 Start=138
 Len=4
 DataType=Alpha
 
 [Item]
 Label=For how many months was name involved in tending to poultry in months
-Name=LQ32E
+Name=LQ32A
 Start=142
 Len=2
 
 [Item]
 Label=On average,how many weeks in a month did name tending to poultry?
-Name=LQ32F
+Name=LQ32B
 Start=144
 Len=2
 
 [Item]
 Label=On average how many days in a week did name tending to poultry?
-Name=LQ32G
+Name=LQ32C
 Start=146
 Len=1
 
 [Item]
 Label=On average,for how many hours in a day did name tending to poultry?
-Name=LQ32H
+Name=LQ32D
 Start=147
 Len=2
 
 [Item]
 Label=For hired workers how much did he/she receive for their work in cash or in kind?
-Name=LQ33C
+Name=LQ33A
 Start=149
 Len=7
 Decimal=2
@@ -1656,7 +1816,7 @@ DecimalChar=Yes
 
 [Item]
 Label=Does the payment cover other activities?
-Name=LQ33D
+Name=LQ33B
 Start=156
 Len=1
 
@@ -1831,106 +1991,434 @@ DecimalChar=Yes
 Label=LIVESTOCK RECORDS
 Name=LIVESTOCK_RECORDS
 RecordTypeValue='1'
-RecordLen=140
+RecordLen=145
 
 [Item]
 Label=Did the holding  raise any livestock from 1st August to 31 July 2019?
-Name=LQ01S
+Name=LQ01
 Start=119
 Len=1
 
+[ValueSet]
+Label=Did the holding  raise any livestock from 1st August to 31 July 2019?
+Name=LQ01_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
-Name=LQ11S_DAIRYCATTLE
+Name=LQ10S_DAIRYCATTLE
 Start=120
 Len=1
 
+[ValueSet]
+Label=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
+Name=LQ10S_DAIRYCATTLE_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Did the holding provide All Cattle with any Supplimentary feed during summer
-Name=LQ11S_ALLCATTLE
+Name=LQ10S_ALLCATTLE
 Start=121
 Len=1
 
+[ValueSet]
+Label=Did the holding provide All Cattle with any Supplimentary feed during summer
+Name=LQ10S_ALLCATTLE_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Did the holding provide sheep with any Supplimentary feed during summer
-Name=LQ11S_SHEEP
+Name=LQ10S_SHEEP
 Start=122
 Len=1
 
+[ValueSet]
+Label=Did the holding provide sheep with any Supplimentary feed during summer
+Name=LQ10S_SHEEP_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Did the holding provide Goats with any Supplimentary feed during summer
-Name=LQ11S_GOATS
+Name=LQ10S_GOATS
 Start=123
 Len=1
 
+[ValueSet]
+Label=Did the holding provide Goats with any Supplimentary feed during summer
+Name=LQ10S_GOATS_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
-Name=LQ11S_POULTRY
+Name=LQ10S_POULTRY
 Start=124
 Len=1
+
+[ValueSet]
+Label=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
+Name=LQ10S_POULTRY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
+Name=LQ10W_DAIRYCATTLE
+Start=125
+Len=1
+
+[ValueSet]
+Label=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
+Name=LQ10W_DAIRYCATTLE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding provide All Cattle with any Supplimentary feed during winter
+Name=LQ10W_ALLCATTLE
+Start=126
+Len=1
+
+[ValueSet]
+Label=Did the holding provide All Cattle with any Supplimentary feed during winter
+Name=LQ10W_ALLCATTLE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding provide sheep with any Supplimentary feed during winter
+Name=LQ10W_SHEEP
+Start=127
+Len=1
+
+[ValueSet]
+Label=Did the holding provide sheep with any Supplimentary feed during winter
+Name=LQ10W_SHEEP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding provide Goats with any Supplimentary feed during winter
+Name=LQ10W_GOATS
+Start=128
+Len=1
+
+[ValueSet]
+Label=Did the holding provide Goats with any Supplimentary feed during winter
+Name=LQ10W_GOATS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
+Name=LQ10W_POULTRY
+Start=129
+Len=1
+
+[ValueSet]
+Label=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
+Name=LQ10W_POULTRY_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
 Name=LQ24
-Start=125
+Start=130
 Len=1
+
+[ValueSet]
+Label=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
+Name=LQ24_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How was the person paid?-give the estimated cash value if paid in-kind
 Name=LQ25
-Start=126
+Start=131
 Len=7
+
+[ValueSet]
+Label=How was the person paid?-give the estimated cash value if paid in-kind
+Name=LQ25_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Were any other person or household member involved in tending and herding livestock
 Name=LQ26
-Start=133
+Start=138
 Len=1
+
+[ValueSet]
+Label=Were any other person or household member involved in tending and herding livestock
+Name=LQ26_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Were any other person or household member involved in tending poultry
 Name=LQ30
-Start=134
+Start=139
 Len=1
+
+[ValueSet]
+Label=Were any other person or household member involved in tending poultry
+Name=LQ30_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Were any other person or household member involved in other livestock activities?
 Name=LQ34
-Start=135
+Start=140
 Len=1
+
+[ValueSet]
+Label=Were any other person or household member involved in other livestock activities?
+Name=LQ34_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Were any draught animals raised between 1 August 2018 and 31  july 2019
 Name=LQ45A
-Start=136
+Start=141
 Len=1
+
+[ValueSet]
+Label=Were any draught animals raised between 1 August 2018 and 31  july 2019
+Name=LQ45A_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
 Name=LQ45B
-Start=137
+Start=142
 Len=1
+
+[ValueSet]
+Label=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
+Name=LQ45B_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How much did the holding recieve in total payents for renting out the draught animal
 Name=LQ45C
-Start=138
+Start=143
 Len=1
+
+[ValueSet]
+Label=How much did the holding recieve in total payents for renting out the draught animal
+Name=LQ45C_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
 Name=LQ46A
-Start=139
+Start=144
 Len=1
+
+[ValueSet]
+Label=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
+Name=LQ46A_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How much did the holding recieve in total payment from the manure sale?
 Name=LQ46B
-Start=140
+Start=145
 Len=1
+
+[ValueSet]
+Label=How much did the holding recieve in total payment from the manure sale?
+Name=LQ46B_VS1
+Value=1;Yes
+Value=2;No
 
 [Record]
 Label=VISITS
 Name=VISITS
 RecordTypeValue='6'
-RecordLen=118
+RecordLen=260
+
+[Item]
+Label=Number of visits
+Name=NUMBER_OF_VISITS
+Start=119
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Number of visits
+Name=NUMBER_OF_VISITS_VS1
+Value=1:3;1 - 3
+
+[Item]
+Label=Visit date
+Name=VISIT_DATE
+Start=120
+Len=8
+Occurrences=3
+OccurrenceLabel=1,first
+OccurrenceLabel=2,second
+OccurrenceLabel=3,third
+
+[Item]
+Label=Visit year
+Name=VISIT_YEAR
+Start=120
+Len=4
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Visit month
+Name=VISIT_MONTH
+Start=124
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Visit day
+Name=VISIT_DAY
+Start=126
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Household Status
+Name=HOUSEHOLD_STATUS
+Start=144
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Household Status
+Name=HOUSEHOLD_STATUS_VS1
+Value=7;Continue with interview
+Value=2;No household member at home
+Value=3;Entire household absent for extended period of time
+Value=4;Dwelling vacant
+Value=5;Refusal
+
+[Item]
+Label=Final Result Code
+Name=FINAL_RESULT_CODE
+Start=145
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Final Result Code
+Name=FINAL_RESULT_CODE_VS1
+Value=1;Completed
+Value=6;Partially Complete
+
+[Item]
+Label=Partially Complete Reason
+Name=PARTIALLY_COMPLETE_REASON
+Start=146
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Interview Date
+Name=INTERVIEW_DATE
+Start=196
+Len=10
+DataType=Alpha
+
+[Item]
+Label=Assistant Supervisor Approval Status
+Name=APPROVAL_STATUS
+Start=206
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Assistant Supervisor Approval Status
+Name=APPROVAL_STATUS_VS1
+Value=0;Not Approved
+Value=1;Approved
+
+[Item]
+Label=Household Latitude
+Name=HH_LATITUDE
+Start=207
+Len=14
+Decimal=9
+DecimalChar=Yes
+
+[Item]
+Label=Household Longitude
+Name=HH_LONGITUDE
+Start=221
+Len=14
+Decimal=9
+DecimalChar=Yes
+
+[Item]
+Label=Household Altitude
+Name=HH_ALTITUDE
+Start=235
+Len=6
+
+[Item]
+Label=Household Satellites
+Name=HH_SATELLITES
+Start=241
+Len=2
+
+[Item]
+Label=Household Accuracy
+Name=HH_ACCURACY
+Start=243
+Len=4
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=Household Read Time
+Name=HH_READ_TIME
+Start=247
+Len=6
+
+[Item]
+Label=Enumerator Code
+Name=ENUMERATOR_CODE
+Start=253
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Missing Fertility
+Name=MISSING_FERTILITY
+Start=259
+Len=1
+ZeroFill=Yes
+
+[Item]
+Label=Duplicates removed
+Name=DUPLICATES_REMOVED
+Start=260
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Duplicates removed
+Name=DUPLICATES_REMOVED_VS1
+Value=0;No
+Value=1;On tablet in field
+Value=2;By batch edit at HQ
