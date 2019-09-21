@@ -1991,12 +1991,71 @@ DecimalChar=Yes
 Label=LIVESTOCK RECORDS
 Name=LIVESTOCK_RECORDS
 RecordTypeValue='1'
-RecordLen=145
+RecordLen=179
+
+[Item]
+Label=Name of respondent
+Name=RESPONDENT_NAME
+Start=119
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Relationship of the Respondent to household
+Name=RESPONDENT_RELATIONSHIP
+Start=149
+Len=2
+
+[ValueSet]
+Label=Relationship of the Respondent to household
+Name=RESPONDENT_RELATIONSHIP_VS1
+Value=1;Household Head
+Value=2;Spouse
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
+
+[ValueSet]
+Label=Relationship
+Name=B5_RELATIONSHIP_OF_HEAD
+Value=1;Household Head
+
+[ValueSet]
+Label=Relationship
+Name=B5_RELATIONSHIP_TO_HEAD
+Value=2;Spouse
+Value=3;Partner(Cohabiting)
+Value=4;Son/Daughter
+Value=5;Son/daughter in-law
+Value=6;Step child
+Value=7;Sibling
+Value=8;Own Parent
+Value=9;Step Parent
+Value=10;Parent in-law
+Value=11;Grandmother/father
+Value=12;Grandchild/Great grandchild
+Value=13;Other relative
+Value=14;Not related
+
+[Item]
+Label=Number of Household Memebers
+Name=NUMBER_OF_HOUSEHOLD_MEMBERS
+Start=151
+Len=2
 
 [Item]
 Label=Did the holding  raise any livestock from 1st August to 31 July 2019?
 Name=LQ01
-Start=119
+Start=153
 Len=1
 
 [ValueSet]
@@ -2008,7 +2067,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
 Name=LQ10S_DAIRYCATTLE
-Start=120
+Start=154
 Len=1
 
 [ValueSet]
@@ -2020,7 +2079,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide All Cattle with any Supplimentary feed during summer
 Name=LQ10S_ALLCATTLE
-Start=121
+Start=155
 Len=1
 
 [ValueSet]
@@ -2032,7 +2091,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide sheep with any Supplimentary feed during summer
 Name=LQ10S_SHEEP
-Start=122
+Start=156
 Len=1
 
 [ValueSet]
@@ -2044,7 +2103,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide Goats with any Supplimentary feed during summer
 Name=LQ10S_GOATS
-Start=123
+Start=157
 Len=1
 
 [ValueSet]
@@ -2056,7 +2115,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
 Name=LQ10S_POULTRY
-Start=124
+Start=158
 Len=1
 
 [ValueSet]
@@ -2068,7 +2127,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
 Name=LQ10W_DAIRYCATTLE
-Start=125
+Start=159
 Len=1
 
 [ValueSet]
@@ -2080,7 +2139,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide All Cattle with any Supplimentary feed during winter
 Name=LQ10W_ALLCATTLE
-Start=126
+Start=160
 Len=1
 
 [ValueSet]
@@ -2092,7 +2151,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide sheep with any Supplimentary feed during winter
 Name=LQ10W_SHEEP
-Start=127
+Start=161
 Len=1
 
 [ValueSet]
@@ -2104,7 +2163,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide Goats with any Supplimentary feed during winter
 Name=LQ10W_GOATS
-Start=128
+Start=162
 Len=1
 
 [ValueSet]
@@ -2116,7 +2175,7 @@ Value=2;No
 [Item]
 Label=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
 Name=LQ10W_POULTRY
-Start=129
+Start=163
 Len=1
 
 [ValueSet]
@@ -2128,7 +2187,7 @@ Value=2;No
 [Item]
 Label=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
 Name=LQ24
-Start=130
+Start=164
 Len=1
 
 [ValueSet]
@@ -2140,7 +2199,7 @@ Value=2;No
 [Item]
 Label=How was the person paid?-give the estimated cash value if paid in-kind
 Name=LQ25
-Start=131
+Start=165
 Len=7
 
 [ValueSet]
@@ -2152,7 +2211,7 @@ Value=2;No
 [Item]
 Label=Were any other person or household member involved in tending and herding livestock
 Name=LQ26
-Start=138
+Start=172
 Len=1
 
 [ValueSet]
@@ -2164,7 +2223,7 @@ Value=2;No
 [Item]
 Label=Were any other person or household member involved in tending poultry
 Name=LQ30
-Start=139
+Start=173
 Len=1
 
 [ValueSet]
@@ -2176,7 +2235,7 @@ Value=2;No
 [Item]
 Label=Were any other person or household member involved in other livestock activities?
 Name=LQ34
-Start=140
+Start=174
 Len=1
 
 [ValueSet]
@@ -2188,7 +2247,7 @@ Value=2;No
 [Item]
 Label=Were any draught animals raised between 1 August 2018 and 31  july 2019
 Name=LQ45A
-Start=141
+Start=175
 Len=1
 
 [ValueSet]
@@ -2200,7 +2259,7 @@ Value=2;No
 [Item]
 Label=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
 Name=LQ45B
-Start=142
+Start=176
 Len=1
 
 [ValueSet]
@@ -2212,7 +2271,7 @@ Value=2;No
 [Item]
 Label=How much did the holding recieve in total payents for renting out the draught animal
 Name=LQ45C
-Start=143
+Start=177
 Len=1
 
 [ValueSet]
@@ -2224,7 +2283,7 @@ Value=2;No
 [Item]
 Label=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
 Name=LQ46A
-Start=144
+Start=178
 Len=1
 
 [ValueSet]
@@ -2236,7 +2295,7 @@ Value=2;No
 [Item]
 Label=How much did the holding recieve in total payment from the manure sale?
 Name=LQ46B
-Start=145
+Start=179
 Len=1
 
 [ValueSet]
