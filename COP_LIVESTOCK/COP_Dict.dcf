@@ -1728,7 +1728,7 @@ Label=LABOUR COST
 Name=LABOUR_COST
 RecordTypeValue='5'
 MaxRecords=30
-RecordLen=215
+RecordLen=221
 
 [Item]
 Label=For household members-write the serial number from the household roaster,for hired workers write initials
@@ -1776,40 +1776,64 @@ Start=137
 Len=1
 
 [Item]
+Label=Are there any more persons involved in tending and herding livestock?
+Name=ARE_THERE_ANY_MORE_PERSONS_INVOL
+Start=138
+Len=1
+
+[ValueSet]
+Label=Are there any more persons involved in tending and herding livestock?
+Name=ARE_THERE_ANY_MORE_PERSONS_INVOM
+Value=1;Yes
+Value=2;No 
+
+[Item]
+Label=Household member or hired worker?
+Name=HOUSEHOLD_MEMBER_OR_HIRED_WORKER
+Start=139
+Len=1
+
+[ValueSet]
+Label=Household member or hired worker?
+Name=HOUSEHOLD_MEMBER_OR_HIRED_WORKES
+Value=1;Member
+Value=2;Hired Worker
+
+[Item]
 Label=For household members-write the serial number from the household roaster,for hired workers write initials
 Name=LQ31
-Start=138
+Start=140
 Len=4
 DataType=Alpha
 
 [Item]
 Label=For how many months was name involved in tending to poultry in months
 Name=LQ32A
-Start=142
+Start=144
 Len=2
 
 [Item]
 Label=On average,how many weeks in a month did name tending to poultry?
 Name=LQ32B
-Start=144
+Start=146
 Len=2
 
 [Item]
 Label=On average how many days in a week did name tending to poultry?
 Name=LQ32C
-Start=146
+Start=148
 Len=1
 
 [Item]
 Label=On average,for how many hours in a day did name tending to poultry?
 Name=LQ32D
-Start=147
+Start=149
 Len=2
 
 [Item]
 Label=For hired workers how much did he/she receive for their work in cash or in kind?
 Name=LQ33A
-Start=149
+Start=151
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1817,51 +1841,75 @@ DecimalChar=Yes
 [Item]
 Label=Does the payment cover other activities?
 Name=LQ33B
-Start=156
+Start=158
 Len=1
+
+[Item]
+Label=Are there any more persons involved in tending and herding livestock?
+Name=ARE_THERE_ANY_MORE_PERSONS_PLTZ
+Start=159
+Len=1
+
+[ValueSet]
+Label=Are there any more persons involved in tending and herding livestock?
+Name=ARE_THERE_ANY_MORE_PERSONS_PLTY
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Household member or hired worker?
+Name=HOUSEHOLD_MEMBER_OR_HIRED_PLTZ
+Start=160
+Len=1
+
+[ValueSet]
+Label=Household member or hired worker?
+Name=HOUSEHOLD_MEMBER_OR_HIRED_PLTY
+Value=1;Member
+Value=2;Hired Worker
 
 [Item]
 Label=For household members-write the serial number from the household roaster,for hired workers write initials
 Name=LQ35
-Start=157
+Start=161
 Len=4
 DataType=Alpha
 
 [Item]
 Label=Activity
 Name=LQ36
-Start=161
+Start=165
 Len=40
 DataType=Alpha
 
 [Item]
 Label=For how many months was name involved in this activity in months?
 Name=LQ37A
-Start=201
+Start=205
 Len=2
 
 [Item]
 Label=On average,how many weeks in a months was name involved in this activity ?
 Name=LQ37B
-Start=203
+Start=207
 Len=2
 
 [Item]
 Label=On average how many days in a week was name involved in this activity?
 Name=LQ37C
-Start=205
+Start=209
 Len=1
 
 [Item]
 Label=On average,for how many hours in a day was name involved in this activity?
 Name=LQ37D
-Start=206
+Start=210
 Len=2
 
 [Item]
 Label=For hired workers how much did he/she receive for this activity in cash or in kind?
 Name=LQ38A
-Start=208
+Start=212
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1869,15 +1917,39 @@ DecimalChar=Yes
 [Item]
 Label=Does the payment cover other activities?
 Name=LQ38B
-Start=215
+Start=219
 Len=1
+
+[Item]
+Label=Are there any more persons involved in tending and herding livestock?
+Name=ARE_THERE_ANY_MORE_PERSONS_OTHES
+Start=220
+Len=1
+
+[ValueSet]
+Label=Are there any more persons involved in tending and herding livestock?
+Name=ARE_THERE_ANY_MORE_PERSONS_OTHER
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Household member or hired worker?
+Name=HOUSEHOLD_MEMBER_OR_HIRED_OTHES
+Start=221
+Len=1
+
+[ValueSet]
+Label=Household member or hired worker?
+Name=HOUSEHOLD_MEMBER_OR_HIRED_OTHER
+Value=1;Member
+Value=2;Hired Worker
 
 [Record]
 Label=LIVESTOCK PRODUCTS
 Name=LIVESTOCK_PRODUCT
 RecordTypeValue='9'
 MaxRecords=7
-RecordLen=170
+RecordLen=250
 
 [Item]
 Label=Was any livestock product produced during summer
@@ -1885,16 +1957,29 @@ Name=LQ40S
 Start=119
 Len=1
 
+[ValueSet]
+Label=Was any livestock product produced during summer
+Name=LQ40S_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Product label
+Name=PRODUCT_LABEL_S
+Start=120
+Len=20
+DataType=Alpha
+
 [Item]
 Label=For how many months was Livestock product produced during summer?
 Name=LQ41SA
-Start=120
+Start=140
 Len=1
 
 [Item]
 Label=During those months what was the average quantity of livestock product produced during summer
 Name=LQ42SA
-Start=121
+Start=141
 Len=5
 Decimal=2
 DecimalChar=Yes
@@ -1902,19 +1987,44 @@ DecimalChar=Yes
 [Item]
 Label=During those months what was the unit of the average quantity livestock product produced during summer
 Name=LQ42SB
-Start=126
+Start=146
 Len=2
+
+[ValueSet]
+Label=During those months what was the unit of the average quantity livestock product produced during summer
+Name=LQ42SB_VS1
+Value=1;Litre
+Value=2;Kg
+Value=3;Piece/No./Item
+Value=4;Tray
+Value=5;Bucket
+Value=6;Wheelbarrow
+Value=7;Ox cart
+Value=8;Other, specify
+
+[Item]
+Label=Other specify
+Name=OTHER_SPECIFY_S
+Start=148
+Len=20
+DataType=Alpha
 
 [Item]
 Label=Did the holding sell any of the livestock product produced during summer
 Name=LQ43S
-Start=128
+Start=168
 Len=1
+
+[ValueSet]
+Label=Did the holding sell any of the livestock product produced during summer
+Name=LQ43S_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
 Name=LQ44SA
-Start=129
+Start=169
 Len=5
 Decimal=2
 DecimalChar=Yes
@@ -1922,13 +2032,13 @@ DecimalChar=Yes
 [Item]
 Label=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
 Name=LQ44SB
-Start=134
+Start=174
 Len=2
 
 [Item]
 Label=What was the total value of sales of livestock product in the during summer period?
 Name=LQ44SC
-Start=136
+Start=176
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -1936,19 +2046,32 @@ DecimalChar=Yes
 [Item]
 Label=Was any livestock product produced during winter ?
 Name=LQ40W
-Start=145
+Start=185
 Len=1
+
+[ValueSet]
+Label=Was any livestock product produced during winter ?
+Name=LQ40W_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Product label
+Name=PRODUCT_LABEL_W
+Start=186
+Len=20
+DataType=Alpha
 
 [Item]
 Label=For how many months was Livestock product produced during winter ?
 Name=LQ41WA
-Start=146
+Start=206
 Len=1
 
 [Item]
 Label=During those months what was the average quantity of livestock product produced during winter ?
 Name=LQ42WA
-Start=147
+Start=207
 Len=5
 Decimal=2
 DecimalChar=Yes
@@ -1956,19 +2079,44 @@ DecimalChar=Yes
 [Item]
 Label=During those months what was the unit of the average quantity livestock product produced during winter ?
 Name=LQ42WB
-Start=152
+Start=212
 Len=2
+
+[ValueSet]
+Label=During those months what was the unit of the average quantity livestock product produced during winter ?
+Name=LQ42WB_VS1
+Value=1;Litre
+Value=2;Kg
+Value=3;Piece/No./Item
+Value=4;Tray
+Value=5;Bucket
+Value=6;Wheelbarrow
+Value=7;Ox cart
+Value=8;Other, specify
+
+[Item]
+Label=Other specify
+Name=OTHER_SPECIFY_W
+Start=214
+Len=20
+DataType=Alpha
 
 [Item]
 Label=Did the holding sell any of the livestock product produced during winter ?
 Name=LQ43W
-Start=154
+Start=234
 Len=1
+
+[ValueSet]
+Label=Did the holding sell any of the livestock product produced during winter ?
+Name=LQ43W_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=How much/many Quantity of  livestock product did the holding sell in the  winter period?
 Name=LQ44WA
-Start=155
+Start=235
 Len=5
 Decimal=2
 DecimalChar=Yes
@@ -1976,13 +2124,13 @@ DecimalChar=Yes
 [Item]
 Label=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
 Name=LQ44WB
-Start=160
+Start=240
 Len=2
 
 [Item]
 Label=What was the total value of sales of livestock product in the winter period
 Name=LQ44WC
-Start=162
+Start=242
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -2201,12 +2349,7 @@ Label=How was the person paid?-give the estimated cash value if paid in-kind
 Name=LQ25
 Start=165
 Len=7
-
-[ValueSet]
-Label=How was the person paid?-give the estimated cash value if paid in-kind
-Name=LQ25_VS1
-Value=1;Yes
-Value=2;No
+ZeroFill=Yes
 
 [Item]
 Label=Were any other person or household member involved in tending and herding livestock

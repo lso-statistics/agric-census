@@ -4,3 +4,55 @@ Version=CSPro 7.0
 [LANGUAGES]
 ENG=English
 
+[QUESTION]
+Field=COP_DICT_DICT.ANYMORE_PEOPLE
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Any more member to capture?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B2
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter the name of Household members, starting with the Head of the Household.\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B3
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+ENG=\pard\cf1\fs24 Is \cf0\f1  \cf1\b\i %getocclabel%\i0\f0  \b0 Male or Female?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B4
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+ENG=\pard\cf1\i\fs24 What is \b\f1 %getocclabel%\i0\f0 's \b0 Age?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.RESPONDENT_NAME
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 What is the name of the Respodent?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.RESPONDENT_RELATIONSHIP
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 What is %RESPONDENT_NAME%'s  Relationship to Household Head?\par
+ENG=}
+
