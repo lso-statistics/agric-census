@@ -1311,6 +1311,7 @@ Item=LQ04,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,263,16
 Text=How many were raised on 31 July 2019?
  
 [EndColumn]
@@ -1329,6 +1330,7 @@ Item=LQ05A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,520,16
 Text=How many were purchased for cash between 1st August 2018 to 31st July 2019?
  
 [EndColumn]
@@ -1347,6 +1349,7 @@ Item=LQ05B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,397,16
 Text=What was the total amount paid for these purchase in Maloti?
  
 [EndColumn]
@@ -1383,6 +1386,7 @@ Item=LQ07A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,473,16
 Text=How many were slaughtered between 1st August 2018 to 31st July 2019?
  
 [EndColumn]
@@ -1421,6 +1425,7 @@ Item=LQ07C,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,325,16
 Text=What was the total cost for slaughtering in maloti?
  
 [EndColumn]
@@ -1439,6 +1444,7 @@ Item=LQ08,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,714,16
 Text=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
  
 [EndColumn]
@@ -1457,6 +1463,7 @@ Item=LQ9A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,480,16
 Text=How many were sold for cash between 1st August 2018 to 31st July 2019?
  
 [EndColumn]
@@ -1475,6 +1482,7 @@ Item=LQ9B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,289,16
 Text=What was the total value for sales in Maloti?
  
 [EndColumn]
@@ -1636,6 +1644,7 @@ Item=LQ13SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,439,16
 Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
  
 [EndColumn]
@@ -1655,6 +1664,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,481,16
 Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
  
 [EndColumn]
@@ -1674,6 +1684,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,340,16
 Text=Main source of acquisition for the dairy cattle alone?
  
 [EndColumn]
@@ -1693,6 +1704,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,468,16
 Text=Was any of this supplemetary feed purchsed for the dairy cattle alone??
  
 [EndColumn]
@@ -1711,6 +1723,7 @@ Item=LQ17SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,295,16
 Text=Quantity purchased for the dairy cattle alone?
  
 [EndColumn]
@@ -1749,6 +1762,7 @@ Item=LQ17SC,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,353,16
 Text=Total purchase price (Maloti) for the dairy cattle alone?
  
 [EndColumn]
@@ -1767,6 +1781,7 @@ Item=LQ18S,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,571,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
  
 [EndColumn]
@@ -1783,7 +1798,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=30,546,528,562
+Position=30,546,532,562
 Text=Did the holding provide All Cattle with any Supplimentary feed during summer
  
   
@@ -1910,6 +1925,7 @@ Item=LQ13SA_ALL_CATTLE,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,358,16
 Text=Total Quantity of suppliment provided to feed all cattle?
  
 [EndColumn]
@@ -1929,6 +1945,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,400,16
 Text=Unit of total Quantity of suppliment provided to feed all cattle?
  
 [EndColumn]
@@ -2062,7 +2079,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=27,1061,505,1077
+Position=27,1061,512,1077
 Text=Did the holding provide sheep with any Supplimentary feed during summer
  
   
@@ -2189,6 +2206,7 @@ Item=LQ13SA_ALL_SHEEP,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,375,16
 Text=Total Quantity of suppliments provided to feed the sheep?
  
 [EndColumn]
@@ -2208,6 +2226,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,409,16
 Text=Unit of total Quantity of suppliment provided to feed the sheep?
  
 [EndColumn]
@@ -2227,6 +2246,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,268,16
 Text=Main source of acquisition for the sheep?
  
 [EndColumn]
@@ -2246,6 +2266,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,388,16
 Text=Was any of this supplemetary feed purchsed for the sheep?
  
 [EndColumn]
@@ -2264,6 +2285,7 @@ Item=LQ17SA_ALL_SHEEP,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,284,16
 Text=Quantity purchased the dairy for the sheep?
  
 [EndColumn]
@@ -2302,6 +2324,7 @@ Item=LQ17SC_ALL_SHEEP,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,277,16
 Text=Total purchase price (Maloti) forthe sheep?
  
 [EndColumn]
@@ -2320,6 +2343,7 @@ Item=LQ18S_ALL_SHEEP,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,499,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the sheep?
  
 [EndColumn]
@@ -2336,7 +2360,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=27,1566,503,1582
+Position=27,1566,510,1582
 Text=Did the holding provide Goats with any Supplimentary feed during summer
  
   
@@ -2484,6 +2508,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,405,16
 Text=Unit of total Quantity of suppliment provided to feed the goats?
  
 [EndColumn]
@@ -2503,6 +2528,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,264,16
 Text=Main source of acquisition for the goats?
  
 [EndColumn]
@@ -2522,6 +2548,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,384,16
 Text=Was any of this supplemetary feed purchsed for the goats?
  
 [EndColumn]
@@ -2540,6 +2567,7 @@ Item=LQ17SA_ALL_GOATS,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,280,16
 Text=Quantity purchased the dairy for the goats?
  
 [EndColumn]
@@ -2578,6 +2606,7 @@ Item=LQ17SC_ALL_GOATS,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,273,16
 Text=Total purchase price (Maloti) forthe goats?
  
 [EndColumn]
@@ -2596,6 +2625,7 @@ Item=LQ18S_ALL_GOATS,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,495,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the goats?
  
 [EndColumn]
@@ -2612,7 +2642,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=31,2124,559,2140
+Position=31,2124,566,2140
 Text=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
  
   
@@ -2699,6 +2729,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,304,16
 Text=Did the holding use the suppliment for poultry?
  
 [EndColumn]
@@ -2759,6 +2790,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,414,16
 Text=Unit of total Quantity of suppliment provided to feed the poultry?
  
 [EndColumn]
@@ -2778,6 +2810,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,273,16
 Text=Main source of acquisition for the poultry?
  
 [EndColumn]
@@ -2797,6 +2830,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,393,16
 Text=Was any of this supplemetary feed purchsed for the poultry?
  
 [EndColumn]
@@ -2815,6 +2849,7 @@ Item=LQ17SA_ALL_POULTRY,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,289,16
 Text=Quantity purchased the dairy for the poultry?
  
 [EndColumn]
@@ -2853,6 +2888,7 @@ Item=LQ17SC_ALL_POULTRY,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,282,16
 Text=Total purchase price (Maloti) forthe poultry?
  
 [EndColumn]
@@ -2871,6 +2907,7 @@ Item=LQ18S_ALL_POULTRY,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,504,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the poultry?
  
 [EndColumn]
@@ -2896,7 +2933,7 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=50,39,553,55
+Position=50,39,557,55
 Text=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
  
   
@@ -2983,6 +3020,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,395,16
 Text=Did the holding use the suppliment for the dairy cattle alone?
  
 [EndColumn]
@@ -3022,6 +3060,7 @@ Item=LQ13WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,439,16
 Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
  
 [EndColumn]
@@ -3041,6 +3080,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,481,16
 Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
  
 [EndColumn]
@@ -4351,6 +4391,7 @@ Item=LQ19B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,304,16
 Text=How much was spent on de-worming in maloti?
  
 [EndColumn]
@@ -4370,6 +4411,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,270,16
 Text=Were livestock Vaccinated at least once ?
  
 [EndColumn]
@@ -4388,6 +4430,7 @@ Item=LQ20B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,291,16
 Text=How much was spent on these vaccinations?
  
 [EndColumn]
@@ -4407,6 +4450,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,250,16
 Text=What was the main source of Vaccines
  
 [EndColumn]
@@ -4426,6 +4470,7 @@ UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,295,16
 Text=What was the other main source of Vaccines?
  
 [EndColumn]
@@ -4445,6 +4490,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,428,16
 Text=What was the main method of parasite control on Livestock raised
  
 [EndColumn]
@@ -4463,6 +4509,7 @@ Item=LQ21B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,322,16
 Text=How much was spent on parasite control (Maloti)?
  
 [EndColumn]
@@ -4501,6 +4548,7 @@ Item=LQ22B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,457,16
 Text=How much was spent on treatment for infectious diseases or accidents
  
 [EndColumn]
@@ -4520,6 +4568,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,334,16
 Text=Was Artificial Insemination (IA) or mating practiced?
  
 [EndColumn]
@@ -4538,6 +4587,7 @@ Item=LQ23B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,233,16
 Text=How much was spent on IA/ mating?
  
 [EndColumn]
