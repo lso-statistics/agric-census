@@ -171,7 +171,7 @@ Item=LIVESTOCK_MANAGEMENT_AND_HEAT000
 Name=FORM006
 Label=Labour Costs
 Level=1
-Size=1187,2611
+Size=1103,1667
   
 Item=TABLE_L4
 Item=TABLE_L5
@@ -1798,7 +1798,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=30,546,532,562
+Position=30,546,528,562
 Text=Did the holding provide All Cattle with any Supplimentary feed during summer
  
   
@@ -2079,7 +2079,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=27,1061,512,1077
+Position=27,1061,505,1077
 Text=Did the holding provide sheep with any Supplimentary feed during summer
  
   
@@ -2360,7 +2360,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=27,1566,510,1582
+Position=27,1566,503,1582
 Text=Did the holding provide Goats with any Supplimentary feed during summer
  
   
@@ -2642,7 +2642,7 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=31,2124,566,2140
+Position=31,2124,559,2140
 Text=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
  
   
@@ -2933,7 +2933,7 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=50,39,557,55
+Position=50,39,553,55
 Text=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
  
   
@@ -3100,6 +3100,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,340,16
 Text=Main source of acquisition for the dairy cattle alone?
  
 [EndColumn]
@@ -3119,6 +3120,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,468,16
 Text=Was any of this supplemetary feed purchsed for the dairy cattle alone??
  
 [EndColumn]
@@ -3137,6 +3139,7 @@ Item=LQ17WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,295,16
 Text=Quantity purchased for the dairy cattle alone?
  
 [EndColumn]
@@ -3175,6 +3178,7 @@ Item=LQ17WC,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,353,16
 Text=Total purchase price (Maloti) for the dairy cattle alone?
  
 [EndColumn]
@@ -3193,6 +3197,7 @@ Item=LQ18W,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,571,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
  
 [EndColumn]
@@ -3336,6 +3341,7 @@ Item=LQ13SA_ALL_CATTLEW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,358,16
 Text=Total Quantity of suppliment provided to feed all cattle?
  
 [EndColumn]
@@ -3355,6 +3361,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,400,16
 Text=Unit of total Quantity of suppliment provided to feed all cattle?
  
 [EndColumn]
@@ -3374,6 +3381,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,259,16
 Text=Main source of acquisition for all cattle?
  
 [EndColumn]
@@ -3393,6 +3401,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,379,16
 Text=Was any of this supplemetary feed purchsed for all cattle?
  
 [EndColumn]
@@ -3411,6 +3420,7 @@ Item=LQ17SA_ALL_CATTLEW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,275,16
 Text=Quantity purchased the dairy for all cattle?
  
 [EndColumn]
@@ -3430,6 +3440,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,258,16
 Text=Unit of quantity purchased for all cattle?
  
 [EndColumn]
@@ -3448,6 +3459,7 @@ Item=LQ17SC_ALL_CATTLEW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,272,16
 Text=Total purchase price (Maloti) for all cattle?
  
 [EndColumn]
@@ -3466,6 +3478,7 @@ Item=LQ18S_ALL_CATTLEW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,490,16
 Text=Total transport costs from point of purchase to holding (Maloti) for all cattle?
  
 [EndColumn]
@@ -3569,6 +3582,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,299,16
 Text=Did the holding use the suppliment for sheep?
  
 [EndColumn]
@@ -3608,6 +3622,7 @@ Item=LQ13SA_ALL_SHEEPW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,375,16
 Text=Total Quantity of suppliments provided to feed the sheep?
  
 [EndColumn]
@@ -3627,6 +3642,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,409,16
 Text=Unit of total Quantity of suppliment provided to feed the sheep?
  
 [EndColumn]
@@ -3646,6 +3662,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,268,16
 Text=Main source of acquisition for the sheep?
  
 [EndColumn]
@@ -3665,6 +3682,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,388,16
 Text=Was any of this supplemetary feed purchsed for the sheep?
  
 [EndColumn]
@@ -3683,6 +3701,7 @@ Item=LQ17SA_ALL_SHEEPW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,284,16
 Text=Quantity purchased the dairy for the sheep?
  
 [EndColumn]
@@ -3702,6 +3721,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,267,16
 Text=Unit of quantity purchased for the sheep?
  
 [EndColumn]
@@ -3720,6 +3740,7 @@ Item=LQ17SC_ALL_SHEEPW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,277,16
 Text=Total purchase price (Maloti) forthe sheep?
  
 [EndColumn]
@@ -3738,6 +3759,7 @@ Item=LQ18S_ALL_SHEEPW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,499,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the sheep?
  
 [EndColumn]
@@ -3841,6 +3863,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,295,16
 Text=Did the holding use the suppliment for goats?
  
 [EndColumn]
@@ -3880,6 +3903,7 @@ Item=LQ13SA_ALL_GOATW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,371,16
 Text=Total Quantity of suppliments provided to feed the goats?
  
 [EndColumn]
@@ -3899,6 +3923,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,405,16
 Text=Unit of total Quantity of suppliment provided to feed the goats?
  
 [EndColumn]
@@ -3918,6 +3943,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,264,16
 Text=Main source of acquisition for the goats?
  
 [EndColumn]
@@ -3937,6 +3963,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,384,16
 Text=Was any of this supplemetary feed purchsed for the goats?
  
 [EndColumn]
@@ -3955,6 +3982,7 @@ Item=LQ17SA_ALL_GOATW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,280,16
 Text=Quantity purchased the dairy for the goats?
  
 [EndColumn]
@@ -3974,6 +4002,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,263,16
 Text=Unit of quantity purchased for the goats?
  
 [EndColumn]
@@ -3992,6 +4021,7 @@ Item=LQ17SC_ALL_GOATW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,273,16
 Text=Total purchase price (Maloti) forthe goats?
  
 [EndColumn]
@@ -4010,6 +4040,7 @@ Item=LQ18S_ALL_GOATW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,495,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the goats?
  
 [EndColumn]
@@ -4113,6 +4144,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,304,16
 Text=Did the holding use the suppliment for poultry?
  
 [EndColumn]
@@ -4152,6 +4184,7 @@ Item=LQ13SA_ALL_POULTRYW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,380,16
 Text=Total Quantity of suppliments provided to feed the poultry?
  
 [EndColumn]
@@ -4171,6 +4204,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,414,16
 Text=Unit of total Quantity of suppliment provided to feed the poultry?
  
 [EndColumn]
@@ -4190,6 +4224,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,273,16
 Text=Main source of acquisition for the poultry?
  
 [EndColumn]
@@ -4209,6 +4244,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,393,16
 Text=Was any of this supplemetary feed purchsed for the poultry?
  
 [EndColumn]
@@ -4227,6 +4263,7 @@ Item=LQ17SA_ALL_POULTRYW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,289,16
 Text=Quantity purchased the dairy for the poultry?
  
 [EndColumn]
@@ -4246,6 +4283,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,272,16
 Text=Unit of quantity purchased for the poultry?
  
 [EndColumn]
@@ -4264,6 +4302,7 @@ Item=LQ17SC_ALL_POULTRYW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,282,16
 Text=Total purchase price (Maloti) forthe poultry?
  
 [EndColumn]
@@ -4282,6 +4321,7 @@ Item=LQ18S_ALL_POULTRYW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,504,16
 Text=Total transport costs from point of purchase to holding (Maloti) for the poultry?
  
 [EndColumn]
@@ -4825,6 +4865,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,236,16
 Text=Household member or hired worker?
  
 [EndColumn]
@@ -4863,6 +4904,7 @@ Item=LQ28A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,552,16
 Text=For how many months was name involved in tending and herding livestock in months
  
 [EndColumn]
@@ -4881,6 +4923,7 @@ Item=LQ28B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,481,16
 Text=On average,how many weeks in a month did name tend and herd livestock
  
 [EndColumn]
@@ -4899,6 +4942,7 @@ Item=LQ28C,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,473,16
 Text=On average how many days in a week did name tend and herd livestock?
  
 [EndColumn]
@@ -4917,6 +4961,7 @@ Item=LQ28D,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,490,16
 Text=On average,for how many hours in a day did name tend and herd livestock?
  
 [EndColumn]
@@ -4935,6 +4980,7 @@ Item=LQ29A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,517,16
 Text=For hired workers how much did he/she receive for their work in cash or in kind?
  
 [EndColumn]
@@ -4953,6 +4999,7 @@ Item=LQ29B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,266,16
 Text=Does the payment cover other activities?
  
 [EndColumn]
@@ -5189,12 +5236,13 @@ Text=For household members-write the serial number from the household roaster,fo
  
 [Field]
 Name=LQ31
-Position=38,0,144,20
+Position=38,0,95,20
 Item=LQ31,COP_DICT_DICT
-UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,686,16
 Text=For household members-write the serial number from the household roaster,for hired workers write initials
  
 [EndColumn]
@@ -5303,6 +5351,7 @@ Item=LQ33B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,266,16
 Text=Does the payment cover other activities?
  
 [EndColumn]
@@ -5349,7 +5398,7 @@ Required=Yes
 Type=Record
 TypeName=LABOUR_COST
 Max=30
-DisplaySize=27,1210,1062,1642
+DisplaySize=27,1223,1078,1642
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -5539,10 +5588,11 @@ Text=For household members-write the serial number from the household roaster,fo
 Name=LQ35
 Position=38,0,95,20
 Item=LQ35,COP_DICT_DICT
-UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,686,16
 Text=For household members-write the serial number from the household roaster,for hired workers write initials
  
 [EndColumn]
@@ -5580,6 +5630,7 @@ Item=LQ37A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,444,16
 Text=For how many months was name involved in this activity in months?
  
 [EndColumn]
@@ -5598,6 +5649,7 @@ Item=LQ37B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,507,16
 Text=On average,how many weeks in a months was name involved in this activity ?
  
 [EndColumn]
@@ -5616,6 +5668,7 @@ Item=LQ37C,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,479,16
 Text=On average how many days in a week was name involved in this activity?
  
 [EndColumn]
@@ -5634,6 +5687,7 @@ Item=LQ37D,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,496,16
 Text=On average,for how many hours in a day was name involved in this activity?
  
 [EndColumn]
@@ -5652,6 +5706,7 @@ Item=LQ38A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,529,16
 Text=For hired workers how much did he/she receive for this activity in cash or in kind?
  
 [EndColumn]
@@ -5670,6 +5725,7 @@ Item=LQ38B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,266,16
 Text=Does the payment cover other activities?
  
 [EndColumn]
@@ -5689,6 +5745,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,459,16
 Text=Are there any more persons involved in tending and herding livestock?
  
 [EndColumn]
@@ -5812,6 +5869,7 @@ Item=LQ41SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,465,16
 Text=For how many months was Livestock product produced during summer?
  
 [EndColumn]
@@ -5830,6 +5888,7 @@ Item=LQ42SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,632,16
 Text=During those months what was the average quantity of livestock product produced during summer
  
 [EndColumn]
@@ -5848,6 +5907,7 @@ Item=LQ42SB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,684,16
 Text=During those months what was the unit of the average quantity livestock product produced during summer
  
 [EndColumn]
@@ -5905,6 +5965,7 @@ Item=LQ44SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,585,16
 Text=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
  
 [EndColumn]
@@ -5923,6 +5984,7 @@ Item=LQ44SB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,606,16
 Text=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
  
 [EndColumn]
@@ -5941,6 +6003,7 @@ Item=LQ44SC,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,541,16
 Text=What was the total value of sales of livestock product in the during summer period?
  
 [EndColumn]
@@ -6055,6 +6118,7 @@ Item=LQ41WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,455,16
 Text=For how many months was Livestock product produced during winter ?
  
 [EndColumn]
@@ -6073,6 +6137,7 @@ Item=LQ42WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,630,16
 Text=During those months what was the average quantity of livestock product produced during winter ?
  
 [EndColumn]
@@ -6091,6 +6156,7 @@ Item=LQ42WB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,682,16
 Text=During those months what was the unit of the average quantity livestock product produced during winter ?
  
 [EndColumn]
@@ -6148,6 +6214,7 @@ Item=LQ44WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,567,16
 Text=How much/many Quantity of  livestock product did the holding sell in the  winter period?
  
 [EndColumn]
@@ -6166,6 +6233,7 @@ Item=LQ44WB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,592,16
 Text=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
  
 [EndColumn]
@@ -6184,6 +6252,7 @@ Item=LQ44WC,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,474,16
 Text=What was the total value of sales of livestock product in the winter period
  
 [EndColumn]

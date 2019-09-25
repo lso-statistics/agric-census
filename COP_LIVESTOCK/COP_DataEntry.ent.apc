@@ -777,6 +777,54 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(1);//skip to suplements used for all cattle
 		endif;
 endif;
+PROC LQ15S
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA(curocc($));
+endif;
+PROC LQ16S
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10S_ALLCATTLE;//skip to suplements used for all cattle
+		endif;
+endif;
 PROC LQ18S
 savepartial();
 PROC LQ10S_ALLCATTLE
@@ -844,6 +892,54 @@ if curocc($) = 1 then
 		endif;
 
 endif;
+PROC LQ15S_ALL_CATTLE
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_CATTLE(curocc($));
+endif;
+PROC LQ16S_ALL_CATTLE
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10S_SHEEP;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ18S_ALL_CATTLE
 savepartial();
 PROC LQ10S_SHEEP
@@ -909,6 +1005,54 @@ if curocc($) = 1 then
 		endif;
 
 endif;
+PROC LQ15S_ALL_SHEEP
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_SHEEP(curocc($));
+endif;
+PROC LQ16S_ALL_SHEEP
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10S_GOATS;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ18S_ALL_SHEEP
 savepartial();
 PROC LQ10S_GOATS
@@ -971,6 +1115,54 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_POULTRY(1);//skip to suplements used for poultry
 		endif;
 endif;
+PROC LQ15S_ALL_GOATS
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_GOATS(curocc($));
+endif;
+PROC LQ16S_ALL_GOATS
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10S_POULTRY;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ10S_POULTRY
 preproc
 if LQ02(19) = 2 then
@@ -1027,6 +1219,54 @@ if curocc($) = 1 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_TYPW(1);//skip to suplements used for sheep
+		endif;
+endif;
+PROC LQ15S_ALL_POULTRY
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_POULTRY(curocc($));
+endif;
+PROC LQ16S_ALL_POULTRY
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10W_DAIRYCATTLE;//skip to suplements used for sheep
 		endif;
 endif;
 PROC LQ18S_ALL_POULTRY
@@ -1107,6 +1347,54 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(1);//skip to suplements used for all cattle
 		endif;
 endif;
+PROC LQ15W
+//skip to quantity
+if $ = 1 then
+	skip to LQ17WA(curocc($));
+endif;
+PROC LQ16W
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10W_ALLCATTLE;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ18W
 savepartial();
 PROC LQ10W_ALLCATTLE
@@ -1173,6 +1461,54 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_SHEEPW(1);//skip to suplements used for sheep
 		endif;
 endif;
+PROC LQ15S_ALL_CATTLEW
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_CATTLEW(curocc($));
+endif;
+PROC LQ16S_ALL_CATTLEW
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10W_SHEEP;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ18S_ALL_CATTLEW
 savepartial();
 PROC LQ10W_SHEEP
@@ -1237,6 +1573,54 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_GOATW(1);//skip to suplements used for goats
 		endif;
 endif;
+PROC LQ15S_ALL_SHEEPW
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_SHEEPW(curocc($));
+endif;
+PROC LQ16S_ALL_SHEEPW
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10W_GOATS;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ18S_ALL_SHEEPW
 savepartial();
 PROC LQ10W_GOATS
@@ -1299,6 +1683,54 @@ if curocc($) = 1 then
 			skip to USED_SUPPLIMENT_POULTRYW(1);//skip to suplements used for poultry
 		endif;
 endif;
+PROC LQ15S_ALL_GOATW
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_GOATW(curocc($));
+endif;
+PROC LQ16S_ALL_GOATW
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ10W_POULTRY;//skip to suplements used for sheep
+		endif;
+endif;
 PROC LQ18S_ALL_GOATW
 savepartial();
 PROC LQ10W_POULTRY
@@ -1357,6 +1789,54 @@ if curocc($) = 1 then
 		$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to LQ19A(1);//skip to livestock management
+		endif;
+endif;
+PROC LQ15S_ALL_POULTRYW
+//skip to quantity
+if $ = 1 then
+	skip to LQ17SA_ALL_POULTRYW(curocc($));
+endif;
+PROC LQ16S_ALL_POULTRYW
+//if no supplement skip to the next livestock type
+if curocc($) = 1 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 2 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 3 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 4 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 5 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 6 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 7 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 8 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 9 then
+		if $(curocc($)) = 2 then
+			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		endif;
+	elseif curocc($) = 10 then
+		if $(curocc($)) = 2 then
+			skip to LQ19A(1);//skip to suplements used for sheep
 		endif;
 endif;
 PROC LQ18S_ALL_POULTRYW
