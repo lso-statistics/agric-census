@@ -465,7 +465,7 @@ Label=LIVESTOCK PRODUCTION
 Name=LIVESTOCK_PRODUCTION_REC
 RecordTypeValue='2'
 MaxRecords=22
-RecordLen=190
+RecordLen=194
 
 [Item]
 Label=Did this household raise livestock?
@@ -515,24 +515,24 @@ Len=5
 Label=What was the total amount paid for these purchase in Maloti?
 Name=LQ05B
 Start=156
-Len=1
+Len=5
 
 [Item]
 Label=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019?
 Name=LQ06
-Start=157
+Start=161
 Len=3
 
 [Item]
 Label=How many were slaughtered between 1st August 2018 to 31st July 2019?
 Name=LQ07A
-Start=160
+Start=164
 Len=3
 
 [Item]
 Label=Did you pay for slaughtering ?
 Name=LQ07B
-Start=163
+Start=167
 Len=1
 
 [ValueSet]
@@ -544,7 +544,7 @@ Value=2;No
 [Item]
 Label=What was the total cost for slaughtering in maloti?
 Name=LQ07C
-Start=164
+Start=168
 Len=8
 Decimal=2
 DecimalChar=Yes
@@ -553,21 +553,21 @@ ZeroFill=Yes
 [Item]
 Label=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
 Name=LQ08
-Start=172
+Start=176
 Len=5
 ZeroFill=Yes
 
 [Item]
 Label=How many were sold for cash between 1st August 2018 to 31st July 2019?
 Name=LQ9A
-Start=177
+Start=181
 Len=5
 ZeroFill=Yes
 
 [Item]
 Label=What was the total value for sales in Maloti?
 Name=LQ9B
-Start=182
+Start=186
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -1785,7 +1785,7 @@ Len=1
 Label=Are there any more persons involved in tending and herding livestock?
 Name=ARE_THERE_ANY_MORE_PERSONS_INVOM
 Value=1;Yes
-Value=2;No 
+Value=2;No
 
 [Item]
 Label=Household member or hired worker?

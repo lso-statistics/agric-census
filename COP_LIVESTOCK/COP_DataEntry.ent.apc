@@ -566,38 +566,60 @@ PROC LQ01
 if $ = 2 then
 	endlevel;
 endif;
+PROC LQ02
+preproc
+TYPE_OF_LIVESTOCK_RAISED(1) = "Cattle";
+TYPE_OF_LIVESTOCK_RAISED(2) = "Calve";
+TYPE_OF_LIVESTOCK_RAISED(3) = "Improved dairy";
+TYPE_OF_LIVESTOCK_RAISED(4) = "Improve beef";
+TYPE_OF_LIVESTOCK_RAISED(5) = "Oxen";
+TYPE_OF_LIVESTOCK_RAISED(6) = "Indegenous Cattle";
+TYPE_OF_LIVESTOCK_RAISED(7) = "Sheep";
+TYPE_OF_LIVESTOCK_RAISED(8) = "Improve Sheep";
+TYPE_OF_LIVESTOCK_RAISED(9) = "Indegenous Sheep";
+TYPE_OF_LIVESTOCK_RAISED(10) = "Goats";
+TYPE_OF_LIVESTOCK_RAISED(11) = "Improved Goats";
+TYPE_OF_LIVESTOCK_RAISED(12) = "Indegenous Goats";
+TYPE_OF_LIVESTOCK_RAISED(13) = "Pigs";
+TYPE_OF_LIVESTOCK_RAISED(14) = "Improved Pigs";
+TYPE_OF_LIVESTOCK_RAISED(15) = "Indegenous Pigs";
+TYPE_OF_LIVESTOCK_RAISED(16) =  "Horses";
+TYPE_OF_LIVESTOCK_RAISED(17) = "Donkeys";
+TYPE_OF_LIVESTOCK_RAISED(18) = "Mules";
+TYPE_OF_LIVESTOCK_RAISED(19) = "Chickens";
+TYPE_OF_LIVESTOCK_RAISED(20) = "Boilers";
+TYPE_OF_LIVESTOCK_RAISED(21) = "Layers";
+TYPE_OF_LIVESTOCK_RAISED(22) = "Insigenous";
 PROC TYPE_OF_LIVESTOCK_RAISED
 preproc
- //set the value for the type of livestock raised based on the current row of the roster
+ //skip with respect the given answer
 if curocc($) = 1 then
 	//$(curocc($)) = "Cattle";
 		if LQ02 = 2 then
-				skip to LQ02(curocc($)+6);//skip to sheep
-			else
-				skip to LQ02(curocc($)+1);//skip to calves
+			skip to LQ02(curocc($)+6);//skip to sheep
 		endif;
 	elseif curocc($) = 2 then
-		$(curocc($)) = "Calve";
+		//$(curocc($)) = "Calve";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 3 then
-		$(curocc($)) = "Improved dairy";
+		//$(curocc($)) = "Improved dairy";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 4 then
-		$(curocc($)) = "Improve beef";
+		//$(curocc($)) = "Improve beef";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 5 then
-		$(curocc($)) = "Oxen";
+		//$(curocc($)) = "Oxen";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 6 then
-		$(curocc($)) = "Indegenous Cattle";
+		//$(curocc($)) = "Indegenous Cattle";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
@@ -605,16 +627,14 @@ if curocc($) = 1 then
 		//$(curocc($)) = "Sheep";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+3);//skip to goats
-		else
-			skip to LQ02(curocc($)+1);//skip to Improve Sheep
 		endif;
 	elseif curocc($) = 8 then
-		$(curocc($)) = "Improve Sheep";
+		//$(curocc($)) = "Improve Sheep";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 9 then
-		$(curocc($)) = "Indegenous Sheep";
+		//$(curocc($)) = "Indegenous Sheep";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
@@ -622,16 +642,14 @@ if curocc($) = 1 then
 		//$(curocc($)) = "Goats";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+3);//skip to pigs
-		else
-			skip to LQ02(curocc($)+1);//skip to Improved Goats
 		endif;
 	elseif curocc($) = 11 then
-		$(curocc($)) = "Improved Goats";
+		//$(curocc($)) = "Improved Goats";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 12 then
-		$(curocc($)) = "Indegenous Goats";
+		//$(curocc($)) = "Indegenous Goats";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
@@ -639,31 +657,29 @@ if curocc($) = 1 then
 		//$(curocc($)) = "Pigs";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+3);//skip to the next row
-		else
-			skip to LQ02(curocc($)+1);//skip to Improved Pigs
 		endif;
 	elseif curocc($) = 14 then
-		$(curocc($)) = "Improved Pigs";
+		//$(curocc($)) = "Improved Pigs";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 15 then
-		$(curocc($)) = "Indegenous Pigs";
+		//$(curocc($)) = "Indegenous Pigs";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 16 then
-		$(curocc($)) = "Horses";
+		//$(curocc($)) = "Horses";
 		if LQ02 = 2 then
-			skip to LQ02(curocc($)+1);//skip to the next row
+			skip to LQ02(curocc($)+1);//skip to the next row 
 		endif;
 	elseif curocc($) = 17 then
-		$(curocc($)) = "Donkeys";
+		//$(curocc($)) = "Donkeys";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 18 then
-		$(curocc($)) = "Mules";
+		//$(curocc($)) = "Mules";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
@@ -671,31 +687,222 @@ if curocc($) = 1 then
 		//$(curocc($)) = "Chickens";
 		if LQ02 = 2 then
 			skip to LQ10S_DAIRYCATTLE;//skip to suplements for all cattle
-		else
-			skip to LQ02(curocc($)+1);//skip to Boilers
 		endif;
 	elseif curocc($) = 20 then
-		$(curocc($)) = "Boilers";
+		//$(curocc($)) = "Boilers";
 		if LQ02 = 2 then
-			skip to LQ02(curocc($)+1);//skip to the next row
+			skip to LQ02(curocc($)+1);//skip to the next row of LQ03
 		endif;
 	elseif curocc($) = 21 then
-		$(curocc($)) = "Layers";
+		//$(curocc($)) = "Layers";
 		if LQ02 = 2 then
 			skip to LQ02(curocc($)+1);//skip to the next row
 		endif;
 	elseif curocc($) = 22 then
-		$(curocc($)) = "Chickens";
+		//$(curocc($)) = "Indigenous Chickens";
 		if LQ02 = 2 then
 			skip to LQ10S_DAIRYCATTLE;//skip to suplements for all cattle
 		endif;
 endif;
 postproc
 
+if curocc($) = 2 then
+		//$(curocc($)) = "Calve";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 3 then
+		//$(curocc($)) = "Improved dairy";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 4 then
+		//$(curocc($)) = "Improve beef";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 5 then
+		//$(curocc($)) = "Oxen";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 6 then
+		//$(curocc($)) = "Indegenous Cattle";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 8 then
+		//$(curocc($)) = "Improve Sheep";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 9 then
+		//$(curocc($)) = "Indegenous Sheep";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 11 then
+		//$(curocc($)) = "Improved Goats";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 12 then
+		//$(curocc($)) = "Indegenous Goats";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 14 then
+		//$(curocc($)) = "Improved Pigs";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 15 then
+		//$(curocc($)) = "Indegenous Pigs";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 16 then
+		//$(curocc($)) = "Horses";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 17 then
+		//$(curocc($)) = "Donkeys";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 18 then
+		//$(curocc($)) = "Mules";
+		if LQ02 = 1 then
+			skip to LQ04(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 20 then
+		//$(curocc($)) = "Boilers";
+		if LQ02 = 1 then
+			skip to LQ03(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 21 then
+		//$(curocc($)) = "Layers";
+		if LQ02 = 1 then
+			skip to LQ03(curocc($));//skip to LQ04
+		endif;
+	elseif curocc($) = 22 then
+		//$(curocc($)) = "Indigenous Chickens";
+		if LQ02 = 1 then
+			skip to LQ03(curocc($));//skip to LQ04
+		endif;
+endif;
+PROC LQ03
+if curocc($) = 1 then
+	skip to LQ02(curocc($)+1);//LQ03 is the last answer for Cattle, so skip to the next livestock type(calves)
+elseif curocc($) = 7 then
+	skip to LQ02(curocc($)+1);//LQ03 is the last answer for Sheep, so skip to the next livestock type(Improved sheep)
+elseif curocc($) = 10 then
+	skip to LQ02(curocc($)+1);//LQ03 is the last answer for Goats, so skip to the next livestock type(Improved goats)
+elseif curocc($) = 13 then
+	skip to LQ02(curocc($)+1);//LQ03 is the last answer for Goats, so skip to the next livestock type(Improved pigs)
+elseif curocc($) = 19 then
+	skip to LQ02(curocc($)+1);//LQ01 is the last answer for Goats, so skip to the next livestock type(broilers)
+endif;
+PROC LQ05A
+preproc
+if curocc($) in 20:22 then//the condition only holds if row number is 20(broilers), 21(layers), or 23(indigenous)
+	skip to LQ07A(curocc($));
+endif;
+postproc
+//if non of the livestock was purchased skip to LQ06
+if curocc($) in 2:6 then //the condition only holds if row number is 2(calves), 3(improved dairy), or 4(improved beef)...5(indigenous cattle)
+	if($(curocc($)) = 0) then
+		skip to LQ06(curocc($));
+	endif;
+endif; 
+//if non of the livestock was slaughtered skip to LQ06
+if curocc($) in 8:9 then //the condition only holds if row number is 8(improved sheep),9(indigenous sheep)
+	if($(curocc($)) = 0) then
+		skip to LQ06(curocc($));
+	endif;
+endif;
+//if non of the livestock was slaughtered skip to LQ06
+if curocc($) in 11:12 then //the condition only holds if row number is 11(improved goats),12(indigenous goats)
+	if($(curocc($)) = 0) then
+		skip to LQ06(curocc($));
+	endif;
+endif;
+//if non of the livestock was slaughtered skip to LQ06
+if curocc($) in 14:15 then //the condition only holds if row number is 14(improved pigs),15(indigenous pigs)
+	if($(curocc($)) = 0) then
+		skip to LQ06(curocc($));
+	endif;
+endif;
+PROC LQ07A
+preproc
+//if livestock is horses,donkeys,or mules skip to LQ08
+if curocc($) in 16:18 then 
+	skip to LQ08(curocc($));
+endif;
+postproc
+//if non of the livestock was slaughtered skip to LQ08
+if curocc($) in 2:6 then //the condition only holds if row number is 2(calves), 3(improved dairy), or 4(improved beef)...5(indigenous cattle)
+	if($(curocc($)) = 0) then
+		skip to LQ08(curocc($));
+	endif;
+endif; 
+//if non of the livestock was slaughtered skip to LQ08
+if curocc($) in 8:9 then //the condition only holds if row number is 8(improved sheep),9(indigenous sheep)
+	if($(curocc($)) = 0) then
+		skip to LQ08(curocc($));
+	endif;
+endif;
+//if non of the livestock was slaughtered skip to LQ08
+if curocc($) in 11:12 then //the condition only holds if row number is 11(improved goats),12(indigenous goats)
+	if($(curocc($)) = 0) then
+		skip to LQ08(curocc($));
+	endif;
+endif;
+//if non of the livestock was slaughtered skip to LQ08
+if curocc($) in 14:15 then //the condition only holds if row number is 14(improved pigs),15(indigenous pigs)
+	if($(curocc($)) = 0) then
+		skip to LQ08(curocc($));
+	endif;
+endif;
+PROC LQ07B
+//if did not pay for slaughtering, skip to LQ08
+if curocc($) in 2:6 then //the condition only holds if row number is 2(calves), 3(improved dairy), or 4(improved beef)...5(indigenous cattle)
+	if($(curocc($)) = 2) then
+		skip to LQ08(curocc($));
+	endif;
+endif; 
+//if did not pay for slaughtering, skip to LQ08
+if curocc($) in 8:9 then //the condition only holds if row number is 8(improved sheep),9(indigenous sheep)
+	if($(curocc($)) = 2) then
+		skip to LQ08(curocc($));
+	endif;
+endif;
+//if did not pay for slaughtering, skip to LQ08
+if curocc($) in 11:12 then //the condition only holds if row number is 11(improved goats),12(indigenous goats)
+	if($(curocc($)) = 2) then
+		skip to LQ08(curocc($));
+	endif;
+endif;
+//if did not pay for slaughtering, skip to LQ08
+if curocc($) in 14:15 then //the condition only holds if row number is 14(improved pigs),15(indigenous pigs)
+	if($(curocc($)) = 2) then
+		skip to LQ08(curocc($));
+	endif;
+endif;
+PROC LQ08
+preproc
+if curocc($) in 20:22 then//the condition only holds if row number is 20(broilers), 21(layers), or 23(indigenous)
+	skip to LQ9A(curocc($));
+endif;
 PROC LQ9B
+{if curocc($) in 2:6 then//the condition only holds if row number is 2(calves), 3(improved dairy), or 4(improved beef)...5(indigenous cattle)
+	skip to LQ04(curocc($)+1);
+endif;}
 savepartial();
 PROC LQ10S_DAIRYCATTLE
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep 
 if LQ02(1) = 2 then
 	skip to LQ10W_SHEEP;
 elseif LQ02(7) = 2 then
@@ -706,24 +913,6 @@ elseif LQ02(19) = 2 then
 	skip to LQ19A(1);
 endif;
 
-PROC USED_SUPPLIMENT_TYPE
-{preproc
-numeric currentRow;
-do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
-	if currentRow = 1 and LQ02(currentRow) = 2 then // if have no cattle skip asking about their supplement feed, skip to ship supplement feed
-		//skip to USED_SUPPLIMENT_SHEEP;
-		hasCattle = 1;
-	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
-		//skip to USED_SUPPLIMENT_GOATS;
-		hasSheep = 1;
-	elseif currentRow = 10 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
-		//skip to USED_SUPPLIMENT_GOATS;
-		hasGoats = 1;
-	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
-		//skip to LQ19A(1);
-		hasChickens = 1;
-	endif;
-enddo;}
 PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
 preproc
 if curocc($) = 1 then
@@ -778,7 +967,7 @@ if curocc($) = 1 then
 		endif;
 endif;
 PROC LQ15S
-//skip to quantity
+//if purchased skip to quantity
 if $ = 1 then
 	skip to LQ17SA(curocc($));
 endif;
@@ -829,6 +1018,7 @@ PROC LQ18S
 savepartial();
 PROC LQ10S_ALLCATTLE
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(1) = 2 then
 	skip to LQ10W_SHEEP;
 elseif LQ02(7) = 2 then
@@ -944,6 +1134,7 @@ PROC LQ18S_ALL_CATTLE
 savepartial();
 PROC LQ10S_SHEEP
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(7) = 2 then
 	skip to LQ10W_GOATS;
 elseif LQ02(10) = 2 then
@@ -1057,6 +1248,7 @@ PROC LQ18S_ALL_SHEEP
 savepartial();
 PROC LQ10S_GOATS
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(10) = 2 then
 	skip to LQ10W_POULTRY;
 elseif LQ02(19) = 2 then
@@ -1165,6 +1357,7 @@ if curocc($) = 1 then
 endif;
 PROC LQ10S_POULTRY
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(19) = 2 then
 	skip to LQ19A(1);
 endif;
@@ -1273,6 +1466,7 @@ PROC LQ18S_ALL_POULTRY
 savepartial();
 PROC LQ10W_DAIRYCATTLE
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(1) = 2 then
 	skip to LQ10W_SHEEP;
 elseif LQ02(7) = 2 then
@@ -1399,6 +1593,7 @@ PROC LQ18W
 savepartial();
 PROC LQ10W_ALLCATTLE
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(1) = 2 then
 	skip to LQ10W_SHEEP;
 elseif LQ02(7) = 2 then
@@ -1513,6 +1708,7 @@ PROC LQ18S_ALL_CATTLEW
 savepartial();
 PROC LQ10W_SHEEP
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(7) = 2 then
 	skip to LQ10W_GOATS;
 elseif LQ02(10) = 2 then
@@ -1625,6 +1821,7 @@ PROC LQ18S_ALL_SHEEPW
 savepartial();
 PROC LQ10W_GOATS
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(10) = 2 then
 	skip to LQ10W_POULTRY;
 elseif LQ02(19) = 2 then
@@ -1735,6 +1932,7 @@ PROC LQ18S_ALL_GOATW
 savepartial();
 PROC LQ10W_POULTRY
 preproc
+//skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(19) = 2 then
 	skip to LQ19A(1);
 endif;
@@ -1932,6 +2130,12 @@ elseif curocc($) = 4 then
 	if $(curocc($)) = 2 then
 		//SKIP TO LABOUR COSTS
 	endif;
+endif;
+PROC LQ23A
+preproc
+//LQ23A ANS LQ23B do not apply to POULTRY so skip to LABOUR COSTS
+if curocc($) = 4 then
+	skip to LQ24;
 endif;
 PROC LQ23B
 savepartial();
