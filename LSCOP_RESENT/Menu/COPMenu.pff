@@ -1,0 +1,24 @@
+﻿[Run Information]
+Version=CSPro 7.2
+AppType=Entry
+
+[DataEntryInit]
+Interactive=Ask
+
+[Files]
+Application=.\COPMenu.ent
+InputData=|NONE
+
+[ExternalFiles]
+ASSIST_SUPERVISOR_REVIEW_DICT=|NONE
+COP_DICT_DICT=|NONE
+CROPSCOSTOFPRODUCTION_DICT=.\dummy1.dat
+STAFF_DICT=.\staff.dat
+
+[UserFiles]
+PFFFILE=
+SR_PFFFILE=
+TMPFILE=
+
+[Parameters]
+

@@ -1,0 +1,1322 @@
+﻿[CAPI QUESTIONS]
+Version=CSPro 7.0
+
+[LANGUAGES]
+ENG=English
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.ANYMORE_PEOPLE
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Anymore People\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B1
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Household member serial No\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B2
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Name of the household member (NAME).\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B3
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Is \b\f1\fs18  %getocclabel% \b0\f0\fs24  male or female?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B4
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is \b\f1\fs18  %getocclabel%\b0\f0\fs24 's age\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B5
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\b\f0\fs18 What is %getocclabel%'s relationship to the head of the household?\b0\f1\fs24\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B6
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is \b\f1\fs18  %getocclabel%'s \b0\f0\fs24  marital status?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B7
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\b\f0\fs20 What is \fs18  %getocclabel%'s \fs20 highest level of education attained\b0\f1\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B8
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is \b\f1\fs18  %getocclabel%'s \b0\f0\fs24 current residencial status?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.B9
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did \b\f1\fs18  %getocclabel%'s \b0\f0\fs24  participate in farming activities of the holding between August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CHIEF
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Chief/Headman\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.COMMUNITY_COUNCIL
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Community Council\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CONSTITUENCY
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Constituency\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ01
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding plant any crops during the past Agricaltural year 2018/2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ02
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many fields did the holding have or operate during the summer season for last Agricaltural year 2018/2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ04
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Field number\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ05
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the ownership of the field at \b\f1\fs18  %getocclabel% \b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ06
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the use of the field at \b\f1\fs18  %getocclabel%'\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ06_OTHER
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the other use of the field at \b\f1\fs18  %getocclabel% \b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ07A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much was paid in cash for renting this field at \b\f1\fs18  %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ07B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much was paid in cash equivalant for renting this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ08A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much was recieved in cash for renting this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ08B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much was recieved in cash equivalant for renting this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ09A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the main method used for land preparation at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ09B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What implements did the holding use to prepare land for planting at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ09B_OTHER
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What other implements did the holding use to prepare land for planting at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ09C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many complete weedings of this field at \b\f1\fs18 %getocclabel%\f0\fs24  \b0 were done during the season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ12
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Was the field a pure or mixed stand at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ13
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What crops were planted on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ14
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the seed type used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ15
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Area (ha) For mixtures estimate the propotion under each crop?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ16A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the quantity of seeds used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ16B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What quantity of seeds in kg (Units)?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ17A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Write the code for each combination of crop identified in C.Q 13 and C.Q 14?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ17B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Write the code for each combination of crop identified in C.Q 13 and C.Q 14?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ18
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did the holding obtain most of the seeds used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ19A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity purchase?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ19B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of quantity purchase?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ19C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total price paid for the total quantity purchased?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding put any inorganic fertiliser on their crops during the summer season for the agricultural year 2018/2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ22
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Was the inorgain fertiliser used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ23
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the main type of inorganic fertiliser used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ24A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity of inorganic fertiliser used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ24B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of total quantity of inorganic fertiliser used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ25
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Write the code for each inorganic tertiliser used (C.Q23)\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ26
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did the holding obtain most of the inorganic fertilizer used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ27A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity purchased?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ27B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the total quantity purchased?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ27C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the  total purchase price of the total quantity purchased?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ28
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding put any organic fertiliser on their crops during the summer season for the agricultural year 2018/2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ30
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Was the inorganic used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ31
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the main type of organic fertiliser on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ32A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity of organic fertiliser on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ32B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of total quantity of organic fertiliser on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ34
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did the holding obtain most of the organic fertiliser used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ35A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity purchased for the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ35B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the inut of the quantity purchased for the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ35C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total purchase price for the total purchased for the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ36
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding apply any plant protection products to thier crops during the summer (winter) season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ37
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding apply any herbicides to thier crops during the summer (winter) season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ39
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Were the herbicides used on the field  at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ40A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity of herbicides used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ40B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the quantity of the herbicides used on the field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ41
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did holding obtain most of the herbicides used at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ42A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24  at \b\f1\fs18 %getocclabel%\b0\f0\fs24 What was the total quantity purchased at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ42B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the total quantity purchased  at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ42C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total purchase price in Maloti at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ43
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding apply any insecticides to thier crops during the summer (winter) season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ45
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Were insecticides used on this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ46A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity of insecticides used on this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ46B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was unit the total quantity of insecticides used on this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ47
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did the holding obtain most of the insecticides used at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ48A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the quantity purchased at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ48B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of total quantity purchased at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ48C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total purchase price of the total quantity purchased at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ49
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding apply any fungicides to thier crops during the summer (winter) season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ51
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Were fungicides used on this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ52A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity of fungicides on this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ52B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the total quantity used on this field at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ53
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did the holding obtain most of the fungicides used at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ54A
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity purchase at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ54B
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the total quantity purchased at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ54C
+Occurrences=1:20
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total purchase price of the total quantity purchased at \b\f1\fs18 %getocclabel%\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ55
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much was spent to purchase protective clothing to use during the application of the plant protection products during summer (winter)  season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ56A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding engage Family labour?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ56B
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding engage Hired labour?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ57
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs20 Did you do this \b\f1\fs18 %getocclabel%\b0\f0\fs20  activity ?\fs24\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ57A
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Activity Name\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ58A
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many household members were involved in \b\f1\fs18 %getocclabel%\f0\fs24  \b0 activity ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ58B
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 On average, How many days did household member work on the \b %getocclabel%\b0  activity?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ58C
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 On average, How many hours did household member work on the \b\f1\fs18 %getocclabel%\fs24  \b0\f0 activity?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ59A
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many people did the holding hire to do the \b\f1\fs18 %getocclabel%\b0\f0\fs24  activity?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ59B
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 On avarage, How many days did each worker spend on the \b\f1\fs18 %getocclabel%\fs20  \b0\f0\fs24 activity?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ59C
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 On average, How many hours did the worker spend each day on the \b\f1\fs18 %getocclabel%\fs20  \b0\f0\fs24 activity?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ60A
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total amount pay in cash to hire labour to completed the \b\f1\fs18 %getocclabel%\b0\f0\fs24  activity\b\f1\fs18 ?\b0\f0\fs24\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ60B
+Occurrences=1:11
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 For in-kind payments, what was the total cash equivalent pay to hire labour to complete the \b\f1\fs18 %getocclabel%\b0\f0\fs24  activity?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ61
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding use any external service provider to carry out the activities of crop production during summer (winter) season?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ63
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Type of Activity\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ64
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Did the holding hire a service for the activity(\b\f1\fs18 %getocclabel%\f0\fs24 )\b0 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ65A
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much in cash was paid for the service \fs22 (\b\f1\fs18 %getocclabel%\f0\fs22 )\b0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ65B
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 For in kind payment for the service what was the cash equivalent for\fs22  (\b\f1\fs18 %getocclabel%)\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ67
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Types of Crop\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ68A
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the total quantity of \b\f1\fs18 %getocclabel%\b0\f0\fs24  harvested for the Summer [winter] season of the 2018/19 agricultural year?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ68B
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the total quantityof \b\f1\fs18 %getocclabel%\b0\f0\fs24  harvested for the Summer [winter] season of the 2018/19 agricultural year?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ69A
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What quantity of the crop(\b\f1\fs18 %getocclabel%)\b0\f0\fs24  was sold/exchanged ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ69B
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the unit of the quantity of the crop(\b\f1\fs18 %getocclabel%)\b0\f0\fs24  sold/exchanged ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ70
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Where did you sell/exchange most of the crop(\b\f1\fs18 %getocclabel%)\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ71A
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the cash total payments received in Maloti for (\b\f1\fs18 %getocclabel%)\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ71B
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What was the cash equivalent of in kind payments received in Maloti for (\b\f1\fs18 %getocclabel%)\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ72
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much did the holding spend on Transport to sell the crop in cash for (\b\f1\fs18 %getocclabel%)\b0\f0\fs24 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ73
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 From August 2018 to July 2019, on average, how much did the holding pay monthly for water used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ73A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 From August 2018 to July 2019, on average, how much did the holding pay IN KIND monthly for water used?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ74
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 From August 2018 to July 2019, on average, how much did the holding pay monthly for electricity used for agricultural services?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ74A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 From August 2018 to July 2019, on average, how much did the holding pay IN KIND monthly for electricity used for agricultural services?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ75
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much in total did the holding pay for repairs and maintenance related to farm machinery and equipment from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ75A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much in total did the holding pay IN KIND for repairs and maintenance related to farm machinery and equipment from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ76
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much in total did the holding pay for fuel, oil and lubricants from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ76A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much in total did the holding pay IN KIND for fuel, oil and lubricants from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ77
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much did the holding pay for your lease fees from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ77A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much did the holding pay IN KIND for your lease fees from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ78
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much did the holding spend on any other expenses related to crops or livestock from August 2018  to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CQ78A
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How much in total did holding spend IN KIND on any other expenses related to crops or livestock from August 2018 to July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.CROP_CODE
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Crop Codes\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.DISTRICT
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 District\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.ENUMERATION_AREA
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Enumeration Area\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ02
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 During the 2018/2019 Agricaltural year did the holding own assets?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ02_LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Type of Machinery for Livestock\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ03
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Type of asset\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ03_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 During the 2018/2019 Agricaltural year did the holding own these Irrigation equipment.?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ03_LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 During the 2018/2019 Agricaltural year did the holding own assets?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ04
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many assets  did the holding have in working cindition?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ04_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many assets  did the holding have in working cindition?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ04_LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many assets  did the holding have in working condition?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ05
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Does the holding currently own any of these assetsin working condition now?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ05_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Does the holding currently own any irrigation equipment in working condition now?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ05_LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Does the holding currently own any of these assets in working condition now?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ06
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many of these assets in working conditions does the holding currently own?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ06__LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many of these assets in working conditions does the holding currently own?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ06_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many of these assets in working conditions does the holding currently own?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ07
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the age of the asset?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ07_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the age of the asset?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ07_LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the age of the asset?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ08
+Occurrences=1:17
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 if you were to sell those assets now on the market, how much would you sell them for?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ08_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 If you were to sell those assets now on the market, how much would you sell them for?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ08_LIVESTOCK
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 If you were to sell those assets now on the market, how much would you sell them for?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ10_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 The type of Building or infrastructure\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ11_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 During the 2018/2019 Agricaltural year did the holding own farm buildings and infrastracture?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ12_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 How many of them are operational/in use?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ13A_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 In which year was ASSET1 the construction completed (year when the infrastructure started to be used)?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ13B_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 In which year was ASSET2 the construction completed (year when the infrastructure started to be used)?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ14A_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the estimate of the construction costs t replace ASSET1 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ14B_BUILDINGS
+Occurrences=1:8
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the estimate of the construction costs t replace ASSET2 ?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ_IRRIGATION
+Occurrences=1:5
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Type of irrigation Equipment\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ_IRRIGATION_EQUIPMENT
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Does the holding own any irrigation Equipment?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ_MACHINERY_CROPS
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Does the holding own any Machinery/Equipment for Crops?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.FQ_MACHINERY_LIVESTOCK
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Does the holding own any Machinery/Equipment for Livestock?\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.HOUSEHOLD_HEAD_NAMES
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Name of Household Head\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.HOUSEHOLD_NUMBER
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Household Number\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.HOUSEHOLD_STATUS
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Household Number\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.INTERVIEW_DATE
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Interview Date\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.NUMBER_OF_HOUSEHOLD_MEMBERS
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Number of Household Members\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.NUMBER_OF_VISITS
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Number of visits\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.PSU_CODE
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 PSU Code\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.RESPONDENT_NAME
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Name of Respondent.\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.RESPONDENT_RELATIONSHIP
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Relationship of the Respondent to household head.\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.SETTLEMENT
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Settle\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.VILLAGE_NAME
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Village Name\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.VILLAGE_NUMBER
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Village Number\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.VISIT_DATE
+Occurrences=1:3
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Visit Date\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.ZONE
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Zone\par
+ENG=}
+

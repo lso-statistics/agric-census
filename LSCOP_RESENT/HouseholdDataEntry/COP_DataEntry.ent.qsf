@@ -1,0 +1,1711 @@
+﻿[CAPI QUESTIONS]
+Version=CSPro 7.2
+
+[LANGUAGES]
+ENG=English
+
+[QUESTION]
+Field=COP_DICT_DICT.ANYMORE_PEOPLE
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Any more member to capture?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.ARE_THERE_ANY_MORE_PERSONS_INVOL
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were there any more persons involved in tending and herding livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.ARE_THERE_ANY_MORE_PERSONS_OTHES
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Were there any more persons involved in tending and herding livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.ARE_THERE_ANY_MORE_PERSONS_PLTZ
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were there any more persons involved in tending and herding livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B2
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter the name of Household members, starting with the Head of the Household.\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B3
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Is \cf0\f1  \cf1\b\i %getocclabel%\i0\f0  \b0 Male or Female?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B4
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What is \b\f1 %getocclabel%\i0\f0 's \b0 Age?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B5
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What is \b\f1 %getocclabel%\i0\f0 's \b0 Relationship to the Household Head?\i\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B6
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What is \b\f1 %getocclabel%\i0\f0 's \b0 Marrital status?\i\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B7
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What is \b\f1 %getocclabel%\i0\f0 's \b0 Highest level of Education?\i\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B8
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What is \b\f1 %getocclabel%\i0\f0 's \b0 Residential status?\i\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.B9
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did  \b\f1 %getocclabel%\i0\f0  \b0 participate in Farming activities of the holding between August 2018 and July 2019?\i\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.HOUSEHOLD_MEMBER_OR_HIRED_OTHES
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.HOUSEHOLD_MEMBER_OR_HIRED_PLTZ
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.HOUSEHOLD_MEMBER_OR_HIRED_WORKER
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ01
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding  raise any livestock from 1st August 2018 to 31 July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ02
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the Household raise \b\f1 %getocclabel%\f0  \b0 between 1st August 2018 and 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ03
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What type of livestock production system did the holding mainly use for \b\f1 %getocclabel%\b0\f0 ?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ04
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0   were kept on 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ05A
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were purchased for cash between 1st August 2018 and 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ05B
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total amount paid for \b\f1 %getocclabel%\b0\f0 s' purchase in Maloti?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ06
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were received as gift/lobola/bartered between 1st August 2018 and 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ07A
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were slaughtered between 1st August 2018 to 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ07B
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did you pay for the slaughtering?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ07C
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total cost for slaughtering \b\f1 %getocclabel%\b0\f0  in Maloti?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ08
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10S_ALLCATTLE
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide All Cattle with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10S_DAIRYCATTLE
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Dairy Cattle with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10S_GOATS
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Goats with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10S_POULTRY
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Poultry with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10S_SHEEP
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide sheep with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10W_ALLCATTLE
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide All Cattle with any Supplimentary feed during Winter and Spring seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10W_DAIRYCATTLE
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Dairy Cattle with any Supplimentary feed during Winter and Spring seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10W_GOATS
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Goats with any Supplimentary feed during Winter and Spring seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10W_POULTRY
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Exotic Poultry with any Supplimentary feed during Winter and Spring seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ10W_SHEEP
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide sheep with any Supplimentary feed during Winter and Spring seasons?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_GOATT
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SA_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13SB_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13WA
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ13WB
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0   for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0   for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for the sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15S_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ15W
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0  for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16S_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ16W
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for dairy cattle alone??\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SA_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SB_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17SC_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17WA
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17WB
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ17WC
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18S_ALL_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ18W
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ19A
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were \b\f1 %getocclabel%\b0\f0  de-wormed at least once?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ19B
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much was spent on de-worming \b\f1 %getocclabel%\b0\f0  in Maloti?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ20A
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were \b\f1 %getocclabel%\b0\f0  Vaccinated at least once between 1st August 2018 and 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ20B
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much was spent on these vaccinations?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ20C
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main source of Vaccines?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ20C_OTHER
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the other main source of Vaccines?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ21A
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the main method of parasite control on \b\f1 %getocclabel%\b0\f0 ?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ21B
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much was spent on parasite control (Maloti)?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ22
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were \b\f1 %getocclabel%\b0\f0   treated for infectious diseases or accidents?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ22B
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much was spent on treatment for infectious diseases or accidents?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ23A
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was Artificial Insemination (IA) or mating practiced?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ23B
+Occurrences=1:4
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much was spent on IA or mating?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ24
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ25
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How was the person paid?-give the estimated cash value if paid in-kind?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ26
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were any other person or household member involved in tending and herding livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ27
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials.\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ28A
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\i0\f0  \b0\i  involved in tending and herding livestock in months?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ28B
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,how many weeks in a month did \b\f1 %getocclabel%\i0\f0  \b0\i  tend and herd livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ28C
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average how many days in a week did \b\f1 %getocclabel%\i0\f0  \b0\i tend and herd livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ28D
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,for how many hours in a day did \b\f1 %getocclabel%\i0\f0  \b0\i  tend and herd livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ29A
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For hired workers how much did \b\f1 %getocclabel%\i0\f0  \b0\i  receive for their work in cash or in kind?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ29B
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Does the payment cover other activities?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were any other person or household member involved in tending poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ31
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials.\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ32A
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  involved in tending and herding livestock in months?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ32B
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,how many weeks in a month did \b\f1 %getocclabel%\b0\f0  tend and herd livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ32C
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average how many days in a week did \b\f1 %getocclabel%\b0\f0  tend and herd livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ32D
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,for how many hours in a day did \b\f1 %getocclabel%\b0\f0  tend and herd livestock?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ33A
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For hired workers how much did \b\f1 %getocclabel%\b0\f0  receive for their work in cash or in kind?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ33B
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Does the payment cover other activities?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ34
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were any other person or household member involved in other livestock activities?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ35
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials.\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ36
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the activity that \b\f1 %getocclabel%\b0\f0  was engaged on?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ37A
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  involved in this activity in months?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ37B
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,how many weeks in a months was \b\f1 %getocclabel%\b0\f0  involved in this activity ?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ37C
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average how many days in a week was \b\f1 %getocclabel%\b0\f0  involved in this activity?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ37D
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\fs24 On average,for how many hours in a day was \b\i\f1 %getocclabel%\b0\i0\f0  involved in this activity?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ38A
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\fs24 For hired workers how much did \b\i\f1 %getocclabel%\b0\i0\f0  receive for this activity in cash or in kind?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ38B
+Occurrences=1:30
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Does the payment cover other activities?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ40S
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding produce \b\f1 %getocclabel%\b0\f0  during summer?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ40W
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding produce \b\f1 %getocclabel%\b0\f0  during winter?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ41SA
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  produced during summer?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ41WA
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ42SA
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 During those months what was the average quantity of \b\f1 %getocclabel%\b0\f0  produced during summer\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ42SB
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 During those months what was the unit of the average quantity \b\f1 %getocclabel%\b0\f0  produced during summer?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ42WA
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 During those months what was the average quantity of \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ42WB
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 During those months what was the unit of the average quantity \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ43S
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding sell \b\f1 %getocclabel%\b0\f0   produced during summer?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ43W
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding sell any of the \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ44SA
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much/many Quantity of  \b\f1 %getocclabel%\b0\f0  did the holding sell in summer period?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ44SB
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of  Quantity of  \b\f1 %getocclabel%\b0\f0  sold by the holding in summer period?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ44SC
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total value of sales of \b\f1 %getocclabel%\b0\f0  in the during summer period?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ44WA
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much/many Quantity of  \b\f1 %getocclabel%\b0\f0  did the holding sell in winter period?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ44WB
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of  Quantity of  \b\f1 %getocclabel%\b0\f0  sold by the holding in winter period?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ44WC
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total value of sales of \b\f1 %getocclabel%\b0\f0  in winter period?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ45A
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were any draught animals raised between 1 August 2018 and 31 July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ45B
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ45C
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much did the holding recieve in total payents for renting out the draught animal?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ46A
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ46B
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much did the holding recieve in total payment from the manure sale?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ9A
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were sold for cash between 1st August 2018 to 31st July 2019?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.LQ9B
+Occurrences=1:22
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total amount of sales of \b\f1 %getocclabel%\b0\f0  in Maloti?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.OTHER_SPECIFY_S
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b\f1 %getocclabel%\b0\f0  produced during summer?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.OTHER_SPECIFY_W
+Occurrences=1:7
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.RESPONDENT_NAME
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 What is the name of the Respodent?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.RESPONDENT_RELATIONSHIP
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 What is %RESPONDENT_NAME%'s  Relationship to Household Head?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_ALL_CATTLE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for all cattle?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_ALL_CATTLEW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for all cattle ?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_GOATS
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_GOATW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for goats?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_POULTRY
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_POULTRYW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for poultry?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_SHEEP
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_SHEEPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for sheep?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_TYPE
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for the dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.USED_SUPPLIMENT_TYPW
+Occurrences=1:10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for  dairy cattle alone?\par
+ENG=}
+

@@ -1,0 +1,28 @@
+﻿[CSPro Application]
+Version=CSPro 7.2
+Label=LESOTHOCENSUSMENU
+Name=LESOTHOCENSUSMENU
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+CAPI=Yes
+CAPIFont1=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont2=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont1Color=0
+CAPIFont2Color=16711680
+CaseTree=Never
+[External Dictionaries]
+File=.\Copy of Staff.dcf
+File=..\HouseholdDataEntry\COP_Dict.dcf
+[AppCode]
+File=.\COPMenu.ent.apc
+[Message]
+File=.\COPMenu.ent.mgf
+[Help]
+File=.\COPMenu.ent.qsf
+[Forms]
+File=.\COPMenu.fmf
+[Dictionary Types]
+Dict-Type=.\Copy of Staff.dcf,External
+Dict-Type=.\COPMenu.dcf,Input,.\COPMenu.fmf
+Dict-Type=..\HouseholdDataEntry\COP_Dict.dcf,External

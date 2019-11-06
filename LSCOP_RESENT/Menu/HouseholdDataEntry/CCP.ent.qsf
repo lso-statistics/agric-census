@@ -1,0 +1,20 @@
+﻿[CAPI QUESTIONS]
+Version=CSPro 7.0
+
+[LANGUAGES]
+ENG=English
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.DISTRICT
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang7177{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 District\par
+ENG=}
+
+[QUESTION]
+Field=CROPSCOSTOFPRODUCTION_DICT.INTERVIEW_DATE
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang7177{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 Interview date\par
+ENG=}
+

@@ -1,0 +1,107 @@
+﻿[FormFile]
+Version=CSPro 7.2
+Name=COPRODUCTIONMENU_FF
+Label=CostOfProductionMenu
+DefaultTextFont=-013 0000 0000 0000 0700 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=.\COPMenu.dcf
+  
+[Form]
+Name=FORM000
+Label=LesothoCensusMenu questionnaire
+QuestionTextHeight=160
+Level=1
+Size=613,421
+CapturePos=450,29
+  
+Item=USER_CODE
+Item=ENUMERATOR_MENU
+Item=ASSISTANT_SUPERVISOR_MENU
+Item=CONSTITUENCY_SUPERVISOR_MENU
+  
+Box=18,109,588,396,Thin
+Box=248,18,320,47,Etched
+Box=71,56,548,92,Etched
+Box=17,9,588,103,Raised
+  
+[Text]
+Name=TEXT1
+Position=264,19,308,43
+Text=2020
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0018 Baskerville Old Face
+ 
+  
+[Text]
+Name=TEXT2
+Position=98,61,476,88
+Text=CROPS COST OF PRODUCTION
+Form=1
+Font=-024 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0018 Baskerville Old Face
+ 
+[EndForm]
+  
+[Level]
+Name=COPRODUCTIONMENU_QUEST
+Label=LesothoCensusMenu questionnaire
+  
+[Group]
+Required=Yes
+Name=LESOTHOCENSUSMENU_QUEST_FORM
+Label=LesothoCensusMenu questionnaire
+Form=1
+LogicControl=No
+Max=1
+  
+[Field]
+Name=USER_CODE
+Position=253,116,338,136
+Item=USER_CODE,COPRODUCTIONMENU_DICT
+UseUnicodeTextBox=Yes
+Form=1
+  
+[Text]
+Position=24,119,89,135
+Text=User Code
+ 
+  
+[Field]
+Name=ENUMERATOR_MENU
+Position=253,144,268,164
+Item=ENUMERATOR_MENU,COPRODUCTIONMENU_DICT
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=24,147,137,163
+Text=Enumerator Menu
+ 
+  
+[Field]
+Name=ASSISTANT_SUPERVISOR_MENU
+Position=252,171,267,191
+Item=ASSISTANT_SUPERVISOR_MENU,COPRODUCTIONMENU_DICT
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=25,174,191,190
+Text=Assistant Supervisor Menu
+ 
+  
+[Field]
+Name=CONSTITUENCY_SUPERVISOR_MENU
+Position=252,198,267,218
+Item=CONSTITUENCY_SUPERVISOR_MENU,COPRODUCTIONMENU_DICT
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=24,201,216,217
+Text=Constituency Supervisor Menu
+ 
+[EndGroup]
+  

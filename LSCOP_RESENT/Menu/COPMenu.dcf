@@ -1,0 +1,78 @@
+﻿[Dictionary]
+Version=CSPro 7.0
+Label=CostOfProductionMenu
+Name=COPRODUCTIONMENU_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=CostOfProductionMenu questionnaire
+Name=COPRODUCTIONMENU_QUEST
+
+[IdItems]
+
+[Item]
+Label=LesothoCensusMenu identification
+Name=LESOTHOCENSUSMENU_ID
+Start=2
+Len=1
+
+[Record]
+Label=LesothoCensusMenu record
+Name=COPRODUCTIONMENU_REC
+RecordTypeValue='1'
+RecordLen=11
+
+[Item]
+Label=User Code
+Name=USER_CODE
+Start=3
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Enumerator Menu
+Name=ENUMERATOR_MENU
+Start=9
+Len=1
+
+[ValueSet]
+Label=Enumerator Menu
+Name=ENUMERATOR_MENU_VS1
+Value=1;Data Entry
+Value=2;Sync with Supervisor
+Value=9;Logout
+
+[Item]
+Label=Assistant Supervisor Menu
+Name=ASSISTANT_SUPERVISOR_MENU
+Start=10
+Len=1
+
+[ValueSet]
+Label=Assistant Supervisor Menu
+Name=ASSISTANT_SUPERVISOR_MENU_VS1
+Value=1;Postcheck Households
+Value=2;Household Status
+Value=3;Approve Cases
+Value=9;Logout
+
+[Item]
+Label=Constituency Supervisor
+Name=CONSTITUENCY_SUPERVISOR_MENU
+Start=11
+Len=1
+
+[ValueSet]
+Label=Constituency Supervisor
+Name=CONSTITUENCY_SUPERVISOR_MENU_VS1
+Value=1;View Data
+Value=2;Sex Ratio
+Value=3;Population Pyramid
+Value=4;Household Status
+Value=5;Sync With Enum
+Value=6;Sync With HQ
+Value=9;Logout

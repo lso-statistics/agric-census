@@ -1,0 +1,15 @@
+﻿[Run Information]
+Version=CSPro 6.3
+AppType=Pack
+
+[Files]
+Application=.\LesothoCensusMenu.ent
+ZipFile=.\LesothoCensusMenu.zip
+Listing=.\CSPack.lst
+
+[Parameters]
+ViewListing=Always
+ViewResults=Yes
+Silent=No
+PackInclude=VSImages,Resources,ExternalFiles,UserFiles
+
