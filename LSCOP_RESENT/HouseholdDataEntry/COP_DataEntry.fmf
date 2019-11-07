@@ -4347,6 +4347,7 @@ Name=LQ28A
 Position=41,0,70,20
 Item=LQ28A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,552,16

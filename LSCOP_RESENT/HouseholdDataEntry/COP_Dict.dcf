@@ -1448,7 +1448,7 @@ Len=2
 [ValueSet]
 Label=For how many months was name involved in tending to poultry in months
 Name=LQ32A_VS1
-Value=1:12;1 - 12
+Value=1:12;Input range
 
 [Item]
 Label=On average,how many weeks in a month did name tending to poultry?
@@ -1536,7 +1536,7 @@ Len=2
 [ValueSet]
 Label=For how many months was name involved in this activity in months?
 Name=LQ37A_VS1
-Value=1:12;1 - 12
+Value=1:12;Input range
 
 [Item]
 Label=On average,how many weeks in a months was name involved in this activity ?

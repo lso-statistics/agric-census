@@ -100,7 +100,7 @@ function UpdateOccurrenceLabelsForLivestockStock()
 	 setocclabel(LIVESTOCK_STOCK(19), "Chickens");
 	 setocclabel(LIVESTOCK_STOCK(20), "Broilers");
 	 setocclabel(LIVESTOCK_STOCK(21), "Layers");
-	 setocclabel(LIVESTOCK_STOCK(22), "Chickens");
+	 setocclabel(LIVESTOCK_STOCK(22), "Indigenous Chickens");
 end;
 //---------USED SUPLEMENTS FOR SUMMER FEEDS----------------
 //----------------------set occurrence label used suplement for dairy cattle--------------------------
