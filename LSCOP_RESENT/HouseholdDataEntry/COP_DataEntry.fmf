@@ -134,7 +134,7 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM003
 Label=Livestock Winter Feed
 Level=1
-Size=1080,3169
+Size=927,3236
   
 Item=LQ10W_DAIRYCATTLE
 Item=USED_SUPPLIMENT_TYPW000
@@ -146,7 +146,6 @@ Item=LQ10W_GOATS
 Item=USED_SUPPLIMENT_GOATW000
 Item=LQ10W_POULTRY
 Item=USED_SUPPLIMENT_POULTRYW000
-Item=ALL_SUPPLEMENTS_ALONE
   
   
 [Text]
@@ -156,15 +155,6 @@ Text=Part 1.2 Livestock Feed (Winter)
 Form=5
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
-[EndForm]
-  
-[Form]
-Name=FORM008
-Label=ALL SUPPLEMENTS
-Level=1
-Size=500,500
-  
-  
 [EndForm]
   
 [Form]
@@ -197,21 +187,21 @@ Item=LQ34
 Name=TEXT7
 Position=31,122,86,138
 Text=Table L4
-Form=8
+Form=7
  
   
 [Text]
 Name=TEXT11
 Position=40,686,95,702
 Text=Table L5
-Form=8
+Form=7
  
   
 [Text]
 Name=TEXT12
 Position=42,1188,97,1204
 Text=Table L6
-Form=8
+Form=7
  
 [EndForm]
   
@@ -234,7 +224,7 @@ Item=LQ46B
 Name=TEXT9
 Position=25,19,240,38
 Text=Part 1.5: Livestock Products
-Form=9
+Form=8
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
@@ -242,15 +232,25 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=TEXT10
 Position=39,60,94,76
 Text=Table L7
-Form=9
+Form=8
  
   
 [Text]
 Name=TEXT13
 Position=38,677,93,693
 Text=Table L8
-Form=9
+Form=8
  
+[EndForm]
+  
+[Form]
+Name=FORM008
+Label=ALL SUPPLEMENTS
+Level=1
+Size=896,583
+  
+Item=ALL_SUPPLEMENTS000
+  
 [EndForm]
   
 [Level]
@@ -1644,6 +1644,26 @@ Text=Type of Suppliment for dairy cattle
 Width=85
   
 [HeaderText]
+Position=0,96,85,136
+Text=Supplement code
+ 
+[Field]
+Name=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE
+Position=48,0,77,20
+Item=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Position=0,0,112,16
+Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
 Position=0,80,85,136
 Text=Supplement code character
  
@@ -1658,24 +1678,6 @@ UseUnicodeTextBox=Yes
 [Text]
 Position=0,0,176,16
 Text=Supplement code character
- 
-[EndColumn]
-  
-[Column]
-Width=85
-  
-[HeaderText]
-Position=0,96,85,136
-Text=Supplement code
- 
-[Field]
-Name=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE
-Position=48,0,77,20
-Item=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE,COP_DICT_DICT
-FieldLabelType=DictionaryLabel
-  
-[Text]
-Text=Supplement code
  
 [EndColumn]
   
@@ -1847,6 +1849,26 @@ Text=Type of Suppliment for all cattle
 Width=85
   
 [HeaderText]
+Position=0,64,85,104
+Text=Supplement code
+ 
+[Field]
+Name=SUPPLEMENT_CODE_ALL_CATTLE
+Position=48,0,77,20
+Item=SUPPLEMENT_CODE_ALL_CATTLE,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Position=0,0,112,16
+Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
 Position=0,48,85,104
 Text=Supplement code character
  
@@ -1861,24 +1883,6 @@ UseUnicodeTextBox=Yes
 [Text]
 Position=0,0,176,16
 Text=Supplement code character
- 
-[EndColumn]
-  
-[Column]
-Width=85
-  
-[HeaderText]
-Position=0,64,85,104
-Text=Supplement code
- 
-[Field]
-Name=SUPPLEMENT_CODE_ALL_CATTLE
-Position=48,0,77,20
-Item=SUPPLEMENT_CODE_ALL_CATTLE,COP_DICT_DICT
-FieldLabelType=DictionaryLabel
-  
-[Text]
-Text=Supplement code
  
 [EndColumn]
   
@@ -2050,6 +2054,26 @@ Text=Type of Suppliments for sheep
 Width=85
   
 [HeaderText]
+Position=0,64,85,104
+Text=Supplement code
+ 
+[Field]
+Name=SUPPLEMENT_CODE_ALL_SHEEP
+Position=48,0,77,20
+Item=SUPPLEMENT_CODE_ALL_SHEEP,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Position=0,0,112,16
+Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
 Position=0,48,85,104
 Text=Supplement code character
  
@@ -2064,24 +2088,6 @@ UseUnicodeTextBox=Yes
 [Text]
 Position=0,0,176,16
 Text=Supplement code character
- 
-[EndColumn]
-  
-[Column]
-Width=85
-  
-[HeaderText]
-Position=0,64,85,104
-Text=Supplement code
- 
-[Field]
-Name=SUPPLEMENT_CODE_ALL_SHEEP
-Position=48,0,77,20
-Item=SUPPLEMENT_CODE_ALL_SHEEP,COP_DICT_DICT
-FieldLabelType=DictionaryLabel
-  
-[Text]
-Text=Supplement code
  
 [EndColumn]
   
@@ -2229,27 +2235,6 @@ Text=Did the holding use the suppliment for goats?
 [EndColumn]
   
 [Column]
-Width=85
-  
-[HeaderText]
-Position=0,48,85,104
-Text=Supplement code character
- 
-[Field]
-Name=SUPPLEMENT_CODE_CHARACTER_GOATS
-Position=62,0,77,20
-Item=SUPPLEMENT_CODE_CHARACTER_GOATS,COP_DICT_DICT
-Protected=Yes
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-  
-[Text]
-Position=0,0,176,16
-Text=Supplement code character
- 
-[EndColumn]
-  
-[Column]
 Width=103
   
 [HeaderText]
@@ -2281,10 +2266,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_GOATS
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_GOATS,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,48,85,104
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_GOATS
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_GOATS,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -2433,27 +2441,6 @@ Text=Did the holding use the suppliment for poultry?
 [EndColumn]
   
 [Column]
-Width=85
-  
-[HeaderText]
-Position=0,48,85,104
-Text=Supplement code character
- 
-[Field]
-Name=SUPPLEMENT_CODE_CHARACTER_POULTRY
-Position=62,0,77,20
-Item=SUPPLEMENT_CODE_CHARACTER_POULTRY,COP_DICT_DICT
-Protected=Yes
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-  
-[Text]
-Position=0,0,176,16
-Text=Supplement code character
- 
-[EndColumn]
-  
-[Column]
 Width=141
   
 [HeaderText]
@@ -2485,10 +2472,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_POULTRY
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_POULTRY,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,48,85,104
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_POULTRY
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_POULTRY,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -2565,7 +2575,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=43,74,675,550
+DisplaySize=43,74,799,550
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2678,10 +2688,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,80,85,136
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -2748,7 +2781,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=43,647,651,1091
+DisplaySize=43,647,775,1091
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2861,10 +2894,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_CATTLE_W
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_CATTLE_W,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,48,85,104
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -2931,7 +2987,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=46,1182,693,1646
+DisplaySize=46,1182,817,1646
 Orientation=Horizontal
 FieldRowHeight=32
 HeadingRowHeight=0
@@ -3044,10 +3100,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_SHEEP_W
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_SHEEP_W,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,48,85,104
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_SHEEP_W
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_SHEEP_W,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -3114,7 +3193,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=45,1726,647,2170
+DisplaySize=45,1726,771,2170
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -3227,10 +3306,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_GOATS_W
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_GOATS_W,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,48,85,104
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_GOATS_W
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_GOATS_W,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -3297,7 +3399,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=47,2252,655,2756
+DisplaySize=47,2252,779,2756
 Orientation=Horizontal
 FieldRowHeight=40
 HeadingRowHeight=0
@@ -3410,10 +3512,33 @@ Text=Supplement code
 Name=SUPPLEMENT_CODE_ALL_POULTRY_W
 Position=48,0,77,20
 Item=SUPPLEMENT_CODE_ALL_POULTRY_W,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,112,16
 Text=Supplement code
+ 
+[EndColumn]
+  
+[Column]
+Width=85
+  
+[HeaderText]
+Position=0,48,85,104
+Text=Supplement code character
+ 
+[Field]
+Name=SUPPLEMENT_CODE_CHARACTER_POULTRY_W
+Position=62,0,77,20
+Item=SUPPLEMENT_CODE_CHARACTER_POULTRY_W,COP_DICT_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+  
+[Text]
+Position=0,0,176,16
+Text=Supplement code character
  
 [EndColumn]
   
@@ -3458,20 +3583,28 @@ Text=Unit of total Quantity of suppliment provided to feed the poultry?
   
 [EndGrid]
  
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=ALL_SUPPLEMENTS
+Label=ALL SUPPLEMENTS
+Form=9
+LogicControl=No
+Max=1
   
 [Grid]
-Name=ALL_SUPPLEMENTS_ALONE
-Label=LIVESTOCK FEEDS WINTER
-Form=5
+Name=ALL_SUPPLEMENTS000
+Label=Supplement feed code
+Form=9
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=48,2776,1055,3144
+DisplaySize=40,110,871,558
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
-UseOccurrenceLabels=Yes
 FreeMovement=No
  
 [Text]
@@ -3529,35 +3662,33 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=121
+Width=85
   
 [HeaderText]
-Position=0,48,121,88
+Position=0,128,85,168
 Text=Supplement feed code
  
 [Field]
 Name=LQ14S
-Position=84,0,113,20
+Position=48,0,77,20
 Item=LQ14S,COP_DICT_DICT
-Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
-Position=0,0,144,16
 Text=Supplement feed code
  
 [EndColumn]
   
 [Column]
-Width=127
+Width=77
   
 [HeaderText]
-Position=0,32,127,88
+Position=0,48,77,168
 Text=Main source of acquisition for the dairy cattle alone?
  
 [Field]
 Name=LQ15S
-Position=104,0,119,20
+Position=54,0,69,20
 Item=LQ15S,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
@@ -3568,15 +3699,15 @@ Text=Main source of acquisition for the dairy cattle alone?
 [EndColumn]
   
 [Column]
-Width=135
+Width=94
   
 [HeaderText]
-Position=0,16,135,88
+Position=0,32,94,168
 Text=Was any of this supplemetary feed purchsed for the dairy cattle alone??
  
 [Field]
 Name=LQ16S
-Position=112,0,127,20
+Position=71,0,86,20
 Item=LQ16S,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
@@ -3590,7 +3721,7 @@ Text=Was any of this supplemetary feed purchsed for the dairy cattle alone??
 Width=149
   
 [HeaderText]
-Position=14,32,149,88
+Position=71,64,149,168
 Text=Quantity purchased for the dairy cattle alone?
  
 [Field]
@@ -3605,15 +3736,15 @@ Text=Quantity purchased for the dairy cattle alone?
 [EndColumn]
   
 [Column]
-Width=127
+Width=78
   
 [HeaderText]
-Position=0,32,127,88
+Position=0,48,78,168
 Text=Unit of quantity purchased for the dairy cattle alone?
  
 [Field]
 Name=LQ17SB
-Position=104,0,119,20
+Position=55,0,70,20
 Item=LQ17SB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
@@ -3627,7 +3758,7 @@ Text=Unit of quantity purchased for the dairy cattle alone?
 Width=163
   
 [HeaderText]
-Position=26,32,163,88
+Position=87,48,163,168
 Text=Total purchase price (Maloti) for the dairy cattle alone?
  
 [Field]
@@ -3645,7 +3776,7 @@ Text=Total purchase price (Maloti) for the dairy cattle alone?
 Width=163
   
 [HeaderText]
-Position=23,0,163,88
+Position=87,0,163,168
 Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
  
 [Field]
@@ -3665,25 +3796,16 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the da
   
 [Group]
 Required=Yes
-Name=ALL_SUPPLEMENTS
-Label=ALL SUPPLEMENTS
-Form=6
-LogicControl=No
-Max=1
-[EndGroup]
-  
-[Group]
-Required=Yes
 Name=LIVESTOCK_MANAGEMENT_FORM
 Label=Livestock Management and Health Services
-Form=7
+Form=6
 LogicControl=No
 Max=1
   
 [Grid]
 Name=LIVESTOCK_MANAGEMENT_AND_HEAT000
 Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
-Form=7
+Form=6
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_MANAGEMENT_AND_HEATH_S
@@ -3962,7 +4084,7 @@ Text=How much was spent on IA/ mating?
 Required=Yes
 Name=LABOUR_COSTS_FORM
 Label=Labour Costs
-Form=8
+Form=7
 LogicControl=No
 Max=1
   
@@ -3972,7 +4094,7 @@ Position=704,22,719,42
 Item=LQ24,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=19,25,654,41
@@ -3983,7 +4105,7 @@ Text=Was anyone employed on contract to tend and herd livestock from 1st August 
 Name=LQ25
 Position=705,46,818,66
 Item=LQ25,COP_DICT_DICT
-Form=8
+Form=7
   
 [Text]
 Position=20,49,511,65
@@ -3996,7 +4118,7 @@ Position=706,76,721,96
 Item=LQ26,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=18,74,573,90
@@ -4006,7 +4128,7 @@ Text=Were any other person or household member involved in tending and herding l
 [Grid]
 Name=TABLE_L4
 Label=TABLE L4
-Form=8
+Form=7
 Required=Yes
 Type=Record
 TypeName=LABOUR_COST
@@ -4356,7 +4478,7 @@ Position=522,649,537,669
 Item=LQ30,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=25,652,488,668
@@ -4366,7 +4488,7 @@ Text=Were any other person or household member involved in tending poultry
 [Grid]
 Name=TABLE_L5
 Label=TABLE L5
-Form=8
+Form=7
 Required=Yes
 Type=Record
 TypeName=LABOUR_COST
@@ -4709,7 +4831,7 @@ Position=600,1148,615,1168
 Item=LQ34,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=34,1151,561,1167
@@ -4719,7 +4841,7 @@ Text=Were any other person or household member involved in other livestock activ
 [Grid]
 Name=TABLE_L6
 Label=TABLE L6
-Form=8
+Form=7
 Required=Yes
 Type=Record
 TypeName=LABOUR_COST
@@ -5086,14 +5208,14 @@ Text=Are there any more persons involved in tending and herding livestock?
 Required=Yes
 Name=LIVESTOCK_PRODUCTS_FORM
 Label=Livestock Products
-Form=9
+Form=8
 LogicControl=No
 Max=1
   
 [Grid]
 Name=TABLE_L7
 Label=TABLE L7
-Form=9
+Form=8
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_PRODUCT
@@ -5343,7 +5465,7 @@ Text=What was the total value of sales of livestock product in the during summer
 [Grid]
 Name=TABLE_L8
 Label=TABLE L8
-Form=9
+Form=8
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_PRODUCT
@@ -5596,7 +5718,7 @@ Position=833,1250,848,1270
 Item=LQ45A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=9
+Form=8
   
 [Text]
 Position=29,1255,498,1271
@@ -5609,7 +5731,7 @@ Position=833,1280,848,1300
 Item=LQ45B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=9
+Form=8
   
 [Text]
 Position=29,1283,783,1299
@@ -5622,7 +5744,7 @@ Position=833,1309,848,1329
 Item=LQ45C,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=9
+Form=8
   
 [Text]
 Position=29,1311,567,1327
@@ -5635,7 +5757,7 @@ Position=833,1339,848,1359
 Item=LQ46A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=9
+Form=8
   
 [Text]
 Position=29,1338,619,1354
@@ -5648,7 +5770,7 @@ Position=833,1368,848,1388
 Item=LQ46B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=9
+Form=8
   
 [Text]
 Position=29,1366,502,1382

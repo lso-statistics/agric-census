@@ -15,6 +15,8 @@ numeric MinAgeForEducation = 3;
 numeric MinAgeForEconomicActivity = 10;
 numeric MinAgeWorkRSA = 5;
 numeric i = 1, j = 1, numberOfCrops, numberOfFields;
+numeric index_supplements = 1;
+string supplents_used;
 
 numeric totalLivestockStock = 0;//to obtain the sum of (LQ04+LQ05A+LQ06)
 numeric totalSoldForCash = 0; //to obtain the difference between (LQ04+LQ05A+LQ06) and LQ08 = ((LQ04+LQ05A+LQ06) - LQ08)
@@ -1590,13 +1592,42 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_TYPE = 2 then
-			skip to USED_SUPPLIMENT_ALL_CATTLE(1);//skip to suplements used for all cattle
+			skip to LQ10S_ALLCATTLE;//skip to suplements used for all cattle
 		endif;
 endif;
 
 postproc
 
 savepartial();
+PROC SUPPLEMENT_CODE_ALL_DAIRY_CATTLE
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
 savepartial();
 PROC LQ13SA
 
@@ -1604,10 +1635,16 @@ PROC LQ13SA
 savepartial();
 PROC LQ13SB
 
-
 savepartial();
 PROC LQ10S_ALLCATTLE
 preproc
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_DAIRY_CATTLE))
+	if LQ10S_DAIRYCATTLE = 1 and USED_SUPPLIMENT_TYPE(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
 
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(1) = 2 then
@@ -1619,6 +1656,11 @@ postproc
 if $ = 2 then
 	skip to LQ10S_SHEEP;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_ALL_CATTLE
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_ALL_CATTLE
 preproc
 //give labels to show the type of sepplement used
@@ -1681,12 +1723,62 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
-			skip to USED_SUPPLIMENT_SHEEP(1);//skip to suplements used for sheep
+			skip to LQ10S_SHEEP;//skip to suplements used for sheep
 		endif;
 
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_CATTLE
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_CATTLE
+
+savepartial();
+PROC LQ13SB_ALL_CATTLE
+
+savepartial();
 PROC LQ10S_SHEEP
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_ALL_CATTLE000))
+	if LQ10S_ALLCATTLE = 1 and USED_SUPPLIMENT_ALL_CATTLE(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
+
 
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(7) = 2 then
@@ -1698,6 +1790,11 @@ postproc
 if $ = 2 then
 	skip to LQ10S_GOATS;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_SHEEP
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_SHEEP
 preproc
 //give labels to show the type of sepplement used
@@ -1760,12 +1857,63 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_SHEEP = 2 then
-			skip to USED_SUPPLIMENT_GOATS(1);//skip to suplements used for sheep
+			skip to LQ10S_GOATS;//skip to suplements used for sheep
 		endif;
 
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_SHEEP
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_SHEEP
+
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_SHEEP
+
+savepartial();
+PROC LQ13SB_ALL_SHEEP
+
+savepartial();
 PROC LQ10S_GOATS
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_SHEEP000))
+	if LQ10S_SHEEP = 1 and USED_SUPPLIMENT_SHEEP(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_SHEEP(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
+
 
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(10) = 2 then
@@ -1774,9 +1922,14 @@ endif;
 
 //if the answer is no skip to the next livestock type
 postproc
-if $ = 2 then
+if $ = 2 or notappl then
 	skip to LQ10S_POULTRY;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_GOATS
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_GOATS
 preproc
 //give labels to show the type of sepplement used
@@ -1839,11 +1992,62 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_GOATS = 2 then
-			skip to USED_SUPPLIMENT_POULTRY(1);//skip to suplements used for poultry
+			skip to LQ10S_POULTRY;//skip to suplements used for poultry
 		endif;
 endif;
+
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_GOATS
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_GOATS
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_GOATS
+
+savepartial();
+PROC LQ13SB_ALL_GOATS
+
+savepartial();
 PROC LQ10S_POULTRY
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_GOATS000))
+	if LQ10S_GOATS = 1 and USED_SUPPLIMENT_GOATS(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_GOATS(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
+
 
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(19) = 2 then
@@ -1855,6 +2059,11 @@ postproc
 if $ = 2 then
 	skip to LQ10W_DAIRYCATTLE;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_POULTRY
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_POULTRY
 preproc
 //give labels to show the type of sepplement used
@@ -1917,11 +2126,63 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRY = 2 then
-			skip to USED_SUPPLIMENT_TYPW(1);//skip to suplements used for sheep
+			skip to LQ10W_DAIRYCATTLE;//skip to suplements used for sheep
 		endif;
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_POULTRY
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_POULTRY
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_GOATT
+
+savepartial();
+PROC LQ13SB_ALL_POULTRY
+
+savepartial();
 PROC LQ10W_DAIRYCATTLE
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_POULTRY000))
+	if LQ10S_POULTRY = 1 and USED_SUPPLIMENT_POULTRY(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_POULTRY(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
+
+
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(1) = 2 then
 	skip to LQ10W_SHEEP;
@@ -1932,18 +2193,11 @@ postproc
 if $ = 2 then
 	skip to LQ10W_ALLCATTLE;
 endif;
+
+savepartial();
 PROC USED_SUPPLIMENT_TYPW
-preproc
-numeric currentRow;
-do currentRow = 1 while currentRow <= totocc(LIVESTOCK_STOCK)
-	if currentRow = 1 and LQ02(currentRow) = 2 then // if have no cattle skip asking about their supplement feed, skip to ship supplement feed
-		skip to USED_SUPPLIMENT_SHEEPW;
-	elseif currentRow = 7 and LQ02(currentRow) = 2 then // if have no sheep skip asking about their supplement feed, skip to goats supplement feed
-		skip to USED_SUPPLIMENT_GOATW;
-	elseif currentRow = 19 and LQ02(currentRow) = 2 then // if have no chickens skip to livestock management and health services
-		skip to LQ19A(1);
-	endif;
-enddo;
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENEW
 preproc
 //give labels to show the type of sepplement used
@@ -2006,11 +2260,62 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_TYPW = 2 then
-			skip to USED_SUPPLIMENT_ALL_CATTLEW(1);//skip to suplements used for all cattle
+			skip to LQ10W_ALLCATTLE;//skip to suplements used for all cattle
 		endif;
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13WA
+
+savepartial();
+PROC LQ13WB
+
+savepartial();
 PROC LQ10W_ALLCATTLE
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_TYPW000))
+	if LQ10W_DAIRYCATTLE = 1 and USED_SUPPLIMENT_TYPW(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
+
+
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(1) = 2 then
 	skip to LQ10W_SHEEP;
@@ -2021,6 +2326,11 @@ postproc
 if $ = 2 then
 	skip to LQ10W_SHEEP;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_ALL_CATTLEW
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_ALL_CATTLEW
 preproc
 //give labels to show the type of sepplement used
@@ -2083,11 +2393,62 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
-			skip to USED_SUPPLIMENT_SHEEPW(1);//skip to suplements used for sheep
+			skip to LQ10W_SHEEP;//skip to suplements used for sheep
 		endif;
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_CATTLE_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_CATTLEW
+
+savepartial();
+PROC LQ13SB_ALL_CATTLEW
+
+savepartial();
 PROC LQ10W_SHEEP
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_ALL_CATTLEW000))
+	if LQ10W_ALLCATTLE = 1 and USED_SUPPLIMENT_ALL_CATTLEW(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(counter)));
+		//index_supplements = index_supplements +1;
+	endif;
+enddo;
+
+
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(7) = 2 then
 	skip to LQ10W_GOATS;
@@ -2098,6 +2459,11 @@ postproc
 if $ = 2 then
 	skip to LQ10W_GOATS;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_SHEEPW
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_SHEEPW
 preproc
 //give labels to show the type of sepplement used
@@ -2160,11 +2526,61 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
-			skip to USED_SUPPLIMENT_GOATW(1);//skip to suplements used for goats
+			skip to LQ10W_GOATS;//skip to suplements used for goats
 		endif;
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_SHEEP_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_SHEEP_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_SHEEPW
+
+savepartial();
+PROC LQ13SB_ALL_SHEEPW
+
+savepartial();
 PROC LQ10W_GOATS
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_SHEEPW000))
+	if LQ10W_SHEEP = 1 and USED_SUPPLIMENT_SHEEPW(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_SHEEP_W(counter)));
+	endif;
+enddo;
+
+
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(10) = 2 then
 	skip to LQ10W_POULTRY;
@@ -2175,6 +2591,11 @@ postproc
 if $ = 2 then
 	skip to LQ10W_POULTRY;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_GOATW
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_GOATW
 preproc
 //give labels to show the type of sepplement used
@@ -2237,45 +2658,87 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_GOATW = 2 then
-			skip to USED_SUPPLIMENT_POULTRYW(1);//skip to suplements used for poultry
+			skip to LQ10W_POULTRY;//skip to suplements used for poultry
 		endif;
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_GOATS_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_GOATS_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_GOATW
+
+savepartial();
+PROC LQ13SB_ALL_GOATW
+
+savepartial();
 PROC LQ10W_POULTRY
 preproc
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_GOATW000))
+	if LQ10W_POULTRY = 1 and USED_SUPPLIMENT_GOATW(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_GOATS_W(counter)));
+	endif;
+enddo;
+
+//give CODES to show the type of sepplement used
+LQ14S(1) = 01;
+LQ14S(2) = 02;
+LQ14S(3) = 03;
+LQ14S(4) = 04;
+LQ14S(5) = 05;
+LQ14S(6) = 06;
+LQ14S(7) = 07;
+LQ14S(8) = 08;
+LQ14S(9) = 09;
+LQ14S(10) = 10;
+
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep
 if LQ02(19) = 2 then
 	skip to LQ14S(1);
-else
-	//give CODES to show the type of sepplement used
-	LQ14S(1) = 01;
-	LQ14S(2) = 02;
-	LQ14S(3) = 03;
-	LQ14S(4) = 04;
-	LQ14S(5) = 05;
-	LQ14S(6) = 06;
-	LQ14S(7) = 07;
-	LQ14S(8) = 08;
-	LQ14S(9) = 09;
-	LQ14S(10) = 10;
 endif;
 
 //if the answer is no skip to the next livestock type
 postproc
 if $ = 2 then
 	skip to LQ14S(1);
-else
-	//give CODES to show the type of sepplement used
-	LQ14S(1) = 01;
-	LQ14S(2) = 02;
-	LQ14S(3) = 03;
-	LQ14S(4) = 04;
-	LQ14S(5) = 05;
-	LQ14S(6) = 06;
-	LQ14S(7) = 07;
-	LQ14S(8) = 08;
-	LQ14S(9) = 09;
-	LQ14S(10) = 10;
 endif;
+
+savepartial();
+PROC USED_SUPPLIMENT_POULTRYW
+
+savepartial();
 PROC TYPE_OF_SUPPLIMENT_POULTRYW
 preproc
 //give labels to show the type of sepplement used
@@ -2338,9 +2801,47 @@ if curocc($) = 1 then
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
-			skip to LQ14S(1);//skip to livestock management
+			skip to LQ14S(1);//skip to used supplements
 		endif;
 endif;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_ALL_POULTRY_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = 01;
+$(2) = 02;
+$(3) = 03;
+$(4) = 04;
+$(5) = 05;
+$(6) = 06;
+$(7) = 07;
+$(8) = 08;
+$(9) = 09;
+$(10) = 10;
+postproc
+
+savepartial();
+PROC SUPPLEMENT_CODE_CHARACTER_POULTRY_W
+preproc
+//give CODES to show the type of sepplement used
+$(1) = "A";
+$(2) = "B";
+$(3) = "C";
+$(4) = "D";
+$(5) = "E";
+$(6) = "F";
+$(7) = "G";
+$(8) = "H";
+$(9) = "I";
+$(10) = "J";
+postproc
+
+savepartial();
+PROC LQ13SA_ALL_POULTRYW
+
+savepartial();
 PROC LQ13SB_ALL_POULTRYW
 //give CODES to show the type of sepplement used
 LQ14S(1) = 01;
@@ -2353,188 +2854,125 @@ LQ14S(7) = 07;
 LQ14S(8) = 08;
 LQ14S(9) = 09;
 LQ14S(10) = 10;
+
+savepartial();
 PROC LQ14S
 preproc
-//noinput;//pass without allowing the user to press next or tab key
-{if curocc($) = 1 then 
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+
+//create string of supplements used
+do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_POULTRYW000))
+	if LQ10W_GOATS = 1 and USED_SUPPLIMENT_POULTRYW(counter) = 1 then
+		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_POULTRY_W(counter)));
+	endif;
+enddo;
+//errmsg(supplents_used);
+noinput;
+postproc
+if curocc($) = 1 then
+	if pos('A',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 2 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('B',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 3 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('C',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 4 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('D',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 5 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('E',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 6 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('F',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 7 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('G',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 8 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('H',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 9 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
+	if pos('I',strip(supplents_used)) < 1 then 
 		skip to next;
 	endif;
 elseif curocc($) = 10 then
-	if ((special(USED_SUPPLIMENT_TYPE(curocc($))) or USED_SUPPLIMENT_TYPE(curocc($)) = 2))
-		or ((special(USED_SUPPLIMENT_ALL_CATTLE(curocc($))) or USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEP(curocc($))) or USED_SUPPLIMENT_SHEEP(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATS(curocc($))) or USED_SUPPLIMENT_GOATS(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRY(curocc($))) or USED_SUPPLIMENT_POULTRY(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_TYPW(curocc($))) or USED_SUPPLIMENT_TYPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_ALL_CATTLEW(curocc($))) or USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_SHEEPW(curocc($))) or USED_SUPPLIMENT_SHEEPW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_GOATW(curocc($))) or USED_SUPPLIMENT_GOATW(curocc($)) = 2)) 
-		or ((special(USED_SUPPLIMENT_POULTRYW(curocc($))) or USED_SUPPLIMENT_POULTRYW(curocc($)) = 2)) then
-		skip to next;
+	if pos('J',strip(supplents_used)) < 1 then 
+		skip to LQ19A(1);
 	endif;
-endif;}
+endif;
+
+savepartial();
+
 PROC LQ15S
 //if purchased skip to quantity
 if $ = 1 then
 	skip to LQ17SA(curocc($));
 endif;
+
+savepartial();
 PROC LQ16S
 //if no supplement skip to the next livestock type
 if curocc($) = 1 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 2 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 3 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 4 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 5 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 6 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 7 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 8 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 9 then
 		if $(curocc($)) = 2 then
-			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+			skip to next;//skip to the next row
 		endif;
 	elseif curocc($) = 10 then
 		if $(curocc($)) = 2 then
-			skip to LQ10S_ALLCATTLE;//skip to suplements used for all cattle
+			skip to LQ19A(1);//skip to livestock management
 		endif;
 endif;
+
+savepartial();
+PROC LQ17SA
+
+savepartial();
+PROC LQ17SB
+
+savepartial();
+PROC LQ17SC
+
+savepartial();
 PROC LQ18S
 savepartial();
 PROC LQ19A
@@ -2546,14 +2984,22 @@ LIVESTOCK_NAME(3) = "Goats";//IF ROW NUMBER IS 3 THEN WE ARE ON GOATS
 LIVESTOCK_NAME(4) = "Poultry";//IF ROW NUMBER IS 3 THEN WE ARE ON POULTRY EXOTIC
 
 //skip based on the livestock raised by the household. e.g. if no cattle was raised skip to sheep 
-if LQ02(1) = 2 then
-	skip to next;
-elseif LQ02(7) = 2 then
-	skip to next;
-elseif LQ02(10) = 2 then
-	skip to next;
-elseif LQ02(19) = 2 then
-	skip to LQ24;
+if curocc($) = 1 then
+	if LQ02(1) = 2 then
+		skip to next;
+	endif;
+elseif curocc($) = 2 then
+	if LQ02(7) = 2 then
+		skip to next;
+	endif;
+elseif curocc($) = 3 then
+	if LQ02(10) = 2 then
+		skip to next;
+	endif;
+elseif curocc($) = 4 then
+	if LQ02(19) = 2 then
+		skip to LQ24;//SKIP TO LABOUR COSTS
+	endif;		
 endif;
 
 
@@ -2577,6 +3023,9 @@ elseif curocc($) = 4 then
 	endif;		
 endif;
 
+
+savepartial();
+PROC LIVESTOCK_NAME
 
 savepartial();
 PROC LQ19B
@@ -2690,6 +3139,9 @@ if $ = 2 then
 	skip to  LQ30;
 endif;
 
+
+savepartial();
+PROC HOUSEHOLD_MEMBER_OR_HIRED_WORKER
 
 savepartial();
 PROC LQ27
