@@ -244,6 +244,20 @@ function UpdateOccurrenceSupplimentForPoultryWinter()
 	 setocclabel(USED_SUPPLIMENT_POULTRYW000(9), "Salt");
 	 setocclabel(USED_SUPPLIMENT_POULTRYW000(10), "Mineral Block");
 end;
+//----------------------set occurrence label used for all suplements--------------------------
+function UpdateOccurrenceForAllSuppliment()
+	//set occurrence label used suplement for dairy cattle based on the current row of the roster
+	 setocclabel(ALL_SUPPLEMENTS000(1), "Fodder/Hay/Grass");
+	 setocclabel(ALL_SUPPLEMENTS000(2), "Crop Residue");
+	 setocclabel(ALL_SUPPLEMENTS000(3), "Feed Concentrete");
+	 setocclabel(ALL_SUPPLEMENTS000(4), "Dairy Meal");
+	 setocclabel(ALL_SUPPLEMENTS000(5), "Poultry Meal");
+	 setocclabel(ALL_SUPPLEMENTS000(6), "Sheep Palets");
+	 setocclabel(ALL_SUPPLEMENTS000(7), "Moroko");
+	 setocclabel(ALL_SUPPLEMENTS000(8), "Seameal/Bran");
+	 setocclabel(ALL_SUPPLEMENTS000(9), "Salt");
+	 setocclabel(ALL_SUPPLEMENTS000(10), "Mineral Block");
+end;
 //----------LIVESTOCK MANAGEMENT-----------
 //----------------------set occurrence label used suplement for poultry--------------------------
 function UpdateOccurrenceSupplimentForLivestockManagement()
@@ -852,6 +866,8 @@ UpdateOccurrenceSupplimentForSheepWinter();
 UpdateOccurrenceSupplimentForGoatsWinter();
 //----------------------set occurrence label used suplement for poultry--------------------------
 UpdateOccurrenceSupplimentForPoultryWinter();
+//----------ALL SUPPLEMENTS----------------
+UpdateOccurrenceForAllSuppliment();
 //----------LIVESTOCK MANAGEMENT-----------
 //----------------------set occurrence label used suplement for poultry--------------------------
 UpdateOccurrenceSupplimentForLivestockManagement();
@@ -1305,7 +1321,7 @@ savepartial();
 PROC LQ03
 preproc
 if curocc($) = 19 then
-	skip to $(curocc($)+1);
+	skip to LQ02(curocc($)+1);
 endif;
 
 postproc
@@ -2909,7 +2925,7 @@ elseif curocc($) = 10 then
 		skip to LQ19A(1);
 	endif;
 endif;
-
+errmsg(supplents_used);
 savepartial();
 
 PROC LQ15S

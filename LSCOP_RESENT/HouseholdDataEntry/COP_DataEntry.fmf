@@ -158,6 +158,16 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 [EndForm]
   
 [Form]
+Name=FORM008
+Label=ALL SUPPLEMENTS
+Level=1
+Size=896,583
+  
+Item=ALL_SUPPLEMENTS000
+  
+[EndForm]
+  
+[Form]
 Name=FORM004
 Label=Livestock Management and Health Services
 Level=1
@@ -187,21 +197,21 @@ Item=LQ34
 Name=TEXT7
 Position=31,122,86,138
 Text=Table L4
-Form=7
+Form=8
  
   
 [Text]
 Name=TEXT11
 Position=40,686,95,702
 Text=Table L5
-Form=7
+Form=8
  
   
 [Text]
 Name=TEXT12
 Position=42,1188,97,1204
 Text=Table L6
-Form=7
+Form=8
  
 [EndForm]
   
@@ -224,7 +234,7 @@ Item=LQ46B
 Name=TEXT9
 Position=25,19,240,38
 Text=Part 1.5: Livestock Products
-Form=8
+Form=9
 Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
@@ -232,25 +242,15 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=TEXT10
 Position=39,60,94,76
 Text=Table L7
-Form=8
+Form=9
  
   
 [Text]
 Name=TEXT13
 Position=38,677,93,693
 Text=Table L8
-Form=8
+Form=9
  
-[EndForm]
-  
-[Form]
-Name=FORM008
-Label=ALL SUPPLEMENTS
-Level=1
-Size=896,583
-  
-Item=ALL_SUPPLEMENTS000
-  
 [EndForm]
   
 [Level]
@@ -3589,14 +3589,14 @@ Text=Unit of total Quantity of suppliment provided to feed the poultry?
 Required=Yes
 Name=ALL_SUPPLEMENTS
 Label=ALL SUPPLEMENTS
-Form=9
+Form=6
 LogicControl=No
 Max=1
   
 [Grid]
 Name=ALL_SUPPLEMENTS000
 Label=Supplement feed code
-Form=9
+Form=6
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
@@ -3672,9 +3672,11 @@ Text=Supplement feed code
 Name=LQ14S
 Position=48,0,77,20
 Item=LQ14S,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,144,16
 Text=Supplement feed code
  
 [EndColumn]
@@ -3798,14 +3800,14 @@ Text=Total transport costs from point of purchase to holding (Maloti) for the da
 Required=Yes
 Name=LIVESTOCK_MANAGEMENT_FORM
 Label=Livestock Management and Health Services
-Form=6
+Form=7
 LogicControl=No
 Max=1
   
 [Grid]
 Name=LIVESTOCK_MANAGEMENT_AND_HEAT000
 Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
-Form=6
+Form=7
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_MANAGEMENT_AND_HEATH_S
@@ -4084,7 +4086,7 @@ Text=How much was spent on IA/ mating?
 Required=Yes
 Name=LABOUR_COSTS_FORM
 Label=Labour Costs
-Form=7
+Form=8
 LogicControl=No
 Max=1
   
@@ -4094,7 +4096,7 @@ Position=704,22,719,42
 Item=LQ24,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=7
+Form=8
   
 [Text]
 Position=19,25,654,41
@@ -4105,7 +4107,7 @@ Text=Was anyone employed on contract to tend and herd livestock from 1st August 
 Name=LQ25
 Position=705,46,818,66
 Item=LQ25,COP_DICT_DICT
-Form=7
+Form=8
   
 [Text]
 Position=20,49,511,65
@@ -4118,7 +4120,7 @@ Position=706,76,721,96
 Item=LQ26,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=7
+Form=8
   
 [Text]
 Position=18,74,573,90
@@ -4128,7 +4130,7 @@ Text=Were any other person or household member involved in tending and herding l
 [Grid]
 Name=TABLE_L4
 Label=TABLE L4
-Form=7
+Form=8
 Required=Yes
 Type=Record
 TypeName=LABOUR_COST
@@ -4478,7 +4480,7 @@ Position=522,649,537,669
 Item=LQ30,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=7
+Form=8
   
 [Text]
 Position=25,652,488,668
@@ -4488,7 +4490,7 @@ Text=Were any other person or household member involved in tending poultry
 [Grid]
 Name=TABLE_L5
 Label=TABLE L5
-Form=7
+Form=8
 Required=Yes
 Type=Record
 TypeName=LABOUR_COST
@@ -4831,7 +4833,7 @@ Position=600,1148,615,1168
 Item=LQ34,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=7
+Form=8
   
 [Text]
 Position=34,1151,561,1167
@@ -4841,7 +4843,7 @@ Text=Were any other person or household member involved in other livestock activ
 [Grid]
 Name=TABLE_L6
 Label=TABLE L6
-Form=7
+Form=8
 Required=Yes
 Type=Record
 TypeName=LABOUR_COST
@@ -5208,14 +5210,14 @@ Text=Are there any more persons involved in tending and herding livestock?
 Required=Yes
 Name=LIVESTOCK_PRODUCTS_FORM
 Label=Livestock Products
-Form=8
+Form=9
 LogicControl=No
 Max=1
   
 [Grid]
 Name=TABLE_L7
 Label=TABLE L7
-Form=8
+Form=9
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_PRODUCT
@@ -5465,7 +5467,7 @@ Text=What was the total value of sales of livestock product in the during summer
 [Grid]
 Name=TABLE_L8
 Label=TABLE L8
-Form=8
+Form=9
 Required=Yes
 Type=Record
 TypeName=LIVESTOCK_PRODUCT
@@ -5718,7 +5720,7 @@ Position=833,1250,848,1270
 Item=LQ45A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=9
   
 [Text]
 Position=29,1255,498,1271
@@ -5731,7 +5733,7 @@ Position=833,1280,848,1300
 Item=LQ45B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=9
   
 [Text]
 Position=29,1283,783,1299
@@ -5744,7 +5746,7 @@ Position=833,1309,848,1329
 Item=LQ45C,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=9
   
 [Text]
 Position=29,1311,567,1327
@@ -5757,7 +5759,7 @@ Position=833,1339,848,1359
 Item=LQ46A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=9
   
 [Text]
 Position=29,1338,619,1354
@@ -5770,7 +5772,7 @@ Position=833,1368,848,1388
 Item=LQ46B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=9
   
 [Text]
 Position=29,1366,502,1382
