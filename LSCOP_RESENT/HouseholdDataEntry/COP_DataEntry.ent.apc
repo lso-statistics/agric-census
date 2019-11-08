@@ -882,13 +882,107 @@ if demode() = add then
 		INTERVIEW_DATE = edit("99/99/9999", sysdate("DDMMYYYY"));
 		noinput;
 endif;
+PROC DISTRICT
+if sysparm("DISTRICT") <> "" then
+		// Fill in id-items that were passed in from pff file as parameters
+		DISTRICT = tonumber(sysparm("DISTRICT"));
+		CONSTITUENCY = tonumber(sysparm("CONSTITUENCY"));
+		COMMUNITY_COUNCIL = sysparm("COMMUNITY_COUNCIL");
+		ZONE = tonumber(sysparm("ZONE"));
+		SETTLEMENT = tonumber(sysparm("SETTLEMENT"));
+		ENUMERATION_AREA = tonumber(sysparm("ENUMERATION_AREA"));
+		PSU_CODE = tonumber(sysparm("PSU_CODE"));
+		ENUMERATOR_CODE = sysparm("STAFF_CODE");
+
+		// Make protected so interviewer cannot change id-items
+		set attributes (DISTRICT, CONSTITUENCY, COMMUNITY_COUNCIL, ZONE, SETTLEMENT, ENUMERATION_AREA, PSU_CODE) protect;
+		
+	endif;
+PROC VILLAGE_NAME
+  CheckBlank(VILLAGE_NAME);
+VILLAGE_NAME=toupper(VILLAGE_NAME)
+PROC CHIEF
+CheckBlank(CHIEF);
+CHIEF=toupper(CHIEF)
 PROC HOUSEHOLD_HEAD_NAMES
 CheckBlank(HOUSEHOLD_HEAD_NAMES);// CHECKS IF THE FIELD IS BLANK
 	HOUSEHOLD_HEAD_NAMES = toupper(HOUSEHOLD_HEAD_NAMES);
+PROC VISIT_DATE
+
+preproc
+
+	if visualvalue(VISIT_DATE(curocc())) = notappl then
+		 VISIT_DATE = sysdate("YYYYMMDD");
+	endif;
+
+postproc
+
+	if VISIT_DATE = sysdate("YYYYMMDD") then
+		endgroup;
+	endif;
 PROC NUMBER_OF_VISITS
 preproc
 
 	NUMBER_OF_VISITS = totocc(VISIT_DATE000);
+PROC HOUSEHOLD_STATUS
+if demode() = add then
+	if HH_LATITUDE = notappl then
+		if HOUSEHOLD_STATUS in 2:5 then
+			errmsg("You cannot save the household without its GPS coordinates. Please capture the coordinates.");
+			reenter;
+		endif;
+	else
+		if HOUSEHOLD_STATUS in 2:4 then 
+			if APPROVAL_STATUS = 1 then
+				endlevel;
+			else
+				APPROVAL_STATUS = 0;
+				savepartial();
+				errmsg("The supervisor must approve this case in order for the enumerator to complete it");
+				stop(0);
+			endif;
+		endif;
+		
+		if HOUSEHOLD_STATUS = 5 and NUMBER_OF_VISITS < 3 then
+			errmsg("Refusal can only be accepted if there had been at least 3 attempts or visits");
+			reenter;
+		elseif HOUSEHOLD_STATUS = 5 and NUMBER_OF_VISITS = 3 then
+			if APPROVAL_STATUS = 1 then
+				endlevel;
+			else
+				APPROVAL_STATUS = 0;
+				savepartial();
+				errmsg("The supervisor must approve this case in order for the enumerator to complete it");
+				stop(0);
+			endif;
+		endif;
+	endif;
+else
+	if HOUSEHOLD_STATUS in 2:4 then 
+		if APPROVAL_STATUS = 1 then
+			endlevel;
+		else
+			APPROVAL_STATUS = 0;
+			savepartial();
+			errmsg("The supervisor must approve this case in order for the enumerator to complete it");
+			stop(0);
+		endif;
+	endif;
+	
+	if HOUSEHOLD_STATUS = 5 and NUMBER_OF_VISITS < 3 then
+		errmsg("Refusal can only be accepted if there had been at least 3 attempts or visits");
+		reenter;
+	elseif HOUSEHOLD_STATUS = 5 and NUMBER_OF_VISITS = 3 then
+		if APPROVAL_STATUS = 1 then
+			endlevel;
+		else
+			APPROVAL_STATUS = 0;
+			savepartial();
+			errmsg("The supervisor must approve this case in order for the enumerator to complete it");
+			stop(0);
+		endif;
+	endif;
+endif;
 PROC RESPONDENT_NAME
 
 CheckBlank(RESPONDENT_NAME);
@@ -898,7 +992,7 @@ RESPONDENT_NAME = toupper(RESPONDENT_NAME);
 savepartial();
 PROC RESPONDENT_RELATIONSHIP
 if RESPONDENT_RELATIONSHIP = 1 and RESPONDENT_NAME <> HOUSEHOLD_HEAD_NAMES then
- errmsg("If this Household head name cannot be different from the one given in the ID")
+ errmsg("The Household head name cannot be different from the one given in the ID")
 		select("Correct respondent Name", RESPONDENT_NAME);
  endif;
 
@@ -918,6 +1012,7 @@ preproc
 	//Set name of household head to be the first name in B2
 	if curocc() = 1 then
 		B2 = HOUSEHOLD_HEAD_NAMES;
+		noinput;
 	endif;
 
 postproc
@@ -959,6 +1054,74 @@ preproc
 
 
 savepartial();
+PROC DEMOGRAPHIC_ROSTER
+numeric head, spouse;
+head = seek(B5 = 1);
+// Count number of heads of household so that we can ensure
+// that there is exactly one head of household.
+
+numeric numberOfHeads = count(DEMOGRAPHIC_ROSTER where B5 = 1);
+
+if numberOfHeads <> 1 then
+	errmsg("You have entered %d heads of household. Only one head of household is allowed",
+			numberOfHeads);
+	reenter B5(1);
+endif;
+
+// Count number of spouse of household head so that we can ensure
+// that if spouses are more than 1 then it's polygamous marriage.
+
+numeric numberOfSpouses = count(DEMOGRAPHIC_ROSTER where B5 = 2);
+
+if numberOfSpouses > 1 then
+	if not B6(head) = 3 then
+		errmsg("%s has more than 1 spouse, they must be polygamously married",
+				strip(B2(head)))
+		select("Correct household head marital status", B6(head),
+			   "Correct spouse relationship", B5(spouse),
+			   "Correct spouse marital status", B6(spouse));
+	endif;
+	
+	//Check each spouse in the household
+	do spouse = 1 while spouse <= totocc(DEMOGRAPHIC_ROSTER)
+		if B5(spouse) = 2 then
+			if B5(spouse) <> 2 and not B6(spouse) = 3 then
+				errmsg("%s is not the only spouse for %s. They must be polygamously married",
+						strip(B2(spouse)), strip(B2(head)))
+				select("Correct household head marital status", B6(head),
+			   			"Correct spouse relationship", B5(spouse),
+			   			"Correct spouse marital status", B6(spouse));
+			endif;
+		endif;
+	enddo;	
+endif;
+
+// If household head is monogamously married then his/her spouse must be
+// monogamously married and of different sex.
+
+if B6(head) in 2:3,5 then
+	//Check each spouse in the household
+	do spouse = 1 while spouse <= totocc(DEMOGRAPHIC_ROSTER)
+		if B4(spouse) = 2 then
+			//Check for same sex
+			if B5(spouse) = B5(head) then
+				errmsg("If %s is %s's spouse, then they must be of opposite sex",
+					   strip(B2(spouse)), strip(B2(head)))
+				select("Correct household head sex", B3(head),
+					   "Correct spouse relationship", B5(spouse),
+					   "Correct spouse sex", B3(spouse));
+			endif;
+			//Check for different marrital status
+			if B6(spouse) <> B6(head) then
+				errmsg("If %s is %s's spouse, then they must have the same marital status",
+					   strip(B2(spouse)), strip(B2(head)))
+				select("Correct household head marital status", B6(head),
+					   "Correct spouse relationship", B5(spouse),
+					   "Correct spouse marital status", B6(spouse));
+			endif;
+		endif;
+	enddo;
+endif;
 PROC B3
 // If household head is married then his/her spouse must be of different sex.
 	if B5(curocc()) = 2 and B3(curocc()) = B3(1) then
@@ -2877,10 +3040,11 @@ preproc
 
 //create string of supplements used
 do numeric counter = 1 while counter <= (totocc(USED_SUPPLIMENT_POULTRYW000))
-	if LQ10W_GOATS = 1 and USED_SUPPLIMENT_POULTRYW(counter) = 1 then
+	if LQ10W_POULTRY = 1 and USED_SUPPLIMENT_POULTRYW(counter) = 1 then
 		supplents_used = concat(supplents_used,strip(SUPPLEMENT_CODE_CHARACTER_POULTRY_W(counter)));
 	endif;
 enddo;
+
 //errmsg(supplents_used);
 noinput;
 postproc
@@ -2925,7 +3089,6 @@ elseif curocc($) = 10 then
 		skip to LQ19A(1);
 	endif;
 endif;
-errmsg(supplents_used);
 savepartial();
 
 PROC LQ15S

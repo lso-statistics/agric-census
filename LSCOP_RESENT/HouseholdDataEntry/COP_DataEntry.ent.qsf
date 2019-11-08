@@ -113,6 +113,46 @@ ENG=\pard\cf1\i\fs24 Did  \b\f1 %getocclabel%\i0\f0  \b0 participate in Farming 
 ENG=}
 
 [QUESTION]
+Field=COP_DICT_DICT.CHIEF
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter Chief Name\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.COMMUNITY_COUNCIL
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Select Community Council\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.CONSTITUENCY
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Select Constituency\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.DISTRICT
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Select District\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.HOUSEHOLD_HEAD_NAMES
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter the Name of the Household Head\par
+ENG=}
+
+[QUESTION]
 Field=COP_DICT_DICT.HOUSEHOLD_MEMBER_OR_HIRED_OTHES
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
@@ -137,6 +177,30 @@ ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fchar
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
 ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.HOUSEHOLD_NUMBER
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter Household Number\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.HOUSEHOLD_STATUS
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Select Household Status\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.INTERVIEW_DATE
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Interview Date\par
 ENG=}
 
 [QUESTION]
@@ -1604,6 +1668,14 @@ ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b
 ENG=}
 
 [QUESTION]
+Field=COP_DICT_DICT.PSU_CODE
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter PSU Code\par
+ENG=}
+
+[QUESTION]
 Field=COP_DICT_DICT.RESPONDENT_NAME
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
@@ -1617,6 +1689,22 @@ ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fchar
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
 ENG=\pard\cf1\fs24 What is %RESPONDENT_NAME%'s  Relationship to Household Head?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.SETTLEMENT
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter Settlement Type\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.SEX_OF_HOUSEHOLD_HEAD
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter Household Head's Sex\par
 ENG=}
 
 [QUESTION]
@@ -1707,5 +1795,21 @@ ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fchar
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
 ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for  dairy cattle alone?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.VILLAGE_NAME
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter Village Name\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.VILLAGE_NUMBER
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 Enter Village Number\par
 ENG=}
 

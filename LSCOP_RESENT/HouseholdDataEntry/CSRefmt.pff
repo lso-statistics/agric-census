@@ -1,0 +1,15 @@
+﻿[Run Information]
+Version=CSPro 7.2
+AppType=Reformat
+
+[Files]
+OutputData=.\TESTING_
+InputDict=.\COP_Dict.dcf
+OutputDict=.\COP_Dict.dcf
+Listing=.\CSRefmt.lst
+
+[Parameters]
+ViewListing=Always
+ViewResults=No
+DisplayNames=Yes
+

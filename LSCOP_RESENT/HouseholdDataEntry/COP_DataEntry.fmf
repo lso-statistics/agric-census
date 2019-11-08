@@ -13,7 +13,7 @@ File=.\COP_Dict.dcf
 Name=FORM000
 Label=COP_Dict questionnaire
 Level=1
-Size=761,759
+Size=762,784
   
 Item=DISTRICT
 Item=CONSTITUENCY
@@ -31,10 +31,12 @@ Item=INTERVIEW_DATE
 Item=NUMBER_OF_VISITS
 Item=VISIT_DATE000
 Item=HOUSEHOLD_STATUS
+Item=SEX_OF_HOUSEHOLD_HEAD
   
 Box=25,42,736,558,Thin
 Box=147,70,401,112,Raised
 Box=25,580,737,759,Raised
+Box=444,60,722,112,Thin
   
 [Text]
 Name=TEXT1
@@ -267,10 +269,10 @@ Max=1
   
 [Field]
 Name=INTERVIEW_DATE
-Position=566,75,723,95
+Position=566,75,707,95
 Item=INTERVIEW_DATE,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
 Form=1
   
 [Text]
@@ -319,7 +321,7 @@ Text=Community Council
   
 [Field]
 Name=VILLAGE_NAME
-Position=248,275,498,295
+Position=248,275,430,295
 Item=VILLAGE_NAME,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -332,7 +334,7 @@ Text=Village Name
   
 [Field]
 Name=CHIEF
-Position=248,305,538,325
+Position=248,305,429,325
 Item=CHIEF,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -407,7 +409,7 @@ Text=Settlement
   
 [Field]
 Name=HOUSEHOLD_HEAD_NAMES
-Position=248,485,498,505
+Position=248,485,426,505
 Item=HOUSEHOLD_HEAD_NAMES,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -416,6 +418,19 @@ Form=1
 [Text]
 Position=59,488,226,504
 Text=Names of Household Head
+ 
+  
+[Field]
+Name=SEX_OF_HOUSEHOLD_HEAD
+Position=637,484,652,504
+Item=SEX_OF_HOUSEHOLD_HEAD,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=455,487,603,503
+Text=Sex of household Head
  
   
 [Field]
@@ -428,18 +443,6 @@ Form=1
 [Text]
 Position=59,518,180,534
 Text=Household Number
- 
-  
-[Field]
-Name=NUMBER_OF_VISITS
-Position=462,630,477,650
-Item=NUMBER_OF_VISITS,COP_DICT_DICT
-FieldLabelType=DictionaryLabel
-Form=1
-  
-[Text]
-Position=280,633,381,649
-Text=Number of visits
  
   
 [Grid]
@@ -486,14 +489,28 @@ Text=Visit date
 Name=VISIT_DATE
 Position=0,0,113,20
 Item=VISIT_DATE,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
   
 [Text]
+Position=0,0,60,16
 Text=Visit date
  
 [EndColumn]
   
 [EndGrid]
+ 
+  
+[Field]
+Name=NUMBER_OF_VISITS
+Position=462,630,477,650
+Item=NUMBER_OF_VISITS,COP_DICT_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=280,633,381,649
+Text=Number of visits
  
   
 [Field]
@@ -775,6 +792,7 @@ Text=Anymore People?
 Name=NUMBER_OF_HOUSEHOLD_MEMBERS
 Position=670,64,699,84
 Item=NUMBER_OF_HOUSEHOLD_MEMBERS,COP_DICT_DICT
+Protected=Yes
 FieldLabelType=DictionaryLabel
 Form=2
   
