@@ -706,3 +706,216 @@ CSPRO Process Summary
 
 CSPRO Executor Normal End
 --------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      12:40:27
+End Time        12:40:30
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      12:41:30
+End Time        12:41:33
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      12:44:41
+End Time        12:44:44
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      12:46:16
+End Time        12:46:19
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      12:48:40
+End Time        12:48:42
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      14:05:42
+End Time        14:05:44
+
+CSPRO Process Summary
+
+System messages:
+
+ Number    Frequency   Message text
+ ------    ---------   ------------
+    505            1   File handler '%s' is not used in the application 
+
+
+A compilation error file (.err) has been created for your application.
+
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      14:12:32
+End Time        14:12:35
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RESENT\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      14:19:20
+End Time        14:19:27
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      14:21:24
+End Time        14:21:26
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RECEND\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RECEND\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      14:24:22
+End Time        14:24:24
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RECEND\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RECEND\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      20:33:57
+End Time        20:33:59
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
+Application     E:\MY STAFF\CSPRO\LSCOP_RECEND\Menu\COPMenu.ent
+Type            ENTRY
+Input Data      <<Empty>>
+External        STAFF_DICT=<<Text File>> E:\MY STAFF\CSPRO\LSCOP_RECEND\Menu\staff.dat
+External        COP_DICT_DICT=<<Empty>>
+<File>          TMPFILE=
+<File>          PFFFILE=
+<File>          SR_PFFFILE=
+
+Date            Nov  9, 2019
+Start Time      20:36:26
+End Time        20:36:28
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------

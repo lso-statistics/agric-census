@@ -93,7 +93,7 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM002
 Label=Livestock Summer Feed
 Level=1
-Size=766,2772
+Size=836,2772
   
 Item=USED_SUPPLIMENT_DAIRY_CATTLE
 Item=USED_SUPPLIMENT_ALL_CATTLE000
@@ -136,7 +136,7 @@ Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 Name=FORM003
 Label=Livestock Winter Feed
 Level=1
-Size=927,3236
+Size=892,3934
   
 Item=LQ10W_DAIRYCATTLE
 Item=USED_SUPPLIMENT_TYPW000
@@ -557,8 +557,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=35,34,319,50
-Text=Relationship of the Respondent to household
+Position=35,34,355,50
+Text=Relationship of the Respondent to household head
  
   
 [Grid]
@@ -752,7 +752,7 @@ Width=191
   
 [HeaderText]
 Position=32,16,191,56
-Text=Name of the household member (NAME)
+Text=Name of the household member
  
 [Field]
 Name=B2
@@ -762,7 +762,7 @@ FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
   
 [Text]
-Text=Name of the household member (NAME)
+Text=Name of the household member
  
 [EndColumn]
   
@@ -771,7 +771,7 @@ Width=69
   
 [HeaderText]
 Position=0,16,69,56
-Text=Anymore People?
+Text=Anymore People
  
 [Field]
 Name=ANYMORE_PEOPLE
@@ -781,7 +781,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Anymore People?
+Text=Anymore People
  
 [EndColumn]
   
@@ -974,8 +974,8 @@ Width=10
 Width=71
   
 [HeaderText]
-Position=0,112,71,168
-Text=Is (NAME) male or female?
+Position=16,128,71,152
+Text=Gender
  
 [Field]
 Name=B3
@@ -985,7 +985,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Is (NAME) male or female?
+Text=Gender
  
 [EndColumn]
   
@@ -993,8 +993,8 @@ Text=Is (NAME) male or female?
 Width=70
   
 [HeaderText]
-Position=0,112,70,168
-Text=What is (NAME)'s  age?
+Position=37,128,70,152
+Text=Age
  
 [Field]
 Name=B4
@@ -1003,16 +1003,16 @@ Item=B4,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=What is (NAME)'s  age?
+Text=Age
  
 [EndColumn]
   
 [Column]
-Width=83
+Width=87
   
 [HeaderText]
-Position=0,96,83,168
-Text=What is (NAME)'s  relationship to the HH?
+Position=0,112,87,152
+Text=Relationship to the HH
  
 [Field]
 Name=B5
@@ -1022,7 +1022,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=What is (NAME)'s  relationship to the HH?
+Text=Relationship to the HH
  
 [EndColumn]
   
@@ -1030,8 +1030,8 @@ Text=What is (NAME)'s  relationship to the HH?
 Width=70
   
 [HeaderText]
-Position=0,96,70,168
-Text=What is (NAME)'s  marital status?
+Position=14,112,70,152
+Text=Marital status
  
 [Field]
 Name=B6
@@ -1041,7 +1041,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=What is (NAME)'s  marital status?
+Text=Marital status
  
 [EndColumn]
   
@@ -1049,8 +1049,8 @@ Text=What is (NAME)'s  marital status?
 Width=75
   
 [HeaderText]
-Position=0,64,75,168
-Text=What is (NAME)'s  highest level of education attained?
+Position=0,80,75,152
+Text=Highest level of education attained
  
 [Field]
 Name=B7
@@ -1060,7 +1060,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=What is (NAME)'s  highest level of education attained?
+Text=Highest level of education attained
  
 [EndColumn]
   
@@ -1068,8 +1068,8 @@ Text=What is (NAME)'s  highest level of education attained?
 Width=75
   
 [HeaderText]
-Position=0,80,75,168
-Text=What is (NAME)'s current residential status?
+Position=0,96,75,152
+Text=Current residential status
  
 [Field]
 Name=B8
@@ -1079,16 +1079,16 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=What is (NAME)'s current residential status?
+Text=Current residential status
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=89
   
 [HeaderText]
-Position=0,0,86,168
-Text=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Position=0,0,89,152
+Text=Participation in the farming activities of the holding between 1st August 2018 to 31st July 2019
  
 [Field]
 Name=B9
@@ -1098,7 +1098,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Text=Participation in the farming activities of the holding between 1st August 2018 to 31st July 2019
  
 [EndColumn]
   
@@ -1123,8 +1123,8 @@ DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=24,80,451,96
-Text=Did the holding  raise any livestock from 1st August to 31 July 2019?
+Position=24,80,126,96
+Text=Livestock raised
 Form=3
  
   
@@ -1268,8 +1268,8 @@ Width=10
 Width=75
   
 [HeaderText]
-Position=1,80,75,152
-Text=Did this household raise livestock?
+Position=4,96,75,136
+Text=Livestock raised
  
 [Field]
 Name=LQ02
@@ -1280,7 +1280,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,229,16
-Text=Did this household raise livestock?
+Text=Livestock raised
  
 [EndColumn]
   
@@ -1288,7 +1288,7 @@ Text=Did this household raise livestock?
 Width=105
   
 [HeaderText]
-Position=34,96,105,152
+Position=34,80,105,136
 Text=Type of Livestock Raised
  
 [Field]
@@ -1309,8 +1309,8 @@ Text=Type of Livestock Raised
 Width=76
   
 [HeaderText]
-Position=0,0,76,152
-Text=What type of livestock production system did the holding mainly use?
+Position=0,80,76,136
+Text=Livestock production system
  
 [Field]
 Name=LQ03
@@ -1321,7 +1321,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,452,16
-Text=What type of livestock production system did the holding mainly use?
+Text=Livestock production system
  
 [EndColumn]
   
@@ -1329,8 +1329,8 @@ Text=What type of livestock production system did the holding mainly use?
 Width=79
   
 [HeaderText]
-Position=0,64,79,152
-Text=How many were raised on 31 July 2019?
+Position=2,80,79,136
+Text=Number kept on 31 July 2019
  
 [Field]
 Name=LQ04
@@ -1340,7 +1340,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,263,16
-Text=How many were raised on 31 July 2019?
+Text=Number kept on 31 July 2019
  
 [EndColumn]
   
@@ -1348,8 +1348,8 @@ Text=How many were raised on 31 July 2019?
 Width=79
   
 [HeaderText]
-Position=0,0,79,152
-Text=How many were purchased for cash between 1st August 2018 to 31st July 2019?
+Position=1,0,79,136
+Text=Number purchased for cash between 1st August 2018 to 31st July 2019
  
 [Field]
 Name=LQ05A
@@ -1359,26 +1359,26 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,520,16
-Text=How many were purchased for cash between 1st August 2018 to 31st July 2019?
+Text=Number purchased for cash between 1st August 2018 to 31st July 2019
  
 [EndColumn]
   
 [Column]
-Width=136
+Width=192
   
 [HeaderText]
-Position=70,0,136,152
-Text=What was the total amount paid for these purchase in Maloti?
+Position=120,32,192,136
+Text=Total amount paid for these purchases in Maloti
  
 [Field]
 Name=LQ05B
-Position=43,0,128,20
+Position=43,0,184,20
 Item=LQ05B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,397,16
-Text=What was the total amount paid for these purchase in Maloti?
+Text=Total amount paid for these purchases in Maloti
  
 [EndColumn]
   
@@ -1386,8 +1386,8 @@ Text=What was the total amount paid for these purchase in Maloti?
 Width=144
   
 [HeaderText]
-Position=0,48,144,152
-Text=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019?
+Position=0,64,144,136
+Text=Number recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019
  
 [Field]
 Name=LQ06
@@ -1396,7 +1396,7 @@ Item=LQ06,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019?
+Text=Number recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019
  
 [EndColumn]
   
@@ -1404,8 +1404,8 @@ Text=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to
 Width=83
   
 [HeaderText]
-Position=0,32,83,152
-Text=How many were slaughtered between 1st August 2018 to 31st July 2019?
+Position=0,32,83,136
+Text=Number slaughtered between 1st August 2018 to 31st July 2019
  
 [Field]
 Name=LQ07A
@@ -1415,7 +1415,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,473,16
-Text=How many were slaughtered between 1st August 2018 to 31st July 2019?
+Text=Number slaughtered between 1st August 2018 to 31st July 2019
  
 [EndColumn]
   
@@ -1423,8 +1423,8 @@ Text=How many were slaughtered between 1st August 2018 to 31st July 2019?
 Width=87
   
 [HeaderText]
-Position=0,80,87,152
-Text=Did you pay for slaughtering ?
+Position=0,96,87,136
+Text=Costs of  slaughtering
  
 [Field]
 Name=LQ07B
@@ -1435,7 +1435,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,196,16
-Text=Did you pay for slaughtering ?
+Text=Costs of  slaughtering
  
 [EndColumn]
   
@@ -1443,8 +1443,8 @@ Text=Did you pay for slaughtering ?
 Width=121
   
 [HeaderText]
-Position=14,80,121,152
-Text=What was the total cost for slaughtering in maloti?
+Position=14,80,121,136
+Text=Total costs of slaughtering in Maloti
  
 [Field]
 Name=LQ07C
@@ -1454,7 +1454,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,325,16
-Text=What was the total cost for slaughtering in maloti?
+Text=Total costs of slaughtering in Maloti
  
 [EndColumn]
   
@@ -1462,8 +1462,8 @@ Text=What was the total cost for slaughtering in maloti?
 Width=104
   
 [HeaderText]
-Position=0,0,104,152
-Text=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
+Position=0,0,104,136
+Text=Number given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019
  
 [Field]
 Name=LQ08
@@ -1473,7 +1473,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,714,16
-Text=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
+Text=Number given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019
  
 [EndColumn]
   
@@ -1481,8 +1481,8 @@ Text=How many were given away as gifts/lobola/lost due to death/theft  between 1
 Width=79
   
 [HeaderText]
-Position=0,16,79,152
-Text=How many were sold for cash between 1st August 2018 to 31st July 2019?
+Position=3,0,79,136
+Text=Number sold for cash between 1st August 2018 to 31st July 2019
  
 [Field]
 Name=LQ9A
@@ -1492,7 +1492,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,480,16
-Text=How many were sold for cash between 1st August 2018 to 31st July 2019?
+Text=Number sold for cash between 1st August 2018 to 31st July 2019
  
 [EndColumn]
   
@@ -1500,8 +1500,8 @@ Text=How many were sold for cash between 1st August 2018 to 31st July 2019?
 Width=135
   
 [HeaderText]
-Position=5,96,135,152
-Text=What was the total value for sales in Maloti?
+Position=32,96,135,136
+Text=Total value for sales in Maloti
  
 [Field]
 Name=LQ9B
@@ -1511,7 +1511,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,289,16
-Text=What was the total value for sales in Maloti?
+Text=Total value for sales in Maloti
  
 [EndColumn]
   
@@ -1536,8 +1536,8 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=29,54,543,70
-Text=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
+Position=29,54,353,70
+Text=Supplimentary feed for Dairy Cattle during summer
  
   
 [Grid]
@@ -1618,11 +1618,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=91
   
 [HeaderText]
-Position=0,0,78,136
-Text=Did the holding use the suppliment for the dairy cattle alone?
+Position=0,64,91,120
+Text=Suppliments for the dairy cattle alone
  
 [Field]
 Name=USED_SUPPLIMENT_TYPE
@@ -1633,7 +1633,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,395,16
-Text=Did the holding use the suppliment for the dairy cattle alone?
+Text=Suppliments for the dairy cattle alone
  
 [EndColumn]
   
@@ -1641,7 +1641,7 @@ Text=Did the holding use the suppliment for the dairy cattle alone?
 Width=99
   
 [HeaderText]
-Position=14,64,99,136
+Position=14,48,99,120
 Text=Type of Suppliment for dairy cattle
  
 [Field]
@@ -1662,7 +1662,7 @@ Text=Type of Suppliment for dairy cattle
 Width=85
   
 [HeaderText]
-Position=0,96,85,136
+Position=0,80,85,120
 Text=Supplement code
  
 [Field]
@@ -1682,7 +1682,7 @@ Text=Supplement code
 Width=85
   
 [HeaderText]
-Position=0,80,85,136
+Position=0,64,85,120
 Text=Supplement code character
  
 [Field]
@@ -1703,8 +1703,8 @@ Text=Supplement code character
 Width=121
   
 [HeaderText]
-Position=5,48,121,136
-Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Position=5,32,121,120
+Text=Total Quantity of suppliment provided to feed the dairy cattle alone
  
 [Field]
 Name=LQ13SA
@@ -1714,7 +1714,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,439,16
-Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Text=Total Quantity of suppliment provided to feed the dairy cattle alone
  
 [EndColumn]
   
@@ -1722,8 +1722,8 @@ Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
 Width=82
   
 [HeaderText]
-Position=0,16,82,136
-Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Position=0,0,82,120
+Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
  
 [Field]
 Name=LQ13SB
@@ -1734,7 +1734,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,481,16
-Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
  
 [EndColumn]
   
@@ -1750,8 +1750,8 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=30,546,528,562
-Text=Did the holding provide All Cattle with any Supplimentary feed during summer
+Position=30,546,338,562
+Text=Supplimentary feed for All Cattle during summer
  
   
 [Grid]
@@ -1762,7 +1762,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=24,578,709,1028
+DisplaySize=24,578,762,1028
 Orientation=Horizontal
 FieldRowHeight=34
 HeadingRowHeight=0
@@ -1823,11 +1823,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=91
   
 [HeaderText]
-Position=0,0,78,104
-Text=Did the holding use the suppliment for all cattle ?
+Position=0,64,91,104
+Text=Suppliments for all cattle
  
 [Field]
 Name=USED_SUPPLIMENT_ALL_CATTLE
@@ -1838,7 +1838,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,318,16
-Text=Did the holding use the suppliment for all cattle ?
+Text=Suppliments for all cattle
  
 [EndColumn]
   
@@ -1872,7 +1872,7 @@ Text=Supplement code
  
 [Field]
 Name=SUPPLEMENT_CODE_ALL_CATTLE
-Position=48,0,77,20
+Position=47,0,76,20
 Item=SUPPLEMENT_CODE_ALL_CATTLE,COP_DICT_DICT
 Protected=Yes
 FieldLabelType=DictionaryLabel
@@ -1905,21 +1905,21 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=84
+Width=152
   
 [HeaderText]
-Position=0,0,84,104
-Text=Total Quantity of suppliment provided to feed all cattle?
+Position=68,0,152,104
+Text=Total Quantity of suppliment provided to feed all cattle
  
 [Field]
 Name=LQ13SA_ALL_CATTLE
-Position=31,0,74,20
+Position=31,0,144,20
 Item=LQ13SA_ALL_CATTLE,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,358,16
-Text=Total Quantity of suppliment provided to feed all cattle?
+Text=Total Quantity of suppliment provided to feed all cattle
  
 [EndColumn]
   
@@ -1928,7 +1928,7 @@ Width=82
   
 [HeaderText]
 Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed all cattle?
+Text=Unit of total Quantity of suppliment provided to feed all cattle
  
 [Field]
 Name=LQ13SB_ALL_CATTLE
@@ -1939,7 +1939,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,400,16
-Text=Unit of total Quantity of suppliment provided to feed all cattle?
+Text=Unit of total Quantity of suppliment provided to feed all cattle
  
 [EndColumn]
   
@@ -1955,8 +1955,8 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=27,1061,505,1077
-Text=Did the holding provide sheep with any Supplimentary feed during summer
+Position=27,1061,318,1077
+Text=Supplimentary feed for Sheep during summer
  
   
 [Grid]
@@ -2028,11 +2028,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=82
+Width=87
   
 [HeaderText]
-Position=0,16,82,104
-Text=Did the holding use the suppliment for sheep?
+Position=0,64,87,104
+Text=Suppliments for sheep
  
 [Field]
 Name=USED_SUPPLIMENT_SHEEP
@@ -2043,7 +2043,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,299,16
-Text=Did the holding use the suppliment for sheep?
+Text=Suppliments for sheep
  
 [EndColumn]
   
@@ -2114,7 +2114,7 @@ Width=121
   
 [HeaderText]
 Position=5,32,121,104
-Text=Total Quantity of suppliments provided to feed the sheep?
+Text=Total Quantity of suppliments provided to feed the sheep
  
 [Field]
 Name=LQ13SA_ALL_SHEEP
@@ -2124,7 +2124,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,375,16
-Text=Total Quantity of suppliments provided to feed the sheep?
+Text=Total Quantity of suppliments provided to feed the sheep
  
 [EndColumn]
   
@@ -2133,7 +2133,7 @@ Width=82
   
 [HeaderText]
 Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed the sheep?
+Text=Unit of total Quantity of suppliment provided to feed the sheep
  
 [Field]
 Name=LQ13SB_ALL_SHEEP
@@ -2144,7 +2144,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,409,16
-Text=Unit of total Quantity of suppliment provided to feed the sheep?
+Text=Unit of total Quantity of suppliment provided to feed the sheep
  
 [EndColumn]
   
@@ -2160,8 +2160,8 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=27,1566,503,1582
-Text=Did the holding provide Goats with any Supplimentary feed during summer
+Position=27,1566,313,1582
+Text=Supplimentary feed for Goats during summer
  
   
 [Grid]
@@ -2172,7 +2172,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=24,1595,700,2159
+DisplaySize=24,1595,811,2098
 Orientation=Horizontal
 FieldRowHeight=46
 HeadingRowHeight=0
@@ -2233,11 +2233,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=87
   
 [HeaderText]
-Position=0,16,78,104
-Text=Did the holding use the suppliment for goats?
+Position=0,64,87,104
+Text=Suppliments for goats
  
 [Field]
 Name=USED_SUPPLIMENT_GOATS
@@ -2248,20 +2248,20 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,295,16
-Text=Did the holding use the suppliment for goats?
+Text=Suppliments for goats
  
 [EndColumn]
   
 [Column]
-Width=103
+Width=144
   
 [HeaderText]
-Position=12,48,103,104
+Position=3,64,144,104
 Text=Type of Suppliments for goats
  
 [Field]
 Name=TYPE_OF_SUPPLIMENT_GOATS
-Position=0,0,95,20
+Position=0,0,125,20
 Item=TYPE_OF_SUPPLIMENT_GOATS,COP_DICT_DICT
 Protected=Yes
 FieldLabelType=DictionaryLabel
@@ -2315,31 +2315,30 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=84
+Width=136
   
 [HeaderText]
-Position=0,0,84,104
-Text=Total Quantity of suppliments provided to feed the goats?
+Position=0,32,136,104
+Text=Total Quantity of suppliments provided to feed the goats
  
 [Field]
 Name=LQ13SA_ALL_GOATS
-Position=33,0,76,20
+Position=15,0,128,20
 Item=LQ13SA_ALL_GOATS,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,371,16
-Text=Total Quantity of suppliments provided to feed the goats?
+Position=0,0,363,16
+Text=Total Quantity of suppliments provided to feed the goats
  
 [EndColumn]
   
 [Column]
-Width=82
+Width=87
   
 [HeaderText]
-Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed the goats?
+Position=2,0,87,104
+Text=Unit of total Quantity of suppliment provided to feed the goats
  
 [Field]
 Name=LQ13SB_ALL_GOATS
@@ -2350,7 +2349,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,405,16
-Text=Unit of total Quantity of suppliment provided to feed the goats?
+Text=Unit of total Quantity of suppliment provided to feed the goats
  
 [EndColumn]
   
@@ -2366,8 +2365,8 @@ DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=31,2124,559,2140
-Text=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
+Position=31,2124,326,2140
+Text=Supplimentary feed for Poultry during summer
  
   
 [Grid]
@@ -2378,7 +2377,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEEDS_SUMMER
 Max=10
-DisplaySize=25,2164,741,2663
+DisplaySize=25,2164,805,2663
 Orientation=Horizontal
 FieldRowHeight=39
 HeadingRowHeight=0
@@ -2439,11 +2438,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=87
   
 [HeaderText]
-Position=0,0,78,104
-Text=Did the holding use the suppliment for poultry?
+Position=0,64,87,104
+Text=Suppliments for poultry
  
 [Field]
 Name=USED_SUPPLIMENT_POULTRY
@@ -2454,7 +2453,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,304,16
-Text=Did the holding use the suppliment for poultry?
+Text=Suppliments for poultry
  
 [EndColumn]
   
@@ -2521,31 +2520,30 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=84
+Width=123
   
 [HeaderText]
-Position=0,0,84,104
-Text=Total Quantity of suppliments provided to feed the poultry?
+Position=7,32,123,104
+Text=Total Quantity of suppliments provided to feed the poultry
  
 [Field]
 Name=LQ13SA_ALL_GOATT
-Position=33,0,76,20
+Position=2,0,115,20
 Item=LQ13SA_ALL_GOATT,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,380,16
-Text=Total Quantity of suppliments provided to feed the poultry?
+Position=0,0,372,16
+Text=Total Quantity of suppliments provided to feed the poultry
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=116
   
 [HeaderText]
-Position=0,0,84,104
-Text=Unit of total Quantity of suppliment provided to feed the poultry?
+Position=0,16,116,104
+Text=Unit of total Quantity of suppliment provided to feed the poultry
  
 [Field]
 Name=LQ13SB_ALL_POULTRY
@@ -2556,7 +2554,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,414,16
-Text=Unit of total Quantity of suppliment provided to feed the poultry?
+Text=Unit of total Quantity of suppliment provided to feed the poultry
  
 [EndColumn]
   
@@ -2574,15 +2572,15 @@ Max=1
   
 [Field]
 Name=LQ10W_DAIRYCATTLE
-Position=582,36,597,56
+Position=560,36,575,56
 Item=LQ10W_DAIRYCATTLE,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=50,39,553,55
-Text=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
+Position=50,39,363,55
+Text=Supplimentary feed for Dairy Cattle during winter
  
   
 [Grid]
@@ -2655,11 +2653,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=87
   
 [HeaderText]
-Position=0,0,78,136
-Text=Did the holding use the suppliment for the dairy cattle alone?
+Position=0,48,87,120
+Text=Suppliments for the dairy cattle alone?
  
 [Field]
 Name=USED_SUPPLIMENT_TYPW
@@ -2670,7 +2668,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,395,16
-Text=Did the holding use the suppliment for the dairy cattle alone?
+Text=Suppliments for the dairy cattle alone?
  
 [EndColumn]
   
@@ -2678,7 +2676,7 @@ Text=Did the holding use the suppliment for the dairy cattle alone?
 Width=146
   
 [HeaderText]
-Position=11,96,146,136
+Position=11,80,146,120
 Text=Type of Suppliment for dairy cattle
  
 [Field]
@@ -2699,7 +2697,7 @@ Text=Type of Suppliment for dairy cattle
 Width=85
   
 [HeaderText]
-Position=0,96,85,136
+Position=0,80,85,120
 Text=Supplement code
  
 [Field]
@@ -2719,7 +2717,7 @@ Text=Supplement code
 Width=85
   
 [HeaderText]
-Position=0,80,85,136
+Position=0,64,85,120
 Text=Supplement code character
  
 [Field]
@@ -2740,8 +2738,8 @@ Text=Supplement code character
 Width=121
   
 [HeaderText]
-Position=37,16,121,136
-Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Position=37,0,121,120
+Text=Total Quantity of suppliment provided to feed the dairy cattle alone
  
 [Field]
 Name=LQ13WA
@@ -2751,7 +2749,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,439,16
-Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Text=Total Quantity of suppliment provided to feed the dairy cattle alone
  
 [EndColumn]
   
@@ -2759,8 +2757,8 @@ Text=Total Quantity of suppliment provided to feed the dairy cattle alone?
 Width=82
   
 [HeaderText]
-Position=0,16,82,136
-Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Position=0,0,82,120
+Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
  
 [Field]
 Name=LQ13WB
@@ -2771,7 +2769,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,481,16
-Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Text=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
  
 [EndColumn]
   
@@ -2787,8 +2785,8 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=48,614,535,630
-Text=Did the holding provide All Cattle with any Supplimentary feed during winter
+Position=48,614,345,630
+Text=Supplimentary feed for All Cattle during winter
  
   
 [Grid]
@@ -2799,7 +2797,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=43,647,775,1091
+DisplaySize=44,647,804,1091
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2861,11 +2859,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=91
   
 [HeaderText]
-Position=0,0,78,104
-Text=Did the holding use the suppliment for all cattle ?
+Position=0,64,91,104
+Text=Suppliments for all cattle
  
 [Field]
 Name=USED_SUPPLIMENT_ALL_CATTLEW
@@ -2876,7 +2874,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,318,16
-Text=Did the holding use the suppliment for all cattle ?
+Text=Suppliments for all cattle
  
 [EndColumn]
   
@@ -2943,21 +2941,21 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=84
+Width=138
   
 [HeaderText]
-Position=0,0,84,104
-Text=Total Quantity of suppliment provided to feed all cattle?
+Position=54,0,138,104
+Text=Total Quantity of suppliment provided to feed all cattle
  
 [Field]
 Name=LQ13SA_ALL_CATTLEW
-Position=31,0,74,20
+Position=31,0,130,20
 Item=LQ13SA_ALL_CATTLEW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,358,16
-Text=Total Quantity of suppliment provided to feed all cattle?
+Text=Total Quantity of suppliment provided to feed all cattle
  
 [EndColumn]
   
@@ -2966,7 +2964,7 @@ Width=82
   
 [HeaderText]
 Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed all cattle?
+Text=Unit of total Quantity of suppliment provided to feed all cattle
  
 [Field]
 Name=LQ13SB_ALL_CATTLEW
@@ -2977,7 +2975,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,400,16
-Text=Unit of total Quantity of suppliment provided to feed all cattle?
+Text=Unit of total Quantity of suppliment provided to feed all cattle
  
 [EndColumn]
   
@@ -2993,8 +2991,8 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=48,1150,515,1166
-Text=Did the holding provide sheep with any Supplimentary feed during winter
+Position=48,1150,328,1166
+Text=Supplimentary feed for Sheep during winter
  
   
 [Grid]
@@ -3067,11 +3065,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=82
+Width=87
   
 [HeaderText]
-Position=0,16,82,104
-Text=Did the holding use the suppliment for sheep?
+Position=0,64,87,104
+Text=Suppliments for sheep
  
 [Field]
 Name=USED_SUPPLIMENT_SHEEPW
@@ -3082,7 +3080,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,299,16
-Text=Did the holding use the suppliment for sheep?
+Text=Suppliments for sheep
  
 [EndColumn]
   
@@ -3153,7 +3151,7 @@ Width=121
   
 [HeaderText]
 Position=37,0,121,104
-Text=Total Quantity of suppliments provided to feed the sheep?
+Text=Total Quantity of suppliments provided to feed the sheep
  
 [Field]
 Name=LQ13SA_ALL_SHEEPW
@@ -3163,7 +3161,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,375,16
-Text=Total Quantity of suppliments provided to feed the sheep?
+Text=Total Quantity of suppliments provided to feed the sheep
  
 [EndColumn]
   
@@ -3172,7 +3170,7 @@ Width=82
   
 [HeaderText]
 Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed the sheep?
+Text=Unit of total Quantity of suppliment provided to feed the sheep
  
 [Field]
 Name=LQ13SB_ALL_SHEEPW
@@ -3183,7 +3181,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,409,16
-Text=Unit of total Quantity of suppliment provided to feed the sheep?
+Text=Unit of total Quantity of suppliment provided to feed the sheep
  
 [EndColumn]
   
@@ -3199,8 +3197,8 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=47,1698,512,1714
-Text=Did the holding provide Goats with any Supplimentary feed during winter
+Position=47,1698,322,1714
+Text=Supplimentary feed for Goats during winter
  
   
 [Grid]
@@ -3211,7 +3209,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=45,1726,771,2170
+DisplaySize=45,1726,813,2170
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -3273,11 +3271,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=87
   
 [HeaderText]
-Position=0,16,78,104
-Text=Did the holding use the suppliment for goats?
+Position=0,64,87,104
+Text=Suppliments for goats
  
 [Field]
 Name=USED_SUPPLIMENT_GOATW
@@ -3288,7 +3286,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,295,16
-Text=Did the holding use the suppliment for goats?
+Text=Suppliments for goats
  
 [EndColumn]
   
@@ -3355,21 +3353,21 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=84
+Width=140
   
 [HeaderText]
-Position=0,0,84,104
-Text=Total Quantity of suppliments provided to feed the goats?
+Position=56,0,140,104
+Text=Total Quantity of suppliments provided to feed the goats
  
 [Field]
 Name=LQ13SA_ALL_GOATW
-Position=33,0,76,20
+Position=33,0,132,20
 Item=LQ13SA_ALL_GOATW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,371,16
-Text=Total Quantity of suppliments provided to feed the goats?
+Text=Total Quantity of suppliments provided to feed the goats
  
 [EndColumn]
   
@@ -3378,7 +3376,7 @@ Width=82
   
 [HeaderText]
 Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed the goats?
+Text=Unit of total Quantity of suppliment provided to feed the goats
  
 [Field]
 Name=LQ13SB_ALL_GOATW
@@ -3389,7 +3387,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,405,16
-Text=Unit of total Quantity of suppliment provided to feed the goats?
+Text=Unit of total Quantity of suppliment provided to feed the goats
  
 [EndColumn]
   
@@ -3398,15 +3396,15 @@ Text=Unit of total Quantity of suppliment provided to feed the goats?
   
 [Field]
 Name=LQ10W_POULTRY
-Position=596,2223,611,2243
+Position=542,2223,557,2243
 Item=LQ10W_POULTRY,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=50,2226,567,2242
-Text=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
+Position=50,2226,334,2242
+Text=Supplimentary feed for Poultry during winter
  
   
 [Grid]
@@ -3417,7 +3415,7 @@ Required=Yes
 Type=Record
 TypeName=LIVESTOCK_FEED_WINTER
 Max=10
-DisplaySize=47,2252,779,2756
+DisplaySize=47,2252,811,2756
 Orientation=Horizontal
 FieldRowHeight=40
 HeadingRowHeight=0
@@ -3479,11 +3477,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=78
+Width=87
   
 [HeaderText]
-Position=0,0,78,104
-Text=Did the holding use the suppliment for poultry?
+Position=0,64,87,104
+Text=Suppliments for poultry
  
 [Field]
 Name=USED_SUPPLIMENT_POULTRYW
@@ -3494,7 +3492,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,304,16
-Text=Did the holding use the suppliment for poultry?
+Text=Suppliments for poultry
  
 [EndColumn]
   
@@ -3561,21 +3559,21 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=84
+Width=140
   
 [HeaderText]
-Position=0,0,84,104
-Text=Total Quantity of suppliments provided to feed the poultry?
+Position=56,0,140,104
+Text=Total Quantity of suppliments provided to feed the poultry
  
 [Field]
 Name=LQ13SA_ALL_POULTRYW
-Position=33,0,76,20
+Position=33,0,132,20
 Item=LQ13SA_ALL_POULTRYW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,380,16
-Text=Total Quantity of suppliments provided to feed the poultry?
+Text=Total Quantity of suppliments provided to feed the poultry
  
 [EndColumn]
   
@@ -3584,7 +3582,7 @@ Width=82
   
 [HeaderText]
 Position=0,0,82,104
-Text=Unit of total Quantity of suppliment provided to feed the poultry?
+Text=Unit of total Quantity of suppliment provided to feed the poultry
  
 [Field]
 Name=LQ13SB_ALL_POULTRYW
@@ -3595,7 +3593,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,414,16
-Text=Unit of total Quantity of suppliment provided to feed the poultry?
+Text=Unit of total Quantity of suppliment provided to feed the poultry
  
 [EndColumn]
   
@@ -3704,7 +3702,7 @@ Width=77
   
 [HeaderText]
 Position=0,48,77,168
-Text=Main source of acquisition for the dairy cattle alone?
+Text=Main source of acquisition for the dairy cattle alone
  
 [Field]
 Name=LQ15S
@@ -3714,7 +3712,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Main source of acquisition for the dairy cattle alone?
+Text=Main source of acquisition for the dairy cattle alone
  
 [EndColumn]
   
@@ -3722,8 +3720,8 @@ Text=Main source of acquisition for the dairy cattle alone?
 Width=94
   
 [HeaderText]
-Position=0,32,94,168
-Text=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Position=0,48,94,168
+Text=Was any of this supplemetary feed purchsed for the dairy cattle alone
  
 [Field]
 Name=LQ16S
@@ -3733,7 +3731,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Text=Was any of this supplemetary feed purchsed for the dairy cattle alone
  
 [EndColumn]
   
@@ -3742,7 +3740,7 @@ Width=149
   
 [HeaderText]
 Position=71,64,149,168
-Text=Quantity purchased for the dairy cattle alone?
+Text=Quantity purchased for the dairy cattle alone
  
 [Field]
 Name=LQ17SA
@@ -3751,7 +3749,7 @@ Item=LQ17SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=Quantity purchased for the dairy cattle alone?
+Text=Quantity purchased for the dairy cattle alone
  
 [EndColumn]
   
@@ -3760,7 +3758,7 @@ Width=78
   
 [HeaderText]
 Position=0,48,78,168
-Text=Unit of quantity purchased for the dairy cattle alone?
+Text=Unit of quantity purchased for the dairy cattle alone
  
 [Field]
 Name=LQ17SB
@@ -3770,7 +3768,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Unit of quantity purchased for the dairy cattle alone?
+Text=Unit of quantity purchased for the dairy cattle alone
  
 [EndColumn]
   
@@ -3779,7 +3777,7 @@ Width=163
   
 [HeaderText]
 Position=87,48,163,168
-Text=Total purchase price (Maloti) for the dairy cattle alone?
+Text=Total purchase price (Maloti) for the dairy cattle alone
  
 [Field]
 Name=LQ17SC
@@ -3788,7 +3786,7 @@ Item=LQ17SC,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=Total purchase price (Maloti) for the dairy cattle alone?
+Text=Total purchase price (Maloti) for the dairy cattle alone
  
 [EndColumn]
   
@@ -3797,7 +3795,7 @@ Width=163
   
 [HeaderText]
 Position=87,0,163,168
-Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
+Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone
  
 [Field]
 Name=LQ18S
@@ -3806,7 +3804,7 @@ Item=LQ18S,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
+Text=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone
  
 [EndColumn]
   
@@ -3861,11 +3859,11 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=80
+Width=84
   
 [HeaderText]
-Position=0,64,80,152
-Text=Were the Livestock  de-wormed at least once
+Position=0,48,84,120
+Text=Livestock  de-worming at least once
  
 [Field]
 Name=LQ19A
@@ -3876,7 +3874,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,291,16
-Text=Were the Livestock  de-wormed at least once
+Text=Livestock  de-worming at least once
  
 [EndColumn]
   
@@ -3884,7 +3882,7 @@ Text=Were the Livestock  de-wormed at least once
 Width=147
   
 [HeaderText]
-Position=40,128,147,152
+Position=40,96,147,120
 Text=Livestock name
  
 [Field]
@@ -3905,8 +3903,8 @@ Text=Livestock name
 Width=107
   
 [HeaderText]
-Position=23,64,107,152
-Text=How much was spent on de-worming in maloti?
+Position=23,64,107,120
+Text=Cost of  de-worming in Maloti
  
 [Field]
 Name=LQ19B
@@ -3916,16 +3914,16 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,304,16
-Text=How much was spent on de-worming in maloti?
+Text=Cost of  de-worming in Maloti
  
 [EndColumn]
   
 [Column]
-Width=78
+Width=82
   
 [HeaderText]
-Position=0,64,78,152
-Text=Were livestock Vaccinated at least once ?
+Position=0,48,82,120
+Text=Livestock Vaccination at least once
  
 [Field]
 Name=LQ20A
@@ -3936,7 +3934,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,270,16
-Text=Were livestock Vaccinated at least once ?
+Text=Livestock Vaccination at least once
  
 [EndColumn]
   
@@ -3944,8 +3942,8 @@ Text=Were livestock Vaccinated at least once ?
 Width=107
   
 [HeaderText]
-Position=12,80,107,152
-Text=How much was spent on these vaccinations?
+Position=20,80,107,120
+Text=Cost of vaccinations
  
 [Field]
 Name=LQ20B
@@ -3955,7 +3953,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,291,16
-Text=How much was spent on these vaccinations?
+Text=Cost of vaccinations
  
 [EndColumn]
   
@@ -3963,8 +3961,8 @@ Text=How much was spent on these vaccinations?
 Width=74
   
 [HeaderText]
-Position=0,80,74,152
-Text=What was the main source of Vaccines
+Position=4,64,74,120
+Text=Main source of Vaccines
  
 [Field]
 Name=LQ20C
@@ -3975,7 +3973,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,250,16
-Text=What was the main source of Vaccines
+Text=Main source of Vaccines
  
 [EndColumn]
   
@@ -3983,8 +3981,8 @@ Text=What was the main source of Vaccines
 Width=76
   
 [HeaderText]
-Position=0,32,76,152
-Text=What was the main method of parasite control on Livestock raised
+Position=0,16,76,120
+Text=Main method of parasite control on Livestock raised
  
 [Field]
 Name=LQ21A
@@ -3995,7 +3993,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,428,16
-Text=What was the main method of parasite control on Livestock raised
+Text=Main method of parasite control on Livestock raised
  
 [EndColumn]
   
@@ -4003,8 +4001,8 @@ Text=What was the main method of parasite control on Livestock raised
 Width=107
   
 [HeaderText]
-Position=32,48,107,152
-Text=How much was spent on parasite control (Maloti)?
+Position=35,48,107,120
+Text=Cost of parasite control in Maloti
  
 [Field]
 Name=LQ21B
@@ -4014,7 +4012,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,322,16
-Text=How much was spent on parasite control (Maloti)?
+Text=Cost of parasite control in Maloti
  
 [EndColumn]
   
@@ -4022,8 +4020,8 @@ Text=How much was spent on parasite control (Maloti)?
 Width=84
   
 [HeaderText]
-Position=1,48,84,152
-Text=Were any Livestock treated for infectious diseases or accidents?
+Position=1,32,84,120
+Text=Livestock treated for infectious diseases or accidents
  
 [Field]
 Name=LQ22
@@ -4034,7 +4032,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,421,16
-Text=Were any Livestock treated for infectious diseases or accidents?
+Text=Livestock treated for infectious diseases or accidents
  
 [EndColumn]
   
@@ -4042,8 +4040,8 @@ Text=Were any Livestock treated for infectious diseases or accidents?
 Width=107
   
 [HeaderText]
-Position=32,0,107,152
-Text=How much was spent on treatment for infectious diseases or accidents
+Position=34,0,107,120
+Text=Cost of  treatment for infectious diseases or accidents
  
 [Field]
 Name=LQ22B
@@ -4053,7 +4051,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,457,16
-Text=How much was spent on treatment for infectious diseases or accidents
+Text=Cost of  treatment for infectious diseases or accidents
  
 [EndColumn]
   
@@ -4061,8 +4059,8 @@ Text=How much was spent on treatment for infectious diseases or accidents
 Width=90
   
 [HeaderText]
-Position=0,48,90,152
-Text=Was Artificial Insemination (IA) or mating practiced?
+Position=0,32,90,120
+Text=Artificial Insemination (IA) or mating practiced
  
 [Field]
 Name=LQ23A
@@ -4073,7 +4071,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,334,16
-Text=Was Artificial Insemination (IA) or mating practiced?
+Text=Artificial Insemination (IA) or mating practiced
  
 [EndColumn]
   
@@ -4081,8 +4079,8 @@ Text=Was Artificial Insemination (IA) or mating practiced?
 Width=107
   
 [HeaderText]
-Position=32,80,107,152
-Text=How much was spent on IA/ mating?
+Position=34,80,107,120
+Text=Cost of  IA/ mating
  
 [Field]
 Name=LQ23B
@@ -4092,7 +4090,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,233,16
-Text=How much was spent on IA/ mating?
+Text=Cost of  IA/ mating
  
 [EndColumn]
   
@@ -4117,8 +4115,8 @@ DataCaptureType=RadioButton
 Form=8
   
 [Text]
-Position=19,25,654,41
-Text=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
+Position=19,25,377,41
+Text=Anyone employed on contract to tend and herd livestock
  
   
 [Field]
@@ -4141,8 +4139,8 @@ DataCaptureType=RadioButton
 Form=8
   
 [Text]
-Position=18,74,573,90
-Text=Were any other person or household member involved in tending and herding livestock
+Position=18,74,536,90
+Text=Any other person or household member involved in tending and herding livestock
  
   
 [Grid]
@@ -4317,7 +4315,7 @@ Width=10
 Width=82
   
 [HeaderText]
-Position=0,96,82,168
+Position=0,64,82,136
 Text=Household member or hired worker?
  
 [Field]
@@ -4329,7 +4327,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,236,16
-Text=Household member or hired worker?
+Text=Household member or hired worker
  
 [EndColumn]
   
@@ -4337,7 +4335,7 @@ Text=Household member or hired worker?
 Width=163
   
 [HeaderText]
-Position=6,64,163,168
+Position=6,32,163,136
 Text=For household members-write the serial number from the household roaster,for hired workers write initials
  
 [Field]
@@ -4349,7 +4347,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,686,16
-Text=For household members-write the serial number from the household roaster,for hired workers write initials
+Text=Write the serial number for household members, for hired workers write initials
  
 [EndColumn]
   
@@ -4357,8 +4355,8 @@ Text=For household members-write the serial number from the household roaster,fo
 Width=78
   
 [HeaderText]
-Position=0,0,78,168
-Text=For how many months was name involved in tending and herding livestock in months
+Position=0,0,78,136
+Text=Number of Months spent in tending and herding livestock in months
  
 [Field]
 Name=LQ28A
@@ -4369,7 +4367,7 @@ DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,552,16
-Text=For how many months was name involved in tending and herding livestock in months
+Text=Number of Months spent in tending and herding livestock in months
  
 [EndColumn]
   
@@ -4377,8 +4375,8 @@ Text=For how many months was name involved in tending and herding livestock in m
 Width=91
   
 [HeaderText]
-Position=0,32,91,168
-Text=On average,how many weeks in a month did name tend and herd livestock
+Position=1,16,91,136
+Text=Average number of  weeks in a month spent in tending and herding livestock
  
 [Field]
 Name=LQ28B
@@ -4389,7 +4387,7 @@ DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,481,16
-Text=On average,how many weeks in a month did name tend and herd livestock
+Text=Average number of  weeks in a month spent in tending and herding livestock
  
 [EndColumn]
   
@@ -4397,8 +4395,8 @@ Text=On average,how many weeks in a month did name tend and herd livestock
 Width=80
   
 [HeaderText]
-Position=0,32,80,168
-Text=On average how many days in a week did name tend and herd livestock?
+Position=0,0,80,136
+Text=Average number of days in a week spent in tending and herding livestock
  
 [Field]
 Name=LQ28C
@@ -4408,7 +4406,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,473,16
-Text=On average how many days in a week did name tend and herd livestock?
+Text=Average number of days in a week spent in tending and herding livestock
  
 [EndColumn]
   
@@ -4416,8 +4414,8 @@ Text=On average how many days in a week did name tend and herd livestock?
 Width=81
   
 [HeaderText]
-Position=0,32,81,168
-Text=On average,for how many hours in a day did name tend and herd livestock?
+Position=4,0,81,136
+Text=Average number of hours in a day spent tending and herding livestock
  
 [Field]
 Name=LQ28D
@@ -4427,7 +4425,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,490,16
-Text=On average,for how many hours in a day did name tend and herd livestock?
+Text=Average number of hours in a day spent tending and herding livestock
  
 [EndColumn]
   
@@ -4435,7 +4433,7 @@ Text=On average,for how many hours in a day did name tend and herd livestock?
 Width=107
   
 [HeaderText]
-Position=27,32,107,168
+Position=27,0,107,136
 Text=For hired workers how much did he/she receive for their work in cash or in kind?
  
 [Field]
@@ -4446,7 +4444,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,517,16
-Text=For hired workers how much did he/she receive for their work in cash or in kind?
+Text=Amount receive for their work in cash or in kind
  
 [EndColumn]
   
@@ -4454,7 +4452,7 @@ Text=For hired workers how much did he/she receive for their work in cash or in 
 Width=72
   
 [HeaderText]
-Position=0,80,72,168
+Position=0,48,72,136
 Text=Does the payment cover other activities?
  
 [Field]
@@ -4466,7 +4464,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,266,16
-Text=Does the payment cover other activities?
+Text=Payment cover other activities
  
 [EndColumn]
   
@@ -4474,7 +4472,7 @@ Text=Does the payment cover other activities?
 Width=78
   
 [HeaderText]
-Position=0,32,78,168
+Position=0,0,78,136
 Text=Are there any more persons involved in tending and herding livestock?
  
 [Field]
@@ -4486,7 +4484,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,459,16
-Text=Are there any more persons involved in tending and herding livestock?
+Text=More persons involved in tending and herding livestock
  
 [EndColumn]
   
@@ -4502,8 +4500,8 @@ DataCaptureType=RadioButton
 Form=8
   
 [Text]
-Position=25,652,488,668
-Text=Were any other person or household member involved in tending poultry
+Position=25,652,451,668
+Text=Any other person or household member involved in tending poultry
  
   
 [Grid]
@@ -4689,7 +4687,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Household member or hired worker?
+Text=Household member or hired worker
  
 [EndColumn]
   
@@ -4709,7 +4707,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,686,16
-Text=For household members-write the serial number from the household roaster,for hired workers write initials
+Text=Write the serial number for household members, for hired workers write initials
  
 [EndColumn]
   
@@ -4729,7 +4727,7 @@ DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,474,16
-Text=For how many months was name involved in tending to poultry in months
+Text=Number of Months spent in tending and herding livestock in months
  
 [EndColumn]
   
@@ -4747,7 +4745,7 @@ Item=LQ32B,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=On average,how many weeks in a month did name tending to poultry?
+Text=Average number of  weeks in a month spent in tending and herding livestock
  
 [EndColumn]
   
@@ -4765,7 +4763,7 @@ Item=LQ32C,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=On average how many days in a week did name tending to poultry?
+Text=Average number of days in a week spent in tending and herding livestock
  
 [EndColumn]
   
@@ -4783,7 +4781,7 @@ Item=LQ32D,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=On average,for how many hours in a day did name tending to poultry?
+Text=Average number of hours in a day spent tending and herding livestock
  
 [EndColumn]
   
@@ -4801,7 +4799,7 @@ Item=LQ33A,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=For hired workers how much did he/she receive for their work in cash or in kind?
+Text=Amount receive for their work in cash or in kind
  
 [EndColumn]
   
@@ -4821,7 +4819,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,266,16
-Text=Does the payment cover other activities?
+Text=Payment cover other activities
  
 [EndColumn]
   
@@ -4855,8 +4853,8 @@ DataCaptureType=RadioButton
 Form=8
   
 [Text]
-Position=34,1151,561,1167
-Text=Were any other person or household member involved in other livestock activities?
+Position=34,1151,516,1167
+Text=Any other person or household member involved in other livestock activities
  
   
 [Grid]
@@ -5042,7 +5040,7 @@ FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=Household member or hired worker?
+Text=Household member or hired worker
  
 [EndColumn]
   
@@ -5062,7 +5060,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,686,16
-Text=For household members-write the serial number from the household roaster,for hired workers write initials
+Text=Write the serial number for household members, for hired workers write initials
  
 [EndColumn]
   
@@ -5101,7 +5099,7 @@ DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,444,16
-Text=For how many months was name involved in this activity in months?
+Text=Number of  months involved in this activity
  
 [EndColumn]
   
@@ -5120,7 +5118,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,507,16
-Text=On average,how many weeks in a months was name involved in this activity ?
+Text=Average number of  weeks in a month spent in tending and herding livestock
  
 [EndColumn]
   
@@ -5139,7 +5137,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,479,16
-Text=On average how many days in a week was name involved in this activity?
+Text=Average number of days in a week spent in tending and herding livestock
  
 [EndColumn]
   
@@ -5158,7 +5156,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,496,16
-Text=On average,for how many hours in a day was name involved in this activity?
+Text=Average number of hours in a day spent tending and herding livestock
  
 [EndColumn]
   
@@ -5177,7 +5175,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,529,16
-Text=For hired workers how much did he/she receive for this activity in cash or in kind?
+Text=For hired workers-- amount  receive for this activity in cash or in kind
  
 [EndColumn]
   
@@ -5197,7 +5195,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,266,16
-Text=Does the payment cover other activities?
+Text=Payment cover other activities
  
 [EndColumn]
   
@@ -5217,7 +5215,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,459,16
-Text=Are there any more persons involved in tending and herding livestock?
+Text=More persons involved in tending and herding livestock
  
 [EndColumn]
   
@@ -5322,7 +5320,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,338,16
-Text=Was any livestock product produced during summer
+Text=Livestock product produced during summer and autumn
  
 [EndColumn]
   
@@ -5342,26 +5340,26 @@ DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,465,16
-Text=For how many months was Livestock product produced during summer?
+Text=Number of  months that Livestock product was produced during summer and autumn
  
 [EndColumn]
   
 [Column]
-Width=79
+Width=107
   
 [HeaderText]
-Position=4,90,79,290
+Position=32,90,107,290
 Text=During those months what was the average quantity of livestock product produced during summer
  
 [Field]
 Name=LQ42SA
-Position=0,0,71,20
+Position=0,0,99,20
 Item=LQ42SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,632,16
-Text=During those months what was the average quantity of livestock product produced during summer
+Text=Average quantity of livestock product produced during summer and autumn
  
 [EndColumn]
   
@@ -5377,10 +5375,11 @@ Name=LQ42SB
 Position=39,0,68,20
 Item=LQ42SB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,684,16
-Text=During those months what was the unit of the average quantity livestock product produced during summer
+Text=Unit of measure for livestock product produced during summer and autumn
  
 [EndColumn]
   
@@ -5419,26 +5418,26 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,474,16
-Text=Did the holding sell any of the livestock product produced during summer
+Text=Livestock product sold during summer and autumn
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=114
   
 [HeaderText]
-Position=0,138,86,290
+Position=28,138,114,290
 Text=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
  
 [Field]
 Name=LQ44SA
-Position=7,0,78,20
+Position=7,0,106,20
 Item=LQ44SA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,585,16
-Text=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+Text=Number/Amount of livestock product sold in summer and autumn
  
 [EndColumn]
   
@@ -5454,10 +5453,11 @@ Name=LQ44SB
 Position=44,0,73,20
 Item=LQ44SB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,606,16
-Text=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+Text=Unit of measure for livestock product sold by the holding in summer and autumn
  
 [EndColumn]
   
@@ -5476,7 +5476,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,541,16
-Text=What was the total value of sales of livestock product in the during summer period?
+Text=Total value of sales of livestock product during summer and autumn
  
 [EndColumn]
   
@@ -5572,7 +5572,7 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,336,16
-Text=Was any livestock product produced during winter ?
+Text=Livestock product produced during winter and spring
  
 [EndColumn]
   
@@ -5592,26 +5592,26 @@ DataCaptureType=ComboBox
   
 [Text]
 Position=0,0,455,16
-Text=For how many months was Livestock product produced during winter ?
+Text=Number of  months that Livestock product was produced during winter and spring
  
 [EndColumn]
   
 [Column]
-Width=79
+Width=107
   
 [HeaderText]
-Position=4,16,79,216
+Position=32,16,107,216
 Text=During those months what was the average quantity of livestock product produced during winter ?
  
 [Field]
 Name=LQ42WA
-Position=0,0,71,20
+Position=0,0,99,20
 Item=LQ42WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,630,16
-Text=During those months what was the average quantity of livestock product produced during winter ?
+Text=Average quantity of livestock product produced during winter and spring
  
 [EndColumn]
   
@@ -5630,7 +5630,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,682,16
-Text=During those months what was the unit of the average quantity livestock product produced during winter ?
+Text=Unit of measure for livestock product produced during winter and spring
  
 [EndColumn]
   
@@ -5669,26 +5669,26 @@ DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,472,16
-Text=Did the holding sell any of the livestock product produced during winter ?
+Text=Livestock product sold during winter and spring
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=114
   
 [HeaderText]
-Position=0,64,86,216
+Position=28,64,114,216
 Text=How much/many Quantity of  livestock product did the holding sell in the  winter period?
  
 [Field]
 Name=LQ44WA
-Position=7,0,78,20
+Position=7,0,106,20
 Item=LQ44WA,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,567,16
-Text=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+Text=Number/Amount of livestock product sold in winter and spring
  
 [EndColumn]
   
@@ -5704,10 +5704,11 @@ Name=LQ44WB
 Position=44,0,73,20
 Item=LQ44WB,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
 Position=0,0,592,16
-Text=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+Text=Unit of measure for livestock product sold by the holding in winter and spring
  
 [EndColumn]
   
@@ -5726,7 +5727,7 @@ FieldLabelType=DictionaryLabel
   
 [Text]
 Position=0,0,474,16
-Text=What was the total value of sales of livestock product in the winter period
+Text=Total value of sales of livestock product during winter and spring
  
 [EndColumn]
   
@@ -5742,8 +5743,8 @@ DataCaptureType=RadioButton
 Form=9
   
 [Text]
-Position=29,1255,498,1271
-Text=Were any draught animals raised between 1 August 2018 and 31  july 2019
+Position=29,1255,176,1271
+Text=Draught animals raised
  
   
 [Field]
@@ -5755,8 +5756,8 @@ DataCaptureType=RadioButton
 Form=9
   
 [Text]
-Position=29,1283,783,1299
-Text=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
+Position=29,1283,501,1299
+Text=Drought animals rented to other households for ploughing and/or transport
  
   
 [Field]
@@ -5768,8 +5769,8 @@ DataCaptureType=RadioButton
 Form=9
   
 [Text]
-Position=29,1311,567,1327
-Text=How much did the holding recieve in total payents for renting out the draught animal
+Position=29,1311,392,1327
+Text=Total Amount recieved for renting out the draught animal
  
   
 [Field]
@@ -5781,8 +5782,8 @@ DataCaptureType=RadioButton
 Form=9
   
 [Text]
-Position=29,1338,619,1354
-Text=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
+Position=29,1338,334,1354
+Text=Sales of any manure produced by your livestock
  
   
 [Field]
@@ -5794,8 +5795,8 @@ DataCaptureType=RadioButton
 Form=9
   
 [Text]
-Position=29,1366,502,1382
-Text=How much did the holding recieve in total payment from the manure sale?
+Position=29,1366,293,1382
+Text=Total Amount recieved for selling manure
  
 [EndGroup]
   

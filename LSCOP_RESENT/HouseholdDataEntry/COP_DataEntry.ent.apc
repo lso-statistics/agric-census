@@ -895,7 +895,7 @@ if sysparm("DISTRICT") <> "" then
 		ENUMERATOR_CODE = sysparm("STAFF_CODE");
 
 		// Make protected so interviewer cannot change id-items
-		set attributes (DISTRICT, CONSTITUENCY, COMMUNITY_COUNCIL, ZONE, SETTLEMENT, ENUMERATION_AREA, PSU_CODE) protect;
+		//set attributes (DISTRICT, CONSTITUENCY, COMMUNITY_COUNCIL, ZONE, SETTLEMENT, ENUMERATION_AREA, PSU_CODE) protect;
 		
 	endif;
 PROC VILLAGE_NAME
@@ -924,6 +924,7 @@ PROC NUMBER_OF_VISITS
 preproc
 
 	NUMBER_OF_VISITS = totocc(VISIT_DATE000);
+	noinput;
 PROC HOUSEHOLD_STATUS
 if demode() = add then
 	if HH_LATITUDE = notappl then
@@ -1515,9 +1516,9 @@ PROC LQ04
 savepartial();
 PROC LQ05A
 preproc
-if curocc($) in 20:22 then//the condition only holds if row number is 20(broilers), 21(layers), or 23(indigenous)
+{if curocc($) in 20:22 then//the condition only holds if row number is 20(broilers), 21(layers), or 23(indigenous)
 	skip to LQ07A(curocc($));
-endif;
+endif;}
 postproc
 //if non of the livestock was purchased skip to LQ06
 if curocc($) in 2:6 then //the condition only holds if row number is 2(calves), 3(improved dairy), or 4(improved beef)...5(indigenous cattle)
@@ -1544,6 +1545,10 @@ if curocc($) in 14:15 then //the condition only holds if row number is 14(improv
 	endif;
 endif;
 
+//if were purchased skip to LQ06
+if $ = 0 then
+	skip to LQ06(curocc($));
+endif;
 
 savepartial();
 PROC LQ05B
@@ -1585,6 +1590,10 @@ if curocc($) in 14:15 then //the condition only holds if row number is 14(improv
 	if($(curocc($)) = 0) then
 		skip to LQ08(curocc($));
 	endif;
+endif;
+//if none were slaughtered skip to LQ08
+if $ = 0 then
+	skip to LQ08(curocc($));
 endif;
 
 //LQ07A CANNOT EXCEED (LQ04+LQ05+LQ06)
@@ -1707,7 +1716,6 @@ endif;
 savepartial();
 PROC USED_SUPPLIMENT_TYPE
 
-
 savepartial();
 PROC TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
 preproc
@@ -1727,85 +1735,109 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_TYPE(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(3) = "C";	
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to USED_SUPPLIMENT_TYPE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_TYPE = 2 then
 			skip to LQ10S_ALLCATTLE;//skip to suplements used for all cattle
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE(10) = "J";
 		endif;
 endif;
 
-postproc
 
 savepartial();
 PROC SUPPLEMENT_CODE_ALL_DAIRY_CATTLE
-//give CODES to show the type of sepplement used
-$(1) = 01;
-$(2) = 02;
-$(3) = 03;
-$(4) = 04;
-$(5) = 05;
-$(6) = 06;
-$(7) = 07;
-$(8) = 08;
-$(9) = 09;
-$(10) = 10;
-
 savepartial();
 PROC SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE
-preproc
-//give CODES to show the type of sepplement used
-$(1) = "A";
-$(2) = "B";
-$(3) = "C";
-$(4) = "D";
-$(5) = "E";
-$(6) = "F";
-$(7) = "G";
-$(8) = "H";
-$(9) = "I";
-$(10) = "J";
-postproc
 
 savepartial();
 PROC LQ13SA
@@ -1838,7 +1870,6 @@ endif;
 
 savepartial();
 PROC USED_SUPPLIMENT_ALL_CATTLE
-
 savepartial();
 PROC TYPE_OF_SUPPLIMENT_ALL_CATTLE
 preproc
@@ -1858,55 +1889,104 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_ALL_CATTLE(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLE(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_ALL_CATTLE = 2 then
 			skip to LQ10S_SHEEP;//skip to suplements used for sheep
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE(10) = "J";
 		endif;
 
 endif;
-postproc
 
 savepartial();
 PROC SUPPLEMENT_CODE_ALL_CATTLE
@@ -1922,6 +2002,7 @@ $(7) = 07;
 $(8) = 08;
 $(9) = 09;
 $(10) = 10;
+noinput;
 postproc
 
 savepartial();
@@ -1992,51 +2073,101 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_SHEEP(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to USED_SUPPLIMENT_SHEEP(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_SHEEP = 2 then
 			skip to LQ10S_GOATS;//skip to suplements used for sheep
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP(10) = "J";
 		endif;
 
 endif;
@@ -2056,6 +2187,7 @@ $(7) = 07;
 $(8) = 08;
 $(9) = 09;
 $(10) = 10;
+noinput;
 postproc
 
 savepartial();
@@ -2127,51 +2259,101 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_GOATS(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to USED_SUPPLIMENT_GOATS(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_GOATS = 2 then
 			skip to LQ10S_POULTRY;//skip to suplements used for poultry
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS(10) = "J";
 		endif;
 endif;
 
@@ -2191,6 +2373,7 @@ $(7) = 07;
 $(8) = 08;
 $(9) = 09;
 $(10) = 10;
+noinput;
 postproc
 
 savepartial();
@@ -2261,51 +2444,101 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_POULTRY(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to USED_SUPPLIMENT_POULTRY(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRY = 2 then
 			skip to LQ10W_DAIRYCATTLE;//skip to suplements used for sheep
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY(10) = "J";
 		endif;
 endif;
 postproc
@@ -2324,6 +2557,7 @@ $(7) = 07;
 $(8) = 08;
 $(9) = 09;
 $(10) = 10;
+noinput;
 postproc
 
 savepartial();
@@ -2395,71 +2629,107 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_TYPW(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to USED_SUPPLIMENT_TYPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_TYPW = 2 then
 			skip to LQ10W_ALLCATTLE;//skip to suplements used for all cattle
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W(10) = "J";
 		endif;
 endif;
 postproc
 
 savepartial();
 PROC SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W
-preproc
-//give CODES to show the type of sepplement used
-$(1) = 01;
-$(2) = 02;
-$(3) = 03;
-$(4) = 04;
-$(5) = 05;
-$(6) = 06;
-$(7) = 07;
-$(8) = 08;
-$(9) = 09;
-$(10) = 10;
-postproc
-
 savepartial();
 PROC SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W
 preproc
@@ -2528,70 +2798,107 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_ALL_CATTLEW(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to USED_SUPPLIMENT_ALL_CATTLEW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_ALL_CATTLEW = 2 then
 			skip to LQ10W_SHEEP;//skip to suplements used for sheep
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_CATTLE_W(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W(10) = "J";
 		endif;
 endif;
 postproc
 
 savepartial();
 PROC SUPPLEMENT_CODE_ALL_CATTLE_W
-preproc
-//give CODES to show the type of sepplement used
-$(1) = 01;
-$(2) = 02;
-$(3) = 03;
-$(4) = 04;
-$(5) = 05;
-$(6) = 06;
-$(7) = 07;
-$(8) = 08;
-$(9) = 09;
-$(10) = 10;
-postproc
 
 savepartial();
 PROC SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W
@@ -2661,54 +2968,103 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_SHEEPW(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to USED_SUPPLIMENT_SHEEPW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_SHEEPW = 2 then
 			skip to LQ10W_GOATS;//skip to suplements used for goats
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_SHEEP_W(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_SHEEP_W(10) = "J";
 		endif;
 endif;
-postproc
 
 savepartial();
 PROC SUPPLEMENT_CODE_ALL_SHEEP_W
@@ -2793,51 +3149,101 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_GOATW(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to USED_SUPPLIMENT_GOATW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_GOATW = 2 then
 			skip to LQ10W_POULTRY;//skip to suplements used for poultry
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_GOATS_W(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_GOATS_W(10) = "J";
 		endif;
 endif;
 postproc
@@ -2936,51 +3342,101 @@ if curocc($) = 1 then
 	//$(curocc($)) = "Fodder/Hay/Grass";
 		if USED_SUPPLIMENT_POULTRYW(curocc($)) = 2 then
 				skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(1) = 01;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(1) = "A";
 		endif;
 	elseif curocc($) = 2 then
 		//$(curocc($)) = "Crop Residue";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(2) = 02;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(2) = "B";
 		endif;
 	elseif curocc($) = 3 then
 		//$(curocc($)) = "Feed Concentrete";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(3) = 03;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(3) = "C";
 		endif;
 	elseif curocc($) = 4 then
 		//$(curocc($)) = "Dairy Meal";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(4) = 04;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(4) = "D";
 		endif;
 	elseif curocc($) = 5 then
 		//$(curocc($)) = "Poultry Meal";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(5) = 05;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(5) = "E";
 		endif;
 	elseif curocc($) = 6 then
 		//$(curocc($)) = "Sheep Palets";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(6) = 06;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(6) = "F";
 		endif;
 	elseif curocc($) = 7 then
 		//$(curocc($)) = "Moroko";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(7) = 07;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(7) = "G";
 		endif;
 	elseif curocc($) = 8 then
 		//$(curocc($)) = "Seameal/Bran";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(8) = 08;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(8) = "H";
 		endif;
 	elseif curocc($) = 9 then
 		//$(curocc($)) = "Salt";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to USED_SUPPLIMENT_POULTRYW(curocc($)+1);//skip to the next row
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(9) = 09;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(9) = "I";
 		endif;
 	elseif curocc($) = 10 then
 		//$(curocc($)) = "Mineral Block";
 		if USED_SUPPLIMENT_POULTRYW = 2 then
 			skip to LQ14S(1);//skip to used supplements
+		else
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_ALL_POULTRY_W(10) = 10;
+			//give CODES to show the type of sepplement used
+			SUPPLEMENT_CODE_CHARACTER_POULTRY_W(10) = "J";
 		endif;
 endif;
 postproc
@@ -3460,7 +3916,7 @@ endif;
 $ = toupper($);
 
 //set occurrence labels
-if HOUSEHOLD_MEMBER_OR_HIRED_WORKER(curocc($)) = 1 then
+if HOUSEHOLD_MEMBER_OR_HIRED_PLTZ(curocc($)) = 1 then
 	//set the index number equals to the current input of LQ27, but first convert it from string to number
 	numeric index = tonumber($(curocc($)));
 	setocclabel(TABLE_L5,strip(B2(index)));
@@ -3560,8 +4016,8 @@ endif;
 $ = toupper($);
 
 //set occurrence labels
-if HOUSEHOLD_MEMBER_OR_HIRED_WORKER(curocc($)) = 1 then
-	//set the index number equals to the current input of LQ27, but first convert it from string to number
+if HOUSEHOLD_MEMBER_OR_HIRED_OTHES(curocc($)) = 1 then
+	//set the index number equals to the current input of LQ35, but first convert it from string to number
 	numeric index = tonumber($(curocc($)));
 	setocclabel(TABLE_L6,strip(B2(index)));
 else
@@ -3645,6 +4101,8 @@ if curocc($) = 1 then
 elseif curocc($) = 2 then
 	if LQ02(19) = 2 then
 		skip to next;
+	elseif LQ02(21) = 2 then
+		skip to next;
 	endif;
 elseif curocc($) = 3 then
 	if LQ02(1) = 2 then
@@ -3661,9 +4119,11 @@ elseif curocc($) = 5 then
 elseif curocc($) = 6 then
 	if LQ02(19) = 2 then
 		skip to next;
+	elseif LQ02(20) = 2 then
+		skip to next;
 	endif;
 elseif curocc($) = 7 then
-	if LQ02(1) = 2 and LQ02(7) = 2 and LQ02(10) = 2 and LQ02(19) = 2 then
+	if LQ02(1) = 2 and LQ02(7) = 2 and LQ02(10) = 2 then
 		skip to LQ40W(1);
 	endif;
 endif;
@@ -3850,6 +4310,8 @@ if curocc($) = 1 then
 elseif curocc($) = 2 then
 	if LQ02(19) = 2 then
 		skip to next;
+	elseif LQ02(21) = 2 then
+		skip to next;
 	endif;
 elseif curocc($) = 3 then
 	if LQ02(1) = 2 then
@@ -3866,15 +4328,17 @@ elseif curocc($) = 5 then
 elseif curocc($) = 6 then
 	if LQ02(19) = 2 then
 		skip to next;
+	elseif LQ02(20) = 2 then
+		skip to next;
 	endif;
 elseif curocc($) = 7 then
-	if LQ02(1) = 2 and LQ02(7) = 2 and LQ02(10) = 2 and LQ02(19) = 2 then
+	if LQ02(1) = 2 and LQ02(7) = 2 and LQ02(10) = 2 then
 		skip to LQ45A;
 	endif;
 endif;
 
 postproc
-//skips if there were no livestock product 
+//skips if there were no livestock product LQ45A
 if curocc($) = 1 then 
 	if $ = 2 then 
 		skip to $(curocc($)+1);// skip to Chicken eggs

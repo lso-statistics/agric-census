@@ -326,49 +326,49 @@ Start=120
 Len=2
 
 [Item]
-Label=Name of the household member (NAME)
+Label=Name of the household member
 Name=B2
 Start=122
 Len=50
 DataType=Alpha
 
 [Item]
-Label=Anymore People?
+Label=Anymore People
 Name=ANYMORE_PEOPLE
 Start=172
 Len=1
 
 [ValueSet]
-Label=Anymore People?
+Label=Anymore People
 Name=ANYMORE_PEOPLE_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Is (NAME) male or female?
+Label=Gender
 Name=B3
 Start=173
 Len=1
 
 [ValueSet]
-Label=Is (NAME) male or female?
+Label=Gender
 Name=B3_VS1
 Value=1;Male
 Value=2;Female
 
 [Item]
-Label=What is (NAME)'s  age?
+Label=Age
 Name=B4
 Start=174
 Len=3
 
 [ValueSet]
-Label=What is (NAME)'s  age?
+Label=Age
 Name=B4_VS1
 Value=0:135;0 - 135
 
 [Item]
-Label=What is (NAME)'s  relationship to the HH?
+Label=Relationship to the HH
 Name=B5
 Start=177
 Len=2
@@ -414,13 +414,13 @@ Value=13;Other relative
 Value=14;Not related
 
 [Item]
-Label=What is (NAME)'s  marital status?
+Label=Marital status
 Name=B6
 Start=179
 Len=2
 
 [ValueSet]
-Label=What is (NAME)'s  marital status?
+Label=Marital status
 Name=B6_VS1
 Value=1;Never married
 Value=2;Monogamously married
@@ -432,13 +432,13 @@ Value=7;Widowed
 Value=9;Don't know
 
 [Item]
-Label=What is (NAME)'s  highest level of education attained?
+Label=Highest level of education attained
 Name=B7
 Start=181
 Len=1
 
 [ValueSet]
-Label=What is (NAME)'s  highest level of education attained?
+Label=Highest level of education attained
 Name=B7_VS1
 Value=1;No Education
 Value=2;Primary School
@@ -446,13 +446,13 @@ Value=3;Secondary School
 Value=4;Tertiary Education
 
 [Item]
-Label=What is (NAME)'s current residential status?
+Label=Current residential status
 Name=B8
 Start=182
 Len=1
 
 [ValueSet]
-Label=What is (NAME)'s current residential status?
+Label=Current residential status
 Name=B8_VS1
 Value=1;Present
 Value=2;Elsewhere in Lesotho
@@ -460,13 +460,13 @@ Value=3;RSA
 Value=4;Outside RSA
 
 [Item]
-Label=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Label=Participation in the farming activities of the holding between 1st August 2018 to 31st July 2019
 Name=B9
 Start=183
 Len=1
 
 [ValueSet]
-Label=Did (NAME) participate in the farming activities of the holding between August 2018 to July 2019 ?
+Label=Participation in the farming activities of the holding between 1st August 2018 to 31st July 2019
 Name=B9_VS1
 Value=1;Yes
 Value=2;No
@@ -476,16 +476,16 @@ Label=LIVESTOCK PRODUCTION
 Name=LIVESTOCK_PRODUCTION_REC
 RecordTypeValue='2'
 MaxRecords=22
-RecordLen=195
+RecordLen=199
 
 [Item]
-Label=Did this household raise livestock?
+Label=Livestock raised
 Name=LQ02
 Start=120
 Len=1
 
 [ValueSet]
-Label=Did this household raise livestock?
+Label=Livestock raised
 Name=LQ02_VS1
 Value=1;YES
 Value=2;NO
@@ -498,118 +498,118 @@ Len=25
 DataType=Alpha
 
 [Item]
-Label=What type of livestock production system did the holding mainly use?
+Label=Livestock production system
 Name=LQ03
 Start=146
 Len=1
 
 [ValueSet]
-Label=What type of livestock production system did the holding mainly use?
+Label=Livestock production system
 Name=LQ03_VS1
 Value=1;Grazing System
 Value=2;Mixed System
 Value=3;Industrial System
 
 [Item]
-Label=How many were raised on 31 July 2019?
+Label=Number kept on 31 July 2019
 Name=LQ04
 Start=147
 Len=5
 
 [ValueSet]
-Label=How many were raised on 31 July 2019?
+Label=Number kept on 31 July 2019
 Name=LQ04_VS1
 Value=0:99999;0 - 99999
 
 [Item]
-Label=How many were purchased for cash between 1st August 2018 to 31st July 2019?
+Label=Number purchased for cash between 1st August 2018 to 31st July 2019
 Name=LQ05A
 Start=152
 Len=5
 
 [ValueSet]
-Label=How many were purchased for cash between 1st August 2018 to 31st July 2019?
+Label=Number purchased for cash between 1st August 2018 to 31st July 2019
 Name=LQ05A_VS1
 Value=0:99999;0 - 99999
 
 [Item]
-Label=What was the total amount paid for these purchase in Maloti?
+Label=Total amount paid for these purchases in Maloti
 Name=LQ05B
 Start=157
-Len=5
+Len=9
 Decimal=2
 
 [Item]
-Label=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019?
+Label=Number recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019
 Name=LQ06
-Start=162
+Start=166
 Len=3
 
 [ValueSet]
-Label=How many were recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019?
+Label=Number recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019
 Name=LQ06_VS1
-Value=0:999;0 - 99999
+Value=0:999;Value range
 
 [Item]
-Label=How many were slaughtered between 1st August 2018 to 31st July 2019?
+Label=Number slaughtered between 1st August 2018 to 31st July 2019
 Name=LQ07A
-Start=165
+Start=169
 Len=3
 
 [ValueSet]
-Label=How many were slaughtered between 1st August 2018 to 31st July 2019?
+Label=Number slaughtered between 1st August 2018 to 31st July 2019
 Name=LQ07A_VS1
 Value=0:999;0 - 99999
 
 [Item]
-Label=Did you pay for slaughtering ?
+Label=Costs of  slaughtering
 Name=LQ07B
-Start=168
+Start=172
 Len=1
 
 [ValueSet]
-Label=Did you pay for slaughtering ?
+Label=Costs of  slaughtering
 Name=LQ07B_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=What was the total cost for slaughtering in maloti?
+Label=Total costs of slaughtering in Maloti
 Name=LQ07C
-Start=169
+Start=173
 Len=8
 Decimal=2
 DecimalChar=Yes
 ZeroFill=Yes
 
 [Item]
-Label=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
+Label=Number given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019
 Name=LQ08
-Start=177
+Start=181
 Len=5
 ZeroFill=Yes
 
 [ValueSet]
-Label=How many were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?
+Label=Number given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019
 Name=LQ08_VS1
-Value=0:99999;0 - 99999
+Value=0:99999;Value range
 
 [Item]
-Label=How many were sold for cash between 1st August 2018 to 31st July 2019?
+Label=Number sold for cash between 1st August 2018 to 31st July 2019
 Name=LQ9A
-Start=182
+Start=186
 Len=5
 ZeroFill=Yes
 
 [ValueSet]
-Label=How many were sold for cash between 1st August 2018 to 31st July 2019?
+Label=Number sold for cash between 1st August 2018 to 31st July 2019
 Name=LQ9A_VS1
 Value=0:99999;0 - 99999
 
 [Item]
-Label=What was the total value for sales in Maloti?
+Label=Total value for sales in Maloti
 Name=LQ9B
-Start=187
+Start=191
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -620,16 +620,16 @@ Label=LIVESTOCK FEEDS SUMMER
 Name=LIVESTOCK_FEEDS_SUMMER
 RecordTypeValue='3'
 MaxRecords=10
-RecordLen=317
+RecordLen=329
 
 [Item]
-Label=Did the holding use the suppliment for the dairy cattle alone?
+Label=Suppliments for the dairy cattle alone
 Name=USED_SUPPLIMENT_TYPE
 Start=120
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for the dairy cattle alone?
+Label=Suppliments for the dairy cattle alone
 Name=USED_SUPPLIMENT_TYPE_VS1
 Value=1;Yes
 Value=2;No
@@ -655,20 +655,20 @@ Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Label=Total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13SA
 Start=154
 Len=7
 Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13SB
 Start=161
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13SB_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -683,13 +683,13 @@ Len=30
 DataType=Alpha
 
 [Item]
-Label=Did the holding use the suppliment for all cattle ?
+Label=Suppliments for all cattle
 Name=USED_SUPPLIMENT_ALL_CATTLE
 Start=192
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for all cattle ?
+Label=Suppliments for all cattle
 Name=USED_SUPPLIMENT_ALL_CATTLE_VS1
 Value=1;Yes
 Value=2;No
@@ -708,19 +708,20 @@ Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliment provided to feed all cattle?
+Label=Total Quantity of suppliment provided to feed all cattle
 Name=LQ13SA_ALL_CATTLE
 Start=196
-Len=3
+Len=7
+Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Label=Unit of total Quantity of suppliment provided to feed all cattle
 Name=LQ13SB_ALL_CATTLE
-Start=199
+Start=203
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Label=Unit of total Quantity of suppliment provided to feed all cattle
 Name=LQ13SB_ALL_CATTLE_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -728,13 +729,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for sheep?
+Label=Suppliments for sheep
 Name=USED_SUPPLIMENT_SHEEP
-Start=200
+Start=204
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for sheep?
+Label=Suppliments for sheep
 Name=USED_SUPPLIMENT_SHEEP_VS1
 Value=1;Yes
 Value=2;No
@@ -742,38 +743,38 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for sheep
 Name=TYPE_OF_SUPPLIMENT_SHEEP
-Start=201
+Start=205
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_SHEEP
-Start=231
+Start=235
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_SHEEP
-Start=233
+Start=237
 Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliments provided to feed the sheep?
+Label=Total Quantity of suppliments provided to feed the sheep
 Name=LQ13SA_ALL_SHEEP
-Start=234
+Start=238
 Len=7
 Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Label=Unit of total Quantity of suppliment provided to feed the sheep
 Name=LQ13SB_ALL_SHEEP
-Start=241
+Start=245
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Label=Unit of total Quantity of suppliment provided to feed the sheep
 Name=LQ13SB_ALL_SHEEP_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -781,13 +782,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for goats?
+Label=Suppliments for goats
 Name=USED_SUPPLIMENT_GOATS
-Start=242
+Start=246
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for goats?
+Label=Suppliments for goats
 Name=USED_SUPPLIMENT_GOATS_VS1
 Value=1;Yes
 Value=2;No
@@ -795,37 +796,38 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for goats
 Name=TYPE_OF_SUPPLIMENT_GOATS
-Start=243
+Start=247
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_GOATS
-Start=273
+Start=277
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_GOATS
-Start=275
+Start=279
 Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliments provided to feed the goats?
+Label=Total Quantity of suppliments provided to feed the goats
 Name=LQ13SA_ALL_GOATS
-Start=276
-Len=3
+Start=280
+Len=7
+Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the goats?
+Label=Unit of total Quantity of suppliment provided to feed the goats
 Name=LQ13SB_ALL_GOATS
-Start=279
+Start=287
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the goats?
+Label=Unit of total Quantity of suppliment provided to feed the goats
 Name=LQ13SB_ALL_GOATS_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -833,13 +835,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for poultry?
+Label=Suppliments for poultry
 Name=USED_SUPPLIMENT_POULTRY
-Start=280
+Start=288
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for poultry?
+Label=Suppliments for poultry
 Name=USED_SUPPLIMENT_POULTRY_VS1
 Value=1;Yes
 Value=2;No
@@ -847,37 +849,38 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for poultry
 Name=TYPE_OF_SUPPLIMENT_POULTRY
-Start=281
+Start=289
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_POULTRY
-Start=311
+Start=319
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_POULTRY
-Start=313
+Start=321
 Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliments provided to feed the poultry?
+Label=Total Quantity of suppliments provided to feed the poultry
 Name=LQ13SA_ALL_GOATT
-Start=314
-Len=3
+Start=322
+Len=7
+Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Label=Unit of total Quantity of suppliment provided to feed the poultry
 Name=LQ13SB_ALL_POULTRY
-Start=317
+Start=329
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Label=Unit of total Quantity of suppliment provided to feed the poultry
 Name=LQ13SB_ALL_POULTRY_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -889,16 +892,16 @@ Label=LIVESTOCK FEEDS WINTER
 Name=LIVESTOCK_FEED_WINTER
 RecordTypeValue='7'
 MaxRecords=10
-RecordLen=352
+RecordLen=364
 
 [Item]
-Label=Did the holding use the suppliment for the dairy cattle alone?
+Label=Suppliments for the dairy cattle alone?
 Name=USED_SUPPLIMENT_TYPW
 Start=120
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for the dairy cattle alone?
+Label=Suppliments for the dairy cattle alone?
 Name=USED_SUPPLIMENT_TYPW_VS1
 Value=1;Yes
 Value=2;No
@@ -924,20 +927,20 @@ Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliment provided to feed the dairy cattle alone?
+Label=Total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13WA
 Start=154
 Len=7
 Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13WB
 Start=161
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone?
+Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13WB_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -945,13 +948,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for all cattle ?
+Label=Suppliments for all cattle
 Name=USED_SUPPLIMENT_ALL_CATTLEW
 Start=162
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for all cattle ?
+Label=Suppliments for all cattle
 Name=USED_SUPPLIMENT_ALL_CATTLEW_VS1
 Value=1;Yes
 Value=2;No
@@ -977,19 +980,20 @@ Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliment provided to feed all cattle?
+Label=Total Quantity of suppliment provided to feed all cattle
 Name=LQ13SA_ALL_CATTLEW
 Start=196
-Len=3
+Len=7
+Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Label=Unit of total Quantity of suppliment provided to feed all cattle
 Name=LQ13SB_ALL_CATTLEW
-Start=199
+Start=203
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed all cattle?
+Label=Unit of total Quantity of suppliment provided to feed all cattle
 Name=LQ13SB_ALL_CATTLEW_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -997,13 +1001,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for sheep?
+Label=Suppliments for sheep
 Name=USED_SUPPLIMENT_SHEEPW
-Start=200
+Start=204
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for sheep?
+Label=Suppliments for sheep
 Name=USED_SUPPLIMENT_SHEEPW_VS1
 Value=1;Yes
 Value=2;No
@@ -1011,38 +1015,38 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for sheep
 Name=TYPE_OF_SUPPLIMENT_SHEEPW
-Start=201
+Start=205
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_SHEEP_W
-Start=231
+Start=235
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_SHEEP_W
-Start=233
+Start=237
 Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliments provided to feed the sheep?
+Label=Total Quantity of suppliments provided to feed the sheep
 Name=LQ13SA_ALL_SHEEPW
-Start=234
+Start=238
 Len=7
 Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Label=Unit of total Quantity of suppliment provided to feed the sheep
 Name=LQ13SB_ALL_SHEEPW
-Start=241
+Start=245
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the sheep?
+Label=Unit of total Quantity of suppliment provided to feed the sheep
 Name=LQ13SB_ALL_SHEEPW_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -1050,13 +1054,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for goats?
+Label=Suppliments for goats
 Name=USED_SUPPLIMENT_GOATW
-Start=242
+Start=246
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for goats?
+Label=Suppliments for goats
 Name=USED_SUPPLIMENT_GOATW_VS1
 Value=1;Yes
 Value=2;No
@@ -1064,37 +1068,38 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for goats
 Name=TYPE_OF_SUPPLIMENT_GOATW
-Start=243
+Start=247
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_GOATS_W
-Start=273
+Start=277
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_GOATS_W
-Start=275
+Start=279
 Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliments provided to feed the goats?
+Label=Total Quantity of suppliments provided to feed the goats
 Name=LQ13SA_ALL_GOATW
-Start=276
-Len=3
+Start=280
+Len=7
+Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the goats?
+Label=Unit of total Quantity of suppliment provided to feed the goats
 Name=LQ13SB_ALL_GOATW
-Start=279
+Start=287
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the goats?
+Label=Unit of total Quantity of suppliment provided to feed the goats
 Name=LQ13SB_ALL_GOATW_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -1102,13 +1107,13 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Did the holding use the suppliment for poultry?
+Label=Suppliments for poultry
 Name=USED_SUPPLIMENT_POULTRYW
-Start=280
+Start=288
 Len=1
 
 [ValueSet]
-Label=Did the holding use the suppliment for poultry?
+Label=Suppliments for poultry
 Name=USED_SUPPLIMENT_POULTRYW_VS1
 Value=1;Yes
 Value=2;No
@@ -1116,37 +1121,38 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for poultry
 Name=TYPE_OF_SUPPLIMENT_POULTRYW
-Start=281
+Start=289
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_POULTRY_W
-Start=311
+Start=319
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_POULTRY_W
-Start=313
+Start=321
 Len=1
 DataType=Alpha
 
 [Item]
-Label=Total Quantity of suppliments provided to feed the poultry?
+Label=Total Quantity of suppliments provided to feed the poultry
 Name=LQ13SA_ALL_POULTRYW
-Start=314
-Len=3
+Start=322
+Len=7
+Decimal=2
 
 [Item]
-Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Label=Unit of total Quantity of suppliment provided to feed the poultry
 Name=LQ13SB_ALL_POULTRYW
-Start=317
+Start=329
 Len=1
 
 [ValueSet]
-Label=Unit of total Quantity of suppliment provided to feed the poultry?
+Label=Unit of total Quantity of suppliment provided to feed the poultry
 Name=LQ13SB_ALL_POULTRYW_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -1156,50 +1162,50 @@ Value=4;Bundles
 [Item]
 Label=Supplement feed code
 Name=LQ14S
-Start=318
+Start=330
 Len=2
 
 [Item]
-Label=Main source of acquisition for the dairy cattle alone?
+Label=Main source of acquisition for the dairy cattle alone
 Name=LQ15S
-Start=320
+Start=332
 Len=1
 
 [ValueSet]
-Label=Main source of acquisition for the dairy cattle alone?
+Label=Main source of acquisition for the dairy cattle alone
 Name=LQ15S_VS1
 Value=1;Purchased
 Value=2;Self-supplied/produced
 Value=3;Gift
 
 [Item]
-Label=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Label=Was any of this supplemetary feed purchsed for the dairy cattle alone
 Name=LQ16S
-Start=321
+Start=333
 Len=1
 
 [ValueSet]
-Label=Was any of this supplemetary feed purchsed for the dairy cattle alone??
+Label=Was any of this supplemetary feed purchsed for the dairy cattle alone
 Name=LQ16S_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Quantity purchased for the dairy cattle alone?
+Label=Quantity purchased for the dairy cattle alone
 Name=LQ17SA
-Start=322
+Start=334
 Len=10
 Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Unit of quantity purchased for the dairy cattle alone?
+Label=Unit of quantity purchased for the dairy cattle alone
 Name=LQ17SB
-Start=332
+Start=344
 Len=1
 
 [ValueSet]
-Label=Unit of quantity purchased for the dairy cattle alone?
+Label=Unit of quantity purchased for the dairy cattle alone
 Name=LQ17SB_VS1
 Value=1;Kg
 Value=2;Rolls
@@ -1207,16 +1213,16 @@ Value=3;Bales
 Value=4;Bundles
 
 [Item]
-Label=Total purchase price (Maloti) for the dairy cattle alone?
+Label=Total purchase price (Maloti) for the dairy cattle alone
 Name=LQ17SC
-Start=333
+Start=345
 Len=10
 Decimal=2
 
 [Item]
-Label=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone?
+Label=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone
 Name=LQ18S
-Start=343
+Start=355
 Len=10
 Decimal=2
 
@@ -1228,13 +1234,13 @@ MaxRecords=4
 RecordLen=180
 
 [Item]
-Label=Were the Livestock  de-wormed at least once
+Label=Livestock  de-worming at least once
 Name=LQ19A
 Start=120
 Len=1
 
 [ValueSet]
-Label=Were the Livestock  de-wormed at least once
+Label=Livestock  de-worming at least once
 Name=LQ19A_VS1
 Value=1;Yes
 Value=2;No
@@ -1247,7 +1253,7 @@ Len=20
 DataType=Alpha
 
 [Item]
-Label=How much was spent on de-worming in maloti?
+Label=Cost of  de-worming in Maloti
 Name=LQ19B
 Start=141
 Len=7
@@ -1255,19 +1261,19 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Were livestock Vaccinated at least once ?
+Label=Livestock Vaccination at least once
 Name=LQ20A
 Start=148
 Len=1
 
 [ValueSet]
-Label=Were livestock Vaccinated at least once ?
+Label=Livestock Vaccination at least once
 Name=LQ20A_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much was spent on these vaccinations?
+Label=Cost of vaccinations
 Name=LQ20B
 Start=149
 Len=7
@@ -1275,28 +1281,30 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=What was the main source of Vaccines
+Label=Main source of Vaccines
 Name=LQ20C
 Start=156
 Len=1
 
 [ValueSet]
-Label=What was the main source of Vaccines
+Label=Main source of Vaccines
 Name=LQ20C_VS1
 Value=1;Veterinary Clinic
-Value=2;Trader
-Value=3;Farmer/Farmer Association
+Value=2;Traders (Local)
+Value=3;Traders (Abroad)
+Value=4;Ministry of Agriculture and Food Security
 Value=4;Development Partners
-Value=5;NGO
+Value=5;NGO’s
+Value=6;Farmer/Farmers' Association
 
 [Item]
-Label=What was the main method of parasite control on Livestock raised
+Label=Main method of parasite control on Livestock raised
 Name=LQ21A
 Start=157
 Len=1
 
 [ValueSet]
-Label=What was the main method of parasite control on Livestock raised
+Label=Main method of parasite control on Livestock raised
 Name=LQ21A_VS1
 Value=1;None
 Value=2;Dipping
@@ -1308,7 +1316,7 @@ Value=7;Traditional
 Value=8;Injection
 
 [Item]
-Label=How much was spent on parasite control (Maloti)?
+Label=Cost of parasite control in Maloti
 Name=LQ21B
 Start=158
 Len=7
@@ -1316,19 +1324,19 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Were any Livestock treated for infectious diseases or accidents?
+Label=Livestock treated for infectious diseases or accidents
 Name=LQ22
 Start=165
 Len=1
 
 [ValueSet]
-Label=Were any Livestock treated for infectious diseases or accidents?
+Label=Livestock treated for infectious diseases or accidents
 Name=LQ22_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much was spent on treatment for infectious diseases or accidents
+Label=Cost of  treatment for infectious diseases or accidents
 Name=LQ22B
 Start=166
 Len=7
@@ -1336,19 +1344,19 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Was Artificial Insemination (IA) or mating practiced?
+Label=Artificial Insemination (IA) or mating practiced
 Name=LQ23A
 Start=173
 Len=1
 
 [ValueSet]
-Label=Was Artificial Insemination (IA) or mating practiced?
+Label=Artificial Insemination (IA) or mating practiced
 Name=LQ23A_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much was spent on IA/ mating?
+Label=Cost of  IA/ mating
 Name=LQ23B
 Start=174
 Len=7
@@ -1363,43 +1371,43 @@ MaxRecords=30
 RecordLen=222
 
 [Item]
-Label=For household members-write the serial number from the household roaster,for hired workers write initials
+Label=Write the serial number for household members, for hired workers write initials
 Name=LQ27
 Start=120
 Len=4
 DataType=Alpha
 
 [Item]
-Label=For how many months was name involved in tending and herding livestock in months
+Label=Number of Months spent in tending and herding livestock in months
 Name=LQ28A
 Start=124
 Len=2
 
 [ValueSet]
-Label=For how many months was name involved in tending and herding livestock in months
+Label=Number of Months spent in tending and herding livestock in months
 Name=LQ28A_VS1
-Value=1:12;1 - 12
+Value=1:12;Input range
 
 [Item]
-Label=On average,how many weeks in a month did name tend and herd livestock
+Label=Average number of  weeks in a month spent in tending and herding livestock
 Name=LQ28B
 Start=126
 Len=2
 
 [Item]
-Label=On average how many days in a week did name tend and herd livestock?
+Label=Average number of days in a week spent in tending and herding livestock
 Name=LQ28C
 Start=128
 Len=1
 
 [Item]
-Label=On average,for how many hours in a day did name tend and herd livestock?
+Label=Average number of hours in a day spent tending and herding livestock
 Name=LQ28D
 Start=129
 Len=2
 
 [Item]
-Label=For hired workers how much did he/she receive for their work in cash or in kind?
+Label=Amount receive for their work in cash or in kind
 Name=LQ29A
 Start=131
 Len=7
@@ -1407,80 +1415,80 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Does the payment cover other activities?
+Label=Payment cover other activities
 Name=LQ29B
 Start=138
 Len=1
 
 [ValueSet]
-Label=Does the payment cover other activities?
+Label=Payment cover other activities
 Name=LQ29B_VS1
 Value=1;1 - Livestock Only
 Value=2;2 - Livestock & Crops
 Value=3;3 - Livestock & Others
 
 [Item]
-Label=Are there any more persons involved in tending and herding livestock?
+Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_INVOL
 Start=139
 Len=1
 
 [ValueSet]
-Label=Are there any more persons involved in tending and herding livestock?
+Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_INVOM
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Household member or hired worker?
+Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_WORKER
 Start=140
 Len=1
 
 [ValueSet]
-Label=Household member or hired worker?
+Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_WORKES
 Value=1;Member
 Value=2;Hired Worker
 
 [Item]
-Label=For household members-write the serial number from the household roaster,for hired workers write initials
+Label=Write the serial number for household members, for hired workers write initials
 Name=LQ31
 Start=141
 Len=4
 DataType=Alpha
 
 [Item]
-Label=For how many months was name involved in tending to poultry in months
+Label=Number of Months spent in tending and herding livestock in months
 Name=LQ32A
 Start=145
 Len=2
 
 [ValueSet]
-Label=For how many months was name involved in tending to poultry in months
+Label=Number of Months spent in tending and herding livestock in months
 Name=LQ32A_VS1
 Value=1:12;Input range
 
 [Item]
-Label=On average,how many weeks in a month did name tending to poultry?
+Label=Average number of  weeks in a month spent in tending and herding livestock
 Name=LQ32B
 Start=147
 Len=2
 
 [Item]
-Label=On average how many days in a week did name tending to poultry?
+Label=Average number of days in a week spent in tending and herding livestock
 Name=LQ32C
 Start=149
 Len=1
 
 [Item]
-Label=On average,for how many hours in a day did name tending to poultry?
+Label=Average number of hours in a day spent tending and herding livestock
 Name=LQ32D
 Start=150
 Len=2
 
 [Item]
-Label=For hired workers how much did he/she receive for their work in cash or in kind?
+Label=Amount receive for their work in cash or in kind
 Name=LQ33A
 Start=152
 Len=7
@@ -1488,44 +1496,44 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Does the payment cover other activities?
+Label=Payment cover other activities
 Name=LQ33B
 Start=159
 Len=1
 
 [ValueSet]
-Label=Does the payment cover other activities?
+Label=Payment cover other activities
 Name=LQ33B_VS1
 Value=1;1 - Livestock Only
 Value=2;2 - Livestock & Crops
 Value=3;3 - Livestock & Others
 
 [Item]
-Label=Are there any more persons involved in tending and herding livestock?
+Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_PLTZ
 Start=160
 Len=1
 
 [ValueSet]
-Label=Are there any more persons involved in tending and herding livestock?
+Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_PLTY
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Household member or hired worker?
+Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_PLTZ
 Start=161
 Len=1
 
 [ValueSet]
-Label=Household member or hired worker?
+Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_PLTY
 Value=1;Member
 Value=2;Hired Worker
 
 [Item]
-Label=For household members-write the serial number from the household roaster,for hired workers write initials
+Label=Write the serial number for household members, for hired workers write initials
 Name=LQ35
 Start=162
 Len=4
@@ -1539,36 +1547,36 @@ Len=40
 DataType=Alpha
 
 [Item]
-Label=For how many months was name involved in this activity in months?
+Label=Number of  months involved in this activity
 Name=LQ37A
 Start=206
 Len=2
 
 [ValueSet]
-Label=For how many months was name involved in this activity in months?
+Label=Number of  months involved in this activity
 Name=LQ37A_VS1
 Value=1:12;Input range
 
 [Item]
-Label=On average,how many weeks in a months was name involved in this activity ?
+Label=Average number of  weeks in a month spent in tending and herding livestock
 Name=LQ37B
 Start=208
 Len=2
 
 [Item]
-Label=On average how many days in a week was name involved in this activity?
+Label=Average number of days in a week spent in tending and herding livestock
 Name=LQ37C
 Start=210
 Len=1
 
 [Item]
-Label=On average,for how many hours in a day was name involved in this activity?
+Label=Average number of hours in a day spent tending and herding livestock
 Name=LQ37D
 Start=211
 Len=2
 
 [Item]
-Label=For hired workers how much did he/she receive for this activity in cash or in kind?
+Label=For hired workers-- amount  receive for this activity in cash or in kind
 Name=LQ38A
 Start=213
 Len=7
@@ -1576,38 +1584,38 @@ Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Does the payment cover other activities?
+Label=Payment cover other activities
 Name=LQ38B
 Start=220
 Len=1
 
 [ValueSet]
-Label=Does the payment cover other activities?
+Label=Payment cover other activities
 Name=LQ38B_VS1
 Value=1;1 - Livestock Only
 Value=2;2 - Livestock & Crops
 Value=3;3 - Livestock & Others
 
 [Item]
-Label=Are there any more persons involved in tending and herding livestock?
+Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_OTHES
 Start=221
 Len=1
 
 [ValueSet]
-Label=Are there any more persons involved in tending and herding livestock?
+Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_OTHER
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Household member or hired worker?
+Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_OTHES
 Start=222
 Len=1
 
 [ValueSet]
-Label=Household member or hired worker?
+Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_OTHER
 Value=1;Member
 Value=2;Hired Worker
@@ -1617,16 +1625,16 @@ Label=LIVESTOCK PRODUCTS
 Name=LIVESTOCK_PRODUCT
 RecordTypeValue='9'
 MaxRecords=7
-RecordLen=251
+RecordLen=259
 
 [Item]
-Label=Was any livestock product produced during summer
+Label=Livestock product produced during summer and autumn
 Name=LQ40S
 Start=120
 Len=1
 
 [ValueSet]
-Label=Was any livestock product produced during summer
+Label=Livestock product produced during summer and autumn
 Name=LQ40S_VS1
 Value=1;Yes
 Value=2;No
@@ -1639,32 +1647,32 @@ Len=20
 DataType=Alpha
 
 [Item]
-Label=For how many months was Livestock product produced during summer?
+Label=Number of  months that Livestock product was produced during summer and autumn
 Name=LQ41SA
 Start=141
 Len=1
 
 [ValueSet]
-Label=For how many months was Livestock product produced during summer?
+Label=Number of  months that Livestock product was produced during summer and autumn
 Name=LQ41SA_VS1
-Value=1:6;1 -  6
+Value=1:6;Input range
 
 [Item]
-Label=During those months what was the average quantity of livestock product produced during summer
+Label=Average quantity of livestock product produced during summer and autumn
 Name=LQ42SA
 Start=142
-Len=5
+Len=7
 Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=During those months what was the unit of the average quantity livestock product produced during summer
+Label=Unit of measure for livestock product produced during summer and autumn
 Name=LQ42SB
-Start=147
+Start=149
 Len=2
 
 [ValueSet]
-Label=During those months what was the unit of the average quantity livestock product produced during summer
+Label=Unit of measure for livestock product produced during summer and autumn
 Name=LQ42SB_VS1
 Value=1;Litre
 Value=2;Kg
@@ -1678,43 +1686,43 @@ Value=8;Other, specify
 [Item]
 Label=Other specify
 Name=OTHER_SPECIFY_S
-Start=149
+Start=151
 Len=20
 DataType=Alpha
 
 [Item]
-Label=Did the holding sell any of the livestock product produced during summer
+Label=Livestock product sold during summer and autumn
 Name=LQ43S
-Start=169
+Start=171
 Len=1
 
 [ValueSet]
-Label=Did the holding sell any of the livestock product produced during summer
+Label=Livestock product sold during summer and autumn
 Name=LQ43S_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+Label=Number/Amount of livestock product sold in summer and autumn
 Name=LQ44SA
-Start=170
-Len=5
+Start=172
+Len=7
 Decimal=2
 DecimalChar=Yes
 
 [ValueSet]
-Label=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+Label=Number/Amount of livestock product sold in summer and autumn
 Name=LQ44SA_VS1
-Value=0.00:99.99;0,00 - 99,99
+Value=.00:99.99;0,00 - 99,99
 
 [Item]
-Label=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+Label=Unit of measure for livestock product sold by the holding in summer and autumn
 Name=LQ44SB
-Start=175
+Start=179
 Len=2
 
 [ValueSet]
-Label=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+Label=Unit of measure for livestock product sold by the holding in summer and autumn
 Name=LQ44SB_VS1
 Value=1;Litre
 Value=2;Kg
@@ -1725,21 +1733,21 @@ Value=6;Wheelbarrow
 Value=7;Ox cart
 
 [Item]
-Label=What was the total value of sales of livestock product in the during summer period?
+Label=Total value of sales of livestock product during summer and autumn
 Name=LQ44SC
-Start=177
+Start=181
 Len=9
 Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=Was any livestock product produced during winter ?
+Label=Livestock product produced during winter and spring
 Name=LQ40W
-Start=186
+Start=190
 Len=1
 
 [ValueSet]
-Label=Was any livestock product produced during winter ?
+Label=Livestock product produced during winter and spring
 Name=LQ40W_VS1
 Value=1;Yes
 Value=2;No
@@ -1747,37 +1755,37 @@ Value=2;No
 [Item]
 Label=Product label
 Name=PRODUCT_LABEL_W
-Start=187
+Start=191
 Len=20
 DataType=Alpha
 
 [Item]
-Label=For how many months was Livestock product produced during winter ?
+Label=Number of  months that Livestock product was produced during winter and spring
 Name=LQ41WA
-Start=207
+Start=211
 Len=1
 
 [ValueSet]
-Label=For how many months was Livestock product produced during winter ?
+Label=Number of  months that Livestock product was produced during winter and spring
 Name=LQ41WA_VS1
-Value=1:6;1 -  6
+Value=1:6;Input range
 
 [Item]
-Label=During those months what was the average quantity of livestock product produced during winter ?
+Label=Average quantity of livestock product produced during winter and spring
 Name=LQ42WA
-Start=208
-Len=5
+Start=212
+Len=7
 Decimal=2
 DecimalChar=Yes
 
 [Item]
-Label=During those months what was the unit of the average quantity livestock product produced during winter ?
+Label=Unit of measure for livestock product produced during winter and spring
 Name=LQ42WB
-Start=213
+Start=219
 Len=2
 
 [ValueSet]
-Label=During those months what was the unit of the average quantity livestock product produced during winter ?
+Label=Unit of measure for livestock product produced during winter and spring
 Name=LQ42WB_VS1
 Value=1;Litre
 Value=2;Kg
@@ -1791,43 +1799,43 @@ Value=8;Other, specify
 [Item]
 Label=Other specify
 Name=OTHER_SPECIFY_W
-Start=215
+Start=221
 Len=20
 DataType=Alpha
 
 [Item]
-Label=Did the holding sell any of the livestock product produced during winter ?
+Label=Livestock product sold during winter and spring
 Name=LQ43W
-Start=235
+Start=241
 Len=1
 
 [ValueSet]
-Label=Did the holding sell any of the livestock product produced during winter ?
+Label=Livestock product sold during winter and spring
 Name=LQ43W_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+Label=Number/Amount of livestock product sold in winter and spring
 Name=LQ44WA
-Start=236
-Len=5
+Start=242
+Len=7
 Decimal=2
 DecimalChar=Yes
 
 [ValueSet]
-Label=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+Label=Number/Amount of livestock product sold in winter and spring
 Name=LQ44WA_VS1
-Value=0.00:99.99;0,00 - 99,99
+Value=.00:99.99;0,00 - 99,99
 
 [Item]
-Label=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+Label=Unit of measure for livestock product sold by the holding in winter and spring
 Name=LQ44WB
-Start=241
+Start=249
 Len=2
 
 [ValueSet]
-Label=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+Label=Unit of measure for livestock product sold by the holding in winter and spring
 Name=LQ44WB_VS1
 Value=1;Litre
 Value=2;Kg
@@ -1838,9 +1846,9 @@ Value=6;Wheelbarrow
 Value=7;Ox cart
 
 [Item]
-Label=What was the total value of sales of livestock product in the winter period
+Label=Total value of sales of livestock product during winter and spring
 Name=LQ44WC
-Start=243
+Start=251
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -1859,7 +1867,7 @@ Len=30
 DataType=Alpha
 
 [Item]
-Label=Relationship of the Respondent to household
+Label=Relationship of the Respondent to household head
 Name=RESPONDENT_RELATIONSHIP
 Start=150
 Len=2
@@ -1911,151 +1919,151 @@ Start=152
 Len=2
 
 [Item]
-Label=Did the holding  raise any livestock from 1st August to 31 July 2019?
+Label=Livestock raised
 Name=LQ01
 Start=154
 Len=1
 
 [ValueSet]
-Label=Did the holding  raise any livestock from 1st August to 31 July 2019?
+Label=Livestock raised
 Name=LQ01_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
+Label=Supplimentary feed for Dairy Cattle during summer
 Name=LQ10S_DAIRYCATTLE
 Start=155
 Len=1
 
 [ValueSet]
-Label=Did the holding provide Dairy Cattle with any Supplimentary feed during summer
+Label=Supplimentary feed for Dairy Cattle during summer
 Name=LQ10S_DAIRYCATTLE_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide All Cattle with any Supplimentary feed during summer
+Label=Supplimentary feed for All Cattle during summer
 Name=LQ10S_ALLCATTLE
 Start=156
 Len=1
 
 [ValueSet]
-Label=Did the holding provide All Cattle with any Supplimentary feed during summer
+Label=Supplimentary feed for All Cattle during summer
 Name=LQ10S_ALLCATTLE_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide sheep with any Supplimentary feed during summer
+Label=Supplimentary feed for Sheep during summer
 Name=LQ10S_SHEEP
 Start=157
 Len=1
 
 [ValueSet]
-Label=Did the holding provide sheep with any Supplimentary feed during summer
+Label=Supplimentary feed for Sheep during summer
 Name=LQ10S_SHEEP_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide Goats with any Supplimentary feed during summer
+Label=Supplimentary feed for Goats during summer
 Name=LQ10S_GOATS
 Start=158
 Len=1
 
 [ValueSet]
-Label=Did the holding provide Goats with any Supplimentary feed during summer
+Label=Supplimentary feed for Goats during summer
 Name=LQ10S_GOATS_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
+Label=Supplimentary feed for Poultry during summer
 Name=LQ10S_POULTRY
 Start=159
 Len=1
 
 [ValueSet]
-Label=Did the holding provide Exotic Poultry with any Supplimentary feed during summer
+Label=Supplimentary feed for Poultry during summer
 Name=LQ10S_POULTRY_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
+Label=Supplimentary feed for Dairy Cattle during winter
 Name=LQ10W_DAIRYCATTLE
 Start=160
 Len=1
 
 [ValueSet]
-Label=Did the holding provide Dairy Cattle with any Supplimentary feed during winter
+Label=Supplimentary feed for Dairy Cattle during winter
 Name=LQ10W_DAIRYCATTLE_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide All Cattle with any Supplimentary feed during winter
+Label=Supplimentary feed for All Cattle during winter
 Name=LQ10W_ALLCATTLE
 Start=161
 Len=1
 
 [ValueSet]
-Label=Did the holding provide All Cattle with any Supplimentary feed during winter
+Label=Supplimentary feed for All Cattle during winter
 Name=LQ10W_ALLCATTLE_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide sheep with any Supplimentary feed during winter
+Label=Supplimentary feed for Sheep during winter
 Name=LQ10W_SHEEP
 Start=162
 Len=1
 
 [ValueSet]
-Label=Did the holding provide sheep with any Supplimentary feed during winter
+Label=Supplimentary feed for Sheep during winter
 Name=LQ10W_SHEEP_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide Goats with any Supplimentary feed during winter
+Label=Supplimentary feed for Goats during winter
 Name=LQ10W_GOATS
 Start=163
 Len=1
 
 [ValueSet]
-Label=Did the holding provide Goats with any Supplimentary feed during winter
+Label=Supplimentary feed for Goats during winter
 Name=LQ10W_GOATS_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
+Label=Supplimentary feed for Poultry during winter
 Name=LQ10W_POULTRY
 Start=164
 Len=1
 
 [ValueSet]
-Label=Did the holding provide Exotic Poultry with any Supplimentary feed during winter
+Label=Supplimentary feed for Poultry during winter
 Name=LQ10W_POULTRY_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
+Label=Anyone employed on contract to tend and herd livestock
 Name=LQ24
 Start=165
 Len=1
 
 [ValueSet]
-Label=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?
+Label=Anyone employed on contract to tend and herd livestock
 Name=LQ24_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How was the person paid?-give the estimated cash value if paid in-kind
+Label=Salary-- give the estimated cash value if paid in-kind
 Name=LQ25
 Start=166
 Len=7
@@ -2063,97 +2071,97 @@ Decimal=2
 ZeroFill=Yes
 
 [Item]
-Label=Were any other person or household member involved in tending and herding livestock
+Label=Any other person or household member involved in tending and herding livestock
 Name=LQ26
 Start=173
 Len=1
 
 [ValueSet]
-Label=Were any other person or household member involved in tending and herding livestock
+Label=Any other person or household member involved in tending and herding livestock
 Name=LQ26_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Were any other person or household member involved in tending poultry
+Label=Any other person or household member involved in tending poultry
 Name=LQ30
 Start=174
 Len=1
 
 [ValueSet]
-Label=Were any other person or household member involved in tending poultry
+Label=Any other person or household member involved in tending poultry
 Name=LQ30_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Were any other person or household member involved in other livestock activities?
+Label=Any other person or household member involved in other livestock activities
 Name=LQ34
 Start=175
 Len=1
 
 [ValueSet]
-Label=Were any other person or household member involved in other livestock activities?
+Label=Any other person or household member involved in other livestock activities
 Name=LQ34_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Were any draught animals raised between 1 August 2018 and 31  july 2019
+Label=Draught animals raised
 Name=LQ45A
 Start=176
 Len=1
 
 [ValueSet]
-Label=Were any draught animals raised between 1 August 2018 and 31  july 2019
+Label=Draught animals raised
 Name=LQ45A_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
+Label=Drought animals rented to other households for ploughing and/or transport
 Name=LQ45B
 Start=177
 Len=1
 
 [ValueSet]
-Label=Were drought animals rented other households for ploughing and/or transport between 1 August 2018 and 31July 2019?
+Label=Drought animals rented to other households for ploughing and/or transport
 Name=LQ45B_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much did the holding recieve in total payents for renting out the draught animal
+Label=Total Amount recieved for renting out the draught animal
 Name=LQ45C
 Start=178
 Len=1
 
 [ValueSet]
-Label=How much did the holding recieve in total payents for renting out the draught animal
+Label=Total Amount recieved for renting out the draught animal
 Name=LQ45C_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
+Label=Sales of any manure produced by your livestock
 Name=LQ46A
 Start=179
 Len=1
 
 [ValueSet]
-Label=Did holding sell any manure produced by your livestock between 1 Aug 2018 and 31 jul 2019?
+Label=Sales of any manure produced by your livestock
 Name=LQ46A_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=How much did the holding recieve in total payment from the manure sale?
+Label=Total Amount recieved for selling manure
 Name=LQ46B
 Start=180
 Len=1
 
 [ValueSet]
-Label=How much did the holding recieve in total payment from the manure sale?
+Label=Total Amount recieved for selling manure
 Name=LQ46B_VS1
 Value=1;Yes
 Value=2;No

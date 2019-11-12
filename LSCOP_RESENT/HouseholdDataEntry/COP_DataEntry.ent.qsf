@@ -19,7 +19,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were there any more persons involved in tending and herding livestock?\par
+ENG=\pard\cf1\i\fs24 Were there any more persons involved in tending and herding livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -28,7 +28,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\fs24 Were there any more persons involved in tending and herding livestock?\par
+ENG=\pard\cf1\fs24 Were there any more persons involved in tending and herding livestock \i (1st August - 31st July 2019)\i0 ?\par
 ENG=}
 
 [QUESTION]
@@ -37,7 +37,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were there any more persons involved in tending and herding livestock?\par
+ENG=\pard\cf1\i\fs24 Were there any more persons involved in tending and herding livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -158,7 +158,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -167,7 +167,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -176,7 +176,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker?\par
+ENG=\pard\cf1\i\fs24 Was the person the household member or hired worker (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -208,7 +208,9 @@ Field=COP_DICT_DICT.LQ01
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding  raise any livestock from 1st August 2018 to 31 July 2019?\par
+ENG=\pard\cf1\ul\b\i\fs24 SECTION 1: LIVESTOCK\par
+ENG=\ulnone\b0\par
+ENG=Did the holding  raise any livestock from 1st August 2018 to 31 July 2019?\par
 ENG=}
 
 [QUESTION]
@@ -261,8 +263,8 @@ Field=COP_DICT_DICT.LQ06
 Occurrences=1:22
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were received as gift/lobola/bartered between 1st August 2018 and 31st July 2019?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were received as gift/lobola/bartered/mafisa between 1st August 2018 and 31st July 2019?\par
 ENG=}
 
 [QUESTION]
@@ -297,72 +299,76 @@ Field=COP_DICT_DICT.LQ08
 Occurrences=1:22
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How many \b\f1 %getocclabel%\b0\f0  were given away as gifts/lobola/lost/mafisa due to death/theft  between 1st August 2018 to 31st July 2019?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10S_ALLCATTLE
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide All Cattle with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide All Cattle with any Supplimentary feed during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10S_DAIRYCATTLE
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide Dairy Cattle with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\ul\b\i\fs24 SECTION 1.2: LIVESTOCK FEED - SUMMER AND AUTUMN\ulnone\b0\par
+ENG=\par
+ENG=Did the holding provide Dairy Cattle with any Supplimentary feed during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10S_GOATS
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide Goats with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Goats with any Supplimentary feed during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10S_POULTRY
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide Poultry with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Poultry with any Supplimentary feed during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10S_SHEEP
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide sheep with any Supplimentary feed during Summer and Autumn seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide sheep with any Supplimentary feed during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10W_ALLCATTLE
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide All Cattle with any Supplimentary feed during Winter and Spring seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide All Cattle with any Supplimentary feed during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10W_DAIRYCATTLE
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide Dairy Cattle with any Supplimentary feed during Winter and Spring seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\ul\b\i\fs24 SECTION 1.2: LIVESTOCK FEED - WINTER AND SPRING\ulnone\b0\par
+ENG=\par
+ENG=Did the holding provide Dairy Cattle with any Supplimentary feed during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10W_GOATS
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide Goats with any Supplimentary feed during Winter and Spring seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide Goats with any Supplimentary feed during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -370,15 +376,15 @@ Field=COP_DICT_DICT.LQ10W_POULTRY
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide Poultry with any Supplimentary feed during Winter and Spring seasons?\par
+ENG=\pard\cf1\i\fs24 Did the holding provide Poultry with any Supplimentary feed during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
 Field=COP_DICT_DICT.LQ10W_SHEEP
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding provide sheep with any Supplimentary feed during Winter and Spring seasons?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 Did the holding provide sheep with any Supplimentary feed during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -387,7 +393,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the dairy cattle alone during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -396,7 +402,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed all cattle?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed all cattle during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -405,7 +411,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for all cattle?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for all cattle during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -414,7 +420,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed goats?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed goats during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -423,7 +429,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed poultry?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed poultry during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -432,7 +438,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for goats?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for goats during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -441,7 +447,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for poultry?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for poultry during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -450,7 +456,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the sheep?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the sheep during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -459,7 +465,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for sheep?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for sheep during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -468,7 +474,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed the dairy cattle alone?\par
 ENG=}
 
 [QUESTION]
@@ -477,7 +483,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed all cattle?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed all cattle?\par
 ENG=}
 
 [QUESTION]
@@ -486,7 +492,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for all cattle?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed for all cattle?\par
 ENG=}
 
 [QUESTION]
@@ -495,7 +501,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed goats?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed goats?\par
 ENG=}
 
 [QUESTION]
@@ -504,7 +510,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for goats?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed for goats?\par
 ENG=}
 
 [QUESTION]
@@ -513,7 +519,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed poultry?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed poultry?\par
 ENG=}
 
 [QUESTION]
@@ -522,7 +528,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for poultry?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed for poultry?\par
 ENG=}
 
 [QUESTION]
@@ -531,7 +537,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed the sheep?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed the sheep?\par
 ENG=}
 
 [QUESTION]
@@ -540,7 +546,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for sheep?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed for sheep?\par
 ENG=}
 
 [QUESTION]
@@ -549,7 +555,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the Total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for dairy cattle alone during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -558,7 +564,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the Unit of total Quantity of \b\f1 %getocclabel%\b0\f0  provided to feed for dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the Unit of measure for \b\f1 %getocclabel%\b0\f0  provided to feed for dairy cattle alone?\par
 ENG=}
 
 [QUESTION]
@@ -567,7 +573,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0   for the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the main source of acquisition of \b\f1 %getocclabel%\b0\f0   for the dairy cattle alone (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -657,7 +663,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchsed for the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 Was \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -747,7 +753,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the quantity of \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -828,7 +834,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the unit of quantity of \b\f1 %getocclabel%\b0\f0  purchased for the dairy cattle alone (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -908,8 +914,8 @@ Field=COP_DICT_DICT.LQ17SC
 Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for the dairy cattle alone?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total purchase price of \b\f1 %getocclabel%\b0\f0   (in Maloti) for the dairy cattle alone (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1017,7 +1023,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 What was the total transport costs of \b\f1 %getocclabel%\b0\f0   from point of purchase to holding (Maloti) for the dairy cattle alone (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1107,7 +1113,9 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were \b\f1 %getocclabel%\b0\f0  de-wormed at least once?\par
+ENG=\pard\cf1\ul\b\i\fs24 SECTION 1.3: LIVESTOCK MANAGEMENTS AND HEALTH SERVICES\ulnone\b0\par
+ENG=\par
+ENG=Were \b\f1 %getocclabel%\b0\f0  de-wormed at least once (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1116,7 +1124,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much was spent on de-worming \b\f1 %getocclabel%\b0\f0  in Maloti?\par
+ENG=\pard\cf1\i\fs24 How much was spent on de-worming \b\f1 %getocclabel%\b0\f0  in Maloti (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1134,7 +1142,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much was spent on these vaccinations?\par
+ENG=\pard\cf1\i\fs24 How much was spent on these vaccinations (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1143,7 +1151,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the main source of Vaccines?\par
+ENG=\pard\cf1\i\fs24 What was the main source of Vaccines (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1161,7 +1169,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the main method of parasite control on \b\f1 %getocclabel%\b0\f0 ?\par
+ENG=\pard\cf1\i\fs24 What was the main method of parasite control on \b\f1 %getocclabel%\f0  \b0 (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1170,7 +1178,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much was spent on parasite control (Maloti)?\par
+ENG=\pard\cf1\i\fs24 How much was spent on parasite control (Maloti) (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1179,7 +1187,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were \b\f1 %getocclabel%\b0\f0   treated for infectious diseases or accidents?\par
+ENG=\pard\cf1\i\fs24 Were \b\f1 %getocclabel%\b0\f0   treated for infectious diseases or accidents (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1188,7 +1196,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much was spent on treatment for infectious diseases or accidents?\par
+ENG=\pard\cf1\i\fs24 How much was spent on treatment for infectious diseases or accidents (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1197,7 +1205,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Was Artificial Insemination (IA) or mating practiced?\par
+ENG=\pard\cf1\i\fs24 Was Artificial Insemination (IA) or mating practiced (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1206,7 +1214,7 @@ Occurrences=1:4
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much was spent on IA or mating?\par
+ENG=\pard\cf1\i\fs24 How much was spent on IA or mating (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1214,7 +1222,9 @@ Field=COP_DICT_DICT.LQ24
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?\par
+ENG=\pard\cf1\ul\b\i\fs24 SECTION 1.4: LABOUR COSTS\ulnone\b0\par
+ENG=\par
+ENG=Was anyone employed on contract to tend and herd livestock from 1st August 2018 to 31st July 2019?\par
 ENG=}
 
 [QUESTION]
@@ -1222,7 +1232,7 @@ Field=COP_DICT_DICT.LQ25
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How was the person paid?-give the estimated cash value if paid in-kind?\par
+ENG=\pard\cf1\i\fs24 How was the person paid?-give the estimated cash value if paid in-kind (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1230,7 +1240,7 @@ Field=COP_DICT_DICT.LQ26
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were any other person or household member involved in tending and herding livestock?\par
+ENG=\pard\cf1\i\fs24 Were any other person or household member involved in tending and herding livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1239,7 +1249,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials.\par
+ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials (1st August - 31st July 2019).\par
 ENG=}
 
 [QUESTION]
@@ -1247,8 +1257,8 @@ Field=COP_DICT_DICT.LQ28A
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\i0\f0  \b0\i  involved in tending and herding livestock in months?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\i0\f0  \b0\i  involved in tending and herding livestock in months (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1256,8 +1266,8 @@ Field=COP_DICT_DICT.LQ28B
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average,how many weeks in a month did \b\f1 %getocclabel%\i0\f0  \b0\i  tend and herd livestock?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,how many weeks in a month did \b\f1 %getocclabel%\i0\f0  \b0\i  tend and herd livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1265,8 +1275,8 @@ Field=COP_DICT_DICT.LQ28C
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average how many days in a week did \b\f1 %getocclabel%\i0\f0  \b0\i tend and herd livestock?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average how many days in a week did \b\f1 %getocclabel%\i0\f0  \b0\i tend and herd livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1274,8 +1284,8 @@ Field=COP_DICT_DICT.LQ28D
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average,for how many hours in a day did \b\f1 %getocclabel%\i0\f0  \b0\i  tend and herd livestock?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,for how many hours in a day did \b\f1 %getocclabel%\i0\f0  \b0\i  tend and herd livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1283,8 +1293,8 @@ Field=COP_DICT_DICT.LQ29A
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For hired workers how much did \b\f1 %getocclabel%\i0\f0  \b0\i  receive for their work in cash or in kind?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For hired workers how much did \b\f1 %getocclabel%\i0\f0  \b0\i  receive for their work in cash or in kind (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1293,7 +1303,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Does the payment cover other activities?\par
+ENG=\pard\cf1\i\fs24 Does the payment cover other activities (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1301,7 +1311,7 @@ Field=COP_DICT_DICT.LQ30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were any other person or household member involved in tending poultry?\par
+ENG=\pard\cf1\i\fs24 Were any other person or household member involved in tending poultry (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1310,7 +1320,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials.\par
+ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials (1st August - 31st July 2019).\par
 ENG=}
 
 [QUESTION]
@@ -1318,8 +1328,8 @@ Field=COP_DICT_DICT.LQ32A
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  involved in tending and herding livestock in months?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  involved in tending and herding livestock in months (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1327,8 +1337,8 @@ Field=COP_DICT_DICT.LQ32B
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average,how many weeks in a month did \b\f1 %getocclabel%\b0\f0  tend and herd livestock?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,how many weeks in a month did \b\f1 %getocclabel%\b0\f0  tend and herd livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1336,8 +1346,8 @@ Field=COP_DICT_DICT.LQ32C
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average how many days in a week did \b\f1 %getocclabel%\b0\f0  tend and herd livestock?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average how many days in a week did \b\f1 %getocclabel%\b0\f0  tend and herd livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1345,8 +1355,8 @@ Field=COP_DICT_DICT.LQ32D
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average,for how many hours in a day did \b\f1 %getocclabel%\b0\f0  tend and herd livestock?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,for how many hours in a day did \b\f1 %getocclabel%\b0\f0  tend and herd livestock (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1354,8 +1364,8 @@ Field=COP_DICT_DICT.LQ33A
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For hired workers how much did \b\f1 %getocclabel%\b0\f0  receive for their work in cash or in kind?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For hired workers how much did \b\f1 %getocclabel%\b0\f0  receive for their work in cash or in kind (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1364,7 +1374,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Does the payment cover other activities?\par
+ENG=\pard\cf1\i\fs24 Does the payment cover other activities (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1372,7 +1382,7 @@ Field=COP_DICT_DICT.LQ34
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Were any other person or household member involved in other livestock activities?\par
+ENG=\pard\cf1\i\fs24 Were any other person or household member involved in other livestock activities (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1381,7 +1391,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials.\par
+ENG=\pard\cf1\i\fs24 For household members, select one from the list. For hired workers write write the initials (1st August - 31st July 2019).\par
 ENG=}
 
 [QUESTION]
@@ -1389,8 +1399,8 @@ Field=COP_DICT_DICT.LQ36
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the activity that \b\f1 %getocclabel%\b0\f0  was engaged on?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the activity that \b\f1 %getocclabel%\b0\f0  was engaged on (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1398,8 +1408,8 @@ Field=COP_DICT_DICT.LQ37A
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  involved in this activity in months?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  involved in this activity in months (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1407,8 +1417,8 @@ Field=COP_DICT_DICT.LQ37B
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average,how many weeks in a months was \b\f1 %getocclabel%\b0\f0  involved in this activity ?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average,how many weeks in a months was \b\f1 %getocclabel%\b0\f0  involved in this activity (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1416,8 +1426,8 @@ Field=COP_DICT_DICT.LQ37C
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 On average how many days in a week was \b\f1 %getocclabel%\b0\f0  involved in this activity?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average how many days in a week was \b\f1 %getocclabel%\b0\f0  involved in this activity (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1425,8 +1435,8 @@ Field=COP_DICT_DICT.LQ37D
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\fs24 On average,for how many hours in a day was \b\i\f1 %getocclabel%\b0\i0\f0  involved in this activity?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 On average,for how many hours in a day was \b\i\f1 %getocclabel%\b0\i0\f0  involved in this activity \i (1st August - 31st July 2019)\i0 ?\par
 ENG=}
 
 [QUESTION]
@@ -1434,8 +1444,8 @@ Field=COP_DICT_DICT.LQ38A
 Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\fs24 For hired workers how much did \b\i\f1 %getocclabel%\b0\i0\f0  receive for this activity in cash or in kind?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\fs24 For hired workers how much did \b\i\f1 %getocclabel%\b0\i0\f0  receive for this activity in cash or in kind \i (1st August - 31st July 2019)\i0 ?\par
 ENG=}
 
 [QUESTION]
@@ -1444,7 +1454,7 @@ Occurrences=1:30
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\fs24 Does the payment cover other activities?\par
+ENG=\pard\cf1\fs24 Does the payment cover other activities \i (1st August - 31st July 2019)\i0 ?\par
 ENG=}
 
 [QUESTION]
@@ -1453,7 +1463,9 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding produce \b\f1 %getocclabel%\b0\f0  during summer?\par
+ENG=\pard\cf1\ul\b\i\fs24 SECTION 1.5: LIVESTOCK PRODUCTS\ulnone\b0\par
+ENG=\par
+ENG=Did the holding produce \b\f1 %getocclabel%\b0\f0  during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1462,7 +1474,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding produce \b\f1 %getocclabel%\b0\f0  during winter?\par
+ENG=\pard\cf1\i\fs24 Did the holding produce \b\f1 %getocclabel%\b0\f0  during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1471,7 +1483,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  produced during summer?\par
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  produced during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1480,7 +1492,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=\pard\cf1\i\fs24 For how many months was \b\f1 %getocclabel%\b0\f0  produced during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1489,7 +1501,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 During those months what was the average quantity of \b\f1 %getocclabel%\b0\f0  produced during summer\par
+ENG=\pard\cf1\i\fs24 During those months what was the average quantity of \b\f1 %getocclabel%\b0\f0  produced during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1498,7 +1510,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 During those months what was the unit of the average quantity \b\f1 %getocclabel%\b0\f0  produced during summer?\par
+ENG=\pard\cf1\i\fs24 What was the unit of measure for \b\f1 %getocclabel%\b0\f0  produced?\par
 ENG=}
 
 [QUESTION]
@@ -1507,7 +1519,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 During those months what was the average quantity of \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=\pard\cf1\i\fs24 During those months what was the average quantity of \b\f1 %getocclabel%\b0\f0  produced during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1516,7 +1528,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 During those months what was the unit of the average quantity \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=\pard\cf1\i\fs24 What was the unit of measure for \b\f1 %getocclabel%\b0\f0  produced?\par
 ENG=}
 
 [QUESTION]
@@ -1525,7 +1537,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding sell \b\f1 %getocclabel%\b0\f0   produced during summer?\par
+ENG=\pard\cf1\i\fs24 Did the holding sell \b\f1 %getocclabel%\b0\f0   produced during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1534,7 +1546,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding sell any of the \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=\pard\cf1\i\fs24 Did the holding sell any of the \b\f1 %getocclabel%\b0\f0  produced during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1542,8 +1554,8 @@ Field=COP_DICT_DICT.LQ44SA
 Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much/many Quantity of  \b\f1 %getocclabel%\b0\f0  did the holding sell in summer period?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much/many Quantity of  \b\f1 %getocclabel%\b0\f0  did the holding sell during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1551,8 +1563,8 @@ Field=COP_DICT_DICT.LQ44SB
 Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the unit of  Quantity of  \b\f1 %getocclabel%\b0\f0  sold by the holding in summer period?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of  measure for \b\f1 %getocclabel%\b0\f0  sold?\par
 ENG=}
 
 [QUESTION]
@@ -1561,7 +1573,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the total value of sales of \b\f1 %getocclabel%\b0\f0  in the during summer period?\par
+ENG=\pard\cf1\i\fs24 What was the total value of sales of \b\f1 %getocclabel%\b0\f0  in the during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1569,8 +1581,8 @@ Field=COP_DICT_DICT.LQ44WA
 Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much/many Quantity of  \b\f1 %getocclabel%\b0\f0  did the holding sell in winter period?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much/many Quantity of  \b\f1 %getocclabel%\b0\f0  did the holding sell during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1578,8 +1590,8 @@ Field=COP_DICT_DICT.LQ44WB
 Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the unit of  Quantity of  \b\f1 %getocclabel%\b0\f0  sold by the holding in winter period?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the unit of measure for \b\f1 %getocclabel%\b0\f0  sold?\par
 ENG=}
 
 [QUESTION]
@@ -1587,8 +1599,8 @@ Field=COP_DICT_DICT.LQ44WC
 Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
-ENG={\*\generator Riched20 10.0.14393}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 What was the total value of sales of \b\f1 %getocclabel%\b0\f0  in winter period?\par
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 What was the total value of sales of \b\f1 %getocclabel%\b0\f0  during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1612,7 +1624,7 @@ Field=COP_DICT_DICT.LQ45C
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much did the holding recieve in total payents for renting out the draught animal?\par
+ENG=\pard\cf1\i\fs24 How much did the holding recieve in total payents for renting out the draught animal (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1628,7 +1640,7 @@ Field=COP_DICT_DICT.LQ46B
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 How much did the holding recieve in total payment from the manure sale?\par
+ENG=\pard\cf1\i\fs24 How much did the holding recieve in total payment from the manure sale (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1655,7 +1667,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b\f1 %getocclabel%\b0\f0  produced during summer?\par
+ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b\f1 %getocclabel%\b0\f0  produced during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1664,7 +1676,7 @@ Occurrences=1:7
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b\f1 %getocclabel%\b0\f0  produced during winter?\par
+ENG=\pard\cf1\i\fs24 During those specify the unit of the average quantity of \b\f1 %getocclabel%\b0\f0  produced during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1713,7 +1725,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for all cattle?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for all cattle during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1722,7 +1734,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for all cattle ?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for all cattle during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1731,7 +1743,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for goats?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for goats during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1740,7 +1752,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for goats?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for goats during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1749,7 +1761,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for poultry?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for poultry during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1758,7 +1770,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for poultry?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for poultry during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1767,7 +1779,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for sheep?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for sheep during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1776,7 +1788,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for sheep?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for sheep during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1785,7 +1797,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for the dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for the dairy cattle alone during Summer and Autumn seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
@@ -1794,7 +1806,7 @@ Occurrences=1:10
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss Arial,Italic;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
-ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for  dairy cattle alone?\par
+ENG=\pard\cf1\i\fs24 Did the holding use \b\f1 %getocclabel%\b0\f0  as suppliment for  dairy cattle alone during Winter and Spring seasons (1st August - 31st July 2019)?\par
 ENG=}
 
 [QUESTION]
