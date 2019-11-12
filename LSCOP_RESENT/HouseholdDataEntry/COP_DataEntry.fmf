@@ -23,7 +23,6 @@ Item=CHIEF
 Item=PSU_CODE
 Item=VILLAGE_NUMBER
 Item=ZONE
-Item=ENUMERATION_AREA
 Item=SETTLEMENT
 Item=HOUSEHOLD_HEAD_NAMES
 Item=HOUSEHOLD_NUMBER
@@ -33,7 +32,7 @@ Item=VISIT_DATE000
 Item=HOUSEHOLD_STATUS
 Item=SEX_OF_HOUSEHOLD_HEAD
   
-Box=25,42,736,558,Thin
+Box=25,42,736,534,Thin
 Box=147,70,401,112,Raised
 Box=25,580,737,759,Raised
 Box=444,60,722,112,Thin
@@ -383,65 +382,53 @@ Text=Zone
  
   
 [Field]
-Name=ENUMERATION_AREA
-Position=248,425,403,445
-Item=ENUMERATION_AREA,COP_DICT_DICT
-FieldLabelType=DictionaryLabel
-Form=1
-  
-[Text]
-Position=59,428,174,444
-Text=Enumeration Area
- 
-  
-[Field]
 Name=SETTLEMENT
-Position=248,455,263,475
+Position=248,428,263,448
 Item=SETTLEMENT,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=59,458,128,474
+Position=59,431,128,447
 Text=Settlement
  
   
 [Field]
 Name=HOUSEHOLD_HEAD_NAMES
-Position=248,485,426,505
+Position=248,458,426,478
 Item=HOUSEHOLD_HEAD_NAMES,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 Form=1
   
 [Text]
-Position=59,488,226,504
+Position=59,461,226,477
 Text=Names of Household Head
  
   
 [Field]
 Name=SEX_OF_HOUSEHOLD_HEAD
-Position=637,484,652,504
+Position=637,457,652,477
 Item=SEX_OF_HOUSEHOLD_HEAD,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=455,487,603,503
+Position=455,460,603,476
 Text=Sex of household Head
  
   
 [Field]
 Name=HOUSEHOLD_NUMBER
-Position=248,515,291,535
+Position=248,488,291,508
 Item=HOUSEHOLD_NUMBER,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=59,518,180,534
+Position=59,491,180,507
 Text=Household Number
  
   
@@ -2941,15 +2928,15 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=138
+Width=152
   
 [HeaderText]
-Position=54,0,138,104
+Position=68,0,152,104
 Text=Total Quantity of suppliment provided to feed all cattle
  
 [Field]
 Name=LQ13SA_ALL_CATTLEW
-Position=31,0,130,20
+Position=31,0,144,20
 Item=LQ13SA_ALL_CATTLEW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
@@ -3353,15 +3340,15 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=140
+Width=154
   
 [HeaderText]
-Position=56,0,140,104
+Position=70,0,154,104
 Text=Total Quantity of suppliments provided to feed the goats
  
 [Field]
 Name=LQ13SA_ALL_GOATW
-Position=33,0,132,20
+Position=33,0,146,20
 Item=LQ13SA_ALL_GOATW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
@@ -3559,15 +3546,15 @@ Text=Supplement code character
 [EndColumn]
   
 [Column]
-Width=140
+Width=154
   
 [HeaderText]
-Position=56,0,140,104
+Position=70,0,154,104
 Text=Total Quantity of suppliments provided to feed the poultry
  
 [Field]
 Name=LQ13SA_ALL_POULTRYW
-Position=33,0,132,20
+Position=33,0,146,20
 Item=LQ13SA_ALL_POULTRYW,COP_DICT_DICT
 FieldLabelType=DictionaryLabel
   
@@ -4316,7 +4303,7 @@ Width=82
   
 [HeaderText]
 Position=0,64,82,136
-Text=Household member or hired worker?
+Text=Household member or hired worker
  
 [Field]
 Name=HOUSEHOLD_MEMBER_OR_HIRED_WORKER
@@ -4335,8 +4322,8 @@ Text=Household member or hired worker
 Width=163
   
 [HeaderText]
-Position=6,32,163,136
-Text=For household members-write the serial number from the household roaster,for hired workers write initials
+Position=11,64,163,136
+Text=Write the serial number for household members, for hired workers write initials
  
 [Field]
 Name=LQ27
@@ -4433,8 +4420,8 @@ Text=Average number of hours in a day spent tending and herding livestock
 Width=107
   
 [HeaderText]
-Position=27,0,107,136
-Text=For hired workers how much did he/she receive for their work in cash or in kind?
+Position=27,48,107,136
+Text=Amount receive for their work in cash or in kind
  
 [Field]
 Name=LQ29A
@@ -4452,8 +4439,8 @@ Text=Amount receive for their work in cash or in kind
 Width=72
   
 [HeaderText]
-Position=0,48,72,136
-Text=Does the payment cover other activities?
+Position=4,64,72,136
+Text=Payment cover other activities
  
 [Field]
 Name=LQ29B
@@ -4472,8 +4459,8 @@ Text=Payment cover other activities
 Width=78
   
 [HeaderText]
-Position=0,0,78,136
-Text=Are there any more persons involved in tending and herding livestock?
+Position=0,16,78,136
+Text=More persons involved in tending and herding livestock
  
 [Field]
 Name=ARE_THERE_ANY_MORE_PERSONS_INVOL
@@ -4676,8 +4663,8 @@ Width=10
 Width=82
   
 [HeaderText]
-Position=0,64,82,136
-Text=Household member or hired worker?
+Position=0,80,82,152
+Text=Household member or hired worker
  
 [Field]
 Name=HOUSEHOLD_MEMBER_OR_HIRED_PLTZ
@@ -4695,8 +4682,8 @@ Text=Household member or hired worker
 Width=165
   
 [HeaderText]
-Position=8,32,165,136
-Text=For household members-write the serial number from the household roaster,for hired workers write initials
+Position=13,80,165,152
+Text=Write the serial number for household members, for hired workers write initials
  
 [Field]
 Name=LQ31
@@ -4715,8 +4702,8 @@ Text=Write the serial number for household members, for hired workers write init
 Width=78
   
 [HeaderText]
-Position=0,0,78,136
-Text=For how many months was name involved in tending to poultry in months
+Position=0,16,78,152
+Text=Number of Months spent in tending and herding livestock in months
  
 [Field]
 Name=LQ32A
@@ -4735,8 +4722,8 @@ Text=Number of Months spent in tending and herding livestock in months
 Width=91
   
 [HeaderText]
-Position=0,16,91,136
-Text=On average,how many weeks in a month did name tending to poultry?
+Position=1,32,91,152
+Text=Average number of  weeks in a month spent in tending and herding livestock
  
 [Field]
 Name=LQ32B
@@ -4753,8 +4740,8 @@ Text=Average number of  weeks in a month spent in tending and herding livestock
 Width=78
   
 [HeaderText]
-Position=0,0,78,136
-Text=On average how many days in a week did name tending to poultry?
+Position=1,0,78,152
+Text=Average number of days in a week spent in tending and herding livestock
  
 [Field]
 Name=LQ32C
@@ -4771,8 +4758,8 @@ Text=Average number of days in a week spent in tending and herding livestock
 Width=81
   
 [HeaderText]
-Position=0,0,81,136
-Text=On average,for how many hours in a day did name tending to poultry?
+Position=4,16,81,152
+Text=Average number of hours in a day spent tending and herding livestock
  
 [Field]
 Name=LQ32D
@@ -4789,8 +4776,8 @@ Text=Average number of hours in a day spent tending and herding livestock
 Width=107
   
 [HeaderText]
-Position=27,0,107,136
-Text=For hired workers how much did he/she receive for their work in cash or in kind?
+Position=27,64,107,152
+Text=Amount receive for their work in cash or in kind
  
 [Field]
 Name=LQ33A
@@ -4807,8 +4794,8 @@ Text=Amount receive for their work in cash or in kind
 Width=72
   
 [HeaderText]
-Position=0,48,72,136
-Text=Does the payment cover other activities?
+Position=4,80,72,152
+Text=Payment cover other activities
  
 [Field]
 Name=LQ33B
@@ -4827,7 +4814,7 @@ Text=Payment cover other activities
 Width=78
   
 [HeaderText]
-Position=0,32,78,136
+Position=0,48,78,152
 Text=Are there any more persons involved in tending to poultry?
  
 [Field]
@@ -5030,7 +5017,7 @@ Width=82
   
 [HeaderText]
 Position=0,80,82,152
-Text=Household member or hired worker?
+Text=Household member or hired worker
  
 [Field]
 Name=HOUSEHOLD_MEMBER_OR_HIRED_OTHES
@@ -5048,8 +5035,8 @@ Text=Household member or hired worker
 Width=150
   
 [HeaderText]
-Position=10,48,150,152
-Text=For household members-write the serial number from the household roaster,for hired workers write initials
+Position=10,64,150,152
+Text=Write the serial number for household members, for hired workers write initials
  
 [Field]
 Name=LQ35
@@ -5087,8 +5074,8 @@ Text=Activity
 Width=78
   
 [HeaderText]
-Position=0,16,78,152
-Text=For how many months was name involved in this activity in months?
+Position=0,64,78,152
+Text=Number of  months involved in this activity
  
 [Field]
 Name=LQ37A
@@ -5107,8 +5094,8 @@ Text=Number of  months involved in this activity
 Width=91
   
 [HeaderText]
-Position=0,32,91,152
-Text=On average,how many weeks in a months was name involved in this activity ?
+Position=1,32,91,152
+Text=Average number of  weeks in a month spent in tending and herding livestock
  
 [Field]
 Name=LQ37B
@@ -5126,8 +5113,8 @@ Text=Average number of  weeks in a month spent in tending and herding livestock
 Width=78
   
 [HeaderText]
-Position=0,0,78,152
-Text=On average how many days in a week was name involved in this activity?
+Position=1,0,78,152
+Text=Average number of days in a week spent in tending and herding livestock
  
 [Field]
 Name=LQ37C
@@ -5145,8 +5132,8 @@ Text=Average number of days in a week spent in tending and herding livestock
 Width=81
   
 [HeaderText]
-Position=0,0,81,152
-Text=On average,for how many hours in a day was name involved in this activity?
+Position=4,16,81,152
+Text=Average number of hours in a day spent tending and herding livestock
  
 [Field]
 Name=LQ37D
@@ -5164,8 +5151,8 @@ Text=Average number of hours in a day spent tending and herding livestock
 Width=107
   
 [HeaderText]
-Position=24,16,107,152
-Text=For hired workers how much did he/she receive for this activity in cash or in kind?
+Position=24,32,107,152
+Text=For hired workers-- amount  receive for this activity in cash or in kind
  
 [Field]
 Name=LQ38A
@@ -5183,8 +5170,8 @@ Text=For hired workers-- amount  receive for this activity in cash or in kind
 Width=72
   
 [HeaderText]
-Position=0,64,72,152
-Text=Does the payment cover other activities?
+Position=4,80,72,152
+Text=Payment cover other activities
  
 [Field]
 Name=LQ38B
@@ -5203,8 +5190,8 @@ Text=Payment cover other activities
 Width=78
   
 [HeaderText]
-Position=0,16,78,152
-Text=Are there any more persons involved in tending and herding livestock?
+Position=0,32,78,152
+Text=More persons involved in tending and herding livestock
  
 [Field]
 Name=ARE_THERE_ANY_MORE_PERSONS_OTHES
@@ -5308,8 +5295,8 @@ Text=Livestock Product
 Width=72
   
 [HeaderText]
-Position=0,186,72,290
-Text=Was any livestock product produced during summer
+Position=0,170,72,290
+Text=Livestock product produced during summer and autumn
  
 [Field]
 Name=LQ40S
@@ -5328,8 +5315,8 @@ Text=Livestock product produced during summer and autumn
 Width=68
   
 [HeaderText]
-Position=0,138,68,290
-Text=For how many months was Livestock product produced during summer?
+Position=0,90,68,290
+Text=Number of  months that Livestock product was produced during summer and autumn
  
 [Field]
 Name=LQ41SA
@@ -5348,8 +5335,8 @@ Text=Number of  months that Livestock product was produced during summer and aut
 Width=107
   
 [HeaderText]
-Position=32,90,107,290
-Text=During those months what was the average quantity of livestock product produced during summer
+Position=32,138,107,290
+Text=Average quantity of livestock product produced during summer and autumn
  
 [Field]
 Name=LQ42SA
@@ -5367,8 +5354,8 @@ Text=Average quantity of livestock product produced during summer and autumn
 Width=76
   
 [HeaderText]
-Position=0,74,76,290
-Text=During those months what was the unit of the average quantity livestock product produced during summer
+Position=4,122,76,290
+Text=Unit of measure for livestock product produced during summer and autumn
  
 [Field]
 Name=LQ42SB
@@ -5406,8 +5393,8 @@ Text=Other specify
 Width=77
   
 [HeaderText]
-Position=0,138,77,290
-Text=Did the holding sell any of the livestock product produced during summer
+Position=6,170,77,290
+Text=Livestock product sold during summer and autumn
  
 [Field]
 Name=LQ43S
@@ -5426,8 +5413,8 @@ Text=Livestock product sold during summer and autumn
 Width=114
   
 [HeaderText]
-Position=28,138,114,290
-Text=How much/many Quantity of  livestock product did the holding sell in the summer  period ?
+Position=3,202,114,290
+Text=Number/Amount of livestock product sold in summer and autumn
  
 [Field]
 Name=LQ44SA
@@ -5446,7 +5433,7 @@ Width=81
   
 [HeaderText]
 Position=0,122,81,290
-Text=What was the unit of  Quantity of  livestock product sold by the holding in the summer period?
+Text=Unit of measure for livestock product sold by the holding in summer and autumn
  
 [Field]
 Name=LQ44SB
@@ -5465,8 +5452,8 @@ Text=Unit of measure for livestock product sold by the holding in summer and aut
 Width=135
   
 [HeaderText]
-Position=58,138,135,290
-Text=What was the total value of sales of livestock product in the during summer period?
+Position=68,138,135,290
+Text=Total value of sales of livestock product during summer and autumn
  
 [Field]
 Name=LQ44SC
@@ -5540,7 +5527,7 @@ Width=10
 Width=158
   
 [HeaderText]
-Position=38,192,158,216
+Position=38,176,158,200
 Text=Livestock Product
  
 [Field]
@@ -5560,8 +5547,8 @@ Text=Livestock Product
 Width=72
   
 [HeaderText]
-Position=0,112,72,216
-Text=Was any livestock product produced during winter ?
+Position=0,80,72,200
+Text=Livestock product produced during winter and spring
  
 [Field]
 Name=LQ40W
@@ -5580,8 +5567,8 @@ Text=Livestock product produced during winter and spring
 Width=68
   
 [HeaderText]
-Position=0,64,68,216
-Text=For how many months was Livestock product produced during winter ?
+Position=0,0,68,200
+Text=Number of  months that Livestock product was produced during winter and spring
  
 [Field]
 Name=LQ41WA
@@ -5600,8 +5587,8 @@ Text=Number of  months that Livestock product was produced during winter and spr
 Width=107
   
 [HeaderText]
-Position=32,16,107,216
-Text=During those months what was the average quantity of livestock product produced during winter ?
+Position=32,64,107,200
+Text=Average quantity of livestock product produced during winter and spring
  
 [Field]
 Name=LQ42WA
@@ -5619,8 +5606,8 @@ Text=Average quantity of livestock product produced during winter and spring
 Width=76
   
 [HeaderText]
-Position=0,0,76,216
-Text=During those months what was the unit of the average quantity livestock product produced during winter ?
+Position=0,48,76,200
+Text=Unit of measure for livestock product produced during winter and spring
  
 [Field]
 Name=LQ42WB
@@ -5638,7 +5625,7 @@ Text=Unit of measure for livestock product produced during winter and spring
 Width=148
   
 [HeaderText]
-Position=57,192,148,216
+Position=57,176,148,200
 Text=Other specify
  
 [Field]
@@ -5657,8 +5644,8 @@ Text=Other specify
 Width=77
   
 [HeaderText]
-Position=0,64,77,216
-Text=Did the holding sell any of the livestock product produced during winter ?
+Position=1,96,77,200
+Text=Livestock product sold during winter and spring
  
 [Field]
 Name=LQ43W
@@ -5677,8 +5664,8 @@ Text=Livestock product sold during winter and spring
 Width=114
   
 [HeaderText]
-Position=28,64,114,216
-Text=How much/many Quantity of  livestock product did the holding sell in the  winter period?
+Position=3,112,114,200
+Text=Number/Amount of livestock product sold in winter and spring
  
 [Field]
 Name=LQ44WA
@@ -5696,8 +5683,8 @@ Text=Number/Amount of livestock product sold in winter and spring
 Width=81
   
 [HeaderText]
-Position=0,64,81,216
-Text=What was the unit of  Quantity of  livestock product sold by the holding in the winter period?
+Position=0,48,81,200
+Text=Unit of measure for livestock product sold by the holding in winter and spring
  
 [Field]
 Name=LQ44WB
@@ -5716,8 +5703,8 @@ Text=Unit of measure for livestock product sold by the holding in winter and spr
 Width=135
   
 [HeaderText]
-Position=59,80,135,216
-Text=What was the total value of sales of livestock product in the winter period
+Position=59,64,135,200
+Text=Total value of sales of livestock product during winter and spring
  
 [Field]
 Name=LQ44WC

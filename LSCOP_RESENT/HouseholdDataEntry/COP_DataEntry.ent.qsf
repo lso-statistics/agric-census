@@ -137,6 +137,56 @@ ENG=\pard\cf1\fs24 Select Constituency\par
 ENG=}
 
 [QUESTION]
+Field=COP_DICT_DICT.CQ73
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\ul\b\fs24 Section 2: Other Farm Expenses(Overheads)\ulnone\b0\par
+ENG=\par
+ENG=\i On average, how much did the holding pay monthly for water use (1st August 2018 - 31st July 2019)?\i0\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.CQ74
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 On average, how much did the holding pay monthly for electricity used for agricultural services (1st August 2018 - 31st July 2019)?\ul\b\i0\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.CQ75
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much in total did the holding pay for repairs and maintenance related to farm machinery and equipment (1st August 2018 - 31st July 2019)?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.CQ76
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much in total did the holding pay for fuel, oil and lublicants from (1st August 2018 - 31st July 2019)?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.CQ77
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much did the holding pay for lease fees (1st August 2018 - 31st July 2019)?\par
+ENG=}
+
+[QUESTION]
+Field=COP_DICT_DICT.CQ78
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.3.9600}\viewkind4\uc1
+ENG=\pard\cf1\i\fs24 How much did the holding spend on any other expenses related to crops or livestock (1st August 2018 - 31st July 2019)?\par
+ENG=}
+
+[QUESTION]
 Field=COP_DICT_DICT.DISTRICT
 ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}

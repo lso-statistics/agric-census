@@ -890,7 +890,7 @@ if sysparm("DISTRICT") <> "" then
 		COMMUNITY_COUNCIL = sysparm("COMMUNITY_COUNCIL");
 		ZONE = tonumber(sysparm("ZONE"));
 		SETTLEMENT = tonumber(sysparm("SETTLEMENT"));
-		ENUMERATION_AREA = tonumber(sysparm("ENUMERATION_AREA"));
+		//ENUMERATION_AREA = tonumber(sysparm("ENUMERATION_AREA"));
 		PSU_CODE = tonumber(sysparm("PSU_CODE"));
 		ENUMERATOR_CODE = sysparm("STAFF_CODE");
 

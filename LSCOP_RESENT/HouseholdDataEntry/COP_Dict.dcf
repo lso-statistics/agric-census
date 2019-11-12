@@ -262,16 +262,9 @@ Value=3;Mountains
 Value=4;Senqu river valley
 
 [Item]
-Label=Enumeration Area
-Name=ENUMERATION_AREA
-Start=79
-Len=11
-ZeroFill=Yes
-
-[Item]
 Label=Settlement
 Name=SETTLEMENT
-Start=90
+Start=79
 Len=1
 ZeroFill=Yes
 
@@ -284,14 +277,14 @@ Value=2;Rural
 [Item]
 Label=Names of Household Head
 Name=HOUSEHOLD_HEAD_NAMES
-Start=91
+Start=80
 Len=25
 DataType=Alpha
 
 [Item]
 Label=Sex of household Head
 Name=SEX_OF_HOUSEHOLD_HEAD
-Start=116
+Start=105
 Len=1
 
 [ValueSet]
@@ -303,7 +296,7 @@ Value=2;Female
 [Item]
 Label=Household Number
 Name=HOUSEHOLD_NUMBER
-Start=117
+Start=106
 Len=3
 ZeroFill=Yes
 
@@ -317,25 +310,25 @@ Label=SOCIO DEMOGRAPHICS
 Name=SOCIO_DEMOGRAPHICS
 RecordTypeValue='4'
 MaxRecords=30
-RecordLen=183
+RecordLen=172
 
 [Item]
 Label=Household member serial No
 Name=B1
-Start=120
+Start=109
 Len=2
 
 [Item]
 Label=Name of the household member
 Name=B2
-Start=122
+Start=111
 Len=50
 DataType=Alpha
 
 [Item]
 Label=Anymore People
 Name=ANYMORE_PEOPLE
-Start=172
+Start=161
 Len=1
 
 [ValueSet]
@@ -347,7 +340,7 @@ Value=2;No
 [Item]
 Label=Gender
 Name=B3
-Start=173
+Start=162
 Len=1
 
 [ValueSet]
@@ -359,7 +352,7 @@ Value=2;Female
 [Item]
 Label=Age
 Name=B4
-Start=174
+Start=163
 Len=3
 
 [ValueSet]
@@ -370,7 +363,7 @@ Value=0:135;0 - 135
 [Item]
 Label=Relationship to the HH
 Name=B5
-Start=177
+Start=166
 Len=2
 
 [ValueSet]
@@ -416,7 +409,7 @@ Value=14;Not related
 [Item]
 Label=Marital status
 Name=B6
-Start=179
+Start=168
 Len=2
 
 [ValueSet]
@@ -434,7 +427,7 @@ Value=9;Don't know
 [Item]
 Label=Highest level of education attained
 Name=B7
-Start=181
+Start=170
 Len=1
 
 [ValueSet]
@@ -448,7 +441,7 @@ Value=4;Tertiary Education
 [Item]
 Label=Current residential status
 Name=B8
-Start=182
+Start=171
 Len=1
 
 [ValueSet]
@@ -462,7 +455,7 @@ Value=4;Outside RSA
 [Item]
 Label=Participation in the farming activities of the holding between 1st August 2018 to 31st July 2019
 Name=B9
-Start=183
+Start=172
 Len=1
 
 [ValueSet]
@@ -476,12 +469,12 @@ Label=LIVESTOCK PRODUCTION
 Name=LIVESTOCK_PRODUCTION_REC
 RecordTypeValue='2'
 MaxRecords=22
-RecordLen=199
+RecordLen=188
 
 [Item]
 Label=Livestock raised
 Name=LQ02
-Start=120
+Start=109
 Len=1
 
 [ValueSet]
@@ -493,14 +486,14 @@ Value=2;NO
 [Item]
 Label=Type of Livestock Raised
 Name=TYPE_OF_LIVESTOCK_RAISED
-Start=121
+Start=110
 Len=25
 DataType=Alpha
 
 [Item]
 Label=Livestock production system
 Name=LQ03
-Start=146
+Start=135
 Len=1
 
 [ValueSet]
@@ -513,7 +506,7 @@ Value=3;Industrial System
 [Item]
 Label=Number kept on 31 July 2019
 Name=LQ04
-Start=147
+Start=136
 Len=5
 
 [ValueSet]
@@ -524,7 +517,7 @@ Value=0:99999;0 - 99999
 [Item]
 Label=Number purchased for cash between 1st August 2018 to 31st July 2019
 Name=LQ05A
-Start=152
+Start=141
 Len=5
 
 [ValueSet]
@@ -535,14 +528,14 @@ Value=0:99999;0 - 99999
 [Item]
 Label=Total amount paid for these purchases in Maloti
 Name=LQ05B
-Start=157
+Start=146
 Len=9
 Decimal=2
 
 [Item]
 Label=Number recieved as gifts/lobolad/bartered between 1st August 2018 to 31st July 2019
 Name=LQ06
-Start=166
+Start=155
 Len=3
 
 [ValueSet]
@@ -553,7 +546,7 @@ Value=0:999;Value range
 [Item]
 Label=Number slaughtered between 1st August 2018 to 31st July 2019
 Name=LQ07A
-Start=169
+Start=158
 Len=3
 
 [ValueSet]
@@ -564,7 +557,7 @@ Value=0:999;0 - 99999
 [Item]
 Label=Costs of  slaughtering
 Name=LQ07B
-Start=172
+Start=161
 Len=1
 
 [ValueSet]
@@ -576,7 +569,7 @@ Value=2;No
 [Item]
 Label=Total costs of slaughtering in Maloti
 Name=LQ07C
-Start=173
+Start=162
 Len=8
 Decimal=2
 DecimalChar=Yes
@@ -585,7 +578,7 @@ ZeroFill=Yes
 [Item]
 Label=Number given away as gifts/lobola/lost due to death/theft  between 1st August 2018 to 31st July 2019
 Name=LQ08
-Start=181
+Start=170
 Len=5
 ZeroFill=Yes
 
@@ -597,7 +590,7 @@ Value=0:99999;Value range
 [Item]
 Label=Number sold for cash between 1st August 2018 to 31st July 2019
 Name=LQ9A
-Start=186
+Start=175
 Len=5
 ZeroFill=Yes
 
@@ -609,7 +602,7 @@ Value=0:99999;0 - 99999
 [Item]
 Label=Total value for sales in Maloti
 Name=LQ9B
-Start=191
+Start=180
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -620,12 +613,12 @@ Label=LIVESTOCK FEEDS SUMMER
 Name=LIVESTOCK_FEEDS_SUMMER
 RecordTypeValue='3'
 MaxRecords=10
-RecordLen=329
+RecordLen=318
 
 [Item]
 Label=Suppliments for the dairy cattle alone
 Name=USED_SUPPLIMENT_TYPE
-Start=120
+Start=109
 Len=1
 
 [ValueSet]
@@ -637,34 +630,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliment for dairy cattle
 Name=TYPE_OF_SUPPLIMENT_DAIRY_CATTLE
-Start=121
+Start=110
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE
-Start=151
+Start=140
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE
-Start=153
+Start=142
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13SA
-Start=154
+Start=143
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13SB
-Start=161
+Start=150
 Len=1
 
 [ValueSet]
@@ -678,14 +671,14 @@ Value=4;Bundles
 [Item]
 Label=Type of Suppliment for all cattle
 Name=TYPE_OF_SUPPLIMENT_ALL_CATTLE
-Start=162
+Start=151
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Suppliments for all cattle
 Name=USED_SUPPLIMENT_ALL_CATTLE
-Start=192
+Start=181
 Len=1
 
 [ValueSet]
@@ -697,27 +690,27 @@ Value=2;No
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_CATTLE
-Start=193
+Start=182
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE
-Start=195
+Start=184
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliment provided to feed all cattle
 Name=LQ13SA_ALL_CATTLE
-Start=196
+Start=185
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed all cattle
 Name=LQ13SB_ALL_CATTLE
-Start=203
+Start=192
 Len=1
 
 [ValueSet]
@@ -731,7 +724,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for sheep
 Name=USED_SUPPLIMENT_SHEEP
-Start=204
+Start=193
 Len=1
 
 [ValueSet]
@@ -743,34 +736,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for sheep
 Name=TYPE_OF_SUPPLIMENT_SHEEP
-Start=205
+Start=194
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_SHEEP
-Start=235
+Start=224
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_SHEEP
-Start=237
+Start=226
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliments provided to feed the sheep
 Name=LQ13SA_ALL_SHEEP
-Start=238
+Start=227
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the sheep
 Name=LQ13SB_ALL_SHEEP
-Start=245
+Start=234
 Len=1
 
 [ValueSet]
@@ -784,7 +777,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for goats
 Name=USED_SUPPLIMENT_GOATS
-Start=246
+Start=235
 Len=1
 
 [ValueSet]
@@ -796,34 +789,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for goats
 Name=TYPE_OF_SUPPLIMENT_GOATS
-Start=247
+Start=236
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_GOATS
-Start=277
+Start=266
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_GOATS
-Start=279
+Start=268
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliments provided to feed the goats
 Name=LQ13SA_ALL_GOATS
-Start=280
+Start=269
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the goats
 Name=LQ13SB_ALL_GOATS
-Start=287
+Start=276
 Len=1
 
 [ValueSet]
@@ -837,7 +830,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for poultry
 Name=USED_SUPPLIMENT_POULTRY
-Start=288
+Start=277
 Len=1
 
 [ValueSet]
@@ -849,34 +842,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for poultry
 Name=TYPE_OF_SUPPLIMENT_POULTRY
-Start=289
+Start=278
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_POULTRY
-Start=319
+Start=308
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_POULTRY
-Start=321
+Start=310
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliments provided to feed the poultry
 Name=LQ13SA_ALL_GOATT
-Start=322
+Start=311
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the poultry
 Name=LQ13SB_ALL_POULTRY
-Start=329
+Start=318
 Len=1
 
 [ValueSet]
@@ -892,12 +885,12 @@ Label=LIVESTOCK FEEDS WINTER
 Name=LIVESTOCK_FEED_WINTER
 RecordTypeValue='7'
 MaxRecords=10
-RecordLen=364
+RecordLen=353
 
 [Item]
 Label=Suppliments for the dairy cattle alone?
 Name=USED_SUPPLIMENT_TYPW
-Start=120
+Start=109
 Len=1
 
 [ValueSet]
@@ -909,34 +902,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliment for dairy cattle
 Name=TYPE_OF_SUPPLIMENEW
-Start=121
+Start=110
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_DAIRY_CATTLE_W
-Start=151
+Start=140
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_DAIRY_CATTLE_W
-Start=153
+Start=142
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13WA
-Start=154
+Start=143
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the dairy cattle alone
 Name=LQ13WB
-Start=161
+Start=150
 Len=1
 
 [ValueSet]
@@ -950,7 +943,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for all cattle
 Name=USED_SUPPLIMENT_ALL_CATTLEW
-Start=162
+Start=151
 Len=1
 
 [ValueSet]
@@ -962,34 +955,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliment for all cattle
 Name=TYPE_OF_SUPPLIMENT_ALL_CATTLEW
-Start=163
+Start=152
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_CATTLE_W
-Start=193
+Start=182
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_ALL_CATTLE_W
-Start=195
+Start=184
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliment provided to feed all cattle
 Name=LQ13SA_ALL_CATTLEW
-Start=196
+Start=185
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed all cattle
 Name=LQ13SB_ALL_CATTLEW
-Start=203
+Start=192
 Len=1
 
 [ValueSet]
@@ -1003,7 +996,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for sheep
 Name=USED_SUPPLIMENT_SHEEPW
-Start=204
+Start=193
 Len=1
 
 [ValueSet]
@@ -1015,34 +1008,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for sheep
 Name=TYPE_OF_SUPPLIMENT_SHEEPW
-Start=205
+Start=194
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_SHEEP_W
-Start=235
+Start=224
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_SHEEP_W
-Start=237
+Start=226
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliments provided to feed the sheep
 Name=LQ13SA_ALL_SHEEPW
-Start=238
+Start=227
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the sheep
 Name=LQ13SB_ALL_SHEEPW
-Start=245
+Start=234
 Len=1
 
 [ValueSet]
@@ -1056,7 +1049,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for goats
 Name=USED_SUPPLIMENT_GOATW
-Start=246
+Start=235
 Len=1
 
 [ValueSet]
@@ -1068,34 +1061,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for goats
 Name=TYPE_OF_SUPPLIMENT_GOATW
-Start=247
+Start=236
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_GOATS_W
-Start=277
+Start=266
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_GOATS_W
-Start=279
+Start=268
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliments provided to feed the goats
 Name=LQ13SA_ALL_GOATW
-Start=280
+Start=269
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the goats
 Name=LQ13SB_ALL_GOATW
-Start=287
+Start=276
 Len=1
 
 [ValueSet]
@@ -1109,7 +1102,7 @@ Value=4;Bundles
 [Item]
 Label=Suppliments for poultry
 Name=USED_SUPPLIMENT_POULTRYW
-Start=288
+Start=277
 Len=1
 
 [ValueSet]
@@ -1121,34 +1114,34 @@ Value=2;No
 [Item]
 Label=Type of Suppliments for poultry
 Name=TYPE_OF_SUPPLIMENT_POULTRYW
-Start=289
+Start=278
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Supplement code
 Name=SUPPLEMENT_CODE_ALL_POULTRY_W
-Start=319
+Start=308
 Len=2
 
 [Item]
 Label=Supplement code character
 Name=SUPPLEMENT_CODE_CHARACTER_POULTRY_W
-Start=321
+Start=310
 Len=1
 DataType=Alpha
 
 [Item]
 Label=Total Quantity of suppliments provided to feed the poultry
 Name=LQ13SA_ALL_POULTRYW
-Start=322
+Start=311
 Len=7
 Decimal=2
 
 [Item]
 Label=Unit of total Quantity of suppliment provided to feed the poultry
 Name=LQ13SB_ALL_POULTRYW
-Start=329
+Start=318
 Len=1
 
 [ValueSet]
@@ -1162,13 +1155,13 @@ Value=4;Bundles
 [Item]
 Label=Supplement feed code
 Name=LQ14S
-Start=330
+Start=319
 Len=2
 
 [Item]
 Label=Main source of acquisition for the dairy cattle alone
 Name=LQ15S
-Start=332
+Start=321
 Len=1
 
 [ValueSet]
@@ -1181,7 +1174,7 @@ Value=3;Gift
 [Item]
 Label=Was any of this supplemetary feed purchsed for the dairy cattle alone
 Name=LQ16S
-Start=333
+Start=322
 Len=1
 
 [ValueSet]
@@ -1193,7 +1186,7 @@ Value=2;No
 [Item]
 Label=Quantity purchased for the dairy cattle alone
 Name=LQ17SA
-Start=334
+Start=323
 Len=10
 Decimal=2
 DecimalChar=Yes
@@ -1201,7 +1194,7 @@ DecimalChar=Yes
 [Item]
 Label=Unit of quantity purchased for the dairy cattle alone
 Name=LQ17SB
-Start=344
+Start=333
 Len=1
 
 [ValueSet]
@@ -1215,14 +1208,14 @@ Value=4;Bundles
 [Item]
 Label=Total purchase price (Maloti) for the dairy cattle alone
 Name=LQ17SC
-Start=345
+Start=334
 Len=10
 Decimal=2
 
 [Item]
 Label=Total transport costs from point of purchase to holding (Maloti) for the dairy cattle alone
 Name=LQ18S
-Start=355
+Start=344
 Len=10
 Decimal=2
 
@@ -1231,12 +1224,12 @@ Label=LIVESTOCK MANAGEMENT AND HEATH SERVICES
 Name=LIVESTOCK_MANAGEMENT_AND_HEATH_S
 RecordTypeValue='8'
 MaxRecords=4
-RecordLen=180
+RecordLen=169
 
 [Item]
 Label=Livestock  de-worming at least once
 Name=LQ19A
-Start=120
+Start=109
 Len=1
 
 [ValueSet]
@@ -1248,14 +1241,14 @@ Value=2;No
 [Item]
 Label=Livestock name
 Name=LIVESTOCK_NAME
-Start=121
+Start=110
 Len=20
 DataType=Alpha
 
 [Item]
 Label=Cost of  de-worming in Maloti
 Name=LQ19B
-Start=141
+Start=130
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1263,7 +1256,7 @@ DecimalChar=Yes
 [Item]
 Label=Livestock Vaccination at least once
 Name=LQ20A
-Start=148
+Start=137
 Len=1
 
 [ValueSet]
@@ -1275,7 +1268,7 @@ Value=2;No
 [Item]
 Label=Cost of vaccinations
 Name=LQ20B
-Start=149
+Start=138
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1283,7 +1276,7 @@ DecimalChar=Yes
 [Item]
 Label=Main source of Vaccines
 Name=LQ20C
-Start=156
+Start=145
 Len=1
 
 [ValueSet]
@@ -1300,7 +1293,7 @@ Value=6;Farmer/Farmers' Association
 [Item]
 Label=Main method of parasite control on Livestock raised
 Name=LQ21A
-Start=157
+Start=146
 Len=1
 
 [ValueSet]
@@ -1318,7 +1311,7 @@ Value=8;Injection
 [Item]
 Label=Cost of parasite control in Maloti
 Name=LQ21B
-Start=158
+Start=147
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1326,7 +1319,7 @@ DecimalChar=Yes
 [Item]
 Label=Livestock treated for infectious diseases or accidents
 Name=LQ22
-Start=165
+Start=154
 Len=1
 
 [ValueSet]
@@ -1338,7 +1331,7 @@ Value=2;No
 [Item]
 Label=Cost of  treatment for infectious diseases or accidents
 Name=LQ22B
-Start=166
+Start=155
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1346,7 +1339,7 @@ DecimalChar=Yes
 [Item]
 Label=Artificial Insemination (IA) or mating practiced
 Name=LQ23A
-Start=173
+Start=162
 Len=1
 
 [ValueSet]
@@ -1358,7 +1351,7 @@ Value=2;No
 [Item]
 Label=Cost of  IA/ mating
 Name=LQ23B
-Start=174
+Start=163
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1368,19 +1361,19 @@ Label=LABOUR COST
 Name=LABOUR_COST
 RecordTypeValue='5'
 MaxRecords=30
-RecordLen=222
+RecordLen=211
 
 [Item]
 Label=Write the serial number for household members, for hired workers write initials
 Name=LQ27
-Start=120
+Start=109
 Len=4
 DataType=Alpha
 
 [Item]
 Label=Number of Months spent in tending and herding livestock in months
 Name=LQ28A
-Start=124
+Start=113
 Len=2
 
 [ValueSet]
@@ -1391,25 +1384,25 @@ Value=1:12;Input range
 [Item]
 Label=Average number of  weeks in a month spent in tending and herding livestock
 Name=LQ28B
-Start=126
+Start=115
 Len=2
 
 [Item]
 Label=Average number of days in a week spent in tending and herding livestock
 Name=LQ28C
-Start=128
+Start=117
 Len=1
 
 [Item]
 Label=Average number of hours in a day spent tending and herding livestock
 Name=LQ28D
-Start=129
+Start=118
 Len=2
 
 [Item]
 Label=Amount receive for their work in cash or in kind
 Name=LQ29A
-Start=131
+Start=120
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1417,7 +1410,7 @@ DecimalChar=Yes
 [Item]
 Label=Payment cover other activities
 Name=LQ29B
-Start=138
+Start=127
 Len=1
 
 [ValueSet]
@@ -1430,7 +1423,7 @@ Value=3;3 - Livestock & Others
 [Item]
 Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_INVOL
-Start=139
+Start=128
 Len=1
 
 [ValueSet]
@@ -1442,7 +1435,7 @@ Value=2;No
 [Item]
 Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_WORKER
-Start=140
+Start=129
 Len=1
 
 [ValueSet]
@@ -1454,14 +1447,14 @@ Value=2;Hired Worker
 [Item]
 Label=Write the serial number for household members, for hired workers write initials
 Name=LQ31
-Start=141
+Start=130
 Len=4
 DataType=Alpha
 
 [Item]
 Label=Number of Months spent in tending and herding livestock in months
 Name=LQ32A
-Start=145
+Start=134
 Len=2
 
 [ValueSet]
@@ -1472,25 +1465,25 @@ Value=1:12;Input range
 [Item]
 Label=Average number of  weeks in a month spent in tending and herding livestock
 Name=LQ32B
-Start=147
+Start=136
 Len=2
 
 [Item]
 Label=Average number of days in a week spent in tending and herding livestock
 Name=LQ32C
-Start=149
+Start=138
 Len=1
 
 [Item]
 Label=Average number of hours in a day spent tending and herding livestock
 Name=LQ32D
-Start=150
+Start=139
 Len=2
 
 [Item]
 Label=Amount receive for their work in cash or in kind
 Name=LQ33A
-Start=152
+Start=141
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1498,7 +1491,7 @@ DecimalChar=Yes
 [Item]
 Label=Payment cover other activities
 Name=LQ33B
-Start=159
+Start=148
 Len=1
 
 [ValueSet]
@@ -1511,7 +1504,7 @@ Value=3;3 - Livestock & Others
 [Item]
 Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_PLTZ
-Start=160
+Start=149
 Len=1
 
 [ValueSet]
@@ -1523,7 +1516,7 @@ Value=2;No
 [Item]
 Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_PLTZ
-Start=161
+Start=150
 Len=1
 
 [ValueSet]
@@ -1535,21 +1528,21 @@ Value=2;Hired Worker
 [Item]
 Label=Write the serial number for household members, for hired workers write initials
 Name=LQ35
-Start=162
+Start=151
 Len=4
 DataType=Alpha
 
 [Item]
 Label=Activity
 Name=LQ36
-Start=166
+Start=155
 Len=40
 DataType=Alpha
 
 [Item]
 Label=Number of  months involved in this activity
 Name=LQ37A
-Start=206
+Start=195
 Len=2
 
 [ValueSet]
@@ -1560,25 +1553,25 @@ Value=1:12;Input range
 [Item]
 Label=Average number of  weeks in a month spent in tending and herding livestock
 Name=LQ37B
-Start=208
+Start=197
 Len=2
 
 [Item]
 Label=Average number of days in a week spent in tending and herding livestock
 Name=LQ37C
-Start=210
+Start=199
 Len=1
 
 [Item]
 Label=Average number of hours in a day spent tending and herding livestock
 Name=LQ37D
-Start=211
+Start=200
 Len=2
 
 [Item]
 Label=For hired workers-- amount  receive for this activity in cash or in kind
 Name=LQ38A
-Start=213
+Start=202
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1586,7 +1579,7 @@ DecimalChar=Yes
 [Item]
 Label=Payment cover other activities
 Name=LQ38B
-Start=220
+Start=209
 Len=1
 
 [ValueSet]
@@ -1599,7 +1592,7 @@ Value=3;3 - Livestock & Others
 [Item]
 Label=More persons involved in tending and herding livestock
 Name=ARE_THERE_ANY_MORE_PERSONS_OTHES
-Start=221
+Start=210
 Len=1
 
 [ValueSet]
@@ -1611,7 +1604,7 @@ Value=2;No
 [Item]
 Label=Household member or hired worker
 Name=HOUSEHOLD_MEMBER_OR_HIRED_OTHES
-Start=222
+Start=211
 Len=1
 
 [ValueSet]
@@ -1625,12 +1618,12 @@ Label=LIVESTOCK PRODUCTS
 Name=LIVESTOCK_PRODUCT
 RecordTypeValue='9'
 MaxRecords=7
-RecordLen=259
+RecordLen=248
 
 [Item]
 Label=Livestock product produced during summer and autumn
 Name=LQ40S
-Start=120
+Start=109
 Len=1
 
 [ValueSet]
@@ -1642,14 +1635,14 @@ Value=2;No
 [Item]
 Label=Product label
 Name=PRODUCT_LABEL_S
-Start=121
+Start=110
 Len=20
 DataType=Alpha
 
 [Item]
 Label=Number of  months that Livestock product was produced during summer and autumn
 Name=LQ41SA
-Start=141
+Start=130
 Len=1
 
 [ValueSet]
@@ -1660,7 +1653,7 @@ Value=1:6;Input range
 [Item]
 Label=Average quantity of livestock product produced during summer and autumn
 Name=LQ42SA
-Start=142
+Start=131
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1668,7 +1661,7 @@ DecimalChar=Yes
 [Item]
 Label=Unit of measure for livestock product produced during summer and autumn
 Name=LQ42SB
-Start=149
+Start=138
 Len=2
 
 [ValueSet]
@@ -1686,14 +1679,14 @@ Value=8;Other, specify
 [Item]
 Label=Other specify
 Name=OTHER_SPECIFY_S
-Start=151
+Start=140
 Len=20
 DataType=Alpha
 
 [Item]
 Label=Livestock product sold during summer and autumn
 Name=LQ43S
-Start=171
+Start=160
 Len=1
 
 [ValueSet]
@@ -1705,7 +1698,7 @@ Value=2;No
 [Item]
 Label=Number/Amount of livestock product sold in summer and autumn
 Name=LQ44SA
-Start=172
+Start=161
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1713,12 +1706,12 @@ DecimalChar=Yes
 [ValueSet]
 Label=Number/Amount of livestock product sold in summer and autumn
 Name=LQ44SA_VS1
-Value=.00:99.99;0,00 - 99,99
+Value=0.00:99.99;0,00 - 99,99
 
 [Item]
 Label=Unit of measure for livestock product sold by the holding in summer and autumn
 Name=LQ44SB
-Start=179
+Start=168
 Len=2
 
 [ValueSet]
@@ -1735,7 +1728,7 @@ Value=7;Ox cart
 [Item]
 Label=Total value of sales of livestock product during summer and autumn
 Name=LQ44SC
-Start=181
+Start=170
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -1743,7 +1736,7 @@ DecimalChar=Yes
 [Item]
 Label=Livestock product produced during winter and spring
 Name=LQ40W
-Start=190
+Start=179
 Len=1
 
 [ValueSet]
@@ -1755,14 +1748,14 @@ Value=2;No
 [Item]
 Label=Product label
 Name=PRODUCT_LABEL_W
-Start=191
+Start=180
 Len=20
 DataType=Alpha
 
 [Item]
 Label=Number of  months that Livestock product was produced during winter and spring
 Name=LQ41WA
-Start=211
+Start=200
 Len=1
 
 [ValueSet]
@@ -1773,7 +1766,7 @@ Value=1:6;Input range
 [Item]
 Label=Average quantity of livestock product produced during winter and spring
 Name=LQ42WA
-Start=212
+Start=201
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1781,7 +1774,7 @@ DecimalChar=Yes
 [Item]
 Label=Unit of measure for livestock product produced during winter and spring
 Name=LQ42WB
-Start=219
+Start=208
 Len=2
 
 [ValueSet]
@@ -1799,14 +1792,14 @@ Value=8;Other, specify
 [Item]
 Label=Other specify
 Name=OTHER_SPECIFY_W
-Start=221
+Start=210
 Len=20
 DataType=Alpha
 
 [Item]
 Label=Livestock product sold during winter and spring
 Name=LQ43W
-Start=241
+Start=230
 Len=1
 
 [ValueSet]
@@ -1818,7 +1811,7 @@ Value=2;No
 [Item]
 Label=Number/Amount of livestock product sold in winter and spring
 Name=LQ44WA
-Start=242
+Start=231
 Len=7
 Decimal=2
 DecimalChar=Yes
@@ -1826,12 +1819,12 @@ DecimalChar=Yes
 [ValueSet]
 Label=Number/Amount of livestock product sold in winter and spring
 Name=LQ44WA_VS1
-Value=.00:99.99;0,00 - 99,99
+Value=0.00:99.99;0,00 - 99,99
 
 [Item]
 Label=Unit of measure for livestock product sold by the holding in winter and spring
 Name=LQ44WB
-Start=249
+Start=238
 Len=2
 
 [ValueSet]
@@ -1848,7 +1841,7 @@ Value=7;Ox cart
 [Item]
 Label=Total value of sales of livestock product during winter and spring
 Name=LQ44WC
-Start=251
+Start=240
 Len=9
 Decimal=2
 DecimalChar=Yes
@@ -1857,19 +1850,19 @@ DecimalChar=Yes
 Label=LIVESTOCK RECORDS
 Name=LIVESTOCK_RECORDS
 RecordTypeValue='1'
-RecordLen=180
+RecordLen=169
 
 [Item]
 Label=Name of respondent
 Name=RESPONDENT_NAME
-Start=120
+Start=109
 Len=30
 DataType=Alpha
 
 [Item]
 Label=Relationship of the Respondent to household head
 Name=RESPONDENT_RELATIONSHIP
-Start=150
+Start=139
 Len=2
 
 [ValueSet]
@@ -1915,13 +1908,13 @@ Value=14;Not related
 [Item]
 Label=Number of Household Memebers
 Name=NUMBER_OF_HOUSEHOLD_MEMBERS
-Start=152
+Start=141
 Len=2
 
 [Item]
 Label=Livestock raised
 Name=LQ01
-Start=154
+Start=143
 Len=1
 
 [ValueSet]
@@ -1933,7 +1926,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Dairy Cattle during summer
 Name=LQ10S_DAIRYCATTLE
-Start=155
+Start=144
 Len=1
 
 [ValueSet]
@@ -1945,7 +1938,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for All Cattle during summer
 Name=LQ10S_ALLCATTLE
-Start=156
+Start=145
 Len=1
 
 [ValueSet]
@@ -1957,7 +1950,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Sheep during summer
 Name=LQ10S_SHEEP
-Start=157
+Start=146
 Len=1
 
 [ValueSet]
@@ -1969,7 +1962,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Goats during summer
 Name=LQ10S_GOATS
-Start=158
+Start=147
 Len=1
 
 [ValueSet]
@@ -1981,7 +1974,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Poultry during summer
 Name=LQ10S_POULTRY
-Start=159
+Start=148
 Len=1
 
 [ValueSet]
@@ -1993,7 +1986,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Dairy Cattle during winter
 Name=LQ10W_DAIRYCATTLE
-Start=160
+Start=149
 Len=1
 
 [ValueSet]
@@ -2005,7 +1998,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for All Cattle during winter
 Name=LQ10W_ALLCATTLE
-Start=161
+Start=150
 Len=1
 
 [ValueSet]
@@ -2017,7 +2010,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Sheep during winter
 Name=LQ10W_SHEEP
-Start=162
+Start=151
 Len=1
 
 [ValueSet]
@@ -2029,7 +2022,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Goats during winter
 Name=LQ10W_GOATS
-Start=163
+Start=152
 Len=1
 
 [ValueSet]
@@ -2041,7 +2034,7 @@ Value=2;No
 [Item]
 Label=Supplimentary feed for Poultry during winter
 Name=LQ10W_POULTRY
-Start=164
+Start=153
 Len=1
 
 [ValueSet]
@@ -2053,7 +2046,7 @@ Value=2;No
 [Item]
 Label=Anyone employed on contract to tend and herd livestock
 Name=LQ24
-Start=165
+Start=154
 Len=1
 
 [ValueSet]
@@ -2065,7 +2058,7 @@ Value=2;No
 [Item]
 Label=Salary-- give the estimated cash value if paid in-kind
 Name=LQ25
-Start=166
+Start=155
 Len=7
 Decimal=2
 ZeroFill=Yes
@@ -2073,7 +2066,7 @@ ZeroFill=Yes
 [Item]
 Label=Any other person or household member involved in tending and herding livestock
 Name=LQ26
-Start=173
+Start=162
 Len=1
 
 [ValueSet]
@@ -2085,7 +2078,7 @@ Value=2;No
 [Item]
 Label=Any other person or household member involved in tending poultry
 Name=LQ30
-Start=174
+Start=163
 Len=1
 
 [ValueSet]
@@ -2097,7 +2090,7 @@ Value=2;No
 [Item]
 Label=Any other person or household member involved in other livestock activities
 Name=LQ34
-Start=175
+Start=164
 Len=1
 
 [ValueSet]
@@ -2109,7 +2102,7 @@ Value=2;No
 [Item]
 Label=Draught animals raised
 Name=LQ45A
-Start=176
+Start=165
 Len=1
 
 [ValueSet]
@@ -2121,7 +2114,7 @@ Value=2;No
 [Item]
 Label=Drought animals rented to other households for ploughing and/or transport
 Name=LQ45B
-Start=177
+Start=166
 Len=1
 
 [ValueSet]
@@ -2133,7 +2126,7 @@ Value=2;No
 [Item]
 Label=Total Amount recieved for renting out the draught animal
 Name=LQ45C
-Start=178
+Start=167
 Len=1
 
 [ValueSet]
@@ -2145,7 +2138,7 @@ Value=2;No
 [Item]
 Label=Sales of any manure produced by your livestock
 Name=LQ46A
-Start=179
+Start=168
 Len=1
 
 [ValueSet]
@@ -2157,7 +2150,7 @@ Value=2;No
 [Item]
 Label=Total Amount recieved for selling manure
 Name=LQ46B
-Start=180
+Start=169
 Len=1
 
 [ValueSet]
@@ -2170,12 +2163,12 @@ Value=2;No
 Label=VISITS
 Name=VISITS
 RecordTypeValue='6'
-RecordLen=261
+RecordLen=250
 
 [Item]
 Label=Number of visits
 Name=NUMBER_OF_VISITS
-Start=120
+Start=109
 Len=1
 ZeroFill=Yes
 
@@ -2187,7 +2180,7 @@ Value=1:3;1 - 3
 [Item]
 Label=Visit date
 Name=VISIT_DATE
-Start=121
+Start=110
 Len=8
 Occurrences=3
 OccurrenceLabel=1,first
@@ -2197,7 +2190,7 @@ OccurrenceLabel=3,third
 [Item]
 Label=Visit year
 Name=VISIT_YEAR
-Start=121
+Start=110
 Len=4
 ItemType=SubItem
 ZeroFill=Yes
@@ -2205,7 +2198,7 @@ ZeroFill=Yes
 [Item]
 Label=Visit month
 Name=VISIT_MONTH
-Start=125
+Start=114
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -2213,7 +2206,7 @@ ZeroFill=Yes
 [Item]
 Label=Visit day
 Name=VISIT_DAY
-Start=127
+Start=116
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -2221,7 +2214,7 @@ ZeroFill=Yes
 [Item]
 Label=Household Status
 Name=HOUSEHOLD_STATUS
-Start=145
+Start=134
 Len=1
 ZeroFill=Yes
 
@@ -2237,7 +2230,7 @@ Value=5;Refusal
 [Item]
 Label=Final Result Code
 Name=FINAL_RESULT_CODE
-Start=146
+Start=135
 Len=1
 ZeroFill=Yes
 
@@ -2250,21 +2243,21 @@ Value=6;Partially Complete
 [Item]
 Label=Partially Complete Reason
 Name=PARTIALLY_COMPLETE_REASON
-Start=147
+Start=136
 Len=50
 DataType=Alpha
 
 [Item]
 Label=Interview Date
 Name=INTERVIEW_DATE
-Start=197
+Start=186
 Len=10
 DataType=Alpha
 
 [Item]
 Label=Assistant Supervisor Approval Status
 Name=APPROVAL_STATUS
-Start=207
+Start=196
 Len=1
 ZeroFill=Yes
 
@@ -2277,7 +2270,7 @@ Value=1;Approved
 [Item]
 Label=Household Latitude
 Name=HH_LATITUDE
-Start=208
+Start=197
 Len=14
 Decimal=9
 DecimalChar=Yes
@@ -2285,7 +2278,7 @@ DecimalChar=Yes
 [Item]
 Label=Household Longitude
 Name=HH_LONGITUDE
-Start=222
+Start=211
 Len=14
 Decimal=9
 DecimalChar=Yes
@@ -2293,19 +2286,19 @@ DecimalChar=Yes
 [Item]
 Label=Household Altitude
 Name=HH_ALTITUDE
-Start=236
+Start=225
 Len=6
 
 [Item]
 Label=Household Satellites
 Name=HH_SATELLITES
-Start=242
+Start=231
 Len=2
 
 [Item]
 Label=Household Accuracy
 Name=HH_ACCURACY
-Start=244
+Start=233
 Len=4
 Decimal=1
 DecimalChar=Yes
@@ -2313,27 +2306,27 @@ DecimalChar=Yes
 [Item]
 Label=Household Read Time
 Name=HH_READ_TIME
-Start=248
+Start=237
 Len=6
 
 [Item]
 Label=Enumerator Code
 Name=ENUMERATOR_CODE
-Start=254
+Start=243
 Len=6
 DataType=Alpha
 
 [Item]
 Label=Missing Fertility
 Name=MISSING_FERTILITY
-Start=260
+Start=249
 Len=1
 ZeroFill=Yes
 
 [Item]
 Label=Duplicates removed
 Name=DUPLICATES_REMOVED
-Start=261
+Start=250
 Len=1
 ZeroFill=Yes
 
